@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2019-04-19_170849,HostName:DEGTHAT,FileType:XCCDF Results,StreamName:Microsoft_PowerPoint_2016 - v001.001 -->
+
+<cdf:Benchmark style="SCAP_1.1" resolved="1" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.2/cpe-dictionary_2.2.xsd" id="Microsoft_PowerPoint_2016" xmlns:cdf="http://checklists.nist.gov/xccdf/1.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      <cdf:status date="2016-12-08">accepted</cdf:status>
+      <cdf:title>Microsoft PowerPoint 2016 STIG</cdf:title>
+      <cdf:description>The Microsoft PowerPoint 2016 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems.  Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</cdf:description>
+      <cdf:notice id="terms-of-use"></cdf:notice>
+      <cdf:reference href="http://iase.disa.mil">
+            <dc:publisher>DISA</dc:publisher>
+            <dc:source>STIG.DOD.MIL</dc:source>
+      </cdf:reference>
+      <cdf:plain-text id="release-info">Release: 1 Benchmark Date: 08 Dec 2016</cdf:plain-text>
+      <cdf:platform idref="cpe:/a:microsoft:powerpoint:2016"></cdf:platform>
+      <cdf:version>001.001</cdf:version>
+      <cdf:Profile id="MAC-1_Classified">
+            <cdf:title>I - Mission Critical Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-1_Public">
+            <cdf:title>I - Mission Critical Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-1_Sensitive">
+            <cdf:title>I - Mission Critical Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-2_Classified">
+            <cdf:title>II - Mission Support Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-2_Public">
+            <cdf:title>II - Mission Support Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-2_Sensitive">
+            <cdf:title>II - Mission Support Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-3_Classified">
+            <cdf:title>III - Administrative Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-3_Public">
+            <cdf:title>III - Administrative Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="MAC-3_Sensitive">
+            <cdf:title>III - Administrative Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select selected="true" idref="V-70641"></cdf:select>
+            <cdf:select selected="true" idref="V-70645"></cdf:select>
+            <cdf:select selected="true" idref="V-70647"></cdf:select>
+            <cdf:select selected="true" idref="V-71401"></cdf:select>
+            <cdf:select selected="true" idref="V-70657"></cdf:select>
+            <cdf:select selected="true" idref="V-70659"></cdf:select>
+            <cdf:select selected="true" idref="V-70663"></cdf:select>
+            <cdf:select selected="true" idref="V-70669"></cdf:select>
+            <cdf:select selected="true" idref="V-70665"></cdf:select>
+            <cdf:select selected="true" idref="V-70667"></cdf:select>
+            <cdf:select selected="true" idref="V-70671"></cdf:select>
+            <cdf:select selected="true" idref="V-70681"></cdf:select>
+            <cdf:select selected="true" idref="V-70677"></cdf:select>
+            <cdf:select selected="true" idref="V-70653"></cdf:select>
+            <cdf:select selected="true" idref="V-70673"></cdf:select>
+            <cdf:select selected="true" idref="V-70675"></cdf:select>
+            <cdf:select selected="true" idref="V-70661"></cdf:select>
+            <cdf:select selected="true" idref="V-71403"></cdf:select>
+            <cdf:select selected="true" idref="V-70655"></cdf:select>
+            <cdf:select selected="true" idref="V-70649"></cdf:select>
+            <cdf:select selected="true" idref="V-70643"></cdf:select>
+            <cdf:select selected="true" idref="V-70651"></cdf:select>
+            <cdf:select selected="true" idref="V-71405"></cdf:select>
+            <cdf:select selected="true" idref="V-71407"></cdf:select>
+            <cdf:select selected="true" idref="V-70679"></cdf:select>
+            <cdf:select selected="true" idref="V-70683"></cdf:select>
+            <cdf:select selected="true" idref="V-70699"></cdf:select>
+            <cdf:select selected="true" idref="V-70697"></cdf:select>
+            <cdf:select selected="true" idref="V-70695"></cdf:select>
+            <cdf:select selected="true" idref="V-71647"></cdf:select>
+            <cdf:select selected="true" idref="V-70685"></cdf:select>
+            <cdf:select selected="true" idref="V-70687"></cdf:select>
+            <cdf:select selected="true" idref="V-70689"></cdf:select>
+            <cdf:select selected="true" idref="V-70691"></cdf:select>
+            <cdf:select selected="true" idref="V-70693"></cdf:select>
+            <cdf:select selected="true" idref="V-70701"></cdf:select>
+            <cdf:select selected="true" idref="V-71641"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="CAT_I_Only">
+            <cdf:title>CAT I Only</cdf:title>
+            <cdf:description>This profile only includes rules that are Severity Category I.</cdf:description>
+            <cdf:select selected="false" idref="SV-85263r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85265r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85269r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85271r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85273r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86025r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86027r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85275r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85277r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85279r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85281r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85283r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85285r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85287r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85289r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85291r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85293r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85295r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85297r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86029r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85301r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86031r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85303r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85305r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85267r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85307r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85323r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85321r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85319r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86271r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85309r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85311r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85313r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85315r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-85325r1_rule"></cdf:select>
+            <cdf:select selected="false" idref="SV-86265r1_rule"></cdf:select>
+      </cdf:Profile>
+      <cdf:Group id="V-70641">
+            <cdf:title>DTOO104 - Disable user name and password</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85263r1_rule">
+                  <cdf:version>DTOO104</cdf:version>
+                  <cdf:title>Disabling of user name and password syntax from being used in URLs must be enforced in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Uniform Resource Locator (URL) standard allows user authentication to be included in URL strings in the form http://username:password@example.com. A malicious user might use this URL syntax to create a hyperlink that appears to open a legitimate website but actually opens a deceptive (spoofed) website. For example, the URL http://www.wingtiptoys.com@example.com appears to open http://www.wingtiptoys.com but actually opens http://example.com. To protect users from such attacks, Internet Explorer usually blocks any URLs using this syntax.
+
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If user names and passwords in URLs are allowed, users could be diverted to dangerous web pages, which could pose a security risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46389r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Disable user name and password" to "Enabled" and place a check in the 'powerpnt.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-46389r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70645">
+            <cdf:title>DTOO111 - Enable IE Bind to Object</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85267r1_rule">
+                  <cdf:version>DTOO111</cdf:version>
+                  <cdf:title>The Internet Explorer Bind to Object functionality must be enabled in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer performs a number of safety checks before initializing an ActiveX control. It will not initialize a control if the kill bit for the control is set in the registry, or if the security settings for the zone in which the control is located do not allow it to be initialized.
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). A security risk could occur if potentially dangerous controls are allowed to load.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-46461r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Bind to Object" to "Enabled" and place a check in the 'powerpnt.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-46461r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:2"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70647">
+            <cdf:title>DTOO117 - Saved from URL</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85269r1_rule">
+                  <cdf:version>DTOO117</cdf:version>
+                  <cdf:title>The Saved from URL mark must be selected to enforce Internet zone processing in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Typically, when Internet Explorer loads a web page from a Universal Naming Convention (UNC) share that contains a Mark of the Web (MOTW) comment, indicating the page was saved from a site on the Internet; Internet Explorer runs the page in the Internet security zone instead of the less restrictive Local Intranet security zone. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer does not evaluate the page for a MOTW, potentially dangerous code could be allowed to run.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46395r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Saved from URL" to "Enabled" and place a check in the 'powerpnt.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-46395r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:3"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71401">
+            <cdf:title>DTOO123-Block Navigation to URL from Office</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86025r1_rule">
+                  <cdf:version>DTOO123</cdf:version>
+                  <cdf:title>Navigation to URLs embedded in Office products must be blocked in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;To protect users from attacks, Internet Explorer usually does not attempt to load malformed URLs. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer attempts to load a malformed URL, a security risk could occur.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46401r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Navigate URL" to "Enabled" and place a check in the 'powerpnt.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-46401r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:4"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70657">
+            <cdf:title>DTOO129 - Block Pop-Ups</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85279r1_rule">
+                  <cdf:version>DTOO129</cdf:version>
+                  <cdf:title>Links that invoke instances of Internet Explorer from within an Office product must be blocked in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Pop-up Blocker feature in Internet Explorer can be used to block most unwanted pop-up and pop-under windows from appearing. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If the Pop-up Blocker is disabled, disruptive and potentially dangerous pop-up windows could load and present a security risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-46409r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Block popups" to "Enabled" and select 'powerpnt.exe'.</cdf:fixtext>
+                  <cdf:fix id="F-46409r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:5"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70659">
+            <cdf:title>DTOO131 - Trust Bar Notifications</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85281r1_rule">
+                  <cdf:version>DTOO131</cdf:version>
+                  <cdf:title>Trust Bar Notifications for unsigned application add-ins must be blocked.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If an application is configured to require all add-ins to be signed by a trusted publisher, any unsigned add-ins the application loads will be disabled and the application will display the Trust Bar at the top of the active window. The Trust Bar contains a message informing users about the unsigned add-in. If a user is allowed to make the determination to allow an unsigned add-in, it increases the risk of malicious code being introduced onto the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001749</cdf:ident>
+                  <cdf:fixtext fixref="F-46412r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center "Disable Trust Bar Notification for unsigned application add-ins and block them" to "Enabled".</cdf:fixtext>
+                  <cdf:fix id="F-46412r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:6"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70663">
+            <cdf:title>DTOO133-Disable all trusted locations</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85285r1_rule">
+                  <cdf:version>DTOO133</cdf:version>
+                  <cdf:title>All automatic loading from Trusted Locations must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Trusted locations specified in the Trust Center are used to define file locations assumed to be safe. Content, code, and add-ins are allowed to load from trusted locations with a minimal amount of security, without prompting the users for permission. If a dangerous file is opened from a trusted location, it will not be subject to standard security measures and could harm users' computers or data. By default, files located in trusted locations (those specified in the Trust Center) are assumed to be safe.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46419r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Trusted Locations "Disable all trusted locations" to "Enabled".</cdf:fixtext>
+                  <cdf:fix id="F-46419r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:8"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70669">
+            <cdf:title>DTOO142 - Force Scan Encr. Macros in open XML</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85291r1_rule">
+                  <cdf:version>DTOO142</cdf:version>
+                  <cdf:title>Enforce encrypted macros to be scanned in open XML documents must be determined and configured.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;When an Office Open XML document (Word, Excel, and PowerPoint) is rights-managed, or password-protected, any macros embedded in the document are encrypted along with the rest of the contents.  By default, these encrypted macros will be disabled unless they are scanned by antivirus software immediately before being loaded. If this default configuration is modified, Office products will not require encrypted macros to be scanned before loading. They will be handled as specified by the Office System macro security settings, which can cause macro viruses to load undetected and lead to data loss or reduced application functionality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46427r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security "Scan encrypted macros in PowerPoint Open XML presentations" to "Enabled (Scan encrypted macros (default)".</cdf:fixtext>
+                  <cdf:fix id="F-46427r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:9"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70665">
+            <cdf:title>DTOO134 - Trusted locations on computer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85287r1_rule">
+                  <cdf:version>DTOO134</cdf:version>
+                  <cdf:title>Disallowance of Trusted Locations on the network must be enforced.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Files located in Trusted Locations and specified in the Trust Center are assumed to be safe. Content, code, and add-ins are allowed to load from Trusted Locations with minimal security and without prompting the user for permission. By default, users can specify Trusted Locations on network shares, or in other remote locations not under their direct control, by selecting the "Allow Trusted Locations on my network" (not recommended) check box in the Trusted Locations section of the Trust Center. If a dangerous file is opened from a trusted location, it will not be subject to typical security measures and could affect users' computers or data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46421r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Trusted Locations "Allow Trusted Locations on the network" to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46421r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:10"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70667">
+            <cdf:title>DTOO139 - Save files default format</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85289r1_rule">
+                  <cdf:version>DTOO139</cdf:version>
+                  <cdf:title>The Save commands default file format must be configured.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;When users create new PowerPoint files, PowerPoint 2016 saves them in the new *.pptx format.  Ensure this setting is enabled to specify that all new files are created in PowerPoint 2016.  If a new file is created in an earlier format, some users may not be able to open or use the file, or they may choose a format this is less secure than the PowerPoint 2016 format.  Users can still select a specific format when they save files, but they cannot change default of this setting from the PowerPoint Options dialog box.  This enforced user behavior ensures any change to the file format requires additional deliberate user interaction.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-46423r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Save "default file format" to "Enabled PowerPoint Presentation (*.pptx)".</cdf:fixtext>
+                  <cdf:fix id="F-46423r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:11"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70671">
+            <cdf:title>DTOO146-Disable Trust access to VB Project Macros</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85293r1_rule">
+                  <cdf:version>DTOO146</cdf:version>
+                  <cdf:title>Trust access for VBA must be disallowed.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;VSTO projects require access to the Visual Basic for Applications project system in Excel, PowerPoint, and Word, even though the projects do not use Visual Basic for Applications. Design-time support of controls in both Visual Basic and C# projects depends on the Visual Basic for Applications project system in Word and Excel. By default, Excel, Word, and PowerPoint do not allow automation clients to have programmatic access to VBA projects. Users can enable this by selecting the Trust access to the VBA project object model in the Macro Settings section of the Trust Center. However, doing so allows macros in any documents the user opens to access the core Visual Basic objects, methods, and properties, which represents a potential security hazard.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-46433r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center "Trust access to Visual Basic Project" to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46433r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:12"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70681">
+            <cdf:title>DTOO304 - VBA Macro Warning settings</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85305r1_rule">
+                  <cdf:version>DTOO304</cdf:version>
+                  <cdf:title>Warning Bar settings for VBA macros must be configured.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;When users open files containing VBA macros, applications open the files with the macros disabled and displays the Trust Bar with a warning that macros are present and have been disabled. Users may then enable these macros by clicking Options on the Trust Bar and selecting the option to enable them. Disabling or not configuring this setting may allow dangerous macros to become active on user computers or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-46455r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center "VBA Macro Notification Settings" to "Enabled (Disable all with notification)".</cdf:fixtext>
+                  <cdf:fix id="F-46455r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:13"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70677">
+            <cdf:title>DTOO289 - Running programs in PowerPoint</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85301r1_rule">
+                  <cdf:version>DTOO289</cdf:version>
+                  <cdf:title>The ability to run programs from a PowerPoint presentation must be disallowed.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Action buttons can be used to launch external programs from PowerPoint presentations. If a malicious person adds an action button to a presentation that launches a dangerous program, it could significantly affect the security of a user's computer and data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46446r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security "Run Programs" to "Enabled (disable - (don't run any programs))".</cdf:fixtext>
+                  <cdf:fix id="F-46446r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:15"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70653">
+            <cdf:title>DTOO126 - Add-on Management</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85275r1_rule">
+                  <cdf:version>DTOO126</cdf:version>
+                  <cdf:title>Add-on Management functionality must be allowed in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer add-ons are pieces of code, run in Internet Explorer, to provide additional functionality. Rogue add-ons may contain viruses or other malicious code. Disabling or not configuring this setting could allow malicious code or users to become active on user computers or the network. For example, a malicious user can monitor and then use keystrokes users type into Internet Explorer. Even legitimate add-ons may demand resources, compromising the performance of Internet Explorer, and the operating systems for user computers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-46405r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Add-on Management" to "Enabled" and 'powerpnt.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-46405r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:17"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70673">
+            <cdf:title>DTOO209 - Zone Elevation Protection</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85295r1_rule">
+                  <cdf:version>DTOO209</cdf:version>
+                  <cdf:title>Protection from zone elevation must be enforced in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer places restrictions on each web page users can use the browser to open. Web pages on a user's local computer have the fewest security restrictions and reside in the Local Machine zone, making this security zone a prime target for malicious users and code. Disabling or not configuring this setting could allow pages in the Internet zone to navigate to pages in the Local Machine zone to then run code to elevate privileges. This could allow malicious code or users to become active on the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-46436r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Protection From Zone Elevation" to "Enabled" and 'powerpnt.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-46436r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:18"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70675">
+            <cdf:title>DTOO211 - Restrict ActiveX Install</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85297r1_rule">
+                  <cdf:version>DTOO211</cdf:version>
+                  <cdf:title>ActiveX Installs must be configured for proper restriction in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Microsoft ActiveX controls allow unmanaged, unprotected code to run on the user computers. ActiveX controls do not run within a protected container in the browser like the other types of HTML or Microsoft Silverlight-based controls. Disabling or not configuring this setting does not block prompts for ActiveX control installations and these prompts display to users. This could allow malicious code to become active on the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-002460</cdf:ident>
+                  <cdf:fixtext fixref="F-46442r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict ActiveX Install" to "Enabled" and 'powerpnt.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-46442r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:19"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70661">
+            <cdf:title>DTOO132 - Restrict File Download</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85283r1_rule">
+                  <cdf:version>DTOO132</cdf:version>
+                  <cdf:title>File Downloads must be configured for proper restrictions in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disabling this setting allows websites to present file download prompts via code without the user specifically initiating the download.  User preferences may also allow the download to occur without prompting or interaction with the user.  Even if Internet Explorer prompts the user to accept the download, some websites abuse this functionality.  Malicious websites may continually prompt users to download a file or present confusing dialog boxes to trick users into downloading or running a file.  If the download occurs and it contains malicious code, the code could become active on the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001169</cdf:ident>
+                  <cdf:fixtext fixref="F-46418r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict File Download" to "Enabled" and 'powerpnt.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-46418r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:20"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71403">
+            <cdf:title>DTOO124 - Scripted Window Security</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86027r1_rule">
+                  <cdf:version>DTOO124</cdf:version>
+                  <cdf:title>Scripted Window Security must be enforced in PowerPoint.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Malicious websites often try to confuse or trick users into giving a site permission to perform an action allowing the site to take control of the users' computers in some manner. Disabling or not configuring this setting allows unknown websites to:
+-Create browser windows appearing to be from the local operating system.
+-Draw active windows displaying outside of the viewable areas of the screen capturing keyboard input.
+-Overlay parent windows with their own browser windows to hide important system information, choices or prompts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-46403r1_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Scripted Window Security Restrictions" to "Enabled" and 'powerpnt.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-46403r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:21"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70655">
+            <cdf:title>DTOO127 - Add-ins are signed by Trusted Publisher</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85277r1_rule">
+                  <cdf:version>DTOO127</cdf:version>
+                  <cdf:title>Add-ins to Office applications must be signed by a Trusted Publisher.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Office 2016 applications do not check the digital signature on application add-ins before opening them.  Disabling or not configuring this setting may allow an application to load a dangerous add-in.  As a result, malicious code could become active on user computers or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001749</cdf:ident>
+                  <cdf:fixtext fixref="F-46407r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center "Require that application add-ins are signed by Trusted Publisher" to "Enabled".</cdf:fixtext>
+                  <cdf:fix id="F-46407r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:22"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70649">
+            <cdf:title>DTOO119 - Turn off file validation</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85271r1_rule">
+                  <cdf:version>DTOO119</cdf:version>
+                  <cdf:title>Configuration for file validation must be enforced.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Office File Validation helps detect and prevent a kind of exploit known as a file format attack or file fuzzing attack. File format attacks exploit the integrity of a file. They occur when someone modifies the structure of a file with the intent of adding malicious code. Usually the malicious code is run remotely and is used to elevate the privilege of restricted accounts on the computer. As a result, an attacker could gain access to a computer that they did not previously have access to. This could enable an attacker to read sensitive information from the computer's hard disk drive or install malware, such as a worm or a key logging program. The Office File Validation feature helps prevent file format attacks by scanning and validating files before they are opened. To validate files, Office File Validation compares a file's structure to a predefined file schema, which is a set of rules that determine what a readable file looks like. If Office File Validation detects that a file's structure does not follow all rules that are described in the schema, the file does not pass validation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-46397r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security "Turn off file validation" to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46397r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:23"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70643">
+            <cdf:title>DTOO110 - Set default file block behavior</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85265r1_rule">
+                  <cdf:version>DTOO110</cdf:version>
+                  <cdf:title>Blocking as default file block opening behavior must be enforced.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Users can open, view, or edit a large number of file types in PowerPoint 2016.  Some file types are safer than others, as some could allow malicious code to become active on user computers or the network.  For this reason, disabling or not configuring this setting could allow malicious code to become active on user computers or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-46393r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Set default file block behavior" to "Enabled: Blocked files are not opened".</cdf:fixtext>
+                  <cdf:fix id="F-46393r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:24"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70651">
+            <cdf:title>DTOO121 - Files from the Internet zone</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85273r1_rule">
+                  <cdf:version>DTOO121</cdf:version>
+                  <cdf:title>Files from the Internet zone must be opened in Protected View.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy setting allows for determining if files downloaded from the Internet zone open in Protected View. If enabling this policy setting, files downloaded from the Internet zone do not open in Protected View. If disabling or not configuring this policy setting, files downloaded from the Internet zone open in Protected View.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-46399r2_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Do not open files from the Internet zone in Protected View to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46399r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:25"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71405">
+            <cdf:title>DTOO288 - Files in unsafe locations</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86029r1_rule">
+                  <cdf:version>DTOO288</cdf:version>
+                  <cdf:title>Files in unsafe locations must be opened in Protected View.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy setting determines if files located in unsafe locations will open in Protected View. If unsafe locations have not been specified, only the "Downloaded Program Files" and "Temporary Internet Files" folders are considered unsafe locations. If enabling this policy setting, files located in unsafe locations do not open in Protected View. If disabling or not configuring this policy setting, files located in unsafe locations open in Protected View.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46444r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Do not open files in unsafe locations in Protected View" to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46444r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:26"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71407">
+            <cdf:title>DTOO292 - Set document behavior</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86031r1_rule">
+                  <cdf:version>DTOO292</cdf:version>
+                  <cdf:title>Document behavior if file validation fails must be set.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy key controls the behavior of how Office documents should be handled when failing file validation. By requiring such documents to be opened in Protected View, any potentially malicious code would be disabled, allowing the user to edit the document and resave correctly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46451r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Set document behavior if file validation fails" to "Enabled: Open in Protected View" and Unchecked for "Do not allow edit".</cdf:fixtext>
+                  <cdf:fix id="F-46451r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:27"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70679">
+            <cdf:title>DTOO293 - Turn off Protected View for attachments</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85303r1_rule">
+                  <cdf:version>DTOO293</cdf:version>
+                  <cdf:title>Attachments opened from Outlook must be in Protected View.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy setting allows for determining if PowerPoint files in Outlook attachments open in Protected View. If enabling this policy setting, Outlook attachments do not open in Protected View. If disabling or not configuring this policy setting, Outlook attachments open in Protected View.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46453r1_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Turn off Protected View for attachments opened from Outlook" to "Disabled".</cdf:fixtext>
+                  <cdf:fix id="F-46453r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:28"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70683">
+            <cdf:title>DTOO501 - Disable user name and password in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85307r1_rule">
+                  <cdf:version>DTOO501</cdf:version>
+                  <cdf:title>Disabling of user name and password syntax from being used in URLs must be enforced in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Uniform Resource Locator (URL) standard allows user authentication to be included in URL strings in the form http://username:password@example.com. A malicious user might use this URL syntax to create a hyperlink that appears to open a legitimate website but actually opens a deceptive (spoofed) website. For example, the URL http://www.wingtiptoys.com@example.com appears to open http://www.wingtiptoys.com but actually opens http://example.com. To protect users from such attacks, Internet Explorer usually blocks any URLs using this syntax.
+
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If user names and passwords in URLs are allowed, users could be diverted to dangerous web pages, which could pose a security risk.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-46459r3_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Disable user name and password" to "Enabled" and place a check in the 'pptview.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-46459r3_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:31"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70699">
+            <cdf:title>DTOO510 - Restrict ActiveX Install in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85323r1_rule">
+                  <cdf:version>DTOO510</cdf:version>
+                  <cdf:title>ActiveX Installs must be configured for proper restriction in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Microsoft ActiveX controls allow unmanaged, unprotected code to run on the user computers. ActiveX controls do not run within a protected container in the browser like the other types of HTML or Microsoft Silverlight-based controls. Disabling or not configuring this setting does not block prompts for ActiveX control installations and these prompts display to users. This could allow malicious code to become active on the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-002460</cdf:ident>
+                  <cdf:fixtext fixref="F-47826r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict ActiveX Install" to "Enabled" and 'pptview.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-47826r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:32"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70697">
+            <cdf:title>DTOO509 - Zone Elevation Protection in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85321r1_rule">
+                  <cdf:version>DTOO509</cdf:version>
+                  <cdf:title>Protection from zone elevation must be enforced in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer places restrictions on each web page users can use the browser to open. Web pages on a user's local computer have the fewest security restrictions and reside in the Local Machine zone, making this security zone a prime target for malicious users and code. Disabling or not configuring this setting could allow pages in the Internet zone to navigate to pages in the Local Machine zone to then run code to elevate privileges. This could allow malicious code or users to become active on the user's computer or the network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-47828r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Protection From Zone Elevation" to "Enabled" and 'pptview.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-47828r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:33"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70695">
+            <cdf:title>DTOO507 - Block Pop-Ups in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85319r1_rule">
+                  <cdf:version>DTOO507</cdf:version>
+                  <cdf:title>File Links that invoke instances of Internet Explorer from within an Office product must be blocked in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Pop-up Blocker feature in Internet Explorer can be used to block most unwanted pop-up and pop-under windows from appearing. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If the Pop-up Blocker is disabled, disruptive and potentially dangerous pop-up windows could load and present a security risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-47829r3_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Block popups" to "Enabled" and select 'pptview.exe'.</cdf:fixtext>
+                  <cdf:fix id="F-47829r3_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:34"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71647">
+            <cdf:title>DTOO508 - Restrict File Download in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86271r1_rule">
+                  <cdf:version>DTOO508</cdf:version>
+                  <cdf:title>File Downloads must be configured for proper restrictions in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disabling this setting allows websites to present file download prompts via code without the user specifically initiating the download.  User preferences may also allow the download to occur without prompting or interaction with the user.  Even if Internet Explorer prompts the user to accept the download, some websites abuse this functionality.  Malicious websites may continually prompt users to download a file or present confusing dialog boxes to trick users into downloading or running a file.  If the download occurs and it contains malicious code, the code could become active on the user's computer or the network. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001169</cdf:ident>
+                  <cdf:fixtext fixref="F-47830r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict File Download" to "Enabled" and 'pptview.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-47830r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:35"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70685">
+            <cdf:title>DTOO502 - Enable IE Bind to Object in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85309r1_rule">
+                  <cdf:version>DTOO502</cdf:version>
+                  <cdf:title>The Internet Explorer Bind to Object functionality must be enabled in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer performs a number of safety checks before initializing an ActiveX control. It will not initialize a control if the kill bit for the control is set in the registry, or if the security settings for the zone in which the control is located do not allow it to be initialized.
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). A security risk could occur if potentially dangerous controls are allowed to load.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-47831r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Bind to Object" to "Enabled" and place a check in the 'pptview.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-47831r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:36"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70687">
+            <cdf:title>DTOO503 - Saved from URL in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85311r1_rule">
+                  <cdf:version>DTOO503</cdf:version>
+                  <cdf:title>The Saved from URL mark must be selected to enforce Internet zone processing in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Typically, when Internet Explorer loads a web page from a Universal Naming Convention (UNC) share that contains a Mark of the Web (MOTW) comment, indicating the page was saved from a site on the Internet; Internet Explorer runs the page in the Internet security zone instead of the less restrictive Local Intranet security zone. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer does not evaluate the page for a MOTW, potentially dangerous code could be allowed to run.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-47832r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Saved from URL" to "Enabled" and place a check in the 'pptview.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-47832r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:37"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70689">
+            <cdf:title>DTOO504 - Block Navigation to URL from Office in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85313r1_rule">
+                  <cdf:version>DTOO504</cdf:version>
+                  <cdf:title>Navigation to URLs embedded in Office products must be blocked in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;To protect users from attacks, Internet Explorer usually does not attempt to load malformed URLs. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer attempts to load a malformed URL, a security risk could occur.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-47833r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Navigate URL" to "Enabled" and place a check in the 'pptview.exe' check box.</cdf:fixtext>
+                  <cdf:fix id="F-47833r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:38"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70691">
+            <cdf:title>DTOO505 - Scripted Window Security in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85315r1_rule">
+                  <cdf:version>DTOO505</cdf:version>
+                  <cdf:title>Scripted Window Security must be enforced in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Malicious websites often try to confuse or trick users into giving a site permission to perform an action allowing the site to take control of the users' computers in some manner. Disabling or not configuring this setting allows unknown websites to:
+-Create browser windows appearing to be from the local operating system.
+-Draw active windows displaying outside of the viewable areas of the screen capturing keyboard input.
+-Overlay parent windows with their own browser windows to hide important system information, choices or prompts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-47834r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Scripted Window Security Restrictions" to "Enabled" and 'pptview.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-47834r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:39"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70693">
+            <cdf:title>DTOO506 - Add-on Management in PowerPoint Viewer</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85317r1_rule">
+                  <cdf:version>DTOO506</cdf:version>
+                  <cdf:title>Add-on Management functionality must be allowed in PowerPoint Viewer.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Internet Explorer add-ons are pieces of code, run in Internet Explorer, to provide additional functionality. Rogue add-ons may contain viruses or other malicious code. Disabling or not configuring this setting could allow malicious code or users to become active on user computers or the network. For example, a malicious user can monitor and then use keystrokes users type into Internet Explorer. Even legitimate add-ons may demand resources, compromising the performance of Internet Explorer, and the operating systems for user computers.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fixtext fixref="F-47835r2_fix">Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2016 (Machine) -&gt; Security Settings -&gt; IE Security "Add-on Management" to "Enabled" and 'pptview.exe' is checked.</cdf:fixtext>
+                  <cdf:fix id="F-47835r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:40"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-70701">
+            <cdf:title>DTOO600 - Macros blocked from Internet</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-85325r1_rule">
+                  <cdf:version>DTOO600</cdf:version>
+                  <cdf:title>Macros must be blocked from running in Office files from the Internet.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy setting allows you to block macros from running in Office files that come from the Internet.  If you enable this policy setting, macros are blocked from running, even if 'Enable all macro's is selected in the Macro Settings section of the Trust Center. Also, instead of having the choice to 'Enable Content', users will receive a notification that macros are blocked from running. If the Office file is saved to a trusted location or was previously trusted by the user, macros will be allowed to run.  If you disable or don't configure this policy setting, the settings configured in the Macro Settings section of the Trust Center determine whether macros run in Office files that come from the Internet. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-85325r2_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center "Block macros from running in Office files from the Internet" to "Enabled".</cdf:fixtext>
+                  <cdf:fix id="F-85325r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:41"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="V-71641">
+            <cdf:title>DTOO605 - Files on UNC opened in Protected View</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule weight="10.0" severity="medium" id="SV-86265r1_rule">
+                  <cdf:version>DTOO605</cdf:version>
+                  <cdf:title>Files on local Intranet UNC must be opened in Protected View.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy setting lets you determine if files on local Intranet UNC file shares open in Protected View. If you enable this policy setting, files on local Intranet UNC file shares open in Protected View if their UNC paths appear to be within the Internet zone. If you disable or do not configure this policy setting, files on Intranet UNC file shares do not open in Protected View if their UNC paths appear to be within the Internet zone. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>2483</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-86265r2_fix">Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft PowerPoint 2016 -&gt; PowerPoint Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Open files on local Intranet UNC in Protected View" to "Enabled".</cdf:fixtext>
+                  <cdf:fix id="F-86265r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:42"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:TestResult start-time="2019-04-19T17:09:12" version="001.001" test-system="cpe:/a:spawar:scc:5.0.1" id="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-xccdf.xml---MAC-1_Classified-1" end-time="2019-04-19T17:09:13">
+            <cdf:benchmark href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-xccdf.xml"></cdf:benchmark>
+            <cdf:organization>SPAWAR Systems Center Atlantic</cdf:organization>
+            <cdf:identity privileged="true" authenticated="true">DEGTHAT\degthat</cdf:identity>
+            <cdf:profile idref="MAC-1_Classified"></cdf:profile>
+            <cdf:target>DEGTHAT</cdf:target>
+            <cdf:target-address>192.168.169.1</cdf:target-address>
+            <cdf:target-address>192.168.2.125</cdf:target-address>
+            <cdf:target-address></cdf:target-address>
+            <cdf:target-address></cdf:target-address>
+            <cdf:target-address></cdf:target-address>
+            <cdf:target-facts>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:host_name">DEGTHAT</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:domain"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:fqdn">DEGTHAT.</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_name">Windows 10 Pro</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_version">Windows 10 Pro</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:processor">Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:processor_architecture">Intel64 Family 6 Model 58 Stepping 9</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:processor_mhz">2994</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:physical_memory">8192</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:manufacturer">Dell Inc.</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ein">2CY4RW1</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:bios_version">A11</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:model">Inspiron 660</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_service_pack"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000005] Hyper-V Virtual Ethernet Adapter</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4">192.168.169.1</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:mac">FA:15:B9:13:F9:BC</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000007] Realtek PCIe GbE Family Controller</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4">192.168.2.125</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:mac">78:45:C4:3E:CA:FA</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000015] WAN Miniport (IP)</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:mac">62:03:20:52:41:53</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000016] WAN Miniport (IPv6)</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:mac">7A:5B:20:52:41:53</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:interface_name">[00000017] WAN Miniport (Network Monitor)</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ipv4"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:mac">96:80:20:52:41:53</cdf:fact>
+            </cdf:target-facts>
+            <cdf:platform idref="cpe:/a:microsoft:powerpoint:2016"></cdf:platform>
+            <cdf:rule-result version="DTOO104" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85263r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46389r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO111" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85267r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-46461r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:2"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO117" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85269r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46395r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:3"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO123" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-86025r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46401r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:4"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO129" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85279r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fix id="F-46409r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:5"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO131" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85281r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001749</cdf:ident>
+                  <cdf:fix id="F-46412r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:6"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO133" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85285r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46419r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:8"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO142" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85291r1_rule">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:9"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO134" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85287r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46421r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:10"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO139" weight="10.0" severity="medium" time="2019-04-19T17:09:12" idref="SV-85289r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fix id="F-46423r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:11"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO146" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85293r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fix id="F-46433r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:12"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO304" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85305r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fix id="F-46455r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:13"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO289" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85301r1_rule">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:15"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO126" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85275r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fix id="F-46405r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:17"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO209" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85295r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-46436r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:18"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO211" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85297r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-002460</cdf:ident>
+                  <cdf:fix id="F-46442r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:19"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO132" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85283r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001169</cdf:ident>
+                  <cdf:fix id="F-46418r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:20"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO124" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-86027r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-46403r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:21"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO127" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85277r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001749</cdf:ident>
+                  <cdf:fix id="F-46407r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:22"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO119" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85271r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-46397r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:23"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO110" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85265r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fix id="F-46393r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:24"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO121" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85273r1_rule">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:25"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO288" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-86029r1_rule">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:26"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO292" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-86031r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46451r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:27"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO293" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85303r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46453r1_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:28"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO501" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85307r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-46459r3_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:31"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO510" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85323r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-002460</cdf:ident>
+                  <cdf:fix id="F-47826r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:32"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO509" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85321r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-47828r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:33"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO507" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85319r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fix id="F-47829r3_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:34"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO508" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-86271r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001169</cdf:ident>
+                  <cdf:fix id="F-47830r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:35"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO502" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85309r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-47831r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:36"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO503" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85311r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-47832r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:37"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO504" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85313r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-47833r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:38"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO505" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85315r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fix id="F-47834r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:39"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO506" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85317r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001662</cdf:ident>
+                  <cdf:fix id="F-47835r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:40"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO600" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-85325r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-85325r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:41"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="DTOO605" weight="10.0" severity="medium" time="2019-04-19T17:09:13" idref="SV-86265r1_rule">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://iase.disa.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fix id="F-86265r2_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Microsoft_Office_Powerpoint_2016_V1R1_STIG_SCAP_1-1_Benchmark-oval.xml" name="oval:mil.disa.stig.powerpoint2016:def:42"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">10.81</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-original">10.81</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:default">10.8108108108108</cdf:score>
+            <cdf:score maximum="370" system="urn:xccdf:scoring:flat">40</cdf:score>
+            <cdf:score maximum="37" system="urn:xccdf:scoring:flat-unweighted">4</cdf:score>
+            <cdf:score maximum="1" system="urn:xccdf:scoring:absolute">0</cdf:score>
+      </cdf:TestResult>
+</cdf:Benchmark>
