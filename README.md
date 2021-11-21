@@ -1,7 +1,7 @@
 # openrmfpro-automation
 OpenRMF<sup>&reg;</sup> Professional v2.6+ automation scripts and code to POST, PUT, and GET information via the External API. The External API was introduced as a main feature in v2.6. Later versions will expand on this, as will the examplmes in this repo.
 
-This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. 
+This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
 
 ## How this Repo is Organized
 
