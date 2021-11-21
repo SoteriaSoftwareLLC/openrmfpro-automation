@@ -8,3 +8,5 @@ This repo goes along with the <a href="https://www.soteriasoft.com/" target="_bl
 The Data for checklists, SCAP scans and Nessus/ACAS scans is in the data directory. Your scripts can pull from that sample data as examples. 
 
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data will be different but similar. 
+
+The dashboards folder show mainly Grafana dashboards pulling data from the OpenRMF<sup>&reg;</sup> Professional API as well using the JSON API datasource for Grafana.
