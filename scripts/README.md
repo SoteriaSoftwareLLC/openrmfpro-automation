@@ -1,6 +1,7 @@
 # Example Code for bash scripts to push and pull data from OpenRMF<sup>&reg;</sup> Professional
 The examples here assume you have at least OpenRMF<sup>&reg;</sup> Professional v2.6 installed, the external API setup and turned on, and you have at least one Application Integration record setup on the Administration --> External API Integration page. Your user account in Keycloak also must be setup to match the API integration with proper roles and permissions, including the ExternalAPI role to allow interaction from outside the OpenRMF<sup>&reg;</sup> Professional UI.
 
+The API calls here follow the OpenRMF<sup>&reg;</sup> Professional Developer's Guide. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
 
 ## Running the Test Authentication Example
 When you run the testauthentication.sh type of script you should get a message similar to below. You need to update the script to make sure you update the following to your environment:
