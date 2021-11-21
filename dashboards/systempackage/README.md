@@ -13,4 +13,4 @@ You have to make the JSON API data source, point it to
 ![Application Dashboard](./systempackage-listing.jpg?raw=true)
 
 ## JSON API Settings
-![Datasource Setting](./jsonapi-settings?raw=true)
+![Datasource Setting](./jsonapi-settings.png?raw=true)
