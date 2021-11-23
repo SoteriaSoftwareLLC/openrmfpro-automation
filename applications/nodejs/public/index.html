@@ -190,21 +190,9 @@
                       </div>
                       <div class="row">
                         <div class="col-5 col-sm-4">
-                          <p class="font-weight-semi-bold mb-1">Created By</p>
-                        </div>
-                        <div class="col"><span id="txtCreatedBy"></span></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-5 col-sm-4">
                           <p class="font-weight-semi-bold mb-1">Updated</p>
                         </div>
                         <div class="col"><span id="txtUpdatedDate"></span></div>
-                      </div>
-                      <div class="row">
-                        <div class="col-5 col-sm-4">
-                          <p class="font-weight-semi-bold mb-1">Updated By</p>
-                        </div>
-                        <div class="col"><span id="txtUpdatedBy"></span></div>
                       </div>
                       <div class="row">
                         <div class="col-5 col-sm-4">
@@ -267,11 +255,61 @@
         async function getSystemPackageRecord() {
             var systemKey = getFieldValue("frmSystemPackageSelection");
             if (systemKey) {
+                resetAllSystemPackageFields();
                 let response = await fetch("/api/systempackage/"+systemKey);
                 if (response.ok) {
                     var data = await response.json();
                     if (data) {
+                        if (data.active)
+                            setFieldValue("divSystemGroupTitle", data.title);
+                        else 
+                            setFieldValue("divSystemGroupTitle", data.title + " (Read-Only)");
                         
+                        setFieldValue("divSystemPackageType", data.packageTypeString);
+                        setFieldValue("divSystemGroupDescription", data.description);
+                        setFieldValue("txtSystemKey", data.systemKey);
+                        setFieldValue("txtSystemGroupCreateDate", data.createdDateString);
+                        setFieldValue("txtNumberOfChecklists", data.numberOfChecklists);
+                        
+                        setFieldValue("txtCreatedDate", data.createdDateString);
+
+                        if (data.lastComplianceCheck)
+                            setFieldValue("txtLastComplianceDate", data.lastComplianceCheckDateString);
+                        else 
+                            setFieldValue("txtLastComplianceDate", "N/A");
+
+                        if (data.updated) {
+                            setFieldValue("txtUpdatedDate", data.updatedDateString);
+                        }
+                        setFieldValue("txtSystemAcronym", data.acronym);
+                        setFieldValue("txtSystemVersionNumber", data.versionNumber);
+                        setFieldValue("txtAuthorizationType", getAuthorizationTypeString(data.authorizationType));
+                        setFieldValue("txtAuthorizationStatus", getAuthorizationStatusString(data.authorizationStatus));
+                        setFieldValue("txtAuthorizationDate", data.authorizationDateString);
+                        setFieldValue("txtAuthorizationComments", data.authorizationComments);
+
+                        setFieldValue("txtComponent", data.component);
+                        setFieldValue("txtRegistrationNumber", data.registrationNumber);
+                        setFieldValue("txtSystemType", data.systemType);
+                        setFieldValue("txtPOCName", data.pocName);
+                        setFieldValue("txtPOCPhone", data.pocPhone);
+                        setFieldValue("txtPOCEmail", data.pocEmail);
+                        setFieldValue("txtOMBProjectId", data.ombProjectId);
+                        setFieldValue("txtSecurityCosts", data.securityCosts);
+
+
+                        // update the display based on RMF or FedRAMP
+                        if (data.packageType == 10) {
+                            showElement("panelRMFCIALevels");
+                            hideElement("#panelFedRAMPLevel");
+                            setFieldValue("txtConfidentiality", data.confidentialityLevelString);
+                            setFieldValue("txtIntegrity", data.integrityLevelString);
+                            setFieldValue("txtAvailability", data.availabilityLevelString);
+                        } else {
+                            showElement("panelFedRAMPLevel");
+                            hideElement("#panelRMFCIALevels");
+                            setFieldValue("txtFedRAMPLevel", data.fedRAMPLevelString);
+                        }
                     } else {
                         alert('System Package data did not load properly.');
                     }
@@ -299,6 +337,67 @@
             }
         }
 
+        function showElement(id) {
+            var element = document.getElementById(id);
+            if (element) element.style.display = "block";
+        }
+        function hideElement(id) {
+            var element = document.getElementById(id);
+            if (element) element.style.display = "none";
+        }
+
+        function resetAllSystemPackageFields() {
+            setFieldValue("divSystemGroupTitle", "");
+            
+            setFieldValue("divSystemPackageType",  "");
+            setFieldValue("divSystemGroupDescription",  "");
+            setFieldValue("txtSystemKey",  "");
+            setFieldValue("txtSystemGroupCreateDate",  "");
+            setFieldValue("txtNumberOfChecklists",  "");
+            
+            setFieldValue("txtCreatedDate",  "");
+            setFieldValue("txtLastComplianceDate",  "");
+            setFieldValue("txtUpdatedDate",  "");
+            setFieldValue("txtSystemAcronym",  "");
+            setFieldValue("txtSystemVersionNumber",  "");
+            setFieldValue("txtAuthorizationType",  "");
+            setFieldValue("txtAuthorizationStatus",  "");
+            setFieldValue("txtAuthorizationDate",  "");
+            setFieldValue("txtAuthorizationComments",  "");
+
+            setFieldValue("txtComponent",  "");
+            setFieldValue("txtRegistrationNumber",  "");
+            setFieldValue("txtSystemType",  "");
+            setFieldValue("txtPOCName",  "");
+            setFieldValue("txtPOCPhone",  "");
+            setFieldValue("txtPOCEmail",  "");
+            setFieldValue("txtOMBProjectId",  "");
+            setFieldValue("txtSecurityCosts",  "");
+
+            hideElement("panelRMFCIALevels");
+            hideElement("#panelFedRAMPLevel");
+            setFieldValue("txtConfidentiality",  "");
+            setFieldValue("txtIntegrity",  "");
+            setFieldValue("txtAvailability",  "");
+            setFieldValue("txtFedRAMPLevel",  "");
+        }
+
+        function getAuthorizationTypeString(authType) {
+            if (authType == 10) return "Authorization to Operate (ATO)";
+            if (authType == 30) return "Interim Authorization to Test (IATT)";
+            if (authType == 40) return "Authorization to Connect (ATC)";
+            if (authType == 50) return "Type Accreditation";
+            return "Unknown";
+        }
+
+        function getAuthorizationStatusString(authType) {
+            if (authType == 10) return "Authorization to Operate (ATO)";
+            if (authType == 20) return "Authorization to Operate (ATO) with Conditions";
+            if (authType == 30) return "Interim Authorization to Test (IATT)";
+            if (authType == 40) return "Authorization to Connect (ATC)";
+            if (authType == 100) return "Denial of Authorization to Operate (ATO)";
+            return "In Process";
+        }
     </script>
 </body>
 </html>
