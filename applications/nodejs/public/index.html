@@ -166,6 +166,18 @@
                     <div class="col-lg col-xxl-5 mt-4 mt-lg-0 offset-xxl-1">
                       <div class="row">
                         <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">STIG Checklists Score</p>
+                        </div>
+                        <div class="col" id="divChecklistScores"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Patch Score</p>
+                        </div>
+                        <div class="col" id="divPatchScanScores"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
                           <p class="font-weight-semi-bold mb-1">Component</p>
                         </div>
                         <div class="col"><span id="txtComponent"></span></div>
@@ -297,6 +309,23 @@
                         setFieldValue("txtOMBProjectId", data.ombProjectId);
                         setFieldValue("txtSecurityCosts", data.securityCosts);
 
+                        // score data
+                        var scoreItems = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + data.score.totalCat1Open + '</span>' + 
+                                    ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + data.score.totalCat2Open + '</span>' + 
+                                    ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + data.score.totalCat3Open + '</span> <span' +
+                                    ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + data.score.totalNotAFinding + '</span> <span' +
+                                    ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + data.score.totalNotApplicable + '</span> <span' +
+                                    ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + data.score.totalNotReviewed + '</span>';
+
+                        var scoreCount = data.patchScore.totalCriticalOpen + data.patchScore.totalHighOpen + data.patchScore.totalMediumOpen + data.patchScore.totalLowOpen;
+                        var patchScanScoreItems = '<span title="Total Critical Items" class="badge badge rounded-capsule badge-soft-critical fs--2">' + data.patchScore.totalCriticalOpen + '</span>' + 
+                                    ' <span title="Total High Items" class="badge badge rounded-capsule badge-soft-danger fs--2">' + data.patchScore.totalHighOpen + '</span>' + 
+                                    ' <span title="Total Medium Items" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + data.patchScore.totalMediumOpen + '</span>' +
+                                    ' <span title="Total Low Items" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + data.patchScore.totalLowOpen + '</span>' + 
+                                    ' <span title="Total Patch Vulnerabilities" class="badge badge rounded-capsule bg-soft-primary fs--2">Total - ' + scoreCount + '</span>';
+                        
+                        setFieldValue("divChecklistScores", scoreItems);
+                        setFieldValue("divPatchScanScores", patchScanScoreItems);
 
                         // update the display based on RMF or FedRAMP
                         if (data.packageType == 10) {

@@ -1,3 +1,65 @@
 .main {
     padding: 10px;
 }
+
+/*********** badges ***********/
+.rounded-capsule {
+    border-radius: 3.125rem !important;
+}
+  
+.badge {
+    display: inline-block;
+    padding: 0.35556em 0.71111em;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.badge-soft-danger {
+  color: #932338;
+  background-color: #fad7dd;
+}
+
+.badge-soft-success {
+    color: #00864e;
+    background-color: #ccf6e4;
+}
+
+.badge-soft-cat3 {
+    color: #070f19;
+    background-color: rgba(216, 216, 14, 0.797);
+}
+
+.badge-soft-cat2 {
+    color: #932338;
+    background-color: orange;
+}
+
+.badge-soft-critical {
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+
+.badge-soft-primary {
+    color: #1c4f93;
+    background-color: #d5e5fa;
+}
+
+.badge-soft-secondary {
+    color: #7d899b;
+    background-color: #e3e6ea;
+}
+
+.badge-soft-dark {
+    color: #070f19;
+    background-color: #ced1d4;
+}

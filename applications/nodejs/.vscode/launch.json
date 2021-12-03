@@ -15,8 +15,8 @@
             "env" : {
                 "LISTENPORT": "8100",
                 "ROOTAPIURL": "http://localhost:8080/api/external",
-                "APIKEY": "systempackagecreator",
-                "APITOKEN": "s.sqpFjDXUd44QGAwfTGc8TOSR"
+                "APIKEY": "systempackagemanager",
+                "APITOKEN": "s.sH4jHY7DOF9iVes2Sy8jS1O8"
             }
         }
     ]
