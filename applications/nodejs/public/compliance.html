@@ -29,6 +29,9 @@
                     </div>
                   </div>
                   <div class="card-body fs--1">
+                    <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                     <table id="tblCompliance" style="width: 100%;" class="formattedTable">
                         <thead>
                             <tr>
@@ -66,13 +69,18 @@
 
             async function getComplianceData() {
               if (systemKey) {
+                showElement("divLoading");
                 let response = await fetch("/api/systempackage/"+systemKey+"/compliance/");
                 if (response.ok) {
                     var data = await response.json();
                     if (data) {
-                      for(const item of data.systemComplianceRecords){
-                        addRowToChecklistTable(item.control, item.subControl, item.title, item.complianceRecords);
-                      }                      
+                      if (data.length > 0) {
+                        for(const item of data.systemComplianceRecords){
+                          addRowToChecklistTable(item.control, item.subControl, item.title, item.complianceRecords);
+                        }
+                      } else { // show nothing found
+                        addRowToChecklistTable("", "", "No compliance found", "");
+                      }
                     } else {
                         alert('System Package data did not contain valid saved Compliance data.');
                     }
@@ -82,6 +90,7 @@
               } else {
                   alert('Please choose a valid System Package');
               }
+              hideElement("divLoading");
             }
 
             function addRowToChecklistTable(control, subcontrol, title, complianceRecords) {

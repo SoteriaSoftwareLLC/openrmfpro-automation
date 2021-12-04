@@ -91,6 +91,25 @@ app.get('/api/systempackage/:systemKey/compliance/', function (req, res) {
     });
 });
 
+// Template Records -- you can pass in the template type and optional search string
+app.get('/api/templates/:templateType/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json"
+        }
+    }
+    var templateType = req.params.templateType;
+    let searchString = req.query.search;
+    
+    var urlRequest = url + '/templates/' + templateType + '/?applicationKey=' + apikey + '&searchString=' + searchString;
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
 var server = app.listen(port, function () {
     console.log('Node server is running on port ' + port + '...')
 });

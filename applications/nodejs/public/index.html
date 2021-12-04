@@ -53,6 +53,9 @@
                   </div>
                 </div>
                 <div class="card-body border-top" id="bodySystemPackageRecord">
+                  <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
                   <div class="row">
                     <div class="col-lg col-xxl-5">
                       <div class="row">
@@ -271,6 +274,7 @@
         async function getSystemPackageRecord() {
             var systemKey = getFieldValue("frmSystemPackageSelection");
             if (systemKey) {
+                showElement("divLoading");
                 resetAllSystemPackageFields();
                 let response = await fetch("/api/systempackage/"+systemKey);
                 if (response.ok) {
@@ -352,6 +356,7 @@
             } else {
                 alert('Please choose a valid System Package');
             }
+            hideElement("divLoading");
         }
 
         function resetAllSystemPackageFields() {

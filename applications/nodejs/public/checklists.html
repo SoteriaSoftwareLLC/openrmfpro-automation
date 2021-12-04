@@ -29,6 +29,9 @@
                     </div>
                   </div>
                   <div class="card-body fs--1">
+                    <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                     <table id="tblChecklists" class="formattedTable">
                         <thead>
                             <tr>
@@ -68,14 +71,19 @@
 
         async function getSystemPackageChecklists() {
             if (systemKey) {
+                showElement("divLoading");
                 let response = await fetch("/api/systempackage/"+systemKey+"/checklists/");
                 if (response.ok) {
                     var data = await response.json();
                     if (data) {
-                      for(const item of data){
-                        addRowToChecklistTable(item.hostName, item.stigType, item.stigVersion, item.stigRelease, 
-                        item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
-                        item.score.totalNotApplicable, item.score.totalNotReviewed);
+                      if (data.length > 0) {
+                        for(const item of data){
+                          addRowToChecklistTable(item.hostName, item.stigType, item.stigVersion, item.stigRelease, 
+                          item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
+                          item.score.totalNotApplicable, item.score.totalNotReviewed);
+                        }
+                      } else {// nothing found
+                        addRowToChecklistTable("","No templates found", "","","","","","","","");
                       }
                     } else {
                         alert('System Package data did not contain valid checklists.');
@@ -83,6 +91,7 @@
                 } else {
                     alert("No valid System Package checklists found");
                 }
+                hideElement("divLoading");
             } else {
                 alert('Please choose a valid System Package');
             }
