@@ -29,19 +29,66 @@
                     </div>
                   </div>
                   <div class="card-body fs--1">
-                    <table id="tblChecklists">
-                        <thead>
-                            <tr>
-                                <th style="width: 15%;">Host</th>
-                                <th style="width: 45%;">Type</th>
-                                <th style="width: 10%;">Version</th>
-                                <th style="width: 10%;">Release</th>
-                                <th style="width: 20%;">STIG Score</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
+                    <table id="tblPOAMData" style="width: 100%; min-height: 600px;">
+                      <thead>
+                        <tr>
+                          <th colspan="7" class="text-center poamCubeImpact">Impact</th>
+                        </tr>
+                      </thead>
+                      <tbody id="poamItems">
+                        <tr>
+                          <td rowspan="6" class="poamCubeLikelihood"><div class="rotateMinus90">Likelihood</div></td>
+                          <td style="width: 15%;" class="text-center"></td>
+                          <td style="width: 15%;" class="text-center">Negligible</td>
+                          <td style="width: 15%;" class="text-center">Minor</td>
+                          <td style="width: 15%;" class="text-center">Moderate</td>
+                          <td style="width: 15%;" class="text-center">Significant</td>
+                          <td style="width: 15%;" class="text-center">Severe</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Very Likely</td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtVHLikelihoodVLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtVHLikelihoodLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-high"><span id="txtVHLikelihoodMImpact"></span></td>
+                          <td class="text-center badge-soft-poam-veryhigh"><span id="txtVHLikelihoodHImpact"></span></td>
+                          <td class="text-center badge-soft-poam-veryhigh"><span id="txtVHLikelihoodVHImpact"></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Likely</td>
+                          <td class="text-center badge-soft-poam-verylow"><span id="txtHLikelihoodVLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtHLikelihoodLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtHLikelihoodMImpact"></span></td>
+                          <td class="text-center badge-soft-poam-high"><span id="txtHLikelihoodHImpact"></span></td>
+                          <td class="text-center badge-soft-poam-veryhigh"><span id="txtHLikelihoodVHImpact"></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Possible</td>
+                          <td class="text-center badge-soft-poam-verylow"><span id="txtMLikelihoodVLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtMLikelihoodLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtMLikelihoodMImpact"></span></td>
+                          <td class="text-center badge-soft-poam-high"><span id="txtMLikelihoodHImpact"></span></td>
+                          <td class="text-center badge-soft-poam-high"><span id="txtMLikelihoodVHImpact"></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Unlikely</td>
+                          <td class="text-center badge-soft-poam-verylow"><span id="txtLLikelihoodVLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtLLikelihoodLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtLLikelihoodMImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtLLikelihoodHImpact"></span></td>
+                          <td class="text-center badge-soft-poam-high"><span id="txtLLikelihoodVHImpact"></span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Very Unlikely</td>
+                          <td class="text-center badge-soft-poam-verylow"><span id="txtVLLikelihoodVLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-verylow"><span id="txtVLLikelihoodLImpact"></span></td>
+                          <td class="text-center badge-soft-poam-low"><span id="txtVLLikelihoodMImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtVLLikelihoodHImpact"></span></td>
+                          <td class="text-center badge-soft-poam-moderate"><span id="txtVLLikelihoodVHImpact"></span></td>
+                        </tr>
+                      </tbody>
                     </table>
+                    <div class="clearfix">&nbsp;</div>
+                    <div>Total Unassigned POA&amp;M Items: <span id="txtUnassigned"></span></div>
                   </div>
                 </div> <!-- end system package selection -->
 
@@ -52,43 +99,66 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/common.js"></script>
         <script>
-            var tbodyRef = document.getElementById('tblChecklists').getElementsByTagName('tbody')[0];
-
+            var systemKey = "";
+            
             document.addEventListener("DOMContentLoaded", function(event) { 
                 systemKey = getParameterByName("systemKey");
-                if (systemKey) sessionStorage.setItem("systemKey", systemKey);
+                if (systemKey) {
+                  sessionStorage.setItem("systemKey", systemKey);
+                  getPOAMRiskData();
+                } else {
+                  goHome();
+                }
             });
 
+            async function getPOAMRiskData() {
+              if (systemKey) {
+                let response = await fetch("/api/systempackage/"+systemKey+"/riskcube/");
+                if (response.ok) {
+                    var data = await response.json();
+                    if (data) {
+                      setFieldValue("txtVHLikelihoodVLImpact", data.countVHLikelihoodVLImpact);
+                      setFieldValue("txtVHLikelihoodLImpact", data.countVHLikelihoodLImpact);
+                      setFieldValue("txtVHLikelihoodMImpact", data.countVHLikelihoodMImpact);
+                      setFieldValue("txtVHLikelihoodHImpact", data.countVHLikelihoodHImpact);
+                      setFieldValue("txtVHLikelihoodVHImpact", data.countVHLikelihoodVHImpact);
 
-            function addRowToChecklistTable(host, checklistType, version, release, cat1, cat2, cat3, naf, na, nr) {
-                // Insert a row at the end of table
-                var newRow = tbodyRef.insertRow();
+                      setFieldValue("txtHLikelihoodVLImpact", data.countHLikelihoodVLImpact);
+                      setFieldValue("txtHLikelihoodLImpact", data.countHLikelihoodLImpact);
+                      setFieldValue("txtHLikelihoodMImpact", data.countHLikelihoodMImpact);
+                      setFieldValue("txtHLikelihoodHImpact", data.countHLikelihoodHImpact);
+                      setFieldValue("txtHLikelihoodVHImpact", data.countHLikelihoodVHImpact);
 
-                // Insert a cell at the end of the row
-                var newCell = newRow.insertCell();
+                      setFieldValue("txtMLikelihoodVLImpact", data.countMLikelihoodVLImpact);
+                      setFieldValue("txtMLikelihoodLImpact", data.countMLikelihoodLImpact);
+                      setFieldValue("txtMLikelihoodMImpact", data.countMLikelihoodMImpact);
+                      setFieldValue("txtMLikelihoodHImpact", data.countMLikelihoodHImpact);
+                      setFieldValue("txtMLikelihoodVHImpact", data.countMLikelihoodVHImpact);
 
-                // Append a text node to the cell
-                var newText = document.createTextNode(host);
-                newCell.appendChild(newText);
-                newCell = newRow.insertCell();
-                newText = document.createTextNode(checklistType);
-                newCell.appendChild(newText);
-                newCell = newRow.insertCell();
-                newText = document.createTextNode(version);
-                newCell.appendChild(newText);
-                newCell = newRow.insertCell();
-                newText = document.createTextNode(release);
-                newCell.appendChild(newText);
-                newCell = newRow.insertCell();
-                var divScore = document.createElement("div");
-                divScore.innerHTML = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + cat1 + '</span>' + 
-                ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + cat2 + '</span>' + 
-                ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + cat3 + '</span> <span' +
-                ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + naf + '</span> <span' +
-                ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + na + '</span> <span' +
-                ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + nr + '</span>';
-                newCell.appendChild(divScore);
+                      setFieldValue("txtLLikelihoodVLImpact", data.countLLikelihoodVLImpact);
+                      setFieldValue("txtLLikelihoodLImpact", data.countLLikelihoodLImpact);
+                      setFieldValue("txtLLikelihoodMImpact", data.countLLikelihoodMImpact);
+                      setFieldValue("txtLLikelihoodHImpact", data.countLLikelihoodHImpact);
+                      setFieldValue("txtLLikelihoodVHImpact", data.countLLikelihoodVHImpact);
+
+                      setFieldValue("txtVLLikelihoodVLImpact", data.countVLLikelihoodVLImpact);
+                      setFieldValue("txtVLLikelihoodLImpact", data.countVLLikelihoodLImpact);
+                      setFieldValue("txtVLLikelihoodMImpact", data.countVLLikelihoodMImpact);
+                      setFieldValue("txtVLLikelihoodHImpact", data.countVLLikelihoodHImpact);
+                      setFieldValue("txtVLLikelihoodVHImpact", data.countVLLikelihoodVHImpact);
+
+                      setFieldValue("txtUnassigned", data.countUnassigned);                      
+                    } else {
+                        alert('System Package data did not contain valid POAM data.');
+                    }
+                } else {
+                    alert("No valid System Package POAM data found");
+                }
+            } else {
+                alert('Please choose a valid System Package');
             }
+            }
+
         </script>
     </body>
 </html>

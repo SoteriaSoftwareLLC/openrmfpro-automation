@@ -64,8 +64,82 @@
     background-color: #ced1d4;
 }
 
-/***** CHECKLISTS table ******/
+/***** POAM Risk Cube table ******/
+.poamCubeImpact {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+  .poamCubeLikelihood {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 25px;
+    vertical-align: middle !important;
+}
+.badge-soft-poam-veryhigh {
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+.badge-soft-poam-veryhigh[href]:hover, .badge-soft-poam-veryhigh[href]:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+.badge-soft-poam-high {
+    color: #ffffff;
+    background-color: rgba(227, 137, 41, 0.797);
+}
+.badge-soft-poam-high[href]:hover, .badge-soft-poam-high[href]:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(227, 137, 41, 0.797);
+}
+.badge-soft-poam-moderate {
+    color: #000000;
+    background-color: rgba(225, 225, 49, 0.797);
+}
+.badge-soft-poam-moderate[href]:hover, .badge-soft-poam-moderate[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(225, 225, 49, 0.797);
+}
+.badge-soft-poam-low {
+    color: #000000;
+    background-color: rgba(132, 218, 70, 0.797);
+}
+.badge-soft-poam-low[href]:hover, .badge-soft-poam-low[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(132, 218, 70, 0.797);
+}
+.badge-soft-poam-verylow {
+    color: #000000;
+    background-color: rgba(35, 147, 52, 0.797);
+}
+.badge-soft-poam-verylow[href]:hover, .badge-soft-poam-verylow[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(35, 147, 52, 0.797);
+}
+.rotateMinus90 {
+    /* FF3.5+ */
+    -moz-transform: rotate(-90.0deg);
+    /* Opera 10.5 */
+    -o-transform: rotate(-90.0deg);
+    /* Saf3.1+, Chrome */
+    -webkit-transform: rotate(-90.0deg);
+    /* IE6,IE7 */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    /* Standard */
+    transform: rotate(-90.0deg);
+}
 
+/***** Checklists table ******/
 #tblChecklists {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;

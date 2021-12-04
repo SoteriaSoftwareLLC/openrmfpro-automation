@@ -6,12 +6,9 @@ const url = process.env.ROOTAPIURL
 const apikey = process.env.APIKEY
 const apitoken = process.env.APITOKEN
 
-// const formData = {
-//     applicationKey: apikey
-// };
-
 app.use(express.static(__dirname + '/public'));
 
+// list all the system packages I have access to
 app.get('/api/systempackages/', function (req, res) {
     const config = {
         method: 'get',
@@ -26,6 +23,7 @@ app.get('/api/systempackages/', function (req, res) {
     });
 });
 
+// go get the metadata on a system package
 app.get('/api/systempackage/:systemKey/', function (req, res) {
     const config = {
         method: 'get',
@@ -42,6 +40,7 @@ app.get('/api/systempackage/:systemKey/', function (req, res) {
     });
 });
 
+// list out all your checklists and their relevant scores
 app.get('/api/systempackage/:systemKey/checklists/', function (req, res) {
     const config = {
         method: 'get',
@@ -52,6 +51,23 @@ app.get('/api/systempackage/:systemKey/checklists/', function (req, res) {
     }
     var systemKey = req.params.systemKey;
     var urlRequest = url + '/systempackage/' + systemKey + '/checklists/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
+// POAM Risk Cube Numbers -- realize you have to have a POAM for any of this to come back correctly.
+app.get('/api/systempackage/:systemKey/riskcube/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/poamcube/?applicationKey=' + apikey
     console.log('Calling ' + urlRequest)
     axios.get(urlRequest, config).then(resp => {
         res.send(resp.data)
