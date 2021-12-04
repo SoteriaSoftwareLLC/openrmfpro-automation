@@ -72,7 +72,6 @@
                 if (response.ok) {
                     var data = await response.json();
                     if (data) {
-                      // addRowToChecklistTable("WEB1", "Red Hat 8.3", "1", "R3", 1, 2, 3, 7, 0, 2);
                       for(const item of data){
                         addRowToChecklistTable(item.hostName, item.stigType, item.stigVersion, item.stigRelease, 
                         item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
