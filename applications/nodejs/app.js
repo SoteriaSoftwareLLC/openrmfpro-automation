@@ -74,6 +74,23 @@ app.get('/api/systempackage/:systemKey/riskcube/', function (req, res) {
     });
 });
 
+// Compliance Records -- realize you have to generate a save a compliance for this to return any data
+app.get('/api/systempackage/:systemKey/compliance/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/compliance/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
 var server = app.listen(port, function () {
     console.log('Node server is running on port ' + port + '...')
 });

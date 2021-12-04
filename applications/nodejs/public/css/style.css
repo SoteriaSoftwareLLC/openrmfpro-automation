@@ -139,26 +139,22 @@
     transform: rotate(-90.0deg);
 }
 
-/***** Checklists table ******/
-#tblChecklists {
+/***** formatted tables ******/
+.formattedTable {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  #tblChecklists td, #tblChecklists th {
+}
+.formattedTable td, .formattedTable th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
-  
-  #tblChecklists tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #tblChecklists tr:hover {background-color: #ddd;}
-  
-  #tblChecklists th {
+}
+.formattedTable tr:nth-child(even){background-color: #f2f2f2;}
+.formattedTable tr:hover {background-color: #ddd;}
+.formattedTable th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #0454aac8;
     color: white;
-  }
+}
