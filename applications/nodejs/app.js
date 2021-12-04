@@ -42,6 +42,22 @@ app.get('/api/systempackage/:systemKey/', function (req, res) {
     });
 });
 
+app.get('/api/systempackage/:systemKey/checklists/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/checklists/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
 var server = app.listen(port, function () {
     console.log('Node server is running on port ' + port + '...')
 });
