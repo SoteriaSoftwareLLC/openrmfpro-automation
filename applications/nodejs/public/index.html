@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -245,6 +244,7 @@
         </div> <!-- end divMainContainer -->
       </main>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js"></script>
     <script>
 
         document.addEventListener("DOMContentLoaded", function(event) { 
@@ -255,9 +255,13 @@
             let response = await fetch("/api/systempackages/");
             if (response.ok) {
                 var data = await response.json();
+                var packages = document.getElementById("frmSystemPackageSelection");
                 for(const item of data){
-                    var packages = document.getElementById("frmSystemPackageSelection");
                     packages.add(new Option(item.title,item.systemKey),undefined);
+                }
+                if (sessionStorage.getItem("systemKey")) {
+                  packages.value = sessionStorage.getItem("systemKey");
+                  getSystemPackageRecord();
                 }
             } else {
                 alert("No valid system data found");
@@ -350,31 +354,6 @@
             }
         }
 
-        function setFieldValue(id, value) {
-            var element = document.getElementById(id);
-            if (element) {
-                element.innerHTML = value;
-            }
-        }
-
-        function getFieldValue(id) {
-            var element = document.getElementById(id);
-            if (element) {
-                return element.value;
-            } else {
-                return "";
-            }
-        }
-
-        function showElement(id) {
-            var element = document.getElementById(id);
-            if (element) element.style.display = "block";
-        }
-        function hideElement(id) {
-            var element = document.getElementById(id);
-            if (element) element.style.display = "none";
-        }
-
         function resetAllSystemPackageFields() {
             setFieldValue("divSystemGroupTitle", "");
             
@@ -409,6 +388,22 @@
             setFieldValue("txtIntegrity",  "");
             setFieldValue("txtAvailability",  "");
             setFieldValue("txtFedRAMPLevel",  "");
+
+            // score data
+            var scoreItems = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">0</span>' + 
+                        ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">0</span>' + 
+                        ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">0</span> <span' +
+                        ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">0</span> <span' +
+                        ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">0</span> <span' +
+                        ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">0</span>';
+            var patchScanScoreItems = '<span title="Total Critical Items" class="badge badge rounded-capsule badge-soft-critical fs--2">0</span>' + 
+                        ' <span title="Total High Items" class="badge badge rounded-capsule badge-soft-danger fs--2">0</span>' + 
+                        ' <span title="Total Medium Items" class="badge badge rounded-capsule badge-soft-cat2 fs--2">0</span>' +
+                        ' <span title="Total Low Items" class="badge badge rounded-capsule badge-soft-cat3 fs--2">0</span>' + 
+                        ' <span title="Total Patch Vulnerabilities" class="badge badge rounded-capsule bg-soft-primary fs--2">Total - 0</span>';
+            
+            setFieldValue("divChecklistScores", scoreItems);
+            setFieldValue("divPatchScanScores", patchScanScoreItems);
         }
 
         function getAuthorizationTypeString(authType) {
@@ -427,6 +422,46 @@
             if (authType == 100) return "Denial of Authorization to Operate (ATO)";
             return "In Process";
         }
-    </script>
+
+        function viewChecklists() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "checklists.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewCompliance() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "compliance.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewPOAMRisk() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "poamrisk.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewTemplates() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "templates.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+</script>
 </body>
 </html>

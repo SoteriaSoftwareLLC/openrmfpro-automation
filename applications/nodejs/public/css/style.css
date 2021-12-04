@@ -63,3 +63,28 @@
     color: #070f19;
     background-color: #ced1d4;
 }
+
+/***** CHECKLISTS table ******/
+
+#tblChecklists {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tblChecklists td, #tblChecklists th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tblChecklists tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tblChecklists tr:hover {background-color: #ddd;}
+  
+  #tblChecklists th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0454aac8;
+    color: white;
+  }
