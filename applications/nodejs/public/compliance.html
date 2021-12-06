@@ -74,7 +74,7 @@
                 if (response.ok) {
                     var data = await response.json();
                     if (data) {
-                      if (data.length > 0) {
+                      if (data.systemComplianceRecords.length > 0) {
                         for(const item of data.systemComplianceRecords){
                           addRowToChecklistTable(item.control, item.subControl, item.title, item.complianceRecords);
                         }

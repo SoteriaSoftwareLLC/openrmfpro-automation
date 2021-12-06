@@ -14,9 +14,9 @@
             "program": "${workspaceFolder}/app.js",
             "env" : {
                 "LISTENPORT": "8100",
-                "ROOTAPIURL": "http://localhost:8080/api/external",
-                "APIKEY": "systempackagemanager",
-                "APITOKEN": "s.sH4jHY7DOF9iVes2Sy8jS1O8"
+                "ROOTAPIURL": "https://openrmfprotest.soteriasoft.com/api/external",
+                "APIKEY": "soteriasoftnodejs",
+                "APITOKEN": "s.wVg1vf5lyLD4zyXqFB4I3bLp"
             }
         }
     ]
