@@ -22,6 +22,7 @@ function showElement(id) {
     var element = document.getElementById(id);
     if (element) element.style.display = "block";
 }
+
 function hideElement(id) {
     var element = document.getElementById(id);
     if (element) element.style.display = "none";
@@ -48,13 +49,20 @@ function getStatusBadge(status) {
       return '<span class="badge rounded-capsule badge-soft-success fs--2">Not a Finding</span>';
       else
         return '<span class="badge rounded-capsule fs--2">' + status + '</span>'; // generic catch all
-  }
+}
   
-  function getSeverityBadge(severity) {
+function getSeverityBadge(severity) {
       if (severity.toLowerCase() == "high" || severity.toLowerCase() == "critical")
           return '<span class="badge rounded-capsule badge-soft-danger fs--2">CAT I</span>';
       else if (severity.toLowerCase() == "medium")
           return '<span class="badge rounded-capsule badge-soft-warning fs--2">CAT II</span>';
       else // this is low
           return '<span class="badge rounded-capsule badge-soft-cat3 fs--2">CAT III</span>';
-  }
+}
+
+function getValue(field) {
+    if (field && field != "null")
+        return field;
+    else 
+        return "";
+}

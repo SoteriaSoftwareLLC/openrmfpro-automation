@@ -21,7 +21,7 @@
                   <div class="card-header bg-light">
                     <div class="row justify-content-between align-items-center">
                       <div class="col-sm-auto">
-                        <h5 class="mb-1 mb-md-0">Your System Package Checklists</h5>
+                        <h5 class="mb-1 mb-md-0">Your System Package Ports, Protocols, and Services Listing</h5>
                       </div>
                       <div class="col-sm-auto fs--1">
                         
@@ -36,10 +36,10 @@
                         <thead>
                             <tr>
                                 <th style="width: 15%;">Host</th>
-                                <th style="width: 40%;">Type</th>
-                                <th style="width: 10%;">Version</th>
-                                <th style="width: 15%;">Release</th>
-                                <th style="width: 20%;">STIG Score</th>
+                                <th style="width: 15%;">Port</th>
+                                <th style="width: 15%;">Protocol</th>
+                                <th style="width: 15%;">Service</th>
+                                <th style="width: 40%;">Report Filename</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,33 +62,32 @@
                 systemKey = getParameterByName("systemKey");
                 if (systemKey) {
                   sessionStorage.setItem("systemKey", systemKey);
-                  getSystemPackageChecklists();
+                  getSystemPackagePPSM();
                 } else {
                   goHome();
                 }
             });
 
-            async function getSystemPackageChecklists() {
+            async function getSystemPackagePPSM() {
                 if (systemKey) {
                     showElement("divLoading");
-                    let response = await fetch("/api/systempackage/"+systemKey+"/checklists/");
+                    let response = await fetch("/api/systempackage/"+systemKey+"/ppsm/");
                     if (response.ok) {
                         var data = await response.json();
                         if (data) {
                           if (data.length > 0) {
                             for(const item of data){
-                              addRowToChecklistTable(item.hostName, item.stigType, item.stigVersion, item.stigRelease, 
-                              item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
-                              item.score.totalNotApplicable, item.score.totalNotReviewed);
+                              addRowToTable(item.hostname, item.lowPortNumber, item.protocol, item.svc_name, 
+                              item.filename);
                             }
                           } else {// nothing found
-                            addRowToChecklistTable("","No checklists found", "","","","","","","","");
+                            addRowToTable("","No PPSM list found", "","","");
                           }
                         } else {
-                            alert('System Package data did not contain valid checklists.');
+                            alert('System Package data did not contain a valid PPSM listing.');
                         }
                     } else {
-                        alert("No valid System Package checklists found");
+                        alert("No valid System Package PPSM found");
                     }
                     hideElement("divLoading");
                 } else {
@@ -96,7 +95,7 @@
                 }
             }
 
-            function addRowToChecklistTable(host, checklistType, version, release, cat1, cat2, cat3, naf, na, nr) {
+            function addRowToTable(host, port, protocol, service, filename) {
                 // Insert a row at the end of table
                 var newRow = tbodyRef.insertRow();
 
@@ -107,23 +106,17 @@
                 var newText = document.createTextNode(host);
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(checklistType);
+                newText = document.createTextNode(port);
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(version);
+                newText = document.createTextNode(protocol);
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(release);
+                newText = document.createTextNode(service);
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                var divScore = document.createElement("div");
-                divScore.innerHTML = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + cat1 + '</span>' + 
-                ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + cat2 + '</span>' + 
-                ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + cat3 + '</span> <span' +
-                ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + naf + '</span> <span' +
-                ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + na + '</span> <span' +
-                ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + nr + '</span>';
-                newCell.appendChild(divScore);
+                newText = document.createTextNode(filename);
+                newCell.appendChild(newText);
             }
         </script>
     </body>

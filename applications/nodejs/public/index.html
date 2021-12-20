@@ -49,7 +49,7 @@
                     <div class="col">
                       <h5 class="mb-0">System Package Information</h5>
                     </div>
-                    <div class="col-auto"><a id="btnChecklists" class="btn btn-primary btn-sm" title="View Checklists" onclick="viewChecklists(); return false;"> Checklists</a> <a id="btnCompliance" class="btn btn-primary btn-sm" title="View Compliance" onclick="viewCompliance(); return false;"> Compliance</a> <a id="btnPOAMRisk" class="btn btn-primary btn-sm" title="View POAM Risk Information" onclick="viewPOAMRisk(); return false;"> Risk Profile</a> <a id="btnAddTemplate" class="btn btn-primary btn-sm" title="Add Checklists from Templates" onclick="viewTemplates(); return false;"> Add from Templates</a> </div>
+                    <div class="col-auto"><a id="btnChecklists" class="btn btn-primary btn-sm" title="View Checklists" onclick="viewChecklists(); return false;"> Checklists</a> <a id="btnCompliance" class="btn btn-primary btn-sm" title="View Compliance" onclick="viewCompliance(); return false;"> Compliance</a> <a id="btnHardware" class="btn btn-primary btn-sm" title="View Hardware / Device Listing" onclick="viewHardware(); return false;"> Hardware</a> <a id="btnSoftware" class="btn btn-primary btn-sm" title="View Software Listing" onclick="viewSoftware(); return false;"> Software</a> <a id="btnPPSM" class="btn btn-primary btn-sm" title="View PPSM Information" onclick="viewPPSM(); return false;"> PPSM</a> <a id="btnPOAMRisk" class="btn btn-primary btn-sm" title="View POAM Risk Information" onclick="viewPOAMRisk(); return false;"> Risk Profile</a> <a id="btnAddTemplate" class="btn btn-primary btn-sm" title="Add Checklists from Templates" onclick="viewTemplates(); return false;"> Add from Templates</a> </div>
                   </div>
                 </div>
                 <div class="card-body border-top" id="bodySystemPackageRecord">
@@ -467,6 +467,36 @@
               return false;
             }
         }
-</script>
-</body>
+
+        function viewHardware() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "hardware.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewSoftware() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "software.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewPPSM() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "ppsm.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+    </script>
+  </body>
 </html>

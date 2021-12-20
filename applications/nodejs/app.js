@@ -110,6 +110,60 @@ app.get('/api/templates/:templateType/', function (req, res) {
     });
 });
 
+// Hardware/Device Records 
+app.get('/api/systempackage/:systemKey/hardware/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/hardware/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
+// Software Records 
+app.get('/api/systempackage/:systemKey/software/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/software/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
+// Ports/Protocols/Services Records 
+app.get('/api/systempackage/:systemKey/ppsm/', function (req, res) {
+    const config = {
+        method: 'get',
+        headers: {            
+            "Authorization": "Bearer " + apitoken,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
+    }
+    var systemKey = req.params.systemKey;
+    var urlRequest = url + '/systempackage/' + systemKey + '/ppsm/?applicationKey=' + apikey
+    console.log('Calling ' + urlRequest)
+    axios.get(urlRequest, config).then(resp => {
+        res.send(resp.data)
+    });
+});
+
 var server = app.listen(port, function () {
     console.log('Node server is running on port ' + port + '...')
 });

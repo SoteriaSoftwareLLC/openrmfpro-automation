@@ -21,7 +21,7 @@
                   <div class="card-header bg-light">
                     <div class="row justify-content-between align-items-center">
                       <div class="col-sm-auto">
-                        <h5 class="mb-1 mb-md-0">Your System Package Checklists</h5>
+                        <h5 class="mb-1 mb-md-0">Your System Package Hardware/Device Listing</h5>
                       </div>
                       <div class="col-sm-auto fs--1">
                         
@@ -35,11 +35,13 @@
                     <table id="tblChecklists" class="formattedTable">
                         <thead>
                             <tr>
-                                <th style="width: 15%;">Host</th>
-                                <th style="width: 40%;">Type</th>
-                                <th style="width: 10%;">Version</th>
-                                <th style="width: 15%;">Release</th>
-                                <th style="width: 20%;">STIG Score</th>
+                                <th style="width: 20%;">Host</th>
+                                <th style="width: 20%;">OS</th>
+                                <th style="width: 10%;">Patch Scan?</th>
+                                <th style="width: 10%;">Checklist?</th>
+                                <th style="width: 20%;">Manufacturer</th>
+                                <th style="width: 10%;">Model #</th>
+                                <th style="width: 10%;">Serial #</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,33 +64,31 @@
                 systemKey = getParameterByName("systemKey");
                 if (systemKey) {
                   sessionStorage.setItem("systemKey", systemKey);
-                  getSystemPackageChecklists();
+                  getSystemPackageHardware();
                 } else {
                   goHome();
                 }
             });
 
-            async function getSystemPackageChecklists() {
+            async function getSystemPackageHardware() {
                 if (systemKey) {
                     showElement("divLoading");
-                    let response = await fetch("/api/systempackage/"+systemKey+"/checklists/");
+                    let response = await fetch("/api/systempackage/"+systemKey+"/hardware/");
                     if (response.ok) {
                         var data = await response.json();
                         if (data) {
                           if (data.length > 0) {
                             for(const item of data){
-                              addRowToChecklistTable(item.hostName, item.stigType, item.stigVersion, item.stigRelease, 
-                              item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
-                              item.score.totalNotApplicable, item.score.totalNotReviewed);
+                              addRowToTable(item.hostname, item.operatingSystem, item.patchscan, item.checklist, item.manufacturer, item.modelNumber, item.serialNumber);
                             }
                           } else {// nothing found
-                            addRowToChecklistTable("","No checklists found", "","","","","","","","");
+                            addRowToTable("","No hardware list found", "","","","","");
                           }
                         } else {
-                            alert('System Package data did not contain valid checklists.');
+                            alert('System Package data did not contain a valid hardware listing.');
                         }
                     } else {
-                        alert("No valid System Package checklists found");
+                        alert("No valid System Package hardware found");
                     }
                     hideElement("divLoading");
                 } else {
@@ -96,7 +96,7 @@
                 }
             }
 
-            function addRowToChecklistTable(host, checklistType, version, release, cat1, cat2, cat3, naf, na, nr) {
+            function addRowToTable(host, osname, patch, checklist, manufacturer, model, serial) {
                 // Insert a row at the end of table
                 var newRow = tbodyRef.insertRow();
 
@@ -107,23 +107,29 @@
                 var newText = document.createTextNode(host);
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(checklistType);
+                newText = document.createTextNode(getValue(osname));
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(version);
+                if (patch)
+                  newText = document.createTextNode('X');
+                else 
+                  newText = document.createTextNode(' ');
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                newText = document.createTextNode(release);
+                if (checklist)
+                  newText = document.createTextNode('X');
+                else 
+                  newText = document.createTextNode(' ');
                 newCell.appendChild(newText);
                 newCell = newRow.insertCell();
-                var divScore = document.createElement("div");
-                divScore.innerHTML = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + cat1 + '</span>' + 
-                ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + cat2 + '</span>' + 
-                ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + cat3 + '</span> <span' +
-                ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + naf + '</span> <span' +
-                ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + na + '</span> <span' +
-                ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + nr + '</span>';
-                newCell.appendChild(divScore);
+                newText = document.createTextNode(getValue(manufacturer));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(model));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(serial));
+                newCell.appendChild(newText);
             }
         </script>
     </body>

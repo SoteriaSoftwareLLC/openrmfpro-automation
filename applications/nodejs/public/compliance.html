@@ -76,10 +76,10 @@
                     if (data) {
                       if (data.systemComplianceRecords.length > 0) {
                         for(const item of data.systemComplianceRecords){
-                          addRowToChecklistTable(item.control, item.subControl, item.title, item.complianceRecords);
+                          addRowToTable(item.control, item.subControl, item.title, item.complianceRecords);
                         }
                       } else { // show nothing found
-                        addRowToChecklistTable("", "", "No compliance found", "");
+                        addRowToTable("", "", "No compliance found", "");
                       }
                     } else {
                         alert('System Package data did not contain valid saved Compliance data.');
@@ -93,7 +93,7 @@
               hideElement("divLoading");
             }
 
-            function addRowToChecklistTable(control, subcontrol, title, complianceRecords) {
+            function addRowToTable(control, subcontrol, title, complianceRecords) {
                 // Insert a row at the end of table
                 var newRow = tbodyRef.insertRow();
                 // Insert a cell at the end of the row
