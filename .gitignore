@@ -40,3 +40,6 @@ obj
 
 # Crypto Files
 *.pem
+
+# NodeJS files
+node_modules

@@ -1,0 +1,160 @@
+.main {
+    padding: 10px;
+}
+
+/*********** badges ***********/
+.rounded-capsule {
+    border-radius: 3.125rem !important;
+}
+  
+.badge {
+    display: inline-block;
+    padding: 0.35556em 0.71111em;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.badge-soft-danger {
+  color: #932338;
+  background-color: #fad7dd;
+}
+
+.badge-soft-success {
+    color: #00864e;
+    background-color: #ccf6e4;
+}
+
+.badge-soft-cat3 {
+    color: #070f19;
+    background-color: rgba(216, 216, 14, 0.797);
+}
+
+.badge-soft-cat2 {
+    color: #932338;
+    background-color: orange;
+}
+
+.badge-soft-critical {
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+
+.badge-soft-primary {
+    color: #1c4f93;
+    background-color: #d5e5fa;
+}
+
+.badge-soft-secondary {
+    color: #7d899b;
+    background-color: #e3e6ea;
+}
+
+.badge-soft-dark {
+    color: #070f19;
+    background-color: #ced1d4;
+}
+
+/***** POAM Risk Cube table ******/
+.poamCubeImpact {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+  .poamCubeLikelihood {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 25px;
+    vertical-align: middle !important;
+}
+.badge-soft-poam-veryhigh {
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+.badge-soft-poam-veryhigh[href]:hover, .badge-soft-poam-veryhigh[href]:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(237, 61, 61, 0.797);
+}
+.badge-soft-poam-high {
+    color: #ffffff;
+    background-color: rgba(227, 137, 41, 0.797);
+}
+.badge-soft-poam-high[href]:hover, .badge-soft-poam-high[href]:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(227, 137, 41, 0.797);
+}
+.badge-soft-poam-moderate {
+    color: #000000;
+    background-color: rgba(225, 225, 49, 0.797);
+}
+.badge-soft-poam-moderate[href]:hover, .badge-soft-poam-moderate[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(225, 225, 49, 0.797);
+}
+.badge-soft-poam-low {
+    color: #000000;
+    background-color: rgba(132, 218, 70, 0.797);
+}
+.badge-soft-poam-low[href]:hover, .badge-soft-poam-low[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(132, 218, 70, 0.797);
+}
+.badge-soft-poam-verylow {
+    color: #000000;
+    background-color: rgba(35, 147, 52, 0.797);
+}
+.badge-soft-poam-verylow[href]:hover, .badge-soft-poam-verylow[href]:focus {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(35, 147, 52, 0.797);
+}
+.rotateMinus90 {
+    /* FF3.5+ */
+    -moz-transform: rotate(-90.0deg);
+    /* Opera 10.5 */
+    -o-transform: rotate(-90.0deg);
+    /* Saf3.1+, Chrome */
+    -webkit-transform: rotate(-90.0deg);
+    /* IE6,IE7 */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    /* Standard */
+    transform: rotate(-90.0deg);
+}
+
+/***** formatted tables ******/
+.formattedTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.formattedTable td, .formattedTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.formattedTable tr:nth-child(even){background-color: #f2f2f2;}
+.formattedTable tr:hover {background-color: #ddd;}
+.formattedTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0454aac8;
+    color: white;
+}

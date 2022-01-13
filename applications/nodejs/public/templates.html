@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+        <link href="/css/style.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+    
+        <title>OpenRMF Professional Checklist Templates</title>
+    </head>
+    <body style="font-size: 12pt;">
+        <main class="main" id="top">
+            <div id="divMainContainer" class="container-fluid" data-layout="container">
+              <div class="content">
+                <h1 class="mb-3">OpenRMF<sup>&reg;</sup> Professional Sample Application</h1>
+                <a href="javascript:goHome();" title="Go to the Homepage">HOME</a><p></p>
+                <div class="card overflow-hidden mb-3">
+                  <div class="card-header bg-light">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-sm-auto">
+                        <h5 class="mb-1 mb-md-0">Your Checklist Templates</h5>
+                      </div>
+                      <div class="col-sm-auto fs--1">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body fs--1">
+                    <form id="frmTemplateSearch">
+                      <div class="row">
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                              <label for="frmTemplateType">Choose your ChecklistTemplate Type</label>
+                              <br /><select style="padding: 5px 0px 0px 20px; width: 250px;" class="form-select mb-3" id="frmTemplateType">
+                                <option value="disa">DISA</option>
+                                <option value="organizational">Organizational</option>
+                                <option value="custom">Custom</option>
+                              </select>
+                            </div>
+                          <div class="form-group mb-3">
+                            <label for="frmSearchString">Search Title</label>
+                            <input class="form-control" id="frmSearchString" type="text" required placeholder="Enter any search string for the template title">
+                          </div>
+                          <div class="form-group mb-3">
+                            <button class="btn btn-primary" type="button" title="Search for Checklist Templates" 
+                              onclick="getChecklistTemplates(); return false;" id="btnSearch">Search</button>
+                            </div>
+                        </div>
+                      </div>
+                    </form>
+                    <p><hr style="width: 90%;" /></p>
+                    <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <table id="tblChecklists" class="formattedTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 55%;">Type</th>
+                                <th style="width: 10%;">Version</th>
+                                <th style="width: 15%;">Release</th>
+                                <th style="width: 20%;">STIG Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                  </div>
+                </div> <!-- end system package selection -->
+
+            </div> <!-- end content -->
+          </div> <!-- end divMainContainer -->
+        </main>  
+
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script>
+            var tbodyRef = document.getElementById('tblChecklists').getElementsByTagName('tbody')[0];
+            var systemKey = "";
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                systemKey = getParameterByName("systemKey");
+                if (systemKey) {
+                  sessionStorage.setItem("systemKey", systemKey);
+                }
+                //getChecklistTemplates(); // do not need the systemKey for this
+            });
+
+            async function getChecklistTemplates() {
+                var templateType = getFieldValue("frmTemplateType");
+                var searchTitle = getFieldValue("frmSearchString");
+                if (!searchTitle) searchTitle = "";
+                showElement("divLoading");
+                while (tbodyRef.hasChildNodes()) {
+                  tbodyRef.removeChild(tbodyRef.firstChild);
+                }
+                
+                let response = await fetch("/api/templates/"+templateType+"/?search=" + encodeURIComponent(searchTitle));
+                if (response.ok) {
+                    var data = await response.json();
+                    if (data) {
+                      if (data.length > 0) {
+                        for(const item of data){
+                          addRowToChecklistTable(item.stigType, item.stigVersion, item.stigRelease, 
+                          item.score.totalCat1Open, item.score.totalCat2Open, item.score.totalCat3Open, item.score.totalNotAFinding, 
+                          item.score.totalNotApplicable, item.score.totalNotReviewed);
+                        }
+                      } else { // there is no data
+                        addRowToChecklistTable("No templates found", "","","","","","","","");
+                      }
+                    } else {
+                        alert('Template listing data did not contain valid checklist templates.');
+                    }
+                } else {
+                    alert("No valid checklist templatess found");
+                }
+                hideElement("divLoading");
+            }
+
+            function addRowToChecklistTable(checklistType, version, release, cat1, cat2, cat3, naf, na, nr) {
+                // Insert a row at the end of table
+                var newRow = tbodyRef.insertRow();
+                // Insert a cell at the end of the row
+                var newCell = newRow.insertCell();
+                // Append a text node to the cell
+                var newText = document.createTextNode(checklistType);
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(version);
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(release);
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                var divScore = document.createElement("div");
+                divScore.innerHTML = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + cat1 + '</span>' + 
+                ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + cat2 + '</span>' + 
+                ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + cat3 + '</span> <span' +
+                ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + naf + '</span> <span' +
+                ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + na + '</span> <span' +
+                ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + nr + '</span>';
+                newCell.appendChild(divScore);
+            }
+        </script>
+    </body>
+</html>

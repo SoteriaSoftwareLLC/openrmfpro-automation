@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+        <link href="/css/style.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+    
+        <title>OpenRMF Professional System Package Checklists</title>
+    </head>
+    <body style="font-size: 12pt;">
+        <main class="main" id="top">
+            <div id="divMainContainer" class="container-fluid" data-layout="container">
+              <div class="content">
+                <h1 class="mb-3">OpenRMF<sup>&reg;</sup> Professional Sample Application</h1>
+                <a href="javascript:goHome();" title="Go to the Homepage">HOME</a><p></p>
+                <div class="card overflow-hidden mb-3">
+                  <div class="card-header bg-light">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-sm-auto">
+                        <h5 class="mb-1 mb-md-0">Your System Package Software Listing</h5>
+                      </div>
+                      <div class="col-sm-auto fs--1">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body fs--1">
+                    <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <table id="tblChecklists" class="formattedTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Host</th>
+                                <th style="width: 10%;">OS</th>
+                                <th style="width: 10%;">Software Type</th>
+                                <th style="width: 20%;">Software</th>
+                                <th style="width: 15%;">Version</th>
+                                <th style="width: 20%;">Installed</th>
+                                <th style="width: 10%;">Filename</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                  </div>
+                </div> <!-- end system package selection -->
+
+            </div> <!-- end content -->
+          </div> <!-- end divMainContainer -->
+        </main>  
+
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script>
+            var tbodyRef = document.getElementById('tblChecklists').getElementsByTagName('tbody')[0];
+            var systemKey = "";
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                systemKey = getParameterByName("systemKey");
+                if (systemKey) {
+                  sessionStorage.setItem("systemKey", systemKey);
+                  getSystemPackageSoftware();
+                } else {
+                  goHome();
+                }
+            });
+
+            async function getSystemPackageSoftware() {
+                if (systemKey) {
+                    showElement("divLoading");
+                    let response = await fetch("/api/systempackage/"+systemKey+"/software/");
+                    if (response.ok) {
+                        var data = await response.json();
+                        if (data) {
+                          if (data.length > 0) {
+                            for(const item of data){
+                              addRowToTable(item.hostname, item.operatingSystem, item.assetTypeString, item.softwareName, item.softwareVersion, item.installedOn, item.filename);
+                            }
+                          } else {// nothing found
+                            addRowToTable("","No software found", "","","","","");
+                          }
+                        } else {
+                            alert('System Package data did not contain valid software.');
+                        }
+                    } else {
+                        alert("No valid System Package software found");
+                    }
+                    hideElement("divLoading");
+                } else {
+                    alert('Please choose a valid System Package');
+                }
+            }
+
+            function addRowToTable(host, osname, assetType, softwareName, version, installDate, filename) {
+                // Insert a row at the end of table
+                var newRow = tbodyRef.insertRow();
+
+                // Insert a cell at the end of the row
+                var newCell = newRow.insertCell();
+
+                // Append a text node to the cell
+                var newText = document.createTextNode(host);
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(osname));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(assetType));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(softwareName));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(version));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(installDate));
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(getValue(filename));
+                newCell.appendChild(newText);
+            }
+        </script>
+    </body>
+</html>

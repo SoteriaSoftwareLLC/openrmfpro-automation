@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+        <link href="/css/style.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+    
+        <title>OpenRMF Professional System Package Checklists</title>
+    </head>
+    <body style="font-size: 12pt;">
+        <main class="main" id="top">
+            <div id="divMainContainer" class="container-fluid" data-layout="container">
+              <div class="content">
+                <h1 class="mb-3">OpenRMF<sup>&reg;</sup> Professional Sample Application</h1>
+                <a href="javascript:goHome();" title="Go to the Homepage">HOME</a><p></p>
+                <div class="card overflow-hidden mb-3">
+                  <div class="card-header bg-light">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-sm-auto">
+                        <h5 class="mb-1 mb-md-0">Your System Package Compliance</h5>
+                      </div>
+                      <div class="col-sm-auto fs--1">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body fs--1">
+                    <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <table id="tblCompliance" style="width: 100%;" class="formattedTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Control</th>
+                                <th style="width: 40%;">Title</th>
+                                <th style="width: 45%;">Checklist</th>
+                                <th style="width: 10%;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                  </div>
+                </div> <!-- end system package selection -->
+
+            </div> <!-- end content -->
+          </div> <!-- end divMainContainer -->
+        </main>  
+
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/common.js"></script>
+        <script>
+          var systemKey = "";
+            var tbodyRef = document.getElementById('tblCompliance').getElementsByTagName('tbody')[0];
+
+            document.addEventListener("DOMContentLoaded", function(event) { 
+              systemKey = getParameterByName("systemKey");
+                if (systemKey) {
+                  sessionStorage.setItem("systemKey", systemKey);
+                  getComplianceData();
+                } else {
+                  goHome();
+                }
+            });
+
+            async function getComplianceData() {
+              if (systemKey) {
+                showElement("divLoading");
+                let response = await fetch("/api/systempackage/"+systemKey+"/compliance/");
+                if (response.ok) {
+                    var data = await response.json();
+                    if (data) {
+                      if (data.systemComplianceRecords.length > 0) {
+                        for(const item of data.systemComplianceRecords){
+                          addRowToTable(item.control, item.subControl, item.title, item.complianceRecords);
+                        }
+                      } else { // show nothing found
+                        addRowToTable("", "", "No compliance found", "");
+                      }
+                    } else {
+                        alert('System Package data did not contain valid saved Compliance data.');
+                    }
+                } else {
+                    alert("No valid System Package saved Compliance data found");
+                }
+              } else {
+                  alert('Please choose a valid System Package');
+              }
+              hideElement("divLoading");
+            }
+
+            function addRowToTable(control, subcontrol, title, complianceRecords) {
+                // Insert a row at the end of table
+                var newRow = tbodyRef.insertRow();
+                // Insert a cell at the end of the row
+                var newCell = newRow.insertCell();
+                var divStatus;
+
+                // Append a text node to the cell
+                var newText;
+                if (subcontrol)
+                  newText = document.createTextNode(subcontrol);
+                else 
+                newText = document.createTextNode(control);
+                newCell.appendChild(newText);
+                newCell = newRow.insertCell();
+                newText = document.createTextNode(title);
+                newCell.appendChild(newText);
+                if (complianceRecords != null && complianceRecords.length > 0) {
+                  var listing = false;
+                  for (const record of complianceRecords) {
+                    if (listing){
+                        newRow = tbodyRef.insertRow();
+                        newCell = newRow.insertCell();
+                        newText = document.createTextNode("");
+                        newCell.appendChild(newText);
+                        newCell = newRow.insertCell();
+                        newText = document.createTextNode("");
+                        newCell.appendChild(newText);
+                        newCell = newRow.insertCell();
+                        newText = document.createTextNode(record.title);
+                        newCell.appendChild(newText);
+                        newCell = newRow.insertCell();
+                        divStatus = document.createElement("div");
+                        divStatus.innerHTML = getStatusBadge(record.status);
+                        newCell.appendChild(divStatus);
+                    } else {
+                      newCell = newRow.insertCell();
+                      newText = document.createTextNode(record.title);
+                      newCell.appendChild(newText);
+                      newCell = newRow.insertCell();
+                      divStatus = document.createElement("div");
+                      divStatus.innerHTML = getStatusBadge(record.status);
+                      newCell.appendChild(divStatus);
+                      listing = true; // generate the next level listing if there is one
+                    }
+                  }
+                }
+            }
+        </script>
+    </body>
+</html>

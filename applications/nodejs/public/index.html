@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/css/style.css" type="text/css" rel="stylesheet" crossorigin="anonymous">
+
+    <title>OpenRMF Professional System Package Manager</title>
+</head>
+<body>
+    <main class="main" id="top">
+        <div id="divMainContainer" class="container-fluid" data-layout="container">
+          <div class="content">
+            <h1 class="mb-3">OpenRMF<sup>&reg;</sup> Professional Sample Application</h1>
+            <div class="card overflow-hidden mb-3">
+              <div class="card-header bg-light">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-sm-auto">
+                    <h5 class="mb-1 mb-md-0">Your System Packages</h5>
+                  </div>
+                  <div class="col-sm-auto fs--1">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card-body fs--1">
+                <form id="frmSystemPackageRecord">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                              <label for="frmSystemPackageSelection">System Package</label>
+                              <select class="form-select mb-3" id="frmSystemPackageSelection" 
+                                    onchange="getSystemPackageRecord(); return false;">
+                                <option value="">[Choose One]</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+              </div>
+            </div> <!-- end system package selection -->
+
+            <div class="card mb-3">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h5 class="mb-0">System Package Information</h5>
+                    </div>
+                    <div class="col-auto"><a id="btnChecklists" class="btn btn-primary btn-sm" title="View Checklists" onclick="viewChecklists(); return false;"> Checklists</a> <a id="btnCompliance" class="btn btn-primary btn-sm" title="View Compliance" onclick="viewCompliance(); return false;"> Compliance</a> <a id="btnHardware" class="btn btn-primary btn-sm" title="View Hardware / Device Listing" onclick="viewHardware(); return false;"> Hardware</a> <a id="btnSoftware" class="btn btn-primary btn-sm" title="View Software Listing" onclick="viewSoftware(); return false;"> Software</a> <a id="btnPPSM" class="btn btn-primary btn-sm" title="View PPSM Information" onclick="viewPPSM(); return false;"> PPSM</a> <a id="btnPOAMRisk" class="btn btn-primary btn-sm" title="View POAM Risk Information" onclick="viewPOAMRisk(); return false;"> Risk Profile</a> <a id="btnAddTemplate" class="btn btn-primary btn-sm" title="Add Checklists from Templates" onclick="viewTemplates(); return false;"> Add from Templates</a> </div>
+                  </div>
+                </div>
+                <div class="card-body border-top" id="bodySystemPackageRecord">
+                  <div id="divLoading" style="display: none;" class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg col-xxl-5">
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">System Key</p>
+                        </div>
+                        <div class="col"><span id="txtSystemKey"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Acronym</p>
+                        </div>
+                        <div class="col"><span id="txtSystemAcronym"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Version Number</p>
+                        </div>
+                        <div class="col"><span id="txtSystemVersionNumber"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                            <p class="font-weight-semi-bold mb-1">System Package Type</p>
+                        </div>
+                        <div class="col" id="divSystemPackageType"></div>
+                      </div>
+                      <div id="panelRMFCIALevels" style="display: none;">
+                        <div class="row">
+                          <div class="col-5 col-sm-4">
+                            <p class="font-weight-semi-bold mb-1">Confidentiality</p>
+                          </div>
+                          <div class="col">
+                            <p class="mb-1"><span id="txtConfidentiality"></span></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-5 col-sm-4">
+                            <p class="font-weight-semi-bold mb-1">Integrity</p>
+                          </div>
+                          <div class="col">
+                            <p class="mb-1"><span id="txtIntegrity"></span></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-5 col-sm-4">
+                            <p class="font-weight-semi-bold mb-1">Availability</p>
+                          </div>
+                          <div class="col">
+                            <p class="mb-1"><span id="txtAvailability"></span></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="panelFedRAMPLevel" style="display: none;">
+                          <div class="row">
+                          <div class="col-5 col-sm-4">
+                              <p class="font-weight-semi-bold mb-1">FedRAMP Level</p>
+                          </div>
+                          <div class="col">
+                              <p class="mb-1"><span id="txtFedRAMPLevel"></span></p>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1"># Checklists</p>
+                        </div>
+                        <div class="col"><span id="txtNumberOfChecklists"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Last Saved Compliance</p>
+                        </div>
+                        <div class="col">
+                          <p class="mb-1"><span id="txtLastComplianceDate"></span></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Authorization Type</p>
+                        </div>
+                        <div class="col">
+                          <p class="mb-1"><span id="txtAuthorizationType"></span></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Authorization Status</p>
+                        </div>
+                        <div class="col">
+                          <p class="mb-1"><span id="txtAuthorizationStatus"></span></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Authorization Date</p>
+                        </div>
+                        <div class="col">
+                          <p class="mb-1"><span id="txtAuthorizationDate"></span></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Authorization Info</p>
+                        </div>
+                        <div class="col">
+                          <p class="mb-1"><span id="txtAuthorizationComments"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg col-xxl-5 mt-4 mt-lg-0 offset-xxl-1">
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">STIG Checklists Score</p>
+                        </div>
+                        <div class="col" id="divChecklistScores"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Patch Score</p>
+                        </div>
+                        <div class="col" id="divPatchScanScores"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Component</p>
+                        </div>
+                        <div class="col"><span id="txtComponent"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">IT Registration #</p>
+                        </div>
+                        <div class="col"><span id="txtRegistrationNumber"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">System Type</p>
+                        </div>
+                        <div class="col"><span id="txtSystemType"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Created</p>
+                        </div>
+                        <div class="col"><span id="txtCreatedDate"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Updated</p>
+                        </div>
+                        <div class="col"><span id="txtUpdatedDate"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">POC Name</p>
+                        </div>
+                        <div class="col"><span id="txtPOCName"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">POC Phone</p>
+                        </div>
+                        <div class="col"><span id="txtPOCPhone"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">POC Email</p>
+                        </div>
+                        <div class="col"><span id="txtPOCEmail"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">OMB Project Id</p>
+                        </div>
+                        <div class="col"><span id="txtOMBProjectId"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-5 col-sm-4">
+                          <p class="font-weight-semi-bold mb-1">Security Costs</p>
+                        </div>
+                        <div class="col"><span id="txtSecurityCosts"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end system package record-->
+
+          </div> <!-- end content -->
+        </div> <!-- end divMainContainer -->
+      </main>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            getSystemPackages();
+        });
+
+        async function getSystemPackages() {
+            let response = await fetch("/api/systempackages/");
+            if (response.ok) {
+                var data = await response.json();
+                var packages = document.getElementById("frmSystemPackageSelection");
+                for(const item of data){
+                    packages.add(new Option(item.title,item.systemKey),undefined);
+                }
+                if (sessionStorage.getItem("systemKey")) {
+                  packages.value = sessionStorage.getItem("systemKey");
+                  getSystemPackageRecord();
+                }
+            } else {
+                alert("No valid system data found");
+            }
+        }
+
+        async function getSystemPackageRecord() {
+            var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+                showElement("divLoading");
+                resetAllSystemPackageFields();
+                let response = await fetch("/api/systempackage/"+systemKey);
+                if (response.ok) {
+                    var data = await response.json();
+                    if (data) {
+                        if (data.active)
+                            setFieldValue("divSystemGroupTitle", data.title);
+                        else 
+                            setFieldValue("divSystemGroupTitle", data.title + " (Read-Only)");
+                        
+                        setFieldValue("divSystemPackageType", data.packageTypeString);
+                        setFieldValue("divSystemGroupDescription", data.description);
+                        setFieldValue("txtSystemKey", data.systemKey);
+                        setFieldValue("txtSystemGroupCreateDate", data.createdDateString);
+                        setFieldValue("txtNumberOfChecklists", data.numberOfChecklists);
+                        
+                        setFieldValue("txtCreatedDate", data.createdDateString);
+
+                        if (data.lastComplianceCheck)
+                            setFieldValue("txtLastComplianceDate", data.lastComplianceCheckDateString);
+                        else 
+                            setFieldValue("txtLastComplianceDate", "N/A");
+
+                        if (data.updated) {
+                            setFieldValue("txtUpdatedDate", data.updatedDateString);
+                        }
+                        setFieldValue("txtSystemAcronym", data.acronym);
+                        setFieldValue("txtSystemVersionNumber", data.versionNumber);
+                        setFieldValue("txtAuthorizationType", getAuthorizationTypeString(data.authorizationType));
+                        setFieldValue("txtAuthorizationStatus", getAuthorizationStatusString(data.authorizationStatus));
+                        setFieldValue("txtAuthorizationDate", data.authorizationDateString);
+                        setFieldValue("txtAuthorizationComments", data.authorizationComments);
+
+                        setFieldValue("txtComponent", data.component);
+                        setFieldValue("txtRegistrationNumber", data.registrationNumber);
+                        setFieldValue("txtSystemType", data.systemType);
+                        setFieldValue("txtPOCName", data.pocName);
+                        setFieldValue("txtPOCPhone", data.pocPhone);
+                        setFieldValue("txtPOCEmail", data.pocEmail);
+                        setFieldValue("txtOMBProjectId", data.ombProjectId);
+                        setFieldValue("txtSecurityCosts", data.securityCosts);
+
+                        // score data
+                        var scoreItems = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">' + data.score.totalCat1Open + '</span>' + 
+                                    ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + data.score.totalCat2Open + '</span>' + 
+                                    ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + data.score.totalCat3Open + '</span> <span' +
+                                    ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">' + data.score.totalNotAFinding + '</span> <span' +
+                                    ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">' + data.score.totalNotApplicable + '</span> <span' +
+                                    ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">' + data.score.totalNotReviewed + '</span>';
+
+                        var scoreCount = data.patchScore.totalCriticalOpen + data.patchScore.totalHighOpen + data.patchScore.totalMediumOpen + data.patchScore.totalLowOpen;
+                        var patchScanScoreItems = '<span title="Total Critical Items" class="badge badge rounded-capsule badge-soft-critical fs--2">' + data.patchScore.totalCriticalOpen + '</span>' + 
+                                    ' <span title="Total High Items" class="badge badge rounded-capsule badge-soft-danger fs--2">' + data.patchScore.totalHighOpen + '</span>' + 
+                                    ' <span title="Total Medium Items" class="badge badge rounded-capsule badge-soft-cat2 fs--2">' + data.patchScore.totalMediumOpen + '</span>' +
+                                    ' <span title="Total Low Items" class="badge badge rounded-capsule badge-soft-cat3 fs--2">' + data.patchScore.totalLowOpen + '</span>' + 
+                                    ' <span title="Total Patch Vulnerabilities" class="badge badge rounded-capsule bg-soft-primary fs--2">Total - ' + scoreCount + '</span>';
+                        
+                        setFieldValue("divChecklistScores", scoreItems);
+                        setFieldValue("divPatchScanScores", patchScanScoreItems);
+
+                        // update the display based on RMF or FedRAMP
+                        if (data.packageType == 10) {
+                            showElement("panelRMFCIALevels");
+                            hideElement("#panelFedRAMPLevel");
+                            setFieldValue("txtConfidentiality", data.confidentialityLevelString);
+                            setFieldValue("txtIntegrity", data.integrityLevelString);
+                            setFieldValue("txtAvailability", data.availabilityLevelString);
+                        } else {
+                            showElement("panelFedRAMPLevel");
+                            hideElement("#panelRMFCIALevels");
+                            setFieldValue("txtFedRAMPLevel", data.fedRAMPLevelString);
+                        }
+                    } else {
+                        alert('System Package data did not load properly.');
+                    }
+                } else {
+                    alert("No valid system data found");
+                }
+            } else {
+                alert('Please choose a valid System Package');
+            }
+            hideElement("divLoading");
+        }
+
+        function resetAllSystemPackageFields() {
+            setFieldValue("divSystemGroupTitle", "");
+            
+            setFieldValue("divSystemPackageType",  "");
+            setFieldValue("divSystemGroupDescription",  "");
+            setFieldValue("txtSystemKey",  "");
+            setFieldValue("txtSystemGroupCreateDate",  "");
+            setFieldValue("txtNumberOfChecklists",  "");
+            
+            setFieldValue("txtCreatedDate",  "");
+            setFieldValue("txtLastComplianceDate",  "");
+            setFieldValue("txtUpdatedDate",  "");
+            setFieldValue("txtSystemAcronym",  "");
+            setFieldValue("txtSystemVersionNumber",  "");
+            setFieldValue("txtAuthorizationType",  "");
+            setFieldValue("txtAuthorizationStatus",  "");
+            setFieldValue("txtAuthorizationDate",  "");
+            setFieldValue("txtAuthorizationComments",  "");
+
+            setFieldValue("txtComponent",  "");
+            setFieldValue("txtRegistrationNumber",  "");
+            setFieldValue("txtSystemType",  "");
+            setFieldValue("txtPOCName",  "");
+            setFieldValue("txtPOCPhone",  "");
+            setFieldValue("txtPOCEmail",  "");
+            setFieldValue("txtOMBProjectId",  "");
+            setFieldValue("txtSecurityCosts",  "");
+
+            hideElement("panelRMFCIALevels");
+            hideElement("#panelFedRAMPLevel");
+            setFieldValue("txtConfidentiality",  "");
+            setFieldValue("txtIntegrity",  "");
+            setFieldValue("txtAvailability",  "");
+            setFieldValue("txtFedRAMPLevel",  "");
+
+            // score data
+            var scoreItems = '<span title="Total CAT 1 Open" class="badge badge rounded-capsule badge-soft-danger fs--2">0</span>' + 
+                        ' <span title="Total CAT 2 Open" class="badge badge rounded-capsule badge-soft-cat2 fs--2">0</span>' + 
+                        ' <span title="Total CAT 3 Open" class="badge badge rounded-capsule badge-soft-cat3 fs--2">0</span> <span' +
+                        ' title="Total Not a Finding" class="badge badge rounded-capsule badge-soft-success fs--2">0</span> <span' +
+                        ' title="Total Not Applicable" class="badge badge rounded-capsule badge-soft-secondary fs--2">0</span> <span' +
+                        ' title="Total Not Reviewed" class="badge badge rounded-capsule badge-soft-dark fs--2">0</span>';
+            var patchScanScoreItems = '<span title="Total Critical Items" class="badge badge rounded-capsule badge-soft-critical fs--2">0</span>' + 
+                        ' <span title="Total High Items" class="badge badge rounded-capsule badge-soft-danger fs--2">0</span>' + 
+                        ' <span title="Total Medium Items" class="badge badge rounded-capsule badge-soft-cat2 fs--2">0</span>' +
+                        ' <span title="Total Low Items" class="badge badge rounded-capsule badge-soft-cat3 fs--2">0</span>' + 
+                        ' <span title="Total Patch Vulnerabilities" class="badge badge rounded-capsule bg-soft-primary fs--2">Total - 0</span>';
+            
+            setFieldValue("divChecklistScores", scoreItems);
+            setFieldValue("divPatchScanScores", patchScanScoreItems);
+        }
+
+        function getAuthorizationTypeString(authType) {
+            if (authType == 10) return "Authorization to Operate (ATO)";
+            if (authType == 30) return "Interim Authorization to Test (IATT)";
+            if (authType == 40) return "Authorization to Connect (ATC)";
+            if (authType == 50) return "Type Accreditation";
+            return "Unknown";
+        }
+
+        function getAuthorizationStatusString(authType) {
+            if (authType == 10) return "Authorization to Operate (ATO)";
+            if (authType == 20) return "Authorization to Operate (ATO) with Conditions";
+            if (authType == 30) return "Interim Authorization to Test (IATT)";
+            if (authType == 40) return "Authorization to Connect (ATC)";
+            if (authType == 100) return "Denial of Authorization to Operate (ATO)";
+            return "In Process";
+        }
+
+        function viewChecklists() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "checklists.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewCompliance() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "compliance.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewPOAMRisk() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "poamrisk.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewTemplates() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "templates.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewHardware() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "hardware.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewSoftware() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "software.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+
+        function viewPPSM() {
+          var systemKey = getFieldValue("frmSystemPackageSelection");
+            if (systemKey) {
+              location.href = "ppsm.html?systemKey=" + systemKey;
+            } else {
+              alert('Please choose a System Package');
+              return false;
+            }
+        }
+    </script>
+  </body>
+</html>
