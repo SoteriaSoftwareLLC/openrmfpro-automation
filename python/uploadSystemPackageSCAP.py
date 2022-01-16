@@ -5,7 +5,7 @@ url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/scap
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.Fl0KfrDNJwa2OHlt3RoFbF84"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 
 # file name of checklist file to be uploaded hosted locally in the same directory as the python code
 with open("../data/scap-scans/DEGTHAT_SCC-5.0.1_2019-04-19_170849_XCCDF-Results_Windows_10_STIG-001.012.xml", "rb") as a_file:

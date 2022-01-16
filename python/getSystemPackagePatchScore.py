@@ -5,7 +5,7 @@ url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/patc
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.Fl0KfrDNJwa2OHlt3RoFbF84"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 
 resp = requests.get(url, headers=headers)
 
