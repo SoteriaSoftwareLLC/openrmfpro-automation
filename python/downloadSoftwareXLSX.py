@@ -8,7 +8,7 @@ headers = CaseInsensitiveDict()
 
 headers["Accept"] = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
-headers["Authorization"] = "Bearer s.Fl0KfrDNJwa2OHlt3RoFbF84"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 resp = requests.get(url, headers=headers)
 filename = "Software.xlsx"
 filepath = './download/'

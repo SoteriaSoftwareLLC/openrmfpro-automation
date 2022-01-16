@@ -7,7 +7,7 @@ url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/chec
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/xml;charset=utf-8"
-headers["Authorization"] = "Bearer s.Fl0KfrDNJwa2OHlt3RoFbF84"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 resp = requests.get(url, headers=headers)
 
 # print(resp.status_code)

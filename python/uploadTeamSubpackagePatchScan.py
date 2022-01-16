@@ -5,7 +5,7 @@ url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/team
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.Fl0KfrDNJwa2OHlt3RoFbF84"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 
 # file name of checklist file to be uploaded hosted locally in the same directory as the python code
 with open("../data/nessus-scans/MachinaBio_System_Scan_Post-Patch-Oct_2021.nessus", "rb") as a_file:

@@ -14,9 +14,9 @@
             "program": "${workspaceFolder}/app.js",
             "env" : {
                 "LISTENPORT": "8100",
-                "ROOTAPIURL": "http://192.168.13.98:8080/api/external",
-                "APIKEY": "packagemanager",
-                "APITOKEN": "s.qZr7Nlkg9uf4hPUErG7keEGF"
+                "ROOTAPIURL": "http://192.168.13.114:8080/api/external",
+                "APIKEY": "soteriasoftnodejs",
+                "APITOKEN": "s.u2PjZ3GSsV2HgFOmwUEvtf70"
             }
         }
     ]
