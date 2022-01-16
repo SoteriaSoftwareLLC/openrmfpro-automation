@@ -22,3 +22,8 @@ The applications folder has an example NodeJS application in it. This was done i
 - [ ] add a way to select templates and do the "bulk add checklists" injecting hostname to a system package
 - [ ] dotnet core 5.x example APIs
 - [ ] golang example APIs
+
+# Note to Developers
+Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. The massive manual way we STILL do ATOs and FedRAMP/RMF approvals has passed its expiration date! And it is starting to stink. 
+
+We need to do better!
