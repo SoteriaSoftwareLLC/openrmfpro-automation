@@ -3,7 +3,7 @@ from requests.structures import CaseInsensitiveDict
 
 SystemKey = "TestKey"
 
-url = "http://192.168.13.114:8080/api/external/systempackage/keycheck/"+SystemKey+"/?applicationKey=aspirenineuploader"
+url = "http://192.168.13.114:8080/api/external/systempackage/keycheck/"+SystemKey+"/?applicationKey=degthatuploader"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"

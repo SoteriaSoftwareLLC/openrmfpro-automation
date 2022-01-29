@@ -3,11 +3,11 @@ from requests.structures import CaseInsensitiveDict
 
 CheckListRecord = "61ae0f58870794d9304bb15a"
 
-url = "http://192.168.13.114:8080/api/external/systempackage/aspireninetest/"+ CheckListRecord + "/?applicationKey=aspirenineuploader"
+url = "http://192.168.13.114:8080/api/external/systempackage/aspireninetest/checklistrecord/"+ CheckListRecord + "/?applicationKey=degthatuploader"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.eSAczEu8a5vAOHfLRz09GVPj"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 
 resp = requests.get(url, headers=headers)
 

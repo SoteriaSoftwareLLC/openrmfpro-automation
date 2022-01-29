@@ -3,7 +3,7 @@ from requests.structures import CaseInsensitiveDict
 
 TemplateType = "disa"
 
-url = "http://192.168.13.114:8080/api/external/templates/"+TemplateType+"/?applicationKey=aspirenineuploader&searchString=Cisco"
+url = "http://192.168.13.114:8080/api/external/templates/"+TemplateType+"/?applicationKey=degthatuploader&searchString=Cisco"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
