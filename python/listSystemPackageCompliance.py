@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "http://192.168.13.114:8080/api/external/systempackage/aspireninetest/compliance/?applicationKey=degthatuploader"
+url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/compliance/?applicationKey=degthatuploader"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
