@@ -5,7 +5,7 @@ from requests.structures import CaseInsensitiveDict
 
 APIname = "systempackage" # Constant for this particular API
 AppKey = "applicationKey=degthatuploader"  # "degthatuploader is an example application key - replace it.
-SystemKey = "aspireninetest"
+SystemKey = "degthatnetwork"
 data = "title=MyPackage&systemKey=mykeywithlowercaseletters&description=This+is+my+description&confidentiality=10&integrity=10&availability=10&fedrampLevel=10&packageType=10&systemType=Business+System&pocName=My+First+and+Last&pocPhone=8003456789 &pocEmail=info@soteriasoft.com&addUserToSystemPackage=true&acronym=TBD"
 
 # Assign the request headers for this particular API

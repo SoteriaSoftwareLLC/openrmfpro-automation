@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-SystemKey = "TestKey"
+SystemKey = "degthatnetwork"
 
 url = "http://192.168.13.114:8080/api/external/systempackage/keycheck/"+SystemKey+"/?applicationKey=degthatuploader"
 

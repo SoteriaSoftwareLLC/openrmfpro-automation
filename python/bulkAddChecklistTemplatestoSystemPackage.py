@@ -5,7 +5,7 @@ from requests.structures import CaseInsensitiveDict
 
 APIname = 'systempackage' # Constant for this particular API
 AppKey = 'applicationKey=degthatuploader'  # "degthatuploader is an example application key - replace it.
-SystemKey = "aspireninetest"
+SystemKey = "degthatnetwork"
 TemplateIds="61b9e3df407f722ecf0ca361,61b9e3d4407f722ecf0ca2b6,61b9e3dd407f722ecf0ca345" 
 
 checklistHostname="FILESVR1"
