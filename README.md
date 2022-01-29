@@ -1,5 +1,5 @@
 # openrmfpro-automation
-OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via the External API. The External API was introduced as a main feature in v2.6 and vastly improved in v2.7 released in January 2022. Later versions will expand on this as well, as will the examplmes in this repo.
+OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via the External API. The External API was introduced as a main feature in v2.6 and vastly improved in v2.7 released in January 2022. Later versions will expand on this as well, as will the examples in this repo.
 
 This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
 
@@ -20,10 +20,12 @@ The applications folder has an example NodeJS application in it. This was done i
 ## To Do
 - [ ] add more to the demo application for uploading files, CKL, .Nessus, .XML SCAP results
 - [ ] add a way to select templates and do the "bulk add checklists" injecting hostname to a system package
-- [ ] dotnet core 5.x example APIs
+- [ ] dotnet core 6.x example APIs
 - [ ] golang example APIs
 
 # Note to Developers
-Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. The massive manual way we STILL do ATOs and FedRAMP/RMF approvals has passed its expiration date! And it is starting to stink. 
+Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. 
+
+The massive manual way we STILL do ATOs and FedRAMP/RMF approvals has passed its expiration date! And it is starting to stink. 
 
 We need to do better!

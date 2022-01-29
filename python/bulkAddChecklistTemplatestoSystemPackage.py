@@ -4,7 +4,7 @@ from requests.structures import CaseInsensitiveDict
 # Assign the API variables that are needed within the request's URL
 
 APIname = 'systempackage' # Constant for this particular API
-AppKey = 'applicationKey=aspirenineuploader'  # "aspirenineuploader is an example application key - replace it.
+AppKey = 'applicationKey=degthatuploader'  # "degthatuploader is an example application key - replace it.
 SystemKey = "aspireninetest"
 TemplateIds="61b9e3df407f722ecf0ca361,61b9e3d4407f722ecf0ca2b6,61b9e3dd407f722ecf0ca345" 
 

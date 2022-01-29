@@ -1,11 +1,11 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "http://192.168.13.114:8080/api/external/systempackages/?applicationKey=aspirenineuploader"
+url = "http://192.168.13.114:8080/api/external/systempackages/?applicationKey=degthatuploader"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.eSAczEu8a5vAOHfLRz09GVPj"
+headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 
 resp = requests.get(url, headers=headers)
 

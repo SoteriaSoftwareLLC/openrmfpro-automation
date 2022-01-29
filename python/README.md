@@ -1,5 +1,5 @@
 # Example Code for Python 3.x to push and pull data from OpenRMF<sup>&reg;</sup> Professional
-The examples here assume you have at least OpenRMF<sup>&reg;</sup> Professional v2.6+ installed, the external API setup and turned on, and you have at least one Application Integration record setup on the Administration --> External API Integration page. Your user account in Keycloak also must be setup to match the API integration with proper roles and permissions, including the ExternalAPI role to allow interaction from outside the OpenRMF<sup>&reg;</sup> Professional UI.
+The examples here assume you have OpenRMF<sup>&reg;</sup> Professional v2.7 or higher installed, the external API setup and turned on, and you have at least one Application Integration record setup on the Administration --> External API Integration page. Your user account in Keycloak also must be setup to match the API integration with proper roles and permissions, including the ExternalAPI role to allow interaction from outside the OpenRMF<sup>&reg;</sup> Professional UI.
 
 ## Install Requests
 
