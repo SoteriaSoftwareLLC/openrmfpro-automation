@@ -1,15 +1,19 @@
+# Upload SCAP XCCDF XML data, CKL data, or Audit Compliance .nessus data
+# ex: python3 uploadSystemPackagePatchScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../data/nessus-scans/ MachinaBio_System_Scan_Post-Patch-Dec_2020.nessus
+
+import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/scapchecklist/?applicationKey=degthatuploader"
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/scapchecklist/?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
+headers["Authorization"] = "Bearer " + sys.argv[4]
 
-# file name of checklist file to be uploaded hosted locally in the same directory as the python code
-with open("../data/scap-scans/DEGTHAT_SCC-5.0.1_2019-04-19_170849_XCCDF-Results_Windows_10_STIG-001.012.xml", "rb") as a_file:
-    patchscanFile = {"DEGTHAT_SCC-5.0.1_2019-04-19_170849_XCCDF-Results_Windows_10_STIG-001.012.xml" : a_file}
+# file name of checklist file to be uploaded hosted locally, passing in the directory name and filename
+with open(sys.argv[5] + sys.argv[6], "rb") as a_file:
+    patchscanFile = {sys.argv[6] : a_file}
     resp = requests.post(url, headers=headers, files=patchscanFile)
 
 print(resp.status_code)
