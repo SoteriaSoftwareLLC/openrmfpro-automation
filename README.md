@@ -1,5 +1,5 @@
 # OpenRMF<sup>&reg;</sup> Professional API Automation
-This repo contains OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via the External API. The External API was introduced as a main feature in v2.6 and vastly improved in v2.7 released in January 2022. Later versions will expand on this as well, as will the examples in this repo.
+This repo contains OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via the External API. The External API was introduced as a main feature in v2.6 and vastly improved in v2.7 released in January 2022 and again in v2.8 released May 10, 2022. Later versions will expand on this as well, as will the examples in this repo.
 
 This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
 
@@ -7,7 +7,7 @@ This repo goes along with the <a href="https://www.soteriasoft.com/" target="_bl
 
 The <a href="./scenarios">scenarios</a> folder explains a few scenarios around the APIs to get your creative juices flowing through your brain and getting your team communicating around ideas. 
 
-The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans is in the data directory. Your scripts can pull from that sample data as examples. 
+The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples. 
 
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data will be different but similar. 
 
@@ -33,3 +33,5 @@ Feel free to Fork this repo, add your own ideas, and do a P/R for us to review a
 The massive manual way we STILL do ATOs and FedRAMP/RMF approvals has passed its expiration date! And it is starting to stink. 
 
 We need to do better!
+
+See more information at https://www.soteriasoft.com/ as well as our links on that site to our YouTube videos and scenarios.
