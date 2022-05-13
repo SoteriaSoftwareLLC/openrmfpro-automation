@@ -1,0 +1,50 @@
+[
+    {
+      "issueId": "BX8eLlJ1rfhk7pr0BEzg",
+      "severityType": 40,
+      "statusType": 30,
+      "component": "Controllers/myapicontroller.cs",
+      "project": "soteriasoftware_sample-api",
+      "source": "SonarQube",
+      "line": 220,
+      "message": "Possible null value not checked",
+      "issueCreationDate": "02/28/2022 09:49:40",
+      "issueUpdateDate": "03/01/2022 13:11:59",
+      "organization": "myorg",
+      "resolution": "",
+      "issueUrl": "",
+      "categoryType": 10
+    },
+    {
+      "issueId": "BX8eLlJ1rfhk7pr0BEzd",
+      "severityType": 30,
+      "statusType": 20,
+      "component": "Controllers/myapicontroller.cs",
+      "project": "soteriasoftware_sample-api",
+      "source": "SonarQube",
+      "line": 123,
+      "message": "Change this code to construct the URL from other information",
+      "issueCreationDate": "02/28/2022 09:49:40",
+      "issueUpdateDate": "03/01/2022 13:11:59",
+      "organization": "myorg",
+      "resolution": "",
+      "issueUrl": "",
+      "categoryType": 10
+    },
+    {
+      "issueId": "BX8eLlJ1rfhk7pr0BEab",
+      "severityType": 30,
+      "statusType": 50,
+      "component": "Startup.cs",
+      "project": "soteriasoftware_sample-api",
+      "source": "SonarQube",
+      "line": 994,
+      "message": "Change this code to construct the URL from other information",
+      "issueCreationDate": "02/28/2022 09:49:40",
+      "issueUpdateDate": "03/01/2022 13:11:59",
+      "organization": "myorg",
+      "resolution": "",
+      "issueUrl": "",
+      "categoryType": 10
+    }
+  ]
