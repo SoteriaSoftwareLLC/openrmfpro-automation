@@ -7,7 +7,7 @@ You will need to run `pip3 install requests` in order to load that library into 
 
 ## Testing Authentication
 
-To ensure your authentication is valid you can run `python3 authentication.py` and make sure it prints back 200 as the request status. If so then your API call, structure, API Key, Token and user/pwd combination for that API are all valid.
+To ensure your authentication is valid using the simple script for testauthentication.sh in the <a href="../scripts/">scripts</a> folder and make sure it prints back 200 as the request status. If so then your API call, structure, API Key, Token and user/pwd combination for that API are all valid.
 
 ## API Calls
 
