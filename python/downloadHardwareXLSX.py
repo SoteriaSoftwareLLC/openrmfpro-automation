@@ -1,16 +1,19 @@
+# download the system package hardware listing to an XLSX file
+# ex: python3 downloadHardwareXLSX.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
+
+import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 import os
 
-url = "http://192.168.13.114:8080/api/external/systempackage/degthatnetwork/hardware/?applicationKey=degthatuploader"
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2] + "/hardware/?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
-
 headers["Accept"] = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+headers["Authorization"] = "Bearer " + sys.argv[4]
 
-headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
 resp = requests.get(url, headers=headers)
-filename = "Hardware.xlsx"
+filename = sys.argv[2] + "-HardwareListing.xlsx"
 filepath = './download/'
 file_path = os.path.join(filepath, filename)
 r = requests.get(url, headers=headers, stream=True)
