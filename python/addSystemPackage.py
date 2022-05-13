@@ -1,7 +1,12 @@
+# Add a brand new system package
+# make sure you have the SystemPackageAdministrator Role
+# ex: python3 addSystemPackage.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx
+
+import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-# Assign the API variables that are needed within the request's URL
+url = sys.argv[1] + "/api/external/systempackage/?applicationKey=" + sys.argv[2]
 
 APIname = "systempackage" # Constant for this particular API
 AppKey = "applicationKey=degthatuploader"  # "degthatuploader is an example application key - replace it.
@@ -11,17 +16,12 @@ data = "title=MyPackage&systemKey=mykeywithlowercaseletters&description=This+is+
 # Assign the request headers for this particular API
 headers = CaseInsensitiveDict() # Does not change
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
+headers["Authorization"] = "Bearer " + sys.argv[3]
 headers["Content-Type"] = "application/x-www-form-urlencoded"
-
-# Build the API URL in order to make the request
-
-url = ("http://192.168.13.114:8080/api/external/"+APIname+"/?"+ AppKey)
 
 # Make the API request
 resp = requests.post(url, headers=headers, data=data)
 
 # print to the screen the status code (i.e. 200, 400, 404, etc)
 print(resp.status_code)
-#print(resp.json)
 print(resp.text)

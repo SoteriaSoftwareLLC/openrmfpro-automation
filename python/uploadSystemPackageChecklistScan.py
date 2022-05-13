@@ -13,8 +13,8 @@ headers["Authorization"] = "Bearer " + sys.argv[4]
 
 # file name of checklist file to be uploaded hosted locally, passing in the directory name and filename
 with open(sys.argv[5] + sys.argv[6], "rb") as a_file:
-    patchscanFile = {sys.argv[6] : a_file}
-    resp = requests.post(url, headers=headers, files=patchscanFile)
+    checklistFile = {sys.argv[6] : a_file}
+    resp = requests.post(url, headers=headers, files=checklistFile)
 
 print(resp.status_code)
 print(resp.text)

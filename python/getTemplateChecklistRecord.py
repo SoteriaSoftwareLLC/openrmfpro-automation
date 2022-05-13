@@ -1,15 +1,17 @@
+# get the template checklist JSON record for a template ID
+# ex: python3 getTemplateChecklistRecord.py http://192.168.13.111:8080 627d39fc003c48cfeb704129 openrmfprosvc hvs.xxxxxxxxxxxxxx
+
+import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-TemplateRec = "61b9e3df407f722ecf0ca361"
-url = "http://192.168.13.114:8080/api/external/templaterecord/"+TemplateRec+"/?applicationKey=degthatuploader"
+url = sys.argv[1] + "/api/external/templaterecord/" + sys.argv[2]+ "/?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
+headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
 
 print(resp.status_code)
-#print(resp.json)
 print(resp.text)

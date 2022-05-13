@@ -11,7 +11,7 @@ To ensure your authentication is valid you can run `python3 authentication.py` a
 
 ## API Calls
 
-The API calls here follow the OpenRMF<sup>&reg;</sup> Professional Developer's Guide. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
+The API calls here follow the OpenRMF<sup>&reg;</sup> Professional Developer's Guide. Please contact <a href="https://www.soteriasoft.com/resources/contact.html">Soteria Software</a> for more information.
 
 ## Notes
 * for the Download XLSX scripts, there needs to be a ./download/ directory created where you run it. Or modify as appropriate.

@@ -1,14 +1,17 @@
+# list team subpackages the user has access to see
+# ex: python3 listTeamSubpackages.py http://192.168.13.111:8080 openrmfprosvc  hvs.xxxxxxxxxxxxxxxx
+
+import sys
 import requests
 from requests.structures import CaseInsensitiveDict
  
-url = "http://192.168.13.114:8080/api/external/teamsubpackages/?applicationKey=degthatuploader"
+url = sys.argv[1] + "/api/external/teamsubpackages//?applicationKey=" + sys.argv[2]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer s.xxxxxxxxxxxxxxxxxxxxxxx"
+headers["Authorization"] = "Bearer " + sys.argv[3]
 
 resp = requests.get(url, headers=headers)
 
 print(resp.status_code)
-#print(resp.json)
 print(resp.text)
