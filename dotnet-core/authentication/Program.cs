@@ -23,12 +23,11 @@ namespace openrmfpro_msg_score
             formData.Add(new StringContent(System.Web.HttpUtility.HtmlEncode(args[1])), "applicationKey");
 
             var req = new HttpRequestMessage(HttpMethod.Post, url) { Content = formData};
-            var res = HttpClient.SendAsync(req).GetAwaiter().GetResult();
+            var res = HttpClient.Send(req);
 
             HttpClient.Dispose();
             Console.WriteLine("Success = " + res.IsSuccessStatusCode);
             Console.WriteLine("Status = " + res.StatusCode);
-
         }
     }
 }
