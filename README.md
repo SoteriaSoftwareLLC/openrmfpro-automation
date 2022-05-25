@@ -7,7 +7,7 @@ This repo goes along with the <a href="https://www.soteriasoft.com/" target="_bl
 
 The <a href="./scenarios">scenarios</a> folder explains a few scenarios around the APIs to get your creative juices flowing through your brain and getting your team communicating around ideas. 
 
-The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples. 
+The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples.  There are also example custom checklists created with our Custom Checklist wizard for all the manual policy, process, and procedure requirements in cyber compliance (i.e. NIST Control families like PM, AT, IR, PL, SA, RA).
 
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data may be different but similar. 
 
@@ -24,8 +24,8 @@ The <a href="./applications">applications</a> folder has an example NodeJS appli
 - [ ] show how to select templates and do the "bulk add checklists" injecting hostname to a system package
 - [X] dotnet core 6.x examples calling APIs
 - [X] golang examples calling APIs
-- [ ] java examples calling APIs
-- [ ] more scenarios to list
+- [X] more scenarios to list
+- [X] more types of data to upload and show
 
 # Note to Developers
 Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. 
