@@ -1,6 +1,6 @@
 # Data Directory
 
-This has all kinds of data for use in evaluating and testing OpenRMF Professional
+This has all kinds of data for use in evaluating and testing OpenRMF Professional.
 
 * regular checklists CKL files
 * SCAP scans
