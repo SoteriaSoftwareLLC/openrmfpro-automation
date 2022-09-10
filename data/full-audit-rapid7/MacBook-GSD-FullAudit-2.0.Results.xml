@@ -1,0 +1,2914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NexposeReport version="2.0">
+<scans>
+<scan id="28" name="Soteria" startTime="20220623T190904312" endTime="20220623T192204933" status="finished"/>
+</scans>
+<nodes>
+<node address="192.168.13.25" status="alive" hardware-address="00E04C681AD3" device-id="3" site-name="Soteria" site-importance="Normal" scan-template="Windows SCAP Scan with Results" risk-score="17835.469">
+<names>
+<name>GSD-MacBook</name>
+</names>
+<fingerprints>
+<os certainty="0.85" vendor="Apple" family="Mac OS X" product="Mac OS X" version="12.0"/>
+<os certainty="0.68" device-class="General" vendor="Apple" family="IOS" product="IOS" version="10.13" arch="Risc"/>
+<os certainty="0.68" device-class="VoIP" vendor="Apple" family="IOS" product="IOS" version="10.13" arch="Risc"/>
+<os certainty="0.68" device-class="General" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.11"/>
+<os certainty="0.68" device-class="Specialized" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.11"/>
+<os certainty="0.63" device-class="VoIP" vendor="Apple" family="IOS" product="IOS" version="4.0" arch="Risc"/>
+<os certainty="0.63" device-class="Specialized" vendor="Apple" family="IOS" product="IOS" version="4.3.2" arch="Risc"/>
+<os certainty="0.63" device-class="VoIP" vendor="Apple" family="IOS" product="IOS" version="4.3.2" arch="Risc"/>
+<os certainty="0.63" device-class="Specialized" vendor="Apple" family="IOS" product="IOS" version="5.0.1" arch="Risc"/>
+<os certainty="0.63" device-class="VoIP" vendor="Apple" family="IOS" product="IOS" version="5.0.1" arch="Risc"/>
+<os certainty="0.63" device-class="General" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.4.8"/>
+<os certainty="0.63" device-class="General" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.5"/>
+<os certainty="0.63" device-class="Specialized" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.5"/>
+<os certainty="0.63" device-class="VoIP" vendor="Apple" family="Mac OS X" product="Mac OS X" version="10.5"/>
+</fingerprints>
+<tests>
+<test id="apple-osx-intelgraphicsdriver-cve-2021-30824" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-intelgraphicsdriver-cve-2021-30901" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-iographics-cve-2021-30821" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-iomobileframebuffer-cve-2021-30883" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-kernel-cve-2021-30886" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-kernel-cve-2021-30909" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-kernel-cve-2021-30916" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-bluetooth-cve-2021-30899" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-filesystem-cve-2021-30923" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-graphicsdrivers-cve-2021-30933" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-kernel-cve-2021-30924" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-smb-cve-2021-30868" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-appkit-cve-2021-30873" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-audio-cve-2021-30907" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-bluetooth-cve-2021-30931" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-colorsync-cve-2021-30917" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-coregraphics-cve-2021-30919" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-fileprovider-cve-2021-30881" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-fontparser-cve-2021-30840" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-foundation-cve-2021-30852" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-imageio-cve-2021-30814" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30809" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30818" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30846" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30848" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30849" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30851" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30889" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-31008" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-applescript-cve-2021-30876" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-applescript-cve-2021-30877" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-applescript-cve-2021-30879" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-applescript-cve-2021-30880" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-continuitycamera-cve-2021-30903" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-icloud-cve-2021-30906" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-launchservices-cve-2021-30864" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-messages-cve-2021-30904" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-networkextension-cve-2021-30874" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-security-cve-2021-31004" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-31005" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webrtc-cve-2021-30930" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-appstore-cve-2021-30994" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-coreaudio-cve-2021-30905" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-directoryutility-cve-2020-9846" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-fontparser-cve-2021-30831" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-gamecenter-cve-2021-30895" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-gamecenter-cve-2021-30896" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-icloudphotolibrary-cve-2021-30867" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-modelio-cve-2021-30910" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-modelio-cve-2021-30911" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-sandbox-cve-2021-30808" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-softwareupdate-cve-2021-30912" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-softwareupdate-cve-2021-30913" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30823" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30836" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30861" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30884" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30887" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30888" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30890" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-webkit-cve-2021-30897" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-xar-cve-2021-30833" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-zsh-cve-2021-30892" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-bootp-cve-2021-30866" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-loginwindow-cve-2021-30813" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-sandbox-cve-2021-30920" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-uikit-cve-2021-30915" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+<test id="apple-osx-windowsserver-cve-2021-30908" key="Apple Mac OS X 12.0" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>
+Vulnerable OS: Apple Mac OS X 12.0
+<Paragraph/>
+</Paragraph>
+</Paragraph>
+</test>
+</tests>
+<endpoints>
+<endpoint protocol="tcp" port="22" status="open">
+<services>
+<service name="SSH">
+<fingerprints>
+<fingerprint certainty="0.90" vendor="OpenBSD" family="OpenSSH" product="OpenSSH" version="8.6"/>
+</fingerprints>
+<configuration>
+<config name="ssh.algorithms.compression">none,zlib@openssh.com</config>
+<config name="ssh.algorithms.encryption">chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com</config>
+<config name="ssh.algorithms.hostkey">rsa-sha2-512,rsa-sha2-256,ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519</config>
+<config name="ssh.algorithms.kex">curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256</config>
+<config name="ssh.algorithms.mac">umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1</config>
+<config name="ssh.banner">SSH-2.0-OpenSSH_8.6</config>
+<config name="ssh.hostkey.ecdsa.bits">256</config>
+<config name="ssh.hostkey.ecdsa.fingerprint">66:ee:89:4e:b4:26:49:a1:72:0e:3f:8a:5f:d6:f0:0f</config>
+<config name="ssh.hostkey.ed25519.bits">256</config>
+<config name="ssh.hostkey.ed25519.fingerprint">f9:02:f9:37:ef:97:03:fe:fa:f5:ef:19:38:6d:70:d2</config>
+<config name="ssh.hostkey.rsa.bits">3072</config>
+<config name="ssh.hostkey.rsa.fingerprint">de:49:ea:6f:19:bd:f1:1e:16:df:38:10:58:4f:75:8a</config>
+<config name="ssh.hostkey.type">RSA,ECDSA,ED25519</config>
+<config name="ssh.protocol.version">2.0</config>
+</configuration>
+<tests>
+<test id="ssh-weak-message-authentication-code-algorithms" key="" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="fail">
+<Paragraph>
+<UnorderedList>
+<ListItem>Running SSH service</ListItem>
+<ListItem>Insecure MAC algorithms in use: umac-64-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,hmac-sha1</ListItem>
+</UnorderedList>
+</Paragraph>
+</test>
+</tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="udp" port="137" status="open">
+<services>
+<service name="CIFS Name Service">
+<configuration>
+<config name="advertised-name-1">GSD (Computer Name)</config>
+<config name="advertised-name-count">1</config>
+<config name="mac-address">3C22FB537A69</config>
+</configuration>
+<tests>
+<test id="netbios-nbstat-amplification" key="" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<UnorderedList>
+<ListItem>Running CIFS Name Service service</ListItem>
+<ListItem>Configuration item advertised-name-count set to '1' matched</ListItem>
+</UnorderedList>
+</Paragraph>
+</test>
+</tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="5000" status="open">
+<services>
+<service name="UPnP-HTTPU">
+<tests>
+<test id="upnp-ssdp-amplification" key="" status="vulnerable-version" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<UnorderedList>
+<ListItem>Running UPnP-HTTPU service</ListItem>
+</UnorderedList>
+</Paragraph>
+</test>
+</tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="udp" port="5353" status="open">
+<services>
+<service name="mDNS">
+<configuration>
+<config name="dns-sd-1">_companion-link._tcp.local.</config>
+<config name="dns-sd-2">_sftp-ssh._tcp.local.</config>
+<config name="dns-sd-3">_ssh._tcp.local.</config>
+<config name="dns-sd-count">3</config>
+</configuration>
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="7777" status="open">
+<services>
+<service name="HTTP">
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="7778" status="open">
+<services>
+<service name="HTTP">
+<fingerprints>
+<fingerprint certainty="0.90" vendor="Microsoft" product="Kestrel web server"/>
+</fingerprints>
+<configuration>
+<config name="http.banner">Kestrel</config>
+<config name="http.banner.server">Kestrel</config>
+</configuration>
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="8080" status="open">
+<services>
+<service name="HTTP">
+<fingerprints>
+<fingerprint certainty="0.90" vendor="nginx" family="nginx" product="nginx"/>
+</fingerprints>
+<configuration>
+<config name="http.banner">nginx</config>
+<config name="http.banner.server">nginx</config>
+</configuration>
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="8082" status="open">
+<services>
+<service name="HTTP">
+<fingerprints>
+<fingerprint certainty="0.90" vendor="mongo-express Project" product="mongo-express"/>
+</fingerprints>
+<configuration>
+<config name="http.banner">Express</config>
+<config name="http.banner.x-powered-by">Express</config>
+<config name="verbs-1">GET</config>
+<config name="verbs-2">HEAD</config>
+<config name="verbs-3">POST</config>
+<config name="verbs-count">3</config>
+</configuration>
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="9090" status="open">
+<services>
+<service name="HTTP">
+<fingerprints>
+<fingerprint certainty="0.90" vendor="Prometheus" product="Prometheus"/>
+</fingerprints>
+<configuration>
+<config name="verbs-1">GET</config>
+<config name="verbs-2">OPTIONS</config>
+<config name="verbs-count">2</config>
+</configuration>
+<tests>
+<test id="http-options-method-enabled" key="" status="vulnerable-exploited" scan-id="28" vulnerable-since="20220623T174748543" pci-compliance-status="pass">
+<Paragraph>
+<Paragraph>OPTIONS method returned values including itself</Paragraph>
+</Paragraph>
+</test>
+</tests>
+</service>
+</services>
+</endpoint>
+<endpoint protocol="tcp" port="27017" status="open">
+<services>
+<service name="HTTP">
+<tests> </tests>
+</service>
+</services>
+</endpoint>
+</endpoints>
+</node>
+</nodes>
+<VulnerabilityDefinitions>
+<vulnerability id="apple-osx-appkit-cve-2021-30873" title="OS X update for AppKit (CVE-2021-30873)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1. A malicious application may be able to elevate privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30873</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-applescript-cve-2021-30876" title="OS X update for AppleScript (CVE-2021-30876)" severity="6" pciSeverity="3" cvssScore="5.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="265.58975">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted AppleScript binary may result in unexpected application termination or disclosure of process memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30876</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-applescript-cve-2021-30877" title="OS X update for AppleScript (CVE-2021-30877)" severity="6" pciSeverity="3" cvssScore="5.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="265.58975">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted AppleScript binary may result in unexpected application termination or disclosure of process memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30877</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-applescript-cve-2021-30879" title="OS X update for AppleScript (CVE-2021-30879)" severity="6" pciSeverity="3" cvssScore="5.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="265.58975">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted AppleScript binary may result in unexpected application termination or disclosure of process memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30879</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-applescript-cve-2021-30880" title="OS X update for AppleScript (CVE-2021-30880)" severity="6" pciSeverity="3" cvssScore="5.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="265.58975">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted AppleScript binary may result in unexpected application termination or disclosure of process memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30880</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-appstore-cve-2021-30994" title="OS X update for App Store (CVE-2021-30994)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20220526T000000000" added="20220526T000000000" modified="20220530T000000000" riskScore="191.27011">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An access issue was addressed with improved access restrictions. This issue is fixed in macOS Monterey 12.0.1. A malicious application may be able to access local users' Apple IDs.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30994</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-audio-cve-2021-30907" title="OS X update for Audio (CVE-2021-30907)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An integer overflow was addressed through improved input validation. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to elevate privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30907</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-bluetooth-cve-2021-30899" title="OS X update for Bluetooth (CVE-2021-30899)" severity="8" pciSeverity="5" cvssScore="7.6" cvssVector="(AV:N/AC:H/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="228.6823">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A race condition was addressed with improved state handling. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30899</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-bluetooth-cve-2021-30931" title="OS X update for Bluetooth (CVE-2021-30931)" severity="7" pciSeverity="5" cvssScore="7.1" cvssVector="(AV:N/AC:M/Au:N/C:C/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="308.1108">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved validation. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.6.2, Security Update 2021-008 Catalina. A malicious application may be able to disclose kernel memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30931</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212979</reference>
+<reference source="URL">https://support.apple.com/kb/HT212981</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.2</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-bootp-cve-2021-30866" title="OS X update for bootp (CVE-2021-30866)" severity="3" pciSeverity="2" cvssScore="3.3" cvssVector="(AV:A/AC:L/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="315.92838">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A user privacy issue was addressed by removing the broadcast MAC address. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. A device may be passively tracked by its WiFi MAC address.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30866</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-colorsync-cve-2021-30917" title="OS X update for ColorSync (CVE-2021-30917)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue existed in the processing of ICC profiles. This issue was addressed with improved input validation. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted image may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30917</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-continuitycamera-cve-2021-30903" title="OS X update for Continuity Camera (CVE-2021-30903)" severity="5" pciSeverity="3" cvssScore="4.6" cvssVector="(AV:L/AC:L/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="241.97836">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in iOS 14.8.1 and iPadOS 14.8.1, iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1. A local attacker may be able to cause unexpected application termination or arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30903</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-coreaudio-cve-2021-30905" title="OS X update for CoreAudio (CVE-2021-30905)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina. Processing a maliciously crafted file may disclose user information.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30905</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-coregraphics-cve-2021-30919" title="OS X update for CoreGraphics (CVE-2021-30919)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds write was addressed with improved input validation. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted PDF may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30919</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-directoryutility-cve-2020-9846" title="OS X update for Directory Utility (CVE-2020-9846)" severity="4" pciSeverity="3" cvssScore="4.4" cvssVector="(AV:L/AC:M/Au:N/C:P/I:P/A:P)" published="20220401T000000000" added="20220401T000000000" modified="20220401T000000000" riskScore="132.35771">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement> A logic issue was addressed with improved state management. </ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2020-9846</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-fileprovider-cve-2021-30881" title="OS X update for FileProvider (CVE-2021-30881)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An input validation issue was addressed with improved memory handling. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Unpacking a maliciously crafted archive may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30881</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-filesystem-cve-2021-30923" title="OS X update for File System (CVE-2021-30923)" severity="8" pciSeverity="5" cvssScore="7.6" cvssVector="(AV:N/AC:H/Au:N/C:C/I:C/A:C)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="251.60196">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A race condition was addressed with improved locking. This issue is fixed in macOS Monterey 12.0.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30923</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-fontparser-cve-2021-30831" title="OS X update for FontParser (CVE-2021-30831)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="234.1508">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved input validation. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing a maliciously crafted font may result in the disclosure of process memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30831</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-fontparser-cve-2021-30840" title="OS X update for FontParser (CVE-2021-30840)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="296.591">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing a maliciously crafted dfont file may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30840</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-foundation-cve-2021-30852" title="OS X update for Foundation (CVE-2021-30852)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="312.21893">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A type confusion issue was addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30852</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-gamecenter-cve-2021-30895" title="OS X update for Game Center (CVE-2021-30895)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved restrictions. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, tvOS 15.1, watchOS 8.1, macOS Monterey 12.0.1. A malicious application may be able to access information about a user's contacts.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30895</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212979</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.2</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-gamecenter-cve-2021-30896" title="OS X update for Game Center (CVE-2021-30896)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved restrictions. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, tvOS 15.1, watchOS 8.1, macOS Monterey 12.0.1. A malicious application may be able to read user's gameplay data.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30896</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-graphicsdrivers-cve-2021-30933" title="OS X update for Graphics Drivers (CVE-2021-30933)" severity="8" pciSeverity="5" cvssScore="7.6" cvssVector="(AV:N/AC:H/Au:N/C:C/I:C/A:C)" published="20220401T000000000" added="20220401T000000000" modified="20220602T000000000" riskScore="169.46231">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A race condition was addressed with improved state handling. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.6. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30933</reference>
+<reference source="URL">https://support.apple.com/kb/HT212804</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-icloud-cve-2021-30906" title="OS X update for iCloud (CVE-2021-30906)" severity="5" pciSeverity="3" cvssScore="4.6" cvssVector="(AV:L/AC:L/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="241.97836">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. A local attacker may be able to elevate their privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30906</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-icloudphotolibrary-cve-2021-30867" title="OS X update for iCloud Photo Library (CVE-2021-30867)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="246.48865">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>The issue was addressed with improved authentication. This issue is fixed in iOS 15 and iPadOS 15. A malicious application may be able to access photo metadata without needing permission to access photos.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30867</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-imageio-cve-2021-30814" title="OS X update for ImageIO (CVE-2021-30814)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="296.591">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved input validation. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing a maliciously crafted image may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30814</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-intelgraphicsdriver-cve-2021-30824" title="OS X update for Intel Graphics Driver (CVE-2021-30824)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30824</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-intelgraphicsdriver-cve-2021-30901" title="OS X update for Intel Graphics Driver (CVE-2021-30901)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>Multiple out-of-bounds write issues were addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30901</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-iographics-cve-2021-30821" title="OS X update for IOGraphics (CVE-2021-30821)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30821</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-iomobileframebuffer-cve-2021-30883" title="OS X update for IOMobileFrameBuffer (CVE-2021-30883)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220524T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.0.2 and iPadOS 15.0.2, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30883</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>CISA KEV</tag>
+<tag>Exploited in the Wild</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-kernel-cve-2021-30886" title="OS X update for Kernel (CVE-2021-30886)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A use after free issue was addressed with improved memory management. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. An application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30886</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-kernel-cve-2021-30909" title="OS X update for Kernel (CVE-2021-30909)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. An application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30909</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-kernel-cve-2021-30916" title="OS X update for Kernel (CVE-2021-30916)" severity="9" pciSeverity="5" cvssScore="9.3" cvssVector="(AV:N/AC:M/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="358.83908">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30916</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-kernel-cve-2021-30924" title="OS X update for Kernel (CVE-2021-30924)" severity="8" pciSeverity="2" cvssScore="7.8" cvssVector="(AV:N/AC:L/Au:N/C:N/I:N/A:C)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="258.86038">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A denial of service issue was addressed with improved state handling. This issue is fixed in macOS Monterey 12.0.1. A remote attacker can cause a device to unexpectedly restart.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30924</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Denial of Service</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-launchservices-cve-2021-30864" title="OS X update for LaunchServices (CVE-2021-30864)" severity="5" pciSeverity="3" cvssScore="5.0" cvssVector="(AV:N/AC:L/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220218T000000000" riskScore="182.66377">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1. A sandboxed process may be able to circumvent sandbox restrictions.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30864</reference>
+<reference source="URL">https://support.apple.com/kb/HT212804</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-loginwindow-cve-2021-30813" title="OS X update for Login Window (CVE-2021-30813)" severity="2" pciSeverity="2" cvssScore="2.1" cvssVector="(AV:L/AC:L/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="79.598145">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.0.1. A person with access to a host Mac may be able to bypass the Login Window in Remote Desktop for a locked instance of macOS.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30813</reference>
+<reference source="URL">https://support.apple.com/kb/HT212804</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-messages-cve-2021-30904" title="OS X update for Messages (CVE-2021-30904)" severity="5" pciSeverity="3" cvssScore="5.0" cvssVector="(AV:N/AC:L/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="443.76062">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A sync issue was addressed with improved state validation. This issue is fixed in macOS Monterey 12.0.1. A user's messages may continue to sync after the user has signed out of iMessage.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30904</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-modelio-cve-2021-30910" title="OS X update for Model I/O (CVE-2021-30910)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, tvOS 15.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. Processing a maliciously crafted file may disclose user information.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30910</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-modelio-cve-2021-30911" title="OS X update for Model I/O (CVE-2021-30911)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, iOS 15.1 and iPadOS 15.1, macOS Big Sur 11.6.1. Processing a maliciously crafted USD file may disclose memory contents.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30911</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-networkextension-cve-2021-30874" title="OS X update for NetworkExtension (CVE-2021-30874)" severity="5" pciSeverity="3" cvssScore="5.0" cvssVector="(AV:N/AC:L/Au:N/C:N/I:P/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="184.90025">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An authorization issue was addressed with improved state management. This issue is fixed in iOS 15 and iPadOS 15. A VPN configuration may be installed by an app without user permission.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30874</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>VPN</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-sandbox-cve-2021-30808" title="OS X update for Sandbox (CVE-2021-30808)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="97.562836">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. A malicious application may be able to modify protected parts of the file system.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30808</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-sandbox-cve-2021-30920" title="OS X update for Sandbox (CVE-2021-30920)" severity="2" pciSeverity="2" cvssScore="2.1" cvssVector="(AV:L/AC:L/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="191.03554">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A permissions issue was addressed with improved validation. This issue is fixed in macOS Monterey 12.0.1. A local attacker may be able to read sensitive information.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30920</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-security-cve-2021-31004" title="OS X update for Security (CVE-2021-31004)" severity="5" pciSeverity="3" cvssScore="5.1" cvssVector="(AV:N/AC:H/Au:N/C:P/I:P/A:P)" published="20220401T000000000" added="20220401T000000000" modified="20220602T000000000" riskScore="140.18108">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A race condition was addressed with improved locking. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.5. An application may be able to gain elevated privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-31004</reference>
+<reference source="URL">https://support.apple.com/kb/HT212602</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.5</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-smb-cve-2021-30868" title="OS X update for SMB (CVE-2021-30868)" severity="8" pciSeverity="5" cvssScore="7.6" cvssVector="(AV:N/AC:H/Au:N/C:C/I:C/A:C)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="228.6823">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A race condition was addressed with improved locking. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.6.1. A malicious application may be able to execute arbitrary code with kernel privileges.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30868</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-softwareupdate-cve-2021-30912" title="OS X update for SoftwareUpdate (CVE-2021-30912)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>The issue was addressed with improved permissions logic. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may gain access to a user's Keychain items.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30912</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-softwareupdate-cve-2021-30913" title="OS X update for SoftwareUpdate (CVE-2021-30913)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>The issue was addressed with improved permissions logic. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.6.1. An unprivileged application may be able to edit NVRAM variables.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30913</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-uikit-cve-2021-30915" title="OS X update for UIKit (CVE-2021-30915)" severity="2" pciSeverity="2" cvssScore="2.1" cvssVector="(AV:L/AC:L/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="191.03554">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, tvOS 15.1, watchOS 8.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A person with physical access to an iOS device may be able to determine characteristics of a user's password in a secure text entry field.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30915</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30809" title="OS X update for WebKit (CVE-2021-30809)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="296.591">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A use after free issue was addressed with improved memory management. This issue is fixed in Safari 15, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30809</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30818" title="OS X update for WebKit (CVE-2021-30818)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="296.591">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A type confusion issue was addressed with improved state handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, tvOS 15, iOS 15 and iPadOS 15, Safari 15, watchOS 8. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30818</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30823" title="OS X update for WebKit (CVE-2021-30823)" severity="4" pciSeverity="3" cvssScore="4.0" cvssVector="(AV:N/AC:L/Au:S/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="75.15854">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Monterey 12.0.1, iOS 14.8 and iPadOS 14.8, tvOS 15, Safari 15, watchOS 8. An attacker in a privileged network position may be able to bypass HSTS.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30823</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30836" title="OS X update for WebKit (CVE-2021-30836)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211028T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="234.1508">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An out-of-bounds read was addressed with improved input validation. This issue is fixed in iOS 14.8 and iPadOS 14.8, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing a maliciously crafted audio file may disclose restricted memory.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30836</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30846" title="OS X update for WebKit (CVE-2021-30846)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211019T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="298.787">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, Safari 15, tvOS 15, iOS 15 and iPadOS 15, watchOS 8. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30846</reference>
+<reference source="DEBIAN">DSA-4995</reference>
+<reference source="DEBIAN">DSA-4996</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30848" title="OS X update for WebKit (CVE-2021-30848)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211019T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="298.787">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, Safari 15, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30848</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30849" title="OS X update for WebKit (CVE-2021-30849)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211019T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="298.787">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>Multiple memory corruption issues were addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, watchOS 8, Safari 15, tvOS 15, iOS 15 and iPadOS 15, iTunes 12.12 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30849</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30851" title="OS X update for WebKit (CVE-2021-30851)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="312.21893">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A memory corruption vulnerability was addressed with improved locking. This issue is fixed in Safari 15, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30851</reference>
+<reference source="DEBIAN">DSA-4995</reference>
+<reference source="DEBIAN">DSA-4996</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30861" title="OS X update for WebKit (CVE-2021-30861)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1. A malicious application may bypass Gatekeeper checks.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30861</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30884" title="OS X update for WebKit (CVE-2021-30884)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="246.48865">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>The issue was resolved with additional restrictions on CSS compositing. This issue is fixed in tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Visiting a maliciously crafted website may reveal a user's browsing history.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30884</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30887" title="OS X update for WebKit (CVE-2021-30887)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211228T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. Processing maliciously crafted web content may lead to unexpectedly unenforced Content Security Policy.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30887</reference>
+<reference source="DEBIAN">DSA-5030</reference>
+<reference source="DEBIAN">DSA-5031</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30888" title="OS X update for WebKit (CVE-2021-30888)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="234.34389">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An information leakage issue was addressed. This issue is fixed in iOS 15.1 and iPadOS 15.1, macOS Monterey 12.0.1, iOS 14.8.1 and iPadOS 14.8.1, tvOS 15.1, watchOS 8.1. A malicious website using Content Security Policy reports may be able to leak information via redirect behavior .</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30888</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30889" title="OS X update for WebKit (CVE-2021-30889)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="296.8356">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. Processing maliciously crafted web content may lead to arbitrary code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30889</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30890" title="OS X update for WebKit (CVE-2021-30890)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211228T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. Processing maliciously crafted web content may lead to universal cross site scripting.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30890</reference>
+<reference source="DEBIAN">DSA-5030</reference>
+<reference source="DEBIAN">DSA-5031</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+<tag>XSS</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-30897" title="OS X update for WebKit (CVE-2021-30897)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="246.48865">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An issue existed in the specification for the resource timing API. The specification was updated and the updated specification was implemented. This issue is fixed in macOS Monterey 12.0.1. A malicious website may exfiltrate data cross-origin.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30897</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-31005" title="OS X update for WebKit (CVE-2021-31005)" severity="5" pciSeverity="3" cvssScore="5.0" cvssVector="(AV:N/AC:L/Au:N/C:N/I:P/A:N)" published="20220401T000000000" added="20220401T000000000" modified="20220602T000000000" riskScore="176.88513">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>Description: A logic issue was addressed with improved state management. This issue is fixed in iOS 15 and iPadOS 15, macOS Monterey 12.0.1. Turning off "Block all remote content" may not apply to all remote content types.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-31005</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webkit-cve-2021-31008" title="OS X update for WebKit (CVE-2021-31008)" severity="7" pciSeverity="4" cvssScore="6.8" cvssVector="(AV:N/AC:M/Au:N/C:P/I:P/A:P)" published="20220401T000000000" added="20220401T000000000" modified="20220602T000000000" riskScore="257.0879">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A type confusion issue was addressed with improved memory handling. This issue is fixed in Safari 15.1, tvOS 15.1, iOS 15 and iPadOS 15, macOS Monterey 12.0.1, watchOS 8.1. Processing maliciously crafted web content may lead to code execution.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-31008</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Remote Execution</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-webrtc-cve-2021-30930" title="OS X update for WebRTC (CVE-2021-30930)" severity="5" pciSeverity="3" cvssScore="5.0" cvssVector="(AV:N/AC:L/Au:N/C:P/I:N/A:N)" published="20210824T000000000" added="20220218T000000000" modified="20220218T000000000" riskScore="443.76062">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1. An attacker may be able to track users through their IP address.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30930</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-windowsserver-cve-2021-30908" title="OS X update for Windows Server (CVE-2021-30908)" severity="2" pciSeverity="1" cvssScore="1.9" cvssVector="(AV:L/AC:M/Au:N/C:P/I:N/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20211126T000000000" riskScore="143.65536">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An authentication issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1, macOS Big Sur 11.6.1. A local attacker may be able to view the previous logged-in user’s desktop from the fast user switching screen.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30908</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-xar-cve-2021-30833" title="OS X update for xar (CVE-2021-30833)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220526T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>This issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.0.1. Unpacking a maliciously crafted archive may allow an attacker to write arbitrary files.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30833</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="apple-osx-zsh-cve-2021-30892" title="OS X update for zsh (CVE-2021-30892)" severity="4" pciSeverity="3" cvssScore="4.3" cvssVector="(AV:N/AC:M/Au:N/C:N/I:P/A:N)" published="20211027T000000000" added="20211027T000000000" modified="20220329T000000000" riskScore="97.64329">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>An inherited permissions issue was addressed with additional restrictions. This issue is fixed in macOS Monterey 12.0.1, Security Update 2021-007 Catalina, macOS Big Sur 11.6.1. A malicious application may be able to modify protected parts of the file system.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CVE">CVE-2021-30892</reference>
+<reference source="URL">https://support.apple.com/kb/HT212869</reference>
+<reference source="URL">https://support.apple.com/kb/HT212871</reference>
+<reference source="URL">https://support.apple.com/kb/HT212872</reference>
+</references>
+<tags>
+<tag>Apple</tag>
+<tag>Apple Mac OS X</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>Apple Mac OS X 10.15.7</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 11.6.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apple Mac OS X &lt;= 12.0.1</Paragraph>
+<Paragraph> Apply the necessary updates by selecting 'Software Update' from the Apple menu, or by using the softwareupdate utility </Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="http-options-method-enabled" title="HTTP OPTIONS Method Enabled" severity="3" pciSeverity="2" cvssScore="2.6" cvssVector="(AV:N/AC:H/Au:N/C:P/I:N/A:N)" published="20051007T000000000" added="20180828T000000000" modified="20190115T000000000" riskScore="579.59424">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>Web servers that respond to the OPTIONS HTTP method expose what other methods are supported by the web server, allowing attackers to narrow and intensify their efforts.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="URL">https://www.owasp.org/index.php/Test_HTTP_Methods_(OTG-CONFIG-006)</reference>
+</references>
+<tags>
+<tag>HTTP</tag>
+<tag>Web</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<UnorderedList>
+<ListItem>
+<Paragraph>
+<Paragraph>Disable HTTP OPTIONS method on your web server. Refer to your web server's instruction manual on how to do this.</Paragraph>
+</Paragraph>
+<Paragraph>
+<Paragraph>Web servers that respond to the OPTIONS HTTP method expose what other methods are supported by the web server, allowing attackers to narrow and intensify their efforts.</Paragraph>
+</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Apache HTTPD</Paragraph>
+<Paragraph>
+<Paragraph>Disable the OPTIONS method by including the following in the Apache configuration:</Paragraph>
+<Paragraph preformat="true"> <Limit OPTIONS> Order deny,allow Deny from all </Limit></Paragraph>
+</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Microsoft IIS</Paragraph>
+<Paragraph>
+<Paragraph>Disable the OPTIONS method by doing the following in the IIS manager</Paragraph>
+<OrderedList>
+<ListItem>Select relevent site</ListItem>
+<ListItem>Select Request filtering and change to HTTP verb tab</ListItem>
+<ListItem>Select Deny Verb from the actions pane</ListItem>
+<ListItem>Type OPTIONS into the provided text box and press OK</ListItem>
+</OrderedList>
+</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>nginx nginx</Paragraph>
+<Paragraph>
+<Paragraph>Disable the OPTIONS method by adding the following line to your server block, you can add other HTTP methods to be allowed to run after POST</Paragraph>
+<Paragraph preformat="true">limit_except GET POST { deny all; }</Paragraph>
+</Paragraph>
+</ListItem>
+</UnorderedList>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="netbios-nbstat-amplification" title="NetBIOS NBSTAT Traffic Amplification" severity="1" pciSeverity="1" cvssScore="0.0" cvssVector="(AV:N/AC:L/Au:N/C:N/I:N/A:N)" published="20140209T000000000" added="20141210T000000000" modified="20141210T000000000" riskScore="0.0">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph> A NetBIOS NBSTAT query will obtain the status from a NetBIOS-speaking endpoint, which will include any names that the endpoint is known to respond to as well as the device's MAC address for that endpoint. A NBSTAT response is roughly 3x the size of the request, and because NetBIOS utilizes UDP, this can be used to conduct traffic amplification attacks against other assets, typically in the form of distributed reflected denial of service (DRDoS) attacks. </Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CERT">TA14-017A</reference>
+</references>
+<tags>
+<tag>CIFS</tag>
+<tag>Denial of Service</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph> NetBIOS can be important to the proper functioning of a Windows network depending on the design. Restrict access to the NetBIOS service to only trusted assets. </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="ssh-weak-message-authentication-code-algorithms" title="SSH Weak Message Authentication Code Algorithms" severity="4" pciSeverity="3" cvssScore="4.0" cvssVector="(AV:N/AC:H/Au:N/C:P/I:P/A:N)" published="20140106T000000000" added="20200331T000000000" modified="20220107T000000000" riskScore="583.2353">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph>The SSH server supports cryptographically weak Hash-based message authentication codes (HMACs) including MD5 or 96-bit Hash-based algorithms.</Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="URL">https://tools.cisco.com/security/center/resources/next_generation_cryptography</reference>
+</references>
+<tags>
+<tag>Network</tag>
+<tag>SSH</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph>Consult the product documentation for instructions to disable any insecure MD5 or 96-bit HMAC algorithms within the SSH configuration.</Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+<vulnerability id="upnp-ssdp-amplification" title="UPnP SSDP Traffic Amplification" severity="1" pciSeverity="1" cvssScore="0.0" cvssVector="(AV:N/AC:L/Au:N/C:N/I:N/A:N)" published="20140209T000000000" added="20141210T000000000" modified="20141210T000000000" riskScore="0.0">
+<malware/>
+<exploits/>
+<description>
+<ContainerBlockElement>
+<Paragraph> A UPnP SSDP M-SEARCH request can be used to search a network for UPNP devices. An M-SEARCH response is roughly 30x the size of the request and can be distributed across multiple responses from multiple hosts, and because it utilizes UDP, this can be used to conduct traffic amplification attacks against other assets, typically in the form of distributed reflected denial of service (DRDoS) attacks. </Paragraph>
+</ContainerBlockElement>
+</description>
+<references>
+<reference source="CERT">TA14-017A</reference>
+</references>
+<tags>
+<tag>Denial of Service</tag>
+<tag>UPnP</tag>
+</tags>
+<solution>
+<ContainerBlockElement>
+<Paragraph> Restrict access to the UPnP service to only trusted assets. </Paragraph>
+</ContainerBlockElement>
+</solution>
+</vulnerability>
+</VulnerabilityDefinitions>
+</NexposeReport>
