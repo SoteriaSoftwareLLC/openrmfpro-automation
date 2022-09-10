@@ -1,0 +1,717 @@
+<TestResult xmlns="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" end-time="2022-07-18T01:28:08" id="xccdf_pa.mcafee.com_testresult_xccdf-1.2" start-time="2022-07-18T01:27:50" test-system="PAAuditEngine:6.5.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 xccdf_1.2.xsd">
+  <benchmark href="xccdf_mil.disa.stig_benchmark_Windows_Server_2016_STIG" />
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">Organization</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">Server Policies By Function</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">SharePoint and SCCM Servers</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">W2K16SERVER301</xccdf:organization>
+  <xccdf:identity xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" authenticated="1" privileged="1" />
+  <identity authenticated="1" privileged="1">pa_user</identity>
+  <profile idref="xccdf_mil.disa.stig_profile_MAC-2_Sensitive" />
+  <target>W2K16SERVER301.domain1.local</target>
+  <target-address>192.168.25.32</target-address>
+  <target-facts>
+    <fact name="bvtId" type="string">371</fact>
+    <fact name="PAAuditEngineVersion" type="string">6.5.3</fact>
+    <fact name="system_info" type="string">&lt;?xml version="1.0" encoding="UTF-16" standalone="no" ?&gt;&lt;system_info xmlns="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5"&gt;&lt;os_name&gt;Windows Server 2016 Standard&lt;/os_name&gt;&lt;os_version&gt;10.0 build 14393&lt;/os_version&gt;&lt;architecture&gt;AMD64&lt;/architecture&gt;&lt;primary_host_name&gt;W2K16SERVER301.domain1.local&lt;/primary_host_name&gt;&lt;interfaces&gt;&lt;interface&gt;&lt;interface_name&gt;HP FlexFabric 20Gb 2-port 650FLB Adapter&lt;/interface_name&gt;&lt;ip_address&gt;192.168.25.32&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-34-56-78&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;HP FlexFabric 20Gb 2-port 650FLB Adapter #2&lt;/interface_name&gt;&lt;ip_address&gt;169.254.224.168&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-34-56-79&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;HP FlexFabric 20Gb 2-port 650FLB Adapter #2&lt;/interface_name&gt;&lt;ip_address&gt;fe80::abcd:1234:5678:ef01/64&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-34-56-7a&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;Software Loopback Interface 1&lt;/interface_name&gt;&lt;ip_address&gt;::1/128&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-00-00-00&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;Microsoft ISATAP Adapter&lt;/interface_name&gt;&lt;ip_address&gt;fe80::abcd:192.168.25.32/128&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-00-00-00&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;Microsoft ISATAP Adapter #2&lt;/interface_name&gt;&lt;ip_address&gt;fe80::5efe:169.254.224.168/128&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-00-00-00&lt;/mac_address&gt;&lt;/interface&gt;&lt;/interfaces&gt;&lt;/system_info&gt;</fact>
+    <fact name="hasPriorRun" type="boolean">false</fact>
+    <fact name="hasChanges" type="boolean">false</fact>
+  </target-facts>
+  <target-id-ref href="" name="asset_1" system="http://scap.nist.gov/schema/asset-identification/1.1" />
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224828r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224831r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224850r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224851r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224852r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224853r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224854r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224855r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224856r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224857r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224858r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224859r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224866r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47152-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224867r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46497-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224868r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47272-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224869r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44479-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224870r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44704-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224871r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45608-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224872r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46914-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224873r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47309-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224874r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45002-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224877r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224878r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224879r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224880r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224881r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44732-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224882r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44732-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224883r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45973-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224884r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46702-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224885r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46552-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224886r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46552-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224888r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46177-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224889r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224890r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224892r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46491-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224893r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45977-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224894r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45977-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224895r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46703-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224896r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45980-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224897r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45980-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224900r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45966-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224901r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45966-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224902r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46496-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224903r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46306-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224904r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45981-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224905r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45981-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224906r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46482-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224907r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46482-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224908r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224909r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46518-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224910r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45968-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224911r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47111-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224912r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46023-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224913r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46023-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224914r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224915r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224916r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45275-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224917r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45276-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224918r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45279-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224919r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45283-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224920r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224921r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224922r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45411-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224924r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44468-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224925r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46343-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224926r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47107-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224927r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47297-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224928r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224929r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47317-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224930r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46919-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224931r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45945-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224932r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46805-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224933r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46760-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224934r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46970-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224935r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46465-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224936r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224937r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44494-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224938r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44526-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224939r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46651-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224940r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44884-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224941r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45876-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224942r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47028-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224943r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47043-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224944r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44880-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224945r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46771-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224946r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45743-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224947r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44496-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224948r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47193-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224949r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45063-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224951r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46302-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224952r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224953r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46993-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224954r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47225-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224955r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46100-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224956r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224957r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224958r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46295-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224959r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46378-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224960r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46014-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224961r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45061-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224962r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45060-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-224963r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46708-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225008r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-50915-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225009r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46382-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225010r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46880-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225011r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46705-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225013r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45487-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225014r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45486-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225015r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44499-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225016r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47287-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225017r819695_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47121-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225018r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46108-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225019r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-47279-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225020r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47308-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225021r819698_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225022r819701_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225023r569271_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225024r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46960-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225025r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46005-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225026r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46321-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225027r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46218-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225028r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46406-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225029r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46754-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225030r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46546-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225031r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46440-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225032r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46018-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225033r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46616-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225034r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-45958-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225035r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46768-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225038r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46148-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225039r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46135-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225040r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46334-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225041r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-46136-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225042r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47038-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225043r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46230-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225045r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46305-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225046r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46305-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225047r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46412-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225048r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44911-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225049r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46338-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225050r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47296-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225051r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46030-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225052r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44602-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225053r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46031-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225054r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46565-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225055r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47129-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225056r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44861-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225057r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46160-8</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225058r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46878-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225059r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44610-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225060r569186_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44597-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225061r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47000-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225062r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46911-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225063r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47284-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225064r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47214-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225065r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46912-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225066r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46913-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225067r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47154-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225068r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47157-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225070r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47182-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225071r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46917-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225072r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-45723-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225073r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44987-6</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225074r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44695-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225076r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44705-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225077r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46835-5</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225078r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44828-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225079r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44927-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225080r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-44650-0</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225081r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45689-7</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225082r569186_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+    <ident system="http://cce.mitre.org">CCE-44804-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225083r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47022-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225084r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-45960-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225085r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47319-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225086r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46078-2</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225087r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46761-3</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225088r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46126-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225089r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46517-9</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225091r569186_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-47295-1</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225092r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46176-4</ident>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-225093r569186_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+    <ident system="http://cce.mitre.org">CCE-46216-8</ident>
+  </rule-result>
+  <score system="urn:xccdf:scoring:default">99.4475174</score>
+  <score maximum="1810" system="urn:xccdf:scoring:flat">1800</score>
+  <score maximum="181" system="urn:xccdf:scoring:flat-unweighted">180</score>
+  <score maximum="1" system="urn:xccdf:scoring:absolute">0</score>
+</TestResult>
