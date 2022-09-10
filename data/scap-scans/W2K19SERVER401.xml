@@ -1,0 +1,573 @@
+<TestResult xmlns="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" end-time="2022-07-18T03:05:15" id="xccdf_pa.mcafee.com_testresult_xccdf-1.2" start-time="2022-07-18T03:05:00" test-system="PAAuditEngine:6.5.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 xccdf_1.2.xsd">
+  <benchmark href="xccdf_mil.disa.stig_benchmark_Windows_Server_2019_STIG" />
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">Organization</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">Server Policies By Function</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">Exclude drives other than C</xccdf:organization>
+  <xccdf:organization xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2">W2K19SERVER401</xccdf:organization>
+  <xccdf:identity xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" authenticated="1" privileged="1" />
+  <identity authenticated="1" privileged="1">pa_user</identity>
+  <profile idref="xccdf_mil.disa.stig_profile_MAC-2_Sensitive" />
+  <target>W2K19SERVER401.domain1.local</target>
+  <target-address>192.168.26.81</target-address>
+  <target-facts>
+    <fact name="bvtId" type="string">367</fact>
+    <fact name="PAAuditEngineVersion" type="string">6.5.3</fact>
+    <fact name="system_info" type="string">&lt;?xml version="1.0" encoding="UTF-16" standalone="no" ?&gt;&lt;system_info xmlns="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5"&gt;&lt;os_name&gt;Windows Server 2019 Standard&lt;/os_name&gt;&lt;os_version&gt;10.0 build 17763&lt;/os_version&gt;&lt;architecture&gt;AMD64&lt;/architecture&gt;&lt;primary_host_name&gt;W2K19SERVER401.domain1.local&lt;/primary_host_name&gt;&lt;interfaces&gt;&lt;interface&gt;&lt;interface_name&gt;vmxnet3 Ethernet Adapter&lt;/interface_name&gt;&lt;ip_address&gt;192.168.26.81&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-45-67-89&lt;/mac_address&gt;&lt;/interface&gt;&lt;interface&gt;&lt;interface_name&gt;Software Loopback Interface 1&lt;/interface_name&gt;&lt;ip_address&gt;::1/128&lt;/ip_address&gt;&lt;mac_address&gt;00-00-00-00-00-00&lt;/mac_address&gt;&lt;/interface&gt;&lt;/interfaces&gt;&lt;/system_info&gt;</fact>
+    <fact name="hasPriorRun" type="boolean">false</fact>
+    <fact name="hasChanges" type="boolean">false</fact>
+  </target-facts>
+  <target-id-ref href="" name="asset_1" system="http://scap.nist.gov/schema/asset-identification/1.1" />
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205625r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205626r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205627r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205629r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205630r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205633r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205634r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205635r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205636r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205637r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205638r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205639r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205640r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205641r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205642r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205643r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205644r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205648r819704_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205649r819707_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205650r573797_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205651r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205652r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205653r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205654r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205655r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205656r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205659r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205660r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205662r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205663r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205671r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205672r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205673r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205674r819709_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205675r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205676r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205678r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205679r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205680r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205681r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205682r819711_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205683r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205684r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205685r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205686r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205687r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205688r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205689r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205690r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205691r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205692r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205693r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205694r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205696r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205697r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205698r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205708r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205709r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205711r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205712r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205713r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205714r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205715r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205716r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205717r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205718r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205719r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205720r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205722r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205724r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205725r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205729r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205730r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205731r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205733r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205747r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205748r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205749r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205750r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205751r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205752r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205753r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205754r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205755r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205756r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205757r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205758r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205759r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205760r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205761r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205762r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205763r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205764r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205765r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205766r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205767r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205768r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205769r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205770r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205771r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205772r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205773r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205774r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205775r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205776r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205777r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205778r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205779r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205780r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205781r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205782r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205783r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205784r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205795r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205796r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205797r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205798r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205801r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205802r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205804r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205805r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205806r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205808r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205809r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205810r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205811r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205812r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205813r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205814r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205815r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205816r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205817r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205819r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205821r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205822r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205823r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205824r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205825r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205826r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205827r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205828r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205830r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205832r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205833r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205835r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205836r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205837r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205838r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205842r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205849r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205858r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205859r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205860r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205861r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205862r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205863r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205865r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205866r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205867r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205868r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205869r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205870r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205871r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205872r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205873r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205874r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205906r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205908r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205909r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205910r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205911r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205912r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205914r569188_rule" role="full" severity="high" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205915r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205916r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205917r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205918r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205919r569188_rule" role="full" severity="high" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205920r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205921r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205922r569188_rule" role="full" severity="medium" weight="10">
+    <result>fail</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205923r569188_rule" role="full" severity="low" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <rule-result idref="xccdf_mil.disa.stig_rule_SV-205925r569188_rule" role="full" severity="medium" weight="10">
+    <result>pass</result>
+  </rule-result>
+  <score system="urn:xccdf:scoring:default">99.4535522</score>
+  <score maximum="1830" system="urn:xccdf:scoring:flat">1820</score>
+  <score maximum="183" system="urn:xccdf:scoring:flat-unweighted">182</score>
+  <score maximum="1" system="urn:xccdf:scoring:absolute">0</score>
+</TestResult>
