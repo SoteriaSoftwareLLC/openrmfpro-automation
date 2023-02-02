@@ -9,6 +9,20 @@ The <a href="./scenarios">scenarios</a> folder explains a few scenarios around t
 
 The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples.  There are also example custom checklists created with our Custom Checklist wizard for all the manual policy, process, and procedure requirements in cyber compliance (i.e. NIST Control families like PM, AT, IR, PL, SA, RA).
 
+* Nessus Patch Vulnerability Scans
+* DISA CKLs
+* EvaluateSTIG checklists
+* Tanium CSV SCAP results
+* Nessus SCAP
+* other SCAP results
+* Nessus audit compliance scans for 
+* Software / Container vulnerability data
+* Universal format Patch vulnerability data
+* Lists for hardware, software, ports/protocols/services
+* Lists for mitigation statements
+* Lists for compliance statements
+* Rapid7 Nexpose scan data
+
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data may be different but similar. 
 
 The <a href="./dashboards">dashboards</a> folder show mainly Grafana dashboards pulling data from the OpenRMF<sup>&reg;</sup> Professional API as well using the JSON API datasource for Grafana.
