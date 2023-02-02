@@ -1,0 +1,17 @@
+﻿Family,Number,Enhancement,CCI,Statement,Status
+AC,1,0,CCI-000001,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-000002,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-000003,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-000004,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-000005,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-000006,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-001545,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,1,0,CCI-001546,"The access control policy document addresses all purpose, scope, roles, responsibilities, and includes procedures, processes and update frequency information to validate and keep this up-to-date.",Not a Finding
+AC,2,1,CCI-000015,We use Active Directory as well as CAC to support management of accounts throughout the enterprise.,Not a Finding
+AC,2,2,CCI-001361,We do not use temporary accounts.,Not Applicable
+AC,2,2,CCI-001365,We do not use emergency accounts.,Not Applicable
+AC,2,3,CCI-000017,We disable accounts after 45 days of inactivity.,Not a Finding
+AC,2,3,CCI-000217,We disable accounts after 45 days of inactivity.,Not a Finding
+AU,10,0,CCI-001899,,Not Reviewed
+AU,11,0,CCI-000167,,Not Reviewed
+AU,11,0,CCI-000168,,Open

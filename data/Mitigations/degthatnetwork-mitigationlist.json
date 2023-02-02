@@ -1,0 +1,20 @@
+[
+    {
+        "mitigationCategory": "Infrastructure",
+        "mitigationTitle": "Inherited from Platform",
+        "mitigationStatement": "This is inherited from the platform we are using",
+        "active": true
+    },
+    {
+        "mitigationCategory": "Infrastructure",
+        "mitigationTitle": "Inherited from Infrastructure Package",
+        "mitigationStatement": "This is inherited from the infrastructure we are running on and its separate ATO",
+        "active": true
+    },
+    {
+        "mitigationCategory": "Firewall",
+        "mitigationTitle": "Exception for Open Port",
+        "mitigationStatement": "We have a documented exception for this port being open",
+        "active": true
+    }
+]

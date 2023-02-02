@@ -19,13 +19,9 @@ The <a href="./applications">applications</a> folder has an example NodeJS appli
 * "APIKEY" -- your API Key created for you, that tracks back to a user in OpenRMF with permissions and roles, especially the ExternalAPI role it needs
 *  "APITOKEN" -- the token generated for that API key
 
-## To Do
-- [ ] add more to the demo application for uploading files, CKL, .Nessus, .XML SCAP results
-- [ ] show how to select templates and do the "bulk add checklists" injecting hostname to a system package
-- [X] dotnet core 6.x examples calling APIs
-- [X] golang examples calling APIs
-- [X] more scenarios to list
-- [X] more types of data to upload and show
+## Swagger.json
+
+The swagger.json file in the root of this repo shows calls as of OpenRMF<sup>&reg;</sup> Professional v2.8.6 API. There are additions for POAM creation, uploading general patch data, uploading lists for bulk add/edit, as well as adding Templates as a Template Administrator.
 
 # Note to Developers
 Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. 

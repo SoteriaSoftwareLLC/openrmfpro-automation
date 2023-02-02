@@ -1,0 +1,4 @@
+﻿Category,Title,Statement,Active
+Infrastructure,Inherited from Platform,This is inherited from the platform we are using,true
+Infrastructure,Inherited from Infrastructure Package,This is inherited from the infrastructure we are running on and its separate ATO,true
+Firewall,Exception for Open Port,We have a documented exception for this port being open,true

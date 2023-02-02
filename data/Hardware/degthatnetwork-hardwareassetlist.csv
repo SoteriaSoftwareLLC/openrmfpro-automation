@@ -1,0 +1,2 @@
+﻿Device,OperatingSystem,VirtualServer,Firmware,Manufacturer,ModelNumber,SerialNumber,AssetName,Purpose,Description
+WINSVR12MS003.SOTERIA,Microsoft Windows 2012 Server,X,3.23.32343,DELL,350PX,8756756475657,WINSVR12MS003,Windows Exchange Server,Our email Exchange Server
