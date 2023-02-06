@@ -1,0 +1,36 @@
+[
+    {
+        "device": "DEGTHAT2",
+        "operatingSystem": "Windows 10",
+        "virtualServer": false,
+        "firmware": "",
+        "manufacturer": "Lenovo",
+        "modelNumber": "WKS22234",
+        "serialNumber": "2342343-PV1",
+        "assetName": "",
+        "purpose": "",
+        "description": ""
+    },{
+        "device": "DEGTHAT3",
+        "operatingSystem": "Windows 10",
+        "virtualServer": false,
+        "firmware": "",
+        "manufacturer": "Lenovo",
+        "modelNumber": "WKS22234",
+        "serialNumber": "2342343-PR2",
+        "assetName": "",
+        "purpose": "",
+        "description": ""
+    },{
+        "device": "DEGTHATWIN2K16SVR01",
+        "operatingSystem": "Microsoft Windows 2016 Server",
+        "virtualServer": true,
+        "firmware": "",
+        "manufacturer": "DELL",
+        "modelNumber": "LKUH65GD",
+        "serialNumber": "2342343-PV3",
+        "assetName": "",
+        "purpose": "Web Server",
+        "description": "This is the main IIS web server for application hosting internally."
+    }
+]

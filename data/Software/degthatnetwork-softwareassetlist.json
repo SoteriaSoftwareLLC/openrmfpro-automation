@@ -1,0 +1,34 @@
+[
+    {
+        "device": "DEGTHAT2",
+        "software": "Windows",
+        "version": "10",
+        "softwareType": "OS",
+        "approval": "#11002",
+        "installedOn": "10/01/2021"
+    },
+    {
+        "device": "DEGTHAT2",
+        "software": "Microsoft Office",
+        "version": "365",
+        "softwareType": "Application",
+        "approval": "#98765",
+        "installedOn": "10/01/2021"
+    },
+    {
+        "device": "DEGTHAT3",
+        "software": "Windows",
+        "version": "10",
+        "softwareType": "OS",
+        "approval": "#11002",
+        "installedOn": "10/01/2021"
+    },
+    {
+        "device": "DEGTHAT3",
+        "software": "Microsoft Office",
+        "version": "365",
+        "softwareType": "Application",
+        "approval": "#98765",
+        "installedOn": "10/01/2021"
+    }
+]

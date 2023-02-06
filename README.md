@@ -9,6 +9,20 @@ The <a href="./scenarios">scenarios</a> folder explains a few scenarios around t
 
 The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples.  There are also example custom checklists created with our Custom Checklist wizard for all the manual policy, process, and procedure requirements in cyber compliance (i.e. NIST Control families like PM, AT, IR, PL, SA, RA).
 
+* Nessus Patch Vulnerability Scans
+* DISA CKLs
+* EvaluateSTIG checklists
+* Tanium CSV SCAP results
+* Nessus SCAP
+* other SCAP results
+* Nessus audit compliance scans for 
+* Software / Container vulnerability data
+* Universal format Patch vulnerability data
+* Lists for hardware, software, ports/protocols/services
+* Lists for mitigation statements
+* Lists for compliance statements
+* Rapid7 Nexpose scan data
+
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data may be different but similar. 
 
 The <a href="./dashboards">dashboards</a> folder show mainly Grafana dashboards pulling data from the OpenRMF<sup>&reg;</sup> Professional API as well using the JSON API datasource for Grafana.
@@ -19,13 +33,9 @@ The <a href="./applications">applications</a> folder has an example NodeJS appli
 * "APIKEY" -- your API Key created for you, that tracks back to a user in OpenRMF with permissions and roles, especially the ExternalAPI role it needs
 *  "APITOKEN" -- the token generated for that API key
 
-## To Do
-- [ ] add more to the demo application for uploading files, CKL, .Nessus, .XML SCAP results
-- [ ] show how to select templates and do the "bulk add checklists" injecting hostname to a system package
-- [X] dotnet core 6.x examples calling APIs
-- [X] golang examples calling APIs
-- [X] more scenarios to list
-- [X] more types of data to upload and show
+## Swagger.json
+
+The swagger.json file in the root of this repo shows calls as of OpenRMF<sup>&reg;</sup> Professional v2.8.6 API. There are additions for POAM creation, uploading general patch data, uploading lists for bulk add/edit, as well as adding Templates as a Template Administrator.
 
 # Note to Developers
 Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. 
