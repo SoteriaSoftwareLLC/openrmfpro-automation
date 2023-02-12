@@ -1,0 +1,24 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: openrmfpro-demo
+  region: us-east-2
+
+nodeGroups:
+  - name: openrmfpro-demo-ng1-public
+    instanceType: m6a.4xlarge
+    minSize: 6
+    desiredCapacity: 6
+    volumeSize: 100
+    amiFamily: Bottlerocket
+    maxSize: 8
+    labels:
+      "role": "worker"
+    iam:
+      withAddonPolicies:
+        ebs: true
+        fsx: true
+        efs: true
+        albIngress: true
