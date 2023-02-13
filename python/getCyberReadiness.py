@@ -1,12 +1,12 @@
-# get the POAM risk cube numbers for a system package on impact and likelihood
-# ex: python3 getPOAMCube.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxx
+# get the Cyber Readiness Scores for a system package
+# ex: python3 getCyberReadiness.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxx
 
 import sys
 import json
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/poamcube/?applicationKey=" + sys.argv[3]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/readinessscore/?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"

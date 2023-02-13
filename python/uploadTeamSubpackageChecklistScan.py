@@ -11,7 +11,7 @@ headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[5]
 
-# file name of checklist file to be uploaded hosted locally in the same directory as the python code
+# file name of file to be uploaded hosted locally in the same directory as the python code
 with open(sys.argv[6] + sys.argv[7], "rb") as a_file:
     checklistFile = {sys.argv[7] : a_file}
     resp = requests.post(url, headers=headers, files=checklistFile)
