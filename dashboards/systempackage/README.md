@@ -9,10 +9,10 @@ You have to make the JSON API data source, point it to and then set up like the 
 The JSON included here has a named data source. You will have to install the JSON API data source, make one and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
 
 ## Grafana Dashboard
-![Grafana Dashboard](./img/systempackage-dashboard.jpg?raw=true)
+![Grafana Dashboard](./img/systempackage-dashboard.png?raw=true)
 
 ## OpenRMF<sup>&reg;</sup> Professional Dashboard
-![Application Dashboard](./img/systempackage-listing.jpg?raw=true)
+![Application Dashboard](./img/systempackage-listing.png?raw=true)
 
 ## JSON API Settings
 For the Custom HTTP Headers, use the `Authorization` and the value is `Bearer ` + your generated token. 
