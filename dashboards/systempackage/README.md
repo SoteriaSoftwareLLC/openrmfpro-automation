@@ -6,6 +6,8 @@ This is a system package dashboard, refreshing every 1 minute to load the change
 
 You have to make the JSON API data source, point it to and then set up like the below screenshots.
 
+The JSON included here has a named data source. You will have to install the JSON API data source, make one and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
+
 ## Grafana Dashboard
 ![Grafana Dashboard](./img/systempackage-dashboard.jpg?raw=true)
 
@@ -13,6 +15,10 @@ You have to make the JSON API data source, point it to and then set up like the 
 ![Application Dashboard](./img/systempackage-listing.jpg?raw=true)
 
 ## JSON API Settings
-use the `Authorization` and the value is `Bearer ` + your generated token
+For the Custom HTTP Headers, use the `Authorization` and the value is `Bearer ` + your generated token. 
+
+Note the Query string is your applicationKey=xxxxxxxxx without the `?` as it assumes that. 
+
+Click Save and Test and make sure it is successful!
 
 ![Datasource Setting](./img/jsonapi-settings.png?raw=true)
