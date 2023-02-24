@@ -1,5 +1,5 @@
 # OpenRMF<sup>&reg;</sup> Professional API Automation
-This repo contains OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via our open API. The API was introduced as a main feature in v2.6 late summer 2021 and vastly improved in v2.7 released in January 2022 and again in v2.8 released May 10, 2022 and v2.8.4 September 9, 2022. Later versions will expand on this as well, as will the examples in this repo. Subscribe to the repo to get notifications on updates.
+This repo contains OpenRMF<sup>&reg;</sup> Professional API automation scripts and code to POST, PUT, and GET information via our open API. The API was introduced as a main feature in v2.6 late summer 2021 and vastly improved in v2.7 released in January 2022 and again in v2.8. Later versions will expand on this as well, as will the examples in this repo. Subscribe to the repo to get notifications on updates.
 
 This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
 
@@ -11,7 +11,7 @@ The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, 
 
 * Nessus Patch Vulnerability Scans
 * DISA CKLs
-* EvaluateSTIG checklists
+* Evaluate-STIG checklists
 * Tanium CSV SCAP results
 * Nessus SCAP
 * other SCAP results
@@ -22,6 +22,7 @@ The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, 
 * Lists for mitigation statements
 * Lists for compliance statements
 * Rapid7 Nexpose scan data
+* Reading data from dashboards, scores, and compliance
 
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data may be different but similar. 
 

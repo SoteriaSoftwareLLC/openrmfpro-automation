@@ -4,7 +4,7 @@ This is a system package dashboard, refreshing every 1 minute to load the change
 * score for STIG checklists
 * score for patch vulnerabilities
 
-You have to make the JSON API data source, point it to 
+You have to make the JSON API data source, point it to and then set up like the below screenshots.
 
 ## Grafana Dashboard
 ![Grafana Dashboard](./systempackage-dashboard.jpg?raw=true)
@@ -13,4 +13,6 @@ You have to make the JSON API data source, point it to
 ![Application Dashboard](./systempackage-listing.jpg?raw=true)
 
 ## JSON API Settings
+use the `Authorization` and the value is `Bearer ` + your generated token
+
 ![Datasource Setting](./jsonapi-settings.png?raw=true)
