@@ -27,4 +27,4 @@ Note the Query string is your applicationKey=xxxxxxxxx without the `?` as it ass
 
 Click Save and Test and make sure it is successful!
 
-![Datasource Setting](./img/jsonapi-settings.png?raw=true)
+![Datasource Setting](./dashboard-ato-systempackagenumbers/img/jsonapi-settings.png?raw=true)
