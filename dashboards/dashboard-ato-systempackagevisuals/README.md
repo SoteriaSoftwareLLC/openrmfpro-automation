@@ -10,8 +10,7 @@ You have to make the JSON API data sources, point it to and then set up like the
 > You can have a single data source that multiple dashboards use. Do not think it is a one-to-one dashboard to data source relationship
 
 The JSON included here has named data sources.
-* system package record
-* notifications, filtered by the systemKey
+* system package record vulnerabilities by categories
 * cyber readiness numbers
 
 You will have to install the JSON API data source, make them and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
