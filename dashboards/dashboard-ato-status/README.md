@@ -7,8 +7,12 @@ This is a dashboard showing all your ATO / system packages (the API user has acc
 You have to make the JSON API data source to point to the /systempackages/ endpoint, point it to and then set up like the below screenshots. There is a second one to point to the /notifications/ endpoint as well to show notifications. 
 
 The JSON included here has 2 named data source, the notifications one is for the Notifications table. 
+* system package listing
+* notifications
 
-You will have to install the JSON API data source, make one and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
+> You can have a single data source that multiple dashboards use. Do not think it is a one-to-one dashboard to data source relationship
+
+You will have to install the JSON API data source, make them and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
 
 ## Grafana Dashboard
 ![Grafana Dashboard](./img/vuln-status-listing-with-notifications.png?raw=true)
