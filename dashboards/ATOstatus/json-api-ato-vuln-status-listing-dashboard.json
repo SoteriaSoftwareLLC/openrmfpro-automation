@@ -1,0 +1,326 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "description": "Status dashboard to show OpenRMF Professional accreditation packages and their open vulnerability numbers",
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 7,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": {
+          "type": "marcusolsson-json-datasource",
+          "uid": "cIxW8Mb4k"
+        },
+        "description": "Current listing of ATO accreditation packages and main data points",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "fixed"
+            },
+            "custom": {
+              "align": "auto",
+              "displayMode": "auto",
+              "filterable": false,
+              "inspect": false,
+              "minWidth": 52
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Title"
+              },
+              "properties": [
+                {
+                  "id": "custom.width",
+                  "value": 825
+                },
+                {
+                  "id": "custom.displayMode",
+                  "value": "auto"
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 23,
+          "x": 0,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "footer": {
+            "enablePagination": true,
+            "fields": "",
+            "reducer": [
+              "sum"
+            ],
+            "show": true
+          },
+          "showHeader": true,
+          "sortBy": []
+        },
+        "pluginVersion": "8.5.11",
+        "targets": [
+          {
+            "cacheDurationSeconds": 300,
+            "datasource": {
+              "type": "marcusolsson-json-datasource",
+              "uid": "cIxW8Mb4k"
+            },
+            "fields": [
+              {
+                "jsonPath": "$...title",
+                "name": "Title"
+              },
+              {
+                "jsonPath": "$...score.totalCat1Open",
+                "language": "jsonpath",
+                "name": "CAT 1"
+              },
+              {
+                "jsonPath": "$...score.totalCat2Open",
+                "language": "jsonpath",
+                "name": "CAT 2"
+              },
+              {
+                "jsonPath": "$...score.totalCat3Open",
+                "language": "jsonpath",
+                "name": "CAT 3"
+              },
+              {
+                "jsonPath": "$...patchScore.totalCriticalOpen",
+                "language": "jsonpath",
+                "name": "Critical"
+              },
+              {
+                "jsonPath": "$...patchScore.totalHighOpen",
+                "language": "jsonpath",
+                "name": "High"
+              },
+              {
+                "jsonPath": "$...patchScore.totalMediumOpen",
+                "language": "jsonpath",
+                "name": "Medium"
+              },
+              {
+                "jsonPath": "$...patchScore.totalLowOpen",
+                "language": "jsonpath",
+                "name": "Low"
+              }
+            ],
+            "method": "GET",
+            "queryParams": "",
+            "refId": "Title",
+            "urlPath": ""
+          }
+        ],
+        "title": "Current Accreditation Packages / ATOs",
+        "type": "table"
+      },
+      {
+        "datasource": {
+          "type": "marcusolsson-json-datasource",
+          "uid": "uEw3gSx4z"
+        },
+        "description": "Latest notifications for OpenRMF Professional",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "align": "auto",
+              "displayMode": "auto",
+              "filterable": true,
+              "inspect": true
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Type"
+              },
+              "properties": [
+                {
+                  "id": "custom.width",
+                  "value": 146
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "System Package"
+              },
+              "properties": [
+                {
+                  "id": "custom.width",
+                  "value": 353
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Date"
+              },
+              "properties": [
+                {
+                  "id": "custom.width",
+                  "value": 199
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Title"
+              },
+              "properties": [
+                {
+                  "id": "custom.width",
+                  "value": 668
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 16,
+          "w": 23,
+          "x": 0,
+          "y": 10
+        },
+        "id": 4,
+        "options": {
+          "footer": {
+            "enablePagination": true,
+            "fields": [
+              "A-series"
+            ],
+            "reducer": [
+              "distinctCount"
+            ],
+            "show": false
+          },
+          "showHeader": true,
+          "sortBy": []
+        },
+        "pluginVersion": "8.5.11",
+        "targets": [
+          {
+            "cacheDurationSeconds": 300,
+            "datasource": {
+              "type": "marcusolsson-json-datasource",
+              "uid": "uEw3gSx4z"
+            },
+            "fields": [
+              {
+                "jsonPath": "$..systemTitle",
+                "name": "System Package"
+              },
+              {
+                "jsonPath": "$..notificationType",
+                "language": "jsonpath",
+                "name": "Type"
+              },
+              {
+                "jsonPath": "$..createdDateString",
+                "language": "jsonpath",
+                "name": "Date"
+              },
+              {
+                "jsonPath": "$..title",
+                "language": "jsonpath",
+                "name": "Title"
+              },
+              {
+                "jsonPath": "$..message",
+                "language": "jsonpath",
+                "name": "Message"
+              }
+            ],
+            "method": "GET",
+            "queryParams": "",
+            "refId": "All Notifications",
+            "urlPath": ""
+          }
+        ],
+        "title": "Notifications",
+        "type": "table"
+      }
+    ],
+    "refresh": "1m",
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [
+      "ATO",
+      "OpenRMF Professional",
+      "Status",
+      "Vulnerability"
+    ],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-30m",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "ATO Status Dashboard",
+    "version": 9,
+    "weekStart": ""
+  }
