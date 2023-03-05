@@ -1,9 +1,10 @@
 # System Package Dashboard
-This is a system package dashboard with more visuals for the open vulnerabilities, Cyber Readins numbers, and other data as well, refreshing every 1 minute to load the changes on:
+This is a system package dashboard with more visuals for the open vulnerabilities, Cyber Readiness numbers, and other data as well, refreshing every 1 minute to load the changes on:
 * number of checklists
 * score for checklists
 * score for patch vulnerabilities
 * score for other technology vulnerabilities
+* 3 cyber readiness CCRI scores
 
 You have to make the JSON API data sources, point it to and then set up like the below screenshots.
 
