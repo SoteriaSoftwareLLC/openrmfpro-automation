@@ -9,9 +9,10 @@ You have to make the JSON API data sources, point it to and then set up like the
 
 > You can have a single data source that multiple dashboards use. Do not think it is a one-to-one dashboard to data source relationship
 
-The JSON included here has named data sources.
-* system package record vulnerabilities by categories
-* cyber readiness numbers
+## Data Sources
+The JSON included here has 2 named data sources:
+* system package record, showing vulnerabilities by categories `/systempackage/SYSTEM-KEY/`
+* cyber readiness numbers `systempackage/SYSTEM-KEY/readinessscore`
 
 You will have to install the JSON API data source, make them and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
 
@@ -19,7 +20,7 @@ You will have to install the JSON API data source, make them and point it to you
 ![Grafana Dashboard](./img/dashboard-visuals.png?raw=true)
 
 ## OpenRMF<sup>&reg;</sup> Professional Dashboard
-![Application Dashboard](./dashboard-ato-systempackagenumbers/systempackage-listing.png?raw=true)
+![Application Dashboard](../dashboard-ato-systempackagenumbers/systempackage-listing.png?raw=true)
 
 ## JSON API Settings
 For the Custom HTTP Headers, use the `Authorization` and the value is `Bearer ` + your generated token. 

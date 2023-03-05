@@ -9,6 +9,10 @@ You have to make the JSON API data source, point it to and then set up like the 
 
 > You can have a single data source that multiple dashboards use. Do not think it is a one-to-one dashboard to data source relationship
 
+## Data Sources
+The JSON included here has 1 named data source, the notifications one is for the Notifications table. 
+* system package listing `/systempackage/SYSTEM-KEY/`
+
 The JSON included here has a named data source. You will have to install the JSON API data source, make one and point it to your system package, and then the rest of this works by copying/pasting the JSON into a new dashboard with the "Import" area under the Create "+" menu on the left of Grafana.
 
 ## Grafana Dashboard
