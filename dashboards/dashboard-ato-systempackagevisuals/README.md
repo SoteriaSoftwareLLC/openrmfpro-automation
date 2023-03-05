@@ -20,7 +20,7 @@ You will have to install the JSON API data source, make them and point it to you
 ![Grafana Dashboard](./img/dashboard-visuals.png?raw=true)
 
 ## OpenRMF<sup>&reg;</sup> Professional Dashboard
-![Application Dashboard](../dashboard-ato-systempackagenumbers/systempackage-listing.png?raw=true)
+![Application Dashboard](../dashboard-ato-systempackagenumbers/img/systempackage-listing.png?raw=true)
 
 ## JSON API Settings
 For the Custom HTTP Headers, use the `Authorization` and the value is `Bearer ` + your generated token. 
