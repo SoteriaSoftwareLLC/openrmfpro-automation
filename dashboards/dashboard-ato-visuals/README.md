@@ -8,9 +8,9 @@ This is a dashboard showing all your ATO / system packages (the API user has acc
 
 You have to make the JSON API data source to point to the /systempackages/ endpoint, point it to and then set up like the below screenshots. There is a second one to point to the /notifications/ endpoint as well to show notifications. 
 
-The JSON included here has 2 named data source, the notifications one is for the Notifications table. 
-* system package listing
-* notifications
+The JSON included here has 2 named data sources, the notifications one is for the Notifications table. 
+* system package listing `/systempackages/`
+* notifications `/notifications/`
 
 > You can have a single data source that multiple dashboards use. Do not think it is a one-to-one dashboard to data source relationship
 
