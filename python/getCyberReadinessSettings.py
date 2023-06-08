@@ -14,6 +14,7 @@ headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
 
-print(resp.status_code)
+# print(resp.status_code)
+
 json_object = json.loads(resp.text)
 print(json.dumps(json_object, indent=1))
