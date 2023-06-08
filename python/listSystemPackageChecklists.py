@@ -1,5 +1,5 @@
 # list all the checklists in a system package
-# ex: python3 listSystemPackageChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
+# ex: python3 listSystemPackageChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx 0 50
 
 import sys
 import json
@@ -13,6 +13,8 @@ headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
-print(resp.status_code)
+
+# print(resp.status_code)
+
 json_object = json.loads(resp.text)
 print(json.dumps(json_object, indent=1))
