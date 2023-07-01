@@ -7,7 +7,6 @@ import requests
 from requests.structures import CaseInsensitiveDict
 
 url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/compliance/?applicationKey=" + sys.argv[3]
-
 data = "title=" + sys.argv[5].replace(" ", "+") + "&description=" + sys.argv[6].replace(" ", "+")
 
 # Assign the request headers for this particular API

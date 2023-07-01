@@ -1,6 +1,6 @@
-# Check if a system package key is available for adding a new system package
-# Make sure you have SystemPackageAdministrator Role
-# ex: python3 windowsdesktopstackbulk.py http://192.168.13.111:8080 infradesktop openrmfprosvc hvs.xxxxxxxxx "6332e5b90e0b5d50d941738c,6332e5f60e0b5d50d941738f,6332e5a40e0b5d50d941738b,6332e5c90e0b5d50d941738d,6332e5db0e0b5d50d941738e" SOTWKS00  1  200
+# create a bunch of checklists based on templates for a particular hostname, also generated
+# used for performance testing or loading a BUNCH of checklists for a templated deployment of workstations, servers, etc.
+# ex: python3 windowsdesktopstackbulk.py http://192.168.13.111:8080 infradesktop openrmfprosvc hvs.xxxxxxxxx "6332e5b90e0b5d50d941738c,6332e5f60e0b5d50d941738f,6332e5a40e0b5d50d941738b,6332e5c90e0b5d50d941738d,6332e5db0e0b5d50d941738e" SOTWKS00  1 200
 
 import sys
 import requests

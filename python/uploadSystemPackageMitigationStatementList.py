@@ -1,5 +1,5 @@
 # Upload a Mitigation Statement List file
-# ex: python3 uploadSystemPackageHardwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/Mitigations/  degthatnetwork-mitigationlist.xlsx
+# ex: python3 uploadSystemPackageMitigationStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/Mitigations/  degthatnetwork-mitigationlist.xlsx
 
 import sys
 import requests
@@ -11,10 +11,10 @@ headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[4]
 
-# file name of file to be uploaded hosted locally in the same directory as the python code
+# file name of file to be uploaded hosted locally
 with open(sys.argv[5] + sys.argv[6], "rb") as a_file:
-    hardwareFile = {sys.argv[6] : a_file}
-    resp = requests.post(url, headers=headers, files=hardwareFile)
+    mitigationFile = {sys.argv[6] : a_file}
+    resp = requests.post(url, headers=headers, files=mitigationFile)
 
 print(resp.status_code)
 print(resp.text)

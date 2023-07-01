@@ -1,4 +1,4 @@
-# list the hardware devices in a system package
+# list the hardware devices in a system package needing a patch scan
 # ex: python3 needsSystemPackagePatchScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys
