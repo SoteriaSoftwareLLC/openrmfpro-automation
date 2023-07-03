@@ -1,5 +1,5 @@
 # Upload Nessus patch scan results *.nessus file
-# ex: python3 uploadSystemPackageSCAP.py http://192.168.13.111:8080 companyinfra network team openrmfprosvc hvs.xxxxxxxxxxxxxxxx ../data/scap-scans/ DEGTHAT_SCC-5.0.1_2019-04-19_170849_XCCDF-Results_Microsoft_Outlook_2016-001.003.xml
+# ex: python3 uploadTeamSubpackagePatchScan.py http://192.168.13.111:8080 companyinfra network team openrmfprosvc hvs.xxxxxxxxxxxxxxxx ../data/patch-vulnerability-scans/  DEGTHAT-2023-May.nessus
 
 import sys
 import requests

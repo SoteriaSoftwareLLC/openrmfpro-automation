@@ -1,4 +1,4 @@
-# Add a brand new system package
+# Test authentication for your application and token
 # ex: python3 authentication.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx
 
 import sys

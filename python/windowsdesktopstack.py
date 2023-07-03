@@ -1,6 +1,5 @@
-# Check if a system package key is available for adding a new system package
-# Make sure you have SystemPackageAdministrator Role
-# ex: python3 bulkAddChecklistTemplatestoSystemPackage.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxx "6273e0dca23ef294c3db2209,6273e10ea23ef294c3db220b" FILESVR01
+# create a bunch of checklists based on templates for a particular hostname
+# ex: python3 windowsdesktopstack.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxx "6273e0dca23ef294c3db2209,6273e10ea23ef294c3db220b" FILESVR01
 
 import sys
 import requests

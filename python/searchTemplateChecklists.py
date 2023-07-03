@@ -1,5 +1,5 @@
 # list checklist templates by DISA, CIS, Custom or Organizational
-# ex: python3 listTemplateChecklist.py http://192.168.13.111:8080 disa openrmfprosvc  hvs.xxxxxxxxxxxxxxxx Cisco
+# ex: python3 searchTemplateChecklist.py http://192.168.13.111:8080 disa openrmfprosvc  hvs.xxxxxxxxxxxxxxxx Cisco
 
 import sys
 import json

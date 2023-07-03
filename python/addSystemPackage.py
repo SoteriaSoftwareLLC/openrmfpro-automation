@@ -1,6 +1,6 @@
 # Add a brand new system package
 # make sure you have the SystemPackageAdministrator Role
-# ex: python3 addSystemPackage.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx "Automated Infrastructure System Package" automatedinfra "My automated system package for infrastructure done entirely via API calls" 20 20 20 10 "Infrastructure ATO" "Dale Bingham" "855-RMF-0848" "support@soteriasoft.com" "AUTOINFRA"
+# ex: python3 addSystemPackage.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx 'Automated Infrastructure System Package' automatedinfra 'My automated system package for infrastructure done entirely via API calls' 20 20 20 10 'Infrastructure ATO' 'Dale Bingham' '855-RMF-0848' 'support@soteriasoft.com' 'AUTOINFRA'
 
 # For the packageType use the following:
 # 10 = RMF (default) – requires the CIA levels
@@ -18,7 +18,7 @@ from requests.structures import CaseInsensitiveDict
 
 url = sys.argv[1] + "/api/external/systempackage/?applicationKey=" + sys.argv[2]
 
-data = "title=" + sys.argv[4].replace(" ", "+") + "&systemKey=" + sys.argv[5] + "&description=" + sys.argv[6].replace(" ", "+") + "&confidentiality=" + sys.argv[7] + "&integrity=" + sys.argv[8] + "&availability=" + sys.argv[9] + "&packageType=" + sys.argv[10] + "&systemType=" + sys.argv[11].replace(" ", "+") + "&pocName=" + sys.argv[12].replace(" ", "+") + "&pocPhone=" + sys.argv[13].replace(" ", "+") + "&pocEmail=" + sys.argv[13] + "&addUserToSystemPackage=true&acronym=" + sys.argv[14].replace(" ", "+")
+data = "title=" + sys.argv[4].replace(" ", "+") + "&systemKey=" + sys.argv[5] + "&description=" + sys.argv[6].replace(" ", "+") + "&confidentiality=" + sys.argv[7] + "&integrity=" + sys.argv[8] + "&availability=" + sys.argv[9] + "&packageType=" + sys.argv[10] + "&systemType=" + sys.argv[11].replace(" ", "+") + "&pocName=" + sys.argv[12].replace(" ", "+") + "&pocPhone=" + sys.argv[13].replace(" ", "+") + "&pocEmail=" + sys.argv[14] + "&addUserToSystemPackage=true&acronym=" + sys.argv[15].replace(" ", "+")
 
 # Assign the request headers for this particular API
 headers = CaseInsensitiveDict() # Does not change

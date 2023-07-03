@@ -13,8 +13,8 @@ headers["Authorization"] = "Bearer " + sys.argv[4]
 
 # file name of file to be uploaded hosted locally in the same directory as the python code
 with open(sys.argv[5] + sys.argv[6], "rb") as a_file:
-    hardwareFile = {sys.argv[6] : a_file}
-    resp = requests.post(url, headers=headers, files=hardwareFile)
+    ppsmFile = {sys.argv[6] : a_file}
+    resp = requests.post(url, headers=headers, files=ppsmFile)
 
 print(resp.status_code)
 print(resp.text)
