@@ -1,5 +1,5 @@
 # list software from the system package
-# ex: python3 searchSystemPackageSoftware.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxx
+# ex: python3 searchSystemPackageSoftware.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxx "Microsoft Office"
 
 import sys
 import json

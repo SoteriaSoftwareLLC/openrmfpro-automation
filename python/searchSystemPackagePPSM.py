@@ -1,5 +1,5 @@
 # list the ports, protocols, and services in a system package
-# ex: python3 searchSystemPackagePPSM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
+# ex: python3 searchSystemPackagePPSM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx 8443
 
 import sys
 import json
