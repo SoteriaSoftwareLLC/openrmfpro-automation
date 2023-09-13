@@ -5,8 +5,10 @@ This repo goes along with the <a href="https://www.soteriasoft.com/" target="_bl
 
 ## How this Repo is Organized
 
+### Scenarios
 The <a href="./scenarios">scenarios</a> folder explains a few scenarios around the APIs to get your creative juices flowing through your brain and getting your team communicating around ideas. 
 
+### Data
 The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, and Audit Compliance scans based on DISA or CIS benchmarks is in the data directory. Your scripts can pull from that sample data as examples.  There are also example custom checklists created with our Custom Checklist wizard for all the manual policy, process, and procedure requirements in cyber compliance (i.e. NIST Control families like PM, AT, IR, PL, SA, RA).
 
 * Nessus Patch Vulnerability Scans
@@ -26,13 +28,25 @@ The <a href="./data">data</a> for checklists, SCAP scans and Nessus/ACAS scans, 
 
 Each type of technology / language is organized in its own folder for dotnet core, golang, python, and scripts to just show examples. Your folder structure, URL, key, token, systemKey for data may be different but similar. 
 
+### Sample Dashboards
 The <a href="./dashboards">dashboards</a> folder show mainly Grafana dashboards pulling data from the OpenRMF<sup>&reg;</sup> Professional API as well using the JSON API datasource for Grafana.
 
-The <a href="./applications">applications</a> folder has an example NodeJS application in it. This was done in VSCode. The .vscode has launch JSON information for the environment variables needed to wrap the API correctly. 
+### Sample Applications
+The <a href="./applications">applications</a> folder has an (older) example NodeJS application in it. This was done in VSCode. The .vscode has launch JSON information for the environment variables needed to wrap the API correctly. 
 * "LISTENPORT" -- the port that your application listens on for the web interface, can be whatever you want it to be that works
 * "ROOTAPIURL" -- the root URL to the external API based on DNS name, IP, etc. ending in /api/external
 * "APIKEY" -- your API Key created for you, that tracks back to a user in OpenRMF with permissions and roles, especially the ExternalAPI role it needs
 *  "APITOKEN" -- the token generated for that API key
+
+### Scripts showing API calls
+
+The <a href="./python">python</a> folder has python 3 scripts organized to show almost all of the API calls as well as a few combination calls.
+
+The <a href="./dotnet-core">dotnet-core</a> folder has example .NET Core API call examples. 
+
+The <a href="./golang">golant</a> folder has example Go language API call examples. 
+
+The <a href="./scripts">scripts</a> folder has bash shell scripts with `curl` to call APIs with examples as well. 
 
 ## Swagger.json
 
