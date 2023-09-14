@@ -1,5 +1,5 @@
 # List all users in JSON by the realm you pass in
-# to run:  python3 listUsersByRealm.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH
+# to run:  python3 listRolesByRealm.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH
 
 import sys
 import json
@@ -18,15 +18,11 @@ keycloak_connection = KeycloakOpenIDConnection(
 print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
-print("debug: running through commands")
-# User counter
-count_users = keycloak_admin.users_count()
-print("Number of Users: " + str(count_users))
+realm_roles = keycloak_admin.get_realm_roles()
 
-# Get Users
-users = keycloak_admin.get_users({})
-users = str(users).replace("'", '"')
-users = str(users).replace("True", 'true')
-users = str(users).replace("False", 'false')
-json_object = json.loads(users)
+# Get Realms
+realm_roles = str(realm_roles).replace("'", '"')
+realm_roles = str(realm_roles).replace("True", 'true')
+realm_roles = str(realm_roles).replace("False", 'false')
+json_object = json.loads(realm_roles)
 print(json.dumps(json_object, indent=1))
