@@ -24,3 +24,14 @@ You will need to run `pip3 install prettytable` in order to load that library in
 ## Install the Python-Keycloak library
 
 You will need to run `pip install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./python/keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
+
+## Calling the Python scripts
+
+You could have a `.env` with the main parameters for the URL, realm admin user, etc. and pass in a password also. You would use `os.getenv('xxxxxxx')` and put the `.env` in the directory with the `.py` files to pull them in. For these examples you pass in every single thing. In production, that may get tiresome. 
+
+```
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+```
