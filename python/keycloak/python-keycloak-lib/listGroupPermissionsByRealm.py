@@ -18,7 +18,6 @@ keycloak_connection = KeycloakOpenIDConnection(
 print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
-
 realm_groups = keycloak_admin.get_groups()
 
 # Get Realms

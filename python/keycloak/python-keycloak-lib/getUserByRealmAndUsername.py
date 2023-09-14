@@ -20,7 +20,7 @@ keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
 user_id_keycloak = keycloak_admin.get_user_id(sys.argv[7])
 if user_id_keycloak is None:
-    print("User Id is not found for that Username\n")
+    print("User Id was not found for that Username\n")
 else:
     user_data = keycloak_admin.get_user(user_id_keycloak)
     user_data = str(user_data).replace("'", '"')

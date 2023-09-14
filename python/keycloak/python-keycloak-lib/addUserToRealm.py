@@ -31,7 +31,7 @@ new_user = keycloak_admin.create_user({"email": sys.argv[8],
                       "credentials": [{"value": sys.argv[11],"type": "password"}]},exist_ok=False)
 
 if new_user is None:
-    print("User not created successfully\n")
+    print("User was not created successfully\n")
 else:
     user_data = keycloak_admin.get_user(new_user)
     user_data = str(user_data).replace("'", '"')
