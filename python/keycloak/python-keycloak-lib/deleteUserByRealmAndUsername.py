@@ -1,7 +1,9 @@
-# List all users in JSON by the realm you pass in
-# to run:  python3 listUsersByRealm.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH
+# Get a user record for the parameters passed in, if it is there
+# fix formatting and return JSON
+# to run:  python3 deleteUserByRealmAndUsername.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name
 
 import sys
+import json
 from keycloak import KeycloakAdmin
 from keycloak import KeycloakOpenIDConnection
 
@@ -14,14 +16,11 @@ keycloak_connection = KeycloakOpenIDConnection(
                         client_secret_key=sys.argv[6],
                         verify=True)
 
-print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
-print("debug: running through commands")
-# User counter
-count_users = keycloak_admin.users_count()
-print("Number of Users: " + str(count_users))
-
-# Get Users
-users = keycloak_admin.get_users({})
-print(users)
+user_id_keycloak = keycloak_admin.get_user_id(sys.argv[7])
+if user_id_keycloak is None:
+    print("User Id is not found for that Username\n")
+else:
+    response = keycloak_admin.delete_user(user_id=user_id_keycloak)
+    print(response)

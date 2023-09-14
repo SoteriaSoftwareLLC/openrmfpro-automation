@@ -1,6 +1,6 @@
 # Get a user record for the parameters passed in, if it is there
 # fix formatting and return JSON
-# to run:  python3 listUsersByRealm.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name
+# to run:  python3 getUserByRealmAndUsername.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name
 
 import sys
 import json
