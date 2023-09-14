@@ -11,6 +11,10 @@ You will need to run `pip3 install requests` in order to load that library into 
 
 You will need to run `pip3 install prettytable` in order to load that library into your folder. Then you can start with the authentication.py script.
 
+## Install the Python Keycloak library
+
+You will need to run `pip install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./python/keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
+
 ## Testing Authentication
 
 To ensure your authentication is valid using the simple script for testauthentication.sh in the <a href="../scripts/">scripts</a> folder and make sure it prints back 200 as the request status. If so then your API call, structure, API Key, Token and user/pwd combination for that API are all valid.
