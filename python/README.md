@@ -23,6 +23,13 @@ To ensure your authentication is valid using the simple script for testauthentic
 
 The API calls here follow the OpenRMF<sup>&reg;</sup> Professional Developer's Guide. Please contact <a href="https://www.soteriasoft.com/resources/contact.html">Soteria Software</a> for more information.
 
+## Example bulk add Python script
+This would load up workstations named SOTWKS2000001 to 00581 with 6 checklists per workstation. These are based on the image we push out for Windows desktops, so a good starting point to see where we are when deployed. Then scans are updated and uploaded to track from there forward.
+
+```
+python3 windowsdesktopstackbulk.py http://192.168.13.100:8080/ company-desktop-infra myapiaccountname hvs.87587659786LKGJKHGLJKHJK "652fcdccde4e9aef5c32545b,652fcdeede4e9aef5c32545e,652fcdfdde4e9aef5c32545f,652fcdc1de4e9aef5c32545a,652fcdd7de4e9aef5c32545c,652fcde1de4e9aef5c32545d" SOTWKS200 1 581
+```
+
 ## Notes
 * for the Download XLSX scripts, there needs to be a ./download/ directory created where you run it. Or modify as appropriate.
 * we tried to put the applicable scripts into the appropriate folders for organization
