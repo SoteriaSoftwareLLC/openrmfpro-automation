@@ -1,6 +1,6 @@
 # Get a user record for the parameters passed in, if it is there
 # fix formatting and return JSON
-# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ admin 1wsx2wsx3edc4rfv openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
+# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
 
 #############################################################################
 # Please make sure if you use special characters you only use &, *, ( or ) 
@@ -39,3 +39,4 @@ else:
     user_data = str(user_data).replace("False", 'false')
     json_object = json.loads(user_data)
     print(json.dumps(json_object, indent=1))
+    print("User was created successfully\n")

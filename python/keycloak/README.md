@@ -3,7 +3,7 @@ There is a manual folder for permforming all calls to authenticate, get a token,
 
 There is a separate Python-Keycloak folder to show automation using a publicly available library that encapsulates a lot of this and makes it easier. 
 
-For the `python-keycloak` library to work you need to create a new OIDC in whatever realm you wish to connect to (e.g. `openrmfpro`), and make sure the Capability Config has "client authentication" on, "direct access grants" checked and "service accounts roles" checked as well. Then make note of the Client Secret on the Credentials tab.
+For the `python-keycloak` library to work you need to create a new OpenID Connect Client in whatever realm you wish to connect to (e.g. `openrmfpro`), and make sure the Capability Config has "client authentication" on, "direct access grants" checked and "service accounts roles" checked as well. Then make note of the Client Secret on the Credentials tab.
 
 ![Capability Config settings](./img/capability-config.png?raw=true)
 
