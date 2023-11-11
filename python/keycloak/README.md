@@ -7,7 +7,7 @@ For the `python-keycloak` library to work you need to create a new OpenID Connec
 
 ![Capability Config settings](./img/capability-config.png?raw=true)
 
-Also, under the Service accounts roles tab, you can add roles to ensure least privilege but execution of whatever functions you are working with to automate around Keycloak. You can see where to start below.
+Also, under the Service accounts roles tab, you can Assign Roles to ensure least privilege but execution of whatever functions you are working with to automate around Keycloak. Make sure you `Filter by clients` in the top corner of that popup window to view the roles.  You can see where to start below.
 
 ![Capability Config settings](./img/service-accounts-roles.png?raw=true)
 
