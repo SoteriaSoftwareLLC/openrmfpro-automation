@@ -1,5 +1,5 @@
 # Create a POAM in the system package
-# ex: python3 addSystemPackage.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxx 
+# ex: python3 createPOAM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxx 
 
 import sys
 import requests
