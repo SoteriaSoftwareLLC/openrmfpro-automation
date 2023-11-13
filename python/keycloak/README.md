@@ -7,7 +7,7 @@ For the `python-keycloak` library to work you need to create a new OpenID Connec
 
 ![Capability Config settings](./img/capability-config.png?raw=true)
 
-Also, under the Service accounts roles tab, you can clik Assign Role and add roles to ensure least privilege but execution of whatever functions you are working with to automate around Keycloak. Make sure you `Filter by clients` in the top corner of that Assign Role popup window to view the roles.  You can see where to start below.
+Also, under the Service accounts roles tab, you can click Assign Role and add roles to ensure least privilege but execution of whatever functions you are working with to automate around Keycloak. Make sure you `Filter by clients` in the top corner of that Assign Role popup window to view the roles.  You can see where to start below.
 
 ![Capability Config settings](./img/service-accounts-roles.png?raw=true)
 
@@ -23,7 +23,7 @@ You will need to run `pip3 install prettytable` in order to load that library in
 
 ## Install the Python-Keycloak library
 
-You will need to run `pip install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./python/keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
+You will need to run `pip3 install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./python/keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
 
 ## Calling the Python scripts
 
