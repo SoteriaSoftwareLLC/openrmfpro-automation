@@ -6,7 +6,6 @@ import json
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "http://192.168.13.114:8080/api/external/notifications/?applicationKey=degthatuploader"
 url = sys.argv[1] + "/api/external/notifications/?applicationKey=" + sys.argv[2]
 
 headers = CaseInsensitiveDict()

@@ -15,7 +15,7 @@ headers["Authorization"] = "Bearer " + sys.argv[3]
 headers["Content-Type"] = "application/x-www-form-urlencoded"
 
 # Make the API request
-resp = requests.post(url, headers=headers, data=data)
+resp = requests.post(url, headers=headers, data=data, verify=False)
 
 # print to the screen the status code (i.e. 200, 400, 404, etc)
 print(resp.status_code)
