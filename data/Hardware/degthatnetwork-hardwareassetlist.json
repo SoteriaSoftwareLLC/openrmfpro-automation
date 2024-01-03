@@ -9,7 +9,11 @@
         "serialNumber": "2342343-PV1",
         "assetName": "",
         "purpose": "",
-        "description": ""
+        "description": "", 
+        "tags": [
+            "tag1",
+            "tag2"
+        ]
     },{
         "device": "DEGTHAT3",
         "operatingSystem": "Windows 10",
@@ -20,7 +24,8 @@
         "serialNumber": "2342343-PR2",
         "assetName": "",
         "purpose": "",
-        "description": ""
+        "description": "", 
+        "tags": []
     },{
         "device": "DEGTHATWIN2K16SVR01",
         "operatingSystem": "Microsoft Windows 2016 Server",
@@ -31,6 +36,7 @@
         "serialNumber": "2342343-PV3",
         "assetName": "",
         "purpose": "Web Server",
-        "description": "This is the main IIS web server for application hosting internally."
+        "description": "This is the main IIS web server for application hosting internally.", 
+        "tags": []
     }
 ]
