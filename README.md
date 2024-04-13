@@ -50,7 +50,7 @@ The <a href="./scripts">scripts</a> folder has bash shell scripts with `curl` to
 
 ## Swagger.json
 
-The swagger.json file in the root of this repo shows calls as of OpenRMF<sup>&reg;</sup> Professional v2.8.6 API. There are additions for POAM creation, uploading general patch data, uploading lists for bulk add/edit, as well as adding Templates as a Template Administrator.
+The swagger.json file in the root of this repo shows calls as of OpenRMF<sup>&reg;</sup> Professional v2.10 API. Check the Developers Guide for this version to understand the calls and data formats.
 
 # Note to Developers
 Feel free to Fork this repo, add your own ideas, and do a P/R for us to review and add into the community using this. 
