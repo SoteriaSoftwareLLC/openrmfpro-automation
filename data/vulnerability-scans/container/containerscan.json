@@ -1,0 +1,34 @@
+[
+    {
+      "issueId": "BX8eLlJ1rfhk7pr0BEyg",
+      "severityType": 40,
+      "statusType": 50,
+      "component": "mysoftware-container-zsasdfasjfd-xxsad",
+      "project": "myorg_myproject-title",
+      "source": "Anchore",
+      "line": 0,
+      "message": "Known vulnerability xyz is present in this container image",
+      "issueCreationDate": "02/28/2022 09:49:40",
+      "issueUpdateDate": "03/01/2022 13:11:59",
+      "organization": "myorg",
+      "resolution": "",
+      "issueUrl": "",
+      "categoryType": 20
+    },
+    {
+      "issueId": "BX8eLlJ1rfhk7pr0BEed",
+      "severityType": 20,
+      "statusType": 50,
+      "component": "mysoftware-container32-zsasdfasjfd-xxsad",
+      "project": "myorg_myproject-title",
+      "source": "Anchore",
+      "line": 0,
+      "message": "Known vulnerability xyz is present in this container image",
+      "issueCreationDate": "02/28/2022 09:49:40",
+      "issueUpdateDate": "03/01/2022 13:11:59",
+      "organization": "myorg",
+      "resolution": "",
+      "issueUrl": "",
+      "categoryType": 20
+    }    
+  ]

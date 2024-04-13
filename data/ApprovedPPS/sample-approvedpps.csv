@@ -1,0 +1,7 @@
+﻿Title,LowPort,HighPort,Protocol,ServiceName,Description
+Web Server,80,80,tcp,www,Default http port 80 website
+Secure Web Server,443,443,tcp,www,Default https port website
+Alternate Web Server,8080,8080,tcp,www,Alternate http port 8080 website used by Java apps a lot
+Alternate Secure Web Server,8443,8443,tcp,www,Alternate https port website used by Java apps a lot
+Secure Shell,22,22,tcp,ssh,Secure shell port used mainly internally
+Elasticsearch, 9200, 9201, tcp, elasticsearch,
