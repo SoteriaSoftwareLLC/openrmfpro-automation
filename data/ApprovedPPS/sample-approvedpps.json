@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Web Server",
+        "lowPort": "80",
+        "highPort": "80",
+        "protocol": "tcp",
+        "serviceName": "www",
+        "description": "Default http port website"
+    },
+    {
+        "title": "Secure Web Server",
+        "lowPort": "443",
+        "highPort": "443",
+        "protocol": "tcp",
+        "serviceName": "www",
+        "description": "Default https port website"
+    },
+    {
+        "title": "Alternate Web Server",
+        "lowPort": "8080",
+        "highPort": "8080",
+        "protocol": "tcp",
+        "serviceName": "www",
+        "description": "Alternate http port website"
+    },
+    {
+        "title": "Alternate Secure Web Server",
+        "lowPort": "8443",
+        "highPort": "8443",
+        "protocol": "tcp",
+        "serviceName": "www",
+        "description": "Alternate https port website"
+    },
+    {
+        "title": "Secure Shell",
+        "lowPort": "22",
+        "highPort": "22",
+        "protocol": "tcp",
+        "serviceName": "ssh",
+        "description": "Secure shell port used mainly internally"
+    }
+]

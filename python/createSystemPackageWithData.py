@@ -84,32 +84,27 @@ headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[3]
 
 # file name of file to be uploaded hosted locally in the same directory as the python code
-for file in glob.glob('../data/patch-vulnerability-scans/DEGTHAT-2023-Jan.nessus', recursive=False):
+for file in glob.glob('../data/patch-vulnerability-scans/2023-11-6-SoteriaWks-PatchScan1.nessus', recursive=False):
     with open(file, "rb") as a_file:
         patchscanFile = {file : a_file}
         resp = requests.post(url, headers=headers, files=patchscanFile)
         print(str(resp.status_code) + " Patch Scan " + os.path.basename(file) + " uploaded")
-for file in glob.glob('../data/patch-vulnerability-scans/IDS-CONEX-HQ-2023-Jan.nessus', recursive=False):
+for file in glob.glob('../data/patch-vulnerability-scans/2023-11-6-SoteriaWks-PatchScan2.nessus', recursive=False):
     with open(file, "rb") as a_file:
         patchscanFile = {file : a_file}
         resp = requests.post(url, headers=headers, files=patchscanFile)
         print(str(resp.status_code) + " Patch Scan " + os.path.basename(file) + " uploaded")
-for file in glob.glob('../data/patch-vulnerability-scans/DEGTHAT-2023-Mar.nessus', recursive=False):
+for file in glob.glob('../data/patch-vulnerability-scans/2023-11-6-SoteriaWks-PatchScan3.nessus', recursive=False):
     with open(file, "rb") as a_file:
         patchscanFile = {file : a_file}
         resp = requests.post(url, headers=headers, files=patchscanFile)
         print(str(resp.status_code) + " Patch Scan " + os.path.basename(file) + " uploaded")
-for file in glob.glob('../data/patch-vulnerability-scans/IDS-CONEX-HQ-2023-Mar.nessus', recursive=False):
+for file in glob.glob('../data/patch-vulnerability-scans/2024-01-30-SoteriaWks-Before.nessus', recursive=False):
     with open(file, "rb") as a_file:
         patchscanFile = {file : a_file}
         resp = requests.post(url, headers=headers, files=patchscanFile)
         print(str(resp.status_code) + " Patch Scan " + os.path.basename(file) + " uploaded")
-for file in glob.glob('../data/patch-vulnerability-scans/DEGTHAT-2023-May.nessus', recursive=False):
-    with open(file, "rb") as a_file:
-        patchscanFile = {file : a_file}
-        resp = requests.post(url, headers=headers, files=patchscanFile)
-        print(str(resp.status_code) + " Patch Scan " + os.path.basename(file) + " uploaded")
-for file in glob.glob('../data/patch-vulnerability-scans/IDS-CONEX-HQ-2023-May.nessus', recursive=False):
+for file in glob.glob('../data/patch-vulnerability-scans/2024-01-31-SoteriaWks-After.nessus', recursive=False):
     with open(file, "rb") as a_file:
         patchscanFile = {file : a_file}
         resp = requests.post(url, headers=headers, files=patchscanFile)
