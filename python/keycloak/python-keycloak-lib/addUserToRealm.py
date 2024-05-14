@@ -1,6 +1,6 @@
 # Get a user record for the parameters passed in, if it is there
 # fix formatting and return JSON
-# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
+# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ admin 1qaz2WSX3edc4RFV openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
 
 #############################################################################
 # Please make sure if you use special characters you only use &, *, ( or ) 
@@ -14,21 +14,19 @@ from keycloak import KeycloakOpenIDConnection
 
 keycloak_connection = KeycloakOpenIDConnection(
                         server_url=sys.argv[1],
-                        username=sys.argv[2],
-                        password=sys.argv[3],
-                        realm_name=sys.argv[4],
-                        client_id=sys.argv[5],
-                        client_secret_key=sys.argv[6],
+                        realm_name=sys.argv[2],
+                        client_id=sys.argv[3],
+                        client_secret_key=sys.argv[4],
                         verify=True)
 
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
-new_user = keycloak_admin.create_user({"email": sys.argv[8],
-                                       "username": sys.argv[7],
+new_user = keycloak_admin.create_user({"email": sys.argv[6],
+                                       "username": sys.argv[5],
                                        "enabled": True,
-                                       "firstName": sys.argv[9],
-                                       "lastName": sys.argv[10],                                       
-                      "credentials": [{"value": sys.argv[11],"type": "password"}]},exist_ok=False)
+                                       "firstName": sys.argv[7],
+                                       "lastName": sys.argv[8],                                       
+                      "credentials": [{"value": sys.argv[9],"type": "password"}]},exist_ok=False)
 
 if new_user is None:
     print("User was not created successfully\n")
