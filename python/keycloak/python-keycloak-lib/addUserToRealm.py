@@ -1,6 +1,6 @@
 # Get a user record for the parameters passed in, if it is there
 # fix formatting and return JSON
-# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ admin 1qaz2WSX3edc4RFV openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
+# to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
 
 #############################################################################
 # Please make sure if you use special characters you only use &, *, ( or ) 
