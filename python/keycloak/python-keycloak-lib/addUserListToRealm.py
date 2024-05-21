@@ -1,6 +1,5 @@
-# Get a user record for the parameters passed in, if it is there
-# fix formatting and return JSON
-# to run:  python3 addUserListToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH mypassword
+# Create users from the CSV list passed in
+# to run:  python3 addUserListToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH mypassword csvfile
 
 #############################################################################
 # Please make sure if you use special characters you only use &, *, ( or ) 
@@ -23,7 +22,7 @@ keycloak_connection = KeycloakOpenIDConnection(
 
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
-csv_file = 'newusers.csv'
+csv_file = sys.argv[6]
 
 with open(csv_file, 'r') as file:
     csv_reader = csv.reader(file)
