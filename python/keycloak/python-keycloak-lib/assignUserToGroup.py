@@ -1,5 +1,4 @@
-# Get a user record for the parameters passed in, if it is there
-# fix formatting and return JSON
+# assign a user to a group passed in
 # to run:  python3 assignUserToGroup.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name group.name
 
 import sys
