@@ -1,3 +1,4 @@
+# Assign a group to a list of users from the CSV passed in
 # to run:  python3 assignUserListToGroup.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH csvfilename group.name
 
 import sys
