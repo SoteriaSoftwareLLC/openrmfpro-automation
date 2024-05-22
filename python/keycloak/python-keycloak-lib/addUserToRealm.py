@@ -1,5 +1,4 @@
-# Get a user record for the parameters passed in, if it is there
-# fix formatting and return JSON
+# Add a single user to a realm with the parameters passed in
 # to run:  python3 addUserToRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name user.email@soteriasoft.com firstname lastname mypassword
 
 #############################################################################

@@ -1,5 +1,4 @@
-# Get a user record for the parameters passed in, if it is there
-# fix formatting and return JSON
+# Delete the user for the realm and username parameters passed in, if it is there
 # to run:  python3 deleteUserByRealmAndUsername.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name
 
 import sys
