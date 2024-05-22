@@ -1,4 +1,4 @@
-# Get a user record for the parameters passed in, if it is there
+# update a user's password to what is passed in
 # fix formatting and return JSON
 # to run:  python3 changeUserPassword.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name newpassword
 

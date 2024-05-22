@@ -1,4 +1,4 @@
-# List all users in JSON by the realm you pass in
+# List all roles in JSON by the realm you pass in
 # to run:  python3 listRolesByRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH
 
 import sys

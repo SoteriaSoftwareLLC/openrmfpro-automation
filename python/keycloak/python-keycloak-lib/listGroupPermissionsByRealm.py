@@ -1,4 +1,4 @@
-# List all users in JSON by the realm you pass in
+# List all group permissions in JSON by the realm you pass in
 # to run:  python3 listGroupPermissionsByRealm.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH
 
 import sys

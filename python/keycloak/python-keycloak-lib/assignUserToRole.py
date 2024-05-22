@@ -1,5 +1,4 @@
-# Get a user record for the parameters passed in, if it is there
-# fix formatting and return JSON
+# assign a user to a role passed in
 # to run:  python3 assignUserToRole.py https://keycloak.mycompany.com/auth/ openrmfpro python-keycloak 8675867tyjhgjghuy5675&JKHLKJH user.name role.name
 
 import sys
