@@ -4,6 +4,7 @@
 
 import sys
 import json
+from prettytable import PrettyTable, ALL
 from keycloak import KeycloakAdmin
 from keycloak import KeycloakOpenIDConnection
 
@@ -16,6 +17,10 @@ keycloak_connection = KeycloakOpenIDConnection(
 
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
+# set the headers
+userTable = PrettyTable(["ID", "Username", "First Name", "Last Name", "Email"], align='l', max_width=40)
+userTable.hrules=ALL
+
 user_id_keycloak = keycloak_admin.get_user_id(sys.argv[5])
 if user_id_keycloak is None:
     print("User Id was not found for that Username\n")
@@ -24,5 +29,9 @@ else:
     user_data = str(user_data).replace("'", '"')
     user_data = str(user_data).replace("True", 'true')
     user_data = str(user_data).replace("False", 'false')
-    json_object = json.loads(user_data)
-    print(json.dumps(json_object, indent=1))
+    user_json_object = json.loads(user_data)
+    #print(json.dumps(user_json_object, indent=1))
+    userTable.add_row([user_json_object["id"],user_json_object["username"],user_json_object["firstName"], 
+                                    user_json_object["lastName"],user_json_object["email"] ])
+    # print the table out
+    print(userTable)
