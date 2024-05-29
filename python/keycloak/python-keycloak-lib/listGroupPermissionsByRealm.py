@@ -3,6 +3,7 @@
 
 import sys
 import json
+from prettytable import PrettyTable, ALL
 from keycloak import KeycloakAdmin
 from keycloak import KeycloakOpenIDConnection
 
@@ -16,11 +17,20 @@ keycloak_connection = KeycloakOpenIDConnection(
 print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
+# set the headers
+realmTable = PrettyTable(["ID", "Name", "Path"], align='l', max_width=40)
+realmTable.hrules=ALL
+
 realm_groups = keycloak_admin.get_groups()
 
 # Get Realms
 realm_groups = str(realm_groups).replace("'", '"')
 realm_groups = str(realm_groups).replace("True", 'true')
 realm_groups = str(realm_groups).replace("False", 'false')
-json_object = json.loads(realm_groups)
-print(json.dumps(json_object, indent=1))
+realm_json_object = json.loads(realm_groups)
+#print(json.dumps(realm_json_object, indent=1))
+
+for item in realm_json_object:
+    realmTable.add_row([item["id"],item["name"],item["path"]])
+# print the table out
+print(realmTable)

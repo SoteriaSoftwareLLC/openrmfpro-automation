@@ -31,7 +31,7 @@ else:
     user_data = str(user_data).replace("False", 'false')
     user_json_object = json.loads(user_data)
     #print(json.dumps(user_json_object, indent=1))
-    userTable.add_row([user_json_object["id"],user_json_object["username"],user_json_object["firstName"], 
-                                    user_json_object["lastName"],user_json_object["email"] ])
+    
+    userTable.add_row([user_json_object["id"],user_json_object["username"],user_json_object["firstName"], user_json_object["lastName"],user_json_object["email"]])
     # print the table out
     print(userTable)

@@ -3,6 +3,7 @@
 
 import sys
 import json
+from prettytable import PrettyTable, ALL
 from keycloak import KeycloakAdmin
 from keycloak import KeycloakOpenIDConnection
 
@@ -16,6 +17,10 @@ keycloak_connection = KeycloakOpenIDConnection(
 print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
+# set the headers
+userTable = PrettyTable(["ID", "Username", "First Name", "Last Name", "Email"], align='l', max_width=40)
+userTable.hrules=ALL
+
 print("debug: running through commands")
 # User counter
 count_users = keycloak_admin.users_count()
@@ -26,5 +31,10 @@ users = keycloak_admin.get_users({})
 users = str(users).replace("'", '"')
 users = str(users).replace("True", 'true')
 users = str(users).replace("False", 'false')
-json_object = json.loads(users)
-print(json.dumps(json_object, indent=1))
+user_json_object = json.loads(users)
+#print(json.dumps(json_object, indent=1))
+
+for item in user_json_object:
+    userTable.add_row([item["id"],item["username"],item["firstName"], item["lastName"],item["email"]])
+# print the table out
+print(userTable)
