@@ -13,7 +13,7 @@ You will need to run `pip3 install prettytable` in order to load that library in
 
 ## Install the Python Keycloak library
 
-You will need to run `pip install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./python/keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
+You will need to run `pip install python-keycloak` to add the proper library into your folder to call Keycloak with the scripts. See https://pypi.org/project/python-keycloak/ for more great information.  Those specific examples are under <a href="./keycloak/python-keycloak-lib/">python/keycloak/python-keycloak-lib/</a> specifically. 
 
 ## Testing Authentication
 
