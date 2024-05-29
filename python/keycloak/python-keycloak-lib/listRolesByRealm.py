@@ -3,6 +3,7 @@
 
 import sys
 import json
+from prettytable import PrettyTable, ALL
 from keycloak import KeycloakAdmin
 from keycloak import KeycloakOpenIDConnection
 
@@ -16,11 +17,20 @@ keycloak_connection = KeycloakOpenIDConnection(
 print("debug: getting the admin connection set")
 keycloak_admin = KeycloakAdmin(connection=keycloak_connection)
 
+# set the headers
+roleTable = PrettyTable(["ID", "Name", "Description", "ContainerID"], align='l', max_width=40)
+roleTable.hrules=ALL
+
 realm_roles = keycloak_admin.get_realm_roles()
 
 # Get Realms
 realm_roles = str(realm_roles).replace("'", '"')
 realm_roles = str(realm_roles).replace("True", 'true')
 realm_roles = str(realm_roles).replace("False", 'false')
-json_object = json.loads(realm_roles)
-print(json.dumps(json_object, indent=1))
+role_json_object = json.loads(realm_roles)
+#print(json.dumps(json_object, indent=1))
+
+for item in role_json_object:
+    roleTable.add_row([item["id"],item["name"],item["description"],item["containerId"]])
+# print the table out
+print(roleTable)
