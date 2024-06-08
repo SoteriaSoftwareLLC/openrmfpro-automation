@@ -1,5 +1,5 @@
 # Upload a Compliance Statement List file
-# ex: python3 uploadSystemPackageComplianceStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/ComplianceData/  compliancetest-ComplianceStatements.xlsx
+# ex: python3 uploadSystemPackageComplianceStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/ComplianceData/  compliancetest-ComplianceStatements.xlsx
 
 import sys
 import requests

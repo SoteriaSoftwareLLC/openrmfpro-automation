@@ -1,5 +1,5 @@
 # Upload a Software list file
-# ex: python3 uploadSystemPackageSoftwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/Software/  degthatnetwork-softwareassetlist.xlsx
+# ex: python3 uploadSystemPackageSoftwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/Software/  degthatnetwork-softwareassetlist.xlsx
 
 import sys
 import requests

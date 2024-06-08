@@ -1,5 +1,5 @@
 # Upload a Mitigation Statement List file
-# ex: python3 uploadSystemPackageMitigationStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/Mitigations/  degthatnetwork-mitigationlist.xlsx
+# ex: python3 uploadSystemPackageMitigationStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/Mitigations/  degthatnetwork-mitigationlist.xlsx
 
 import sys
 import requests

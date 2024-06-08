@@ -1,5 +1,5 @@
 # Upload a Hardware List file
-# ex: python3 uploadSystemPackageHardwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/Hardware/  degthatnetwork-hardwareassetlist.xlsx
+# ex: python3 uploadSystemPackageHardwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/Hardware/  degthatnetwork-hardwareassetlist.xlsx
 
 import sys
 import requests
