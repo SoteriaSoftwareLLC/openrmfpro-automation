@@ -1,5 +1,5 @@
 # Upload checklist for System Package Template
-# ex: python3 uploadPackageTemplateChecklist.py http://192.168.13.111:8080 package-key openrmfprosvc hvs.xxxxxxxxxxxxxxxx "My title" "My description" ../data/ checklist.ckl
+# ex: python3 uploadPackageTemplateChecklist.py http://192.168.13.111:8080 package-key openrmfprosvc hvs.xxxxxxxxxxxxxxxx "My title" "My description" ../../data/ checklist.ckl
 
 import sys
 import requests

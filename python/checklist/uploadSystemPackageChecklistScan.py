@@ -1,5 +1,5 @@
 # Upload SCAP XCCDF XML data, CKL data, or Audit Compliance .nessus data
-# ex: python3 uploadSystemPackageChecklistScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../data/nessus-scans/ MachinaBio_System_Scan_Post-Patch-Dec_2020.nessus
+# ex: python3 uploadSystemPackageChecklistScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../../data/checklists/ MachinaBio_System_Scan_Post-Patch-Dec_2020.nessus
 
 import sys
 import requests

@@ -1,5 +1,5 @@
 # Upload a piece of Evidence to the Compliance Statement category of evidence documents, passing in the CCI-xxxxxx Id referenced
-# ex: python3 uploadSystemPackageComplianceEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx CCI-000015 "my-title" "my-description-text" ../data/evidence/ Disaster-Recovery-Plan.pdf
+# ex: python3 uploadSystemPackageComplianceEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx CCI-000015 "my-title" "my-description-text" ../../data/evidence/ Disaster-Recovery-Plan.pdf
 
 import sys
 import requests

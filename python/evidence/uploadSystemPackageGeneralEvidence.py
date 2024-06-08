@@ -1,5 +1,5 @@
 # Upload a piece of Evidence to the General category of evidence documents
-# ex: python3 uploadSystemPackageGeneralEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/evidence/ Disaster-Recovery-Plan.pdf
+# ex: python3 uploadSystemPackageGeneralEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/evidence/ Disaster-Recovery-Plan.pdf
 
 import sys
 import requests
