@@ -1,5 +1,5 @@
 # Upload a folder of SCAP XCCDF XML data, CKL data, or Audit Compliance .nessus data
-# ex: python3 uploadAllChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../data/checklists/ 
+# ex: python3 uploadAllChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../../data/checklists/ 
 
 import sys
 import requests

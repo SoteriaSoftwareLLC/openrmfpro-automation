@@ -1,5 +1,5 @@
 # Upload a ports/protocols/services list file
-# ex: python3 uploadSystemPackagePPSMList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../data/PPSM/  degthatnetwork-ppsm.xlsx
+# ex: python3 uploadSystemPackagePPSMList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/PPSM/  degthatnetwork-ppsm.xlsx
 
 import sys
 import requests

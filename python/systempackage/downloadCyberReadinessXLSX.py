@@ -14,7 +14,7 @@ headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
 filename = sys.argv[2] + "-CyberReadiness.xlsx"
-filepath = './download/'
+filepath = '../download/'
 file_path = os.path.join(filepath, filename)
 r = requests.get(url, headers=headers, stream=True)
 if r.ok:
