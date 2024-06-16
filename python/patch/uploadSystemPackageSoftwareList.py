@@ -1,4 +1,5 @@
 # Upload a Software list file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/software/?applicationKey={applicationKey}
 # ex: python3 uploadSystemPackageSoftwareList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/Software/  degthatnetwork-softwareassetlist.xlsx
 
 import sys

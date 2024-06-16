@@ -1,4 +1,5 @@
 # get the system package patch scan score totals
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/patchscore/?applicationKey={applicationKey}
 # ex: python3 getSystemPackagePatchScore.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

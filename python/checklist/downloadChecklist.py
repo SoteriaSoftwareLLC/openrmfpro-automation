@@ -1,4 +1,5 @@
 # Download a system package checklist CKL file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/checklist/{checklistId}/?applicationKey={applicationKey}
 # ex: python3 downloadChecklist.py http://192.168.13.111:8080 companyinfra 627d44fbff17ea6dfdf0d702 openrmfprosvc hvs.xxxxxxxxxxx > download/mychecklist.ckl
 
 import sys

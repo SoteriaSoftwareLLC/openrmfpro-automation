@@ -1,4 +1,5 @@
 # download the system package Ports, Protocols, and Services listing to an XLSX file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/ppsm/?applicationKey={applicationKey}&devicename={hostname}
 # ex: python3 downloadPPSMXLSX.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys

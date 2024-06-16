@@ -1,4 +1,5 @@
 # download the system package POAM listing to an XLSX file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/poam/?applicationKey={applicationKey}&days=365&devicename=sot-win2k22
 # ex: python3 downloadPOAMXLSX.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys

@@ -1,4 +1,6 @@
 # Test authentication for your application and token
+# get the Internal Id String from the "List" templates call
+# API call from Developer's Guide: /api/external/testauthentication
 # ex: python3 authentication.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx
 
 import sys

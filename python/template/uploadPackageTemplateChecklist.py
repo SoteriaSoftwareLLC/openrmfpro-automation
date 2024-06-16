@@ -1,4 +1,5 @@
 # Upload checklist for System Package Template
+# API call from Developer's Guide: /api/external/template/systempackage/{systemKey}/?applicationKey={applicationKey}
 # ex: python3 uploadPackageTemplateChecklist.py http://192.168.13.111:8080 package-key openrmfprosvc hvs.xxxxxxxxxxxxxxxx "My title" "My description" ../../data/ checklist.ckl
 
 import sys

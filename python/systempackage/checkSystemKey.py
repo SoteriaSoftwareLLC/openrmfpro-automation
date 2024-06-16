@@ -1,5 +1,6 @@
 # Check if a system package key is available for adding a new system package
 # Make sure you have SystemPackageAdministrator Role
+# API call from Developer's Guide: /api/external/systempackage/keycheck/{systemKey}/?applicationKey={applicationKey}
 # ex: python3 checkSystemKey.py http://192.168.13.111:8080 machinabio openrmfprosvc hvs.xxxxxxx
 
 import sys

@@ -1,4 +1,5 @@
 # Upload a piece of Evidence to the General category of evidence documents
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/evidence/?applicationKey={applicationKey}
 # ex: python3 uploadSystemPackageGeneralEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/evidence/ Disaster-Recovery-Plan.pdf
 
 import sys

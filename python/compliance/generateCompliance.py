@@ -1,5 +1,6 @@
 # Generate a new Compliance against statements, checklists, inheritance
 # make sure the user is the system owner of the package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/compliance/\?complianceId={complianceId}&applicationKey={applicationKey}
 # ex: python3 generateCompliance.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxx "Latest Compliance with updated scand Feb 2023" "Our latest compliance scans from the most recent SCAP scans run across the network"
 
 import sys

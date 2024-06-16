@@ -1,5 +1,6 @@
 # get a single the system package Evidence record
 # get the Internal Id String from the "List" evidence
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/evidence/{evidenceId}/?applicationKey={applicationKey}
 # ex: python3 getSystemPackageEvidenceDocument.py http://192.168.13.111:8080 companyinfra 64a41c62a61876599144ca17 openrmfprosvc hvs.xxxxxxxxx
 
 import sys

@@ -1,4 +1,5 @@
 # Upload SCAP XCCDF XML data, CKL data, or Audit Compliance .nessus data
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/teamsubpackage/{teamKey}/scapchecklist/?applicationKey={applicationKey}
 # ex: python3 uploadTeamSubpackageChecklistScan.py http://192.168.13.111:8080 companyinfra networkteam openrmfprosvc hvs.xxxxxxxxxxxxxxxx ../../data/scap-scans/ DEGTHAT_SCC-5.0.1_2019-04-19_170849_XCCDF-Results_Microsoft_Outlook_2016-001.003.xml
 
 import sys

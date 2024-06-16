@@ -1,4 +1,5 @@
 # list the system package milestone records
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/milestoneevents/?applicationKey={applicationKey}&days=nn
 # ex: python3 listSystemPackageMilestoneEvents.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys

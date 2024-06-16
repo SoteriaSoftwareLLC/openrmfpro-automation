@@ -1,4 +1,5 @@
 # download the system package hardware listing to an XLSX file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/hardware/?applicationKey={applicationKey}&devicename={hostname}
 # ex: python3 downloadHardwareXLSX.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys

@@ -1,4 +1,5 @@
 # Create a POAM in the system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/poam/?applicationKey={applicationKey}
 # ex: python3 createPOAM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxx 
 
 import sys

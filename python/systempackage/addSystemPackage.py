@@ -1,5 +1,6 @@
 # Add a brand new system package
 # make sure you have the SystemPackageAdministrator Role
+# API call from Developer's Guide: /api/external/systempackage/?applicationKey={applicationKey}
 # ex: python3 addSystemPackage.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx 'Automated Infrastructure System Package' automatedinfra 'My automated system package for infrastructure done entirely via API calls' 20 20 20 10 'Infrastructure ATO' 'Dale Bingham' '855-RMF-0848' 'support@soteriasoft.com' 'AUTOINFRA'
 
 # For the packageType use the following:

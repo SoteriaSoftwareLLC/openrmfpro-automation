@@ -1,4 +1,5 @@
 # list system packages this user has access to at least view
+# API call from Developer's Guide: /api/external/systempackages/?applicationKey={applicationKey}
 # ex: python3 searchSystemPackages.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

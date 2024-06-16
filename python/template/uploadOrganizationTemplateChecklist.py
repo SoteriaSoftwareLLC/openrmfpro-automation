@@ -1,4 +1,5 @@
 # Upload checklist for Organization Template
+# API call from Developer's Guide: /api/external/template/organization/?applicationKey={applicationKey}
 # ex: python3 uploadOrganizationTemplateChecklist.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxxxx "My title" "My description" ../../data/ checklist.ckl
 
 import sys

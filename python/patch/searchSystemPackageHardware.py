@@ -1,4 +1,5 @@
 # list the hardware devices in a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/hardware/?applicationKey={applicationKey}&devicename={hostname}
 # ex: python3 searchSystemPackageHardware.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx "red hat"
 
 import sys
