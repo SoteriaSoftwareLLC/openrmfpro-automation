@@ -1,4 +1,5 @@
 # list software from the system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/software/?applicationKey={applicationKey}&devicename={hostname}
 # ex: python3 listSystemPackageSoftware.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxx
 
 import sys

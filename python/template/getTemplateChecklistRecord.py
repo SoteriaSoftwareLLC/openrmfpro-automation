@@ -1,4 +1,6 @@
 # get the template checklist JSON record for a template ID
+# get the Internal Id String from the "List" templates
+# API call from Developer's Guide: /api/external/templaterecord/{internalIdString}/?applicationKey={applicationKey}
 # ex: python3 getTemplateChecklistRecord.py http://192.168.13.111:8080 627d39fc003c48cfeb704129 openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

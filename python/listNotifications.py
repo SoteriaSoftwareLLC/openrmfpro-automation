@@ -1,4 +1,7 @@
 # list all the notifications this user can view
+# API call from Developer's Guide: /api/external/notifications/?applicationKey={applicationKey}
+# API call from Developer's Guide: /api/external/notifications/?applicationKey={applicationKey}&bShowAll=true&systemKey=degthatnetwork&notificationType=poam
+# API call from Developer's Guide: /api/external/notifications/?applicationKey={applicationKey}&bShowAll=true&notificationType=poam
 # ex: python3 listNotifications.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

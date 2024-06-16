@@ -1,4 +1,5 @@
 # list the system package POAM records
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/poam/?applicationKey={applicationKey}&days=nn&devicename-xxxxxxxxxxxxxx
 # ex: python3 listSystemPackagePOAM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx 180
 
 import sys

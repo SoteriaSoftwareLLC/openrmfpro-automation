@@ -1,4 +1,5 @@
 # Upload Nessus patch scan results *.nessus file, .xml Nexpose or .JSON universal patch format file
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/patchscan/?applicationKey={applicationKey}
 # ex: python3 uploadSystemPackagePatchScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/patch-vulnerability-scans/  DEGTHAT-2023-May.nessus
 
 import sys

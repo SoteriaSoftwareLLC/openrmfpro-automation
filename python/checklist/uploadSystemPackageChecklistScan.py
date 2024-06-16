@@ -1,4 +1,5 @@
 # Upload SCAP XCCDF XML data, CKL data, or Audit Compliance .nessus data
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/scapchecklist/?applicationKey={applicationKey}
 # ex: python3 uploadSystemPackageChecklistScan.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxxx ../../data/checklists/ MachinaBio_System_Scan_Post-Patch-Dec_2020.nessus
 
 import sys

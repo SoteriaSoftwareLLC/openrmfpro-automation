@@ -1,4 +1,5 @@
 # list all the other tech vulnerabilities in a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/techvulnerabilitydata/?applicationKey={applicationKey}&categoryType={categoryType}
 # ex: python3 listSystemPackageTechVulnerabilities.py http://192.168.13.111:8080 companyinfra 10 openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

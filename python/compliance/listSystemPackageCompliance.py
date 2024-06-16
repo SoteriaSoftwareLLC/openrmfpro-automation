@@ -1,4 +1,5 @@
 # list the compliance data generated for a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/compliance/\?complianceId={complianceId}&applicationKey={applicationKey}
 # ex: python3 listSystemPackageCompliance.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

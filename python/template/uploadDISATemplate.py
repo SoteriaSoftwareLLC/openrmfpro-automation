@@ -1,4 +1,5 @@
 # Upload a DISA .xml to create a DISA based checklist
+# API call from Developer's Guide: /api/external/template/disa/?applicationKey={applicationKey}
 # ex: python3 uploadDISAAudit.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxxxx ./filename.xml
 
 import sys

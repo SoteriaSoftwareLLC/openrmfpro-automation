@@ -1,4 +1,5 @@
 # list the system package Evidence records, all 4 types
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/evidence/?applicationKey={applicationKey}&general=true&checklist=true&statement=true&poam=true
 # ex: python3 listSystemPackageEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys

@@ -1,4 +1,5 @@
 # list all the patch scan data vulnerabilities in a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/patchdata/?applicationKey={applicationKey}
 # ex: python3 listSystemPackagePatchVulnerabilities.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

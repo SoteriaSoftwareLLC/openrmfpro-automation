@@ -1,4 +1,6 @@
-# get a system package checklist record based on the Id
+# get a system package checklist record based on the checklist Internal Id
+# get the Internal Id String from the "List" checklists
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/checklistrecord/{internalIdString}/?applicationKey={applicationKey}
 # ex: python3 getChecklistRecord.py http://192.168.13.111:8080 companyinfra 627d44fbff17ea6dfdf0d702 openrmfprosvc hvs.xxxxxxxxxxx
 
 import sys

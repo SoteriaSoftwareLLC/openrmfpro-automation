@@ -1,4 +1,5 @@
 # get the Cyber Readiness Scores for a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/readinessscore/?applicationKey={applicationKey}
 # ex: python3 getCyberReadiness.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxx
 
 import sys

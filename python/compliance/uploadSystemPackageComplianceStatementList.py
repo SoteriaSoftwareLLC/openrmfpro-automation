@@ -1,5 +1,6 @@
 # Upload a Compliance Statement List file
-# ex: python3 uploadSystemPackageComplianceStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/ComplianceData/  compliancetest-ComplianceStatements.xlsx
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/compliancestatements/?applicationKey={applicationKey}
+# ex: python3 uploadSystemPackageComplianceStatementList.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx  ../../data/ComplianceData/ compliancetest-ComplianceStatements.xlsx
 
 import sys
 import requests

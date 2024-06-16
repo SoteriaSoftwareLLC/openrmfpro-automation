@@ -1,4 +1,5 @@
 # Upload a piece of Evidence to the POAM category of evidence documents, passing in the # POAM Item Id generated in the listing
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/evidence/poam/{poamItemId}/?applicationKey={applicationKey}
 # ex: python3 uploadSystemPackagePOAMEvidence.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxxx 125 "my-title" "my-description-text" ../../data/evidence/ Disaster-Recovery-Plan.pdf
 
 import sys

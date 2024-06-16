@@ -1,4 +1,5 @@
 # get the Cyber Readiness Settings for a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/readinesssettings/?applicationKey={applicationKey}
 # ex: python3 getCyberReadinessSettings.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxx
 
 import sys

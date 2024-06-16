@@ -1,4 +1,5 @@
 # get the POAM risk cube numbers for a system package on impact and likelihood
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/poamcube/?applicationKey={applicationKey}
 # ex: python3 getPOAMCube.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxxx
 
 import sys

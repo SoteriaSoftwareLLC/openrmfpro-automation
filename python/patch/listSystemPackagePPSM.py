@@ -1,4 +1,5 @@
 # list the ports, protocols, and services in a system package
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/ppsm/?applicationKey={applicationKey}&devicename={hostname}
 # ex: python3 listSystemPackagePPSM.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys

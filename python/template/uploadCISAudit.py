@@ -1,4 +1,5 @@
 # Upload a CIS .audit file from ACAS/Nessus to create a CIS based checklist
+# API call from Developer's Guide: /api/external/template/audit/?applicationKey={applicationKey}
 # ex: python3 uploadCISAudit.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxxxx ./auditfile.audit
 
 import sys
