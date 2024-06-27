@@ -14,8 +14,8 @@ headers["Accept"] = "application/vnd.openxmlformats-officedocument.spreadsheetml
 headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
-filename = sys.argv[2] + "-POAMListing.xlsx"
-filepath = './download/'
+filename = sys.argv[2] + "-POAM-eMASS.xlsx"
+filepath = '../download/'
 file_path = os.path.join(filepath, filename)
 r = requests.get(url, headers=headers, stream=True)
 if r.ok:
