@@ -7,15 +7,15 @@ import requests
 from requests.structures import CaseInsensitiveDict
 import os
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2] + "/poam/?applicationKey=" + sys.argv[3]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2] + "/poam/alldata/?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 headers["Authorization"] = "Bearer " + sys.argv[4]
 
 resp = requests.get(url, headers=headers)
-filename = sys.argv[2] + "-POAMListing.xlsx"
-filepath = './download/'
+filename = sys.argv[2] + "-POAM-AllData.xlsx"
+filepath = '../download/'
 file_path = os.path.join(filepath, filename)
 r = requests.get(url, headers=headers, stream=True)
 if r.ok:
