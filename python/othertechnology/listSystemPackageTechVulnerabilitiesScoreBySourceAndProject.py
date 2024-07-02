@@ -1,13 +1,14 @@
 # list all the other tech vulnerability score totals by category, source and project in a system package
 # API call from Developer's Guide: /api/external/systempackage/{systemKey}/techvulnerabilityscore/{categoryType}/source/{sourcename}/project/{projectname}/?applicationKey={applicationKey}
-# ex: python3 listSystemPackageTechVulnerabilitiesScoreBySource.py http://192.168.13.111:8080 companyinfra 10 sourcename projectname openrmfprosvc hvs.xxxxxxxxxxxxxx
+# ex: python3 listSystemPackageTechVulnerabilitiesScoreBySourceAndProject.py http://192.168.13.111:8080 companyinfra 10 sourcename projectname openrmfprosvc hvs.xxxxxxxxxxxxxx
 
 import sys
 import json
+from html import escape
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/techvulnerabilityscore/" + sys.argv[3] + "/source/" + sys.argv[4] + "/project/" + sys.argv[5] + "/?applicationKey=" + sys.argv[6]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/techvulnerabilityscore/" + sys.argv[3] + "/source/" + escape(sys.argv[4]) + "/project/" + escape(sys.argv[5]) + "/?applicationKey=" + sys.argv[6]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
