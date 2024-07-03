@@ -1,14 +1,18 @@
 # list all the other tech vulnerability score totals by category, source and project in a system package
-# API call from Developer's Guide: /api/external/systempackage/{systemKey}/techvulnerabilityscore/{categoryType}/source/{sourcename}/project/{projectname}/?applicationKey={applicationKey}
-# ex: python3 listSystemPackageTechVulnerabilitiesScoreBySourceAndProject.py http://192.168.13.111:8080 companyinfra 10 sourcename projectname openrmfprosvc hvs.xxxxxxxxxxxxxx
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/techvulnerabilityscore/{categoryType}/sourceproject/source={sourcename}&project={projectname}&applicationKey={applicationKey}
+# for the source and project, you may need to put double quotes "" around the data if containing spaces or special characters
+# ex: python3 listSystemPackageTechVulnerabilitiesScoreBySourceAndProject.py http://192.168.13.111:8080 companyinfra 10 "sourcename" "projectname" openrmfprosvc hvs.xxxxxxxxxxxxxx
+
+## v2.10.02 change for a bug on passing parameters via URL
 
 import sys
 import json
-from html import escape
+import urllib.parse
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/techvulnerabilityscore/" + sys.argv[3] + "/source/" + escape(sys.argv[4]) + "/project/" + escape(sys.argv[5]) + "/?applicationKey=" + sys.argv[6]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/techvulnerabilityscore/" + sys.argv[3] + "/sourceproject/?source=" + urllib.parse.quote_plus(sys.argv[4]) + "&project=" + urllib.parse.quote_plus(sys.argv[5]) + "&applicationKey=" + sys.argv[6]
+print(url)
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -16,7 +20,7 @@ headers["Authorization"] = "Bearer " + sys.argv[7]
 
 resp = requests.get(url, headers=headers)
 
-# print(resp.status_code)
+print(resp.status_code)
 # print(resp.text)
 
 json_object = json.loads(resp.text)
