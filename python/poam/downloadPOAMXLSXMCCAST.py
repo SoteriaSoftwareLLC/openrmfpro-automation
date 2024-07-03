@@ -1,6 +1,6 @@
-# download the system package POAM listing to an XLSX file
+# Get the actual MS Excel file of the Plan of Action and Milestones listing for the Marine Corps MCCAST system and save to a file
 # API call from Developer's Guide: /api/external/systempackage/{systemKey}/poam/?applicationKey={applicationKey}&days=365&devicename=sot-win2k22
-# ex: python3 downloadPOAMXLSX.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
+# ex: python3 downloadPOAMXLSXMCCAST.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxx
 
 import sys
 import requests
