@@ -1,4 +1,4 @@
-# deletes a checklist in a system package
+# deletes a checklist in a system package listing
 # API call from Developer's Guide: /api/external/systempackage/{systemKey}/checklist/{checklistId}/?applicationKey={applicationKey}
 # ex: python3 deleteSystemPackageChecklist.py http://192.168.13.111:8080 companyinfra 627d44fbff17ea6dfdf0d702 openrmfprosvc hvs.xxxxxxxxxxxxxx
 
@@ -13,7 +13,7 @@ headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[5]
 
-resp = requests.get(url, headers=headers)
+resp = requests.delete(url, headers=headers)
 
 # print(resp.status_code)
 
