@@ -13,7 +13,7 @@ headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + sys.argv[5]
 
-resp = requests.get(url, headers=headers)
+resp = requests.delete(url, headers=headers)
 
 # print(resp.status_code)
 # print(resp.text)
