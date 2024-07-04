@@ -1,12 +1,12 @@
 #Post a JSON record array payload to add / update ports, protocols, and services items in the host scan area for your system package
 # API call from Developer's Guide:/api/external/systempackage/{systemKey}/ppsm/?applicationKey={applicationKey}
-# ex: python3 uploadApprovedPortsAndProtocolsListFile.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx
+# ex: python3 uploadApprovedPortsAndProtocolsListFile.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx ../../data/ApprovedPPS/ sample-approvedpps.json
 
 import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/ppsm/?applicationKey=" + sys.argv[3]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2]+ "/approvedpps//?applicationKey=" + sys.argv[3]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
