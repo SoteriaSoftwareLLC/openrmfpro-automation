@@ -46,3 +46,5 @@ node_modules
 
 # do not copy any download files
 python/download/*
+
+applications/python/cgi-bin/myVariables.py
