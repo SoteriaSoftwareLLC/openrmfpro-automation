@@ -48,3 +48,5 @@ node_modules
 python/download/*
 
 applications/python/cgi-bin/myVariables.py
+
+applications/python/cgi-bin/__pycache__
