@@ -5,7 +5,9 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import html
 
+# set the URL with the 3 variables
 url = myVariables.rootURL + "/api/external/systempackages/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
@@ -17,11 +19,13 @@ resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # make into a PrettyTable
 systemPackageTable = PrettyTable(["System Package", "Key", "Number Checklists"])
-# Just get the fields want
+# Just get the fields we want
 for element in json_object:  # iterate on each element of the list
-    systemPackageTable.add_row([element['title'], element['systemKey'], element['numberOfChecklists']])
+    systemPackageTable.add_row(["<a href='getSystemPackageRecord.py?systemKey=" + element['systemKey'] + "'>" + element['title'] + "</a>", element['systemKey'], element['numberOfChecklists']])
 # call to make this an HTML table and put into a new variable
 htmlCode = systemPackageTable.get_html_string(attributes={"class":"table"}, format=True)
+# make the URL strings an actual URL
+htmlCode = html.unescape(htmlCode)
 
 # print out the HTML fully page
 print(
