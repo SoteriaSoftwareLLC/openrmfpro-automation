@@ -15,10 +15,9 @@ headers["Authorization"] = "Bearer" + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 
-listTemplatesTable = PrettyTable(["Internal ID", "Title", "Version", "Release"])
-# Just get the fields want
-for element in json_object: 
-    listTemplatesTable.add_row([element['internalIdString'], element['title'], element['version'], element['stigRelease']])
+listTemplatesTable = PrettyTable(["Internal ID", "Title", "Version", "Type String"])
+listTemplatesTable.add_row([json_object['internalIdString'], json_object['title'], json_object['version'], json_object['templateTypeString']])
+
 # call to make this an HTML table and put into a new variable
 htmlCode = listTemplatesTable.get_html_string(attributes={"class":"table"}, format=True)
 
