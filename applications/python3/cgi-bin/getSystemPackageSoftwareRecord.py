@@ -5,8 +5,17 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import os
+import urllib.parse
 
-url = myVariables.rootURL + "/api/external/systempackage/machina-biometric/software/65f9c7127e07c68d17e0a20f/?applicationKey=" + myVariables.applicationKey
+## get the query string. this gets passed to cgi scripts as the environment
+## variable QUERY_STRING
+query_string = os.environ['QUERY_STRING']
+
+## convert the query string to a dictionary
+arguments = urllib.parse.parse_qs(query_string)
+
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/software/" + str(arguments["softwareid"][0]) + "/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -16,8 +25,8 @@ resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # print(json.dumps(json_object, indent=1))
 
-RecordTable = PrettyTable(["Title", "Key", "Host Name", "Version", "Software Name"])
-RecordTable.add_row([json_object['systemTitle'], json_object['systemKey'], json_object['hostName'], json_object['softwareName']])
+RecordTable = PrettyTable(["Title", "Key", "Host Name", "Software Name", "Version"])
+RecordTable.add_row([json_object['systemTitle'], json_object['systemKey'], json_object['hostname'], json_object['softwareName'], json_object['softwareVersion']])
     
 # call to make this an HTML table and put into a new variable
 htmlCode = RecordTable.get_html_string(attributes={"class":"table"}, format=True)
