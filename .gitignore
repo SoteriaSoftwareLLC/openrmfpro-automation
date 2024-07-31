@@ -46,3 +46,7 @@ node_modules
 
 # do not copy any download files
 python/download/*
+
+applications/python3/cgi-bin/myVariables.py
+
+applications/python3/cgi-bin/__pycache__
