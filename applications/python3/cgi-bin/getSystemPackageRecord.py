@@ -5,6 +5,7 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import html
 import os
 import urllib.parse
 
@@ -30,6 +31,17 @@ recordTable.add_row([json_object['title'], json_object['systemKey'], json_object
     
 # call to make this an HTML table and put into a new variable
 htmlCode = recordTable.get_html_string(attributes={"class":"table"}, format=True)
+# make the URL strings an actual URL
+htmlCode = html.unescape(htmlCode)
+# make the links off the system package record here from the systemKey in the JSON object above
+htmlMenu = "<p><a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
+htmlMenu += "<a href='listSystemPackageHardware.py?systemKey=" + json_object['systemKey'] + "'>List Hardware</a><br />"
+htmlMenu += "<a href='listSystemPackageSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Software</a><br />"
+htmlMenu += "<a href='listSystemPackagePPSM.py?systemKey=" + json_object['systemKey'] + "'>List Ports/Protocols/Services</a><br />"
+htmlMenu += "<a href='listSystemPackagePOAM.py?systemKey=" + json_object['systemKey'] + "'>List POAM</a><br />"
+htmlMenu += "</p>"
+# unescape them
+htmlMenu = html.unescape(htmlMenu)
 
 # print out the HTML fully page
 print(
@@ -41,6 +53,7 @@ Content-Type: text/html
 <body>"""
 )
 print(htmlCode)
+print(htmlMenu)
 print(
 """\
 </body>

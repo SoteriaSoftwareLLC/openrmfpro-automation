@@ -5,8 +5,18 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import html
+import os
+import urllib.parse
 
-url = myVariables.rootURL + "/api/external/systempackage/machina-biometric/checklists/?applicationKey=" + myVariables.applicationKey + "&page=1&limit=50"
+## get the query string. this gets passed to cgi scripts as the environment
+## variable QUERY_STRING
+query_string = os.environ['QUERY_STRING']
+
+## convert the query string to a dictionary
+arguments = urllib.parse.parse_qs(query_string)
+
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/checklists/?applicationKey=" + myVariables.applicationKey + "&page=1&limit=50"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -22,6 +32,8 @@ for element in json_object:  # iterate on each element of the list
     checklistsTable.add_row([element['systemTitle'], element['systemKey'], element['hostName'], element['version']])
 # call to make this an HTML table and put into a new variable
 htmlCode = checklistsTable.get_html_string(attributes={"class":"table"}, format=True)
+# make the URL strings an actual URL
+htmlCode = html.unescape(htmlCode)
 
 # print out the HTML fully page
 print(

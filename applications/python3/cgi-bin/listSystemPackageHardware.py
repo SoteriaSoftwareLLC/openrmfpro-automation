@@ -6,8 +6,17 @@ from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
 import html
+import os
+import urllib.parse
 
-url = myVariables.rootURL + "/api/external/systempackage/machina-biometric/hardware/?applicationKey=" + myVariables.applicationKey
+## get the query string. this gets passed to cgi scripts as the environment
+## variable QUERY_STRING
+query_string = os.environ['QUERY_STRING']
+
+## convert the query string to a dictionary
+arguments = urllib.parse.parse_qs(query_string)
+
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/hardware/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
