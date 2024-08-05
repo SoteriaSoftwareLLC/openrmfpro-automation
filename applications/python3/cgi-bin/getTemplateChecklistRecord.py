@@ -5,8 +5,17 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import os
+import urllib.parse
 
-url = myVariables.rootURL + "/api/external/templaterecord/6692c0470a51d83f5eb19390/?applicationKey=" + myVariables.applicationKey
+## get the query string. this gets passed to cgi scripts as the environment
+## variable QUERY_STRING
+query_string = os.environ['QUERY_STRING']
+
+## convert the query string to a dictionary
+arguments = urllib.parse.parse_qs(query_string)
+
+url = myVariables.rootURL + "/api/external/templaterecord/" + str(arguments["templateid"][0]) + "/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"

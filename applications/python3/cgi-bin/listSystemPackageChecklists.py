@@ -5,7 +5,6 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
-import html
 
 url = myVariables.rootURL + "/api/external/systempackage/machina-biometric/checklists/?applicationKey=" + myVariables.applicationKey + "&page=1&limit=50"
 
@@ -23,7 +22,6 @@ for element in json_object:  # iterate on each element of the list
     checklistsTable.add_row([element['hostName'], "<a href='getSystemPackageRecord.py?systemKey=" + element['systemKey'] + "&checklistid=" + element['internalIdString'] + "'>" + element['stigType'] + "</a>", element['stigVersion'], element['stigRelease'], element['totalOpen'], element['totalNotApplicable'], element['totalNotAFinding'], element['totalNotReviewed'], element['totalCat1'], element['totalCat2'], element['totalCat3'], element['updatedDateString']])
 # call to make this an HTML table and put into a new variable
 htmlCode = checklistsTable.get_html_string(attributes={"class":"table"}, format=True)
-htmlCode = html.unescape(htmlCode)
 
 # print out the HTML fully page
 print(
