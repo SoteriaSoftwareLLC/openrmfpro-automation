@@ -16,21 +16,22 @@ query_string = os.environ['QUERY_STRING']
 ## convert the query string to a dictionary
 arguments = urllib.parse.parse_qs(query_string)
 
-url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/techvulnerabilitydata/?categoryType=20&applicationKey=" + myVariables.applicationKey
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/mitigation/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
 headers["Authorization"] = "Bearer " + myVariables.bearerToken
 
+# call the API
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
-
-softwareTable = PrettyTable(["Title", "Key", "Category Type", "Source", "Issue Type"])
+# make into a PrettyTable
+mitigationTable = PrettyTable(["Internal Id", "Category", "Title", "Statement", "Active"])
 # Just get the fields want
-for element in json_object: 
-    softwareTable.add_row([element['systemTitle'], element['systemKey'], element['categoryTypeString'], element['source'], element['issueType']])
+for element in json_object:  # iterate on each element of the list
+    mitigationTable.add_row([element['internalIdString'], element['mitigationCategory'], element['mitigationTitle'], element['mitigationStatement'], element['active']])
 # call to make this an HTML table and put into a new variable
-htmlCode = softwareTable.get_html_string(attributes={"class":"table"}, format=True)
+htmlCode = mitigationTable.get_html_string(attributes={"class":"table"}, format=True)
 
 htmlCode = html.unescape(htmlCode)
 # print out the HTML fully page
@@ -48,4 +49,3 @@ print(
 </body>
 </html>"""
 )
-

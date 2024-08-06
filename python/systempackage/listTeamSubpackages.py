@@ -1,6 +1,6 @@
 # list team subpackages the user has access to see
 # API call from Developer's Guide: /api/external/teamsubpackages/?applicationKey={applicationKey}
-# ex: python3 listTeamSubpackages.py http://192.168.13.111:8080 openrmfprosvc  hvs.xxxxxxxxxxxxxxxx
+# ex: python3 listTeamSubpackages.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxxxx
 
 import sys
 import json
