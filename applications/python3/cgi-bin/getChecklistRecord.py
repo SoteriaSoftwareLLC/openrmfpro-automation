@@ -4,6 +4,7 @@ import json
 import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
+import html
 import myVariables
 import os
 import urllib.parse
@@ -15,7 +16,7 @@ query_string = os.environ['QUERY_STRING']
 ## convert the query string to a dictionary
 arguments = urllib.parse.parse_qs(query_string)
 
-url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/checklistrecord/" + + str(arguments["checklistid"][0]) + "/?applicationKey=" + myVariables.applicationKey
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/checklistrecord/" + str(arguments["checklistid"][0]) + "/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -31,6 +32,7 @@ RecordTable.add_row([json_object['artifactTitle'], json_object['hostName'], json
 # call to make this an HTML table and put into a new variable
 htmlCode = RecordTable.get_html_string(attributes={"class":"table"}, format=True)
 
+htmlCode = html.unescape(htmlCode)
 # print out the HTML fully page
 print(
 """\

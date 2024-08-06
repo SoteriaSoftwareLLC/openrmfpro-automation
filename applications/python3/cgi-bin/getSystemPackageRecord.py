@@ -39,6 +39,14 @@ htmlMenu += "<a href='listSystemPackageHardware.py?systemKey=" + json_object['sy
 htmlMenu += "<a href='listSystemPackageSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Software</a><br />"
 htmlMenu += "<a href='listSystemPackagePPSM.py?systemKey=" + json_object['systemKey'] + "'>List Ports/Protocols/Services</a><br />"
 htmlMenu += "<a href='listSystemPackagePOAM.py?systemKey=" + json_object['systemKey'] + "'>List POAM</a><br />"
+htmlMenu += "<a href='getCyberReadiness.py?systemKey=" + json_object['systemKey'] + "'>Get Cyber Readiness</a><br />"
+htmlMenu += "<a href='listSystemPackageEvidence.py?systemKey=" + json_object['systemKey'] + "'>List Evidence</a><br />"
+htmlMenu += "<a href='listSystemPackageComplianceListing.py?systemKey=" + json_object['systemKey'] + "'>List Compliance</a><br />"
+htmlMenu += "<a href='listSystemPackageComplianceOverlays.py?systemKey=" + json_object['systemKey'] + "'>List Compliance Overlays</a><br />"
+htmlMenu += "<a href='listSystemPackageMilestoneEvents.py?systemKey=" + json_object['systemKey'] + "'>List Milestones</a><br />"
+htmlMenu += "<a href='listSystemPackageMitigationStatements.py?systemKey=" + json_object['systemKey'] + "'>List Migration Statements</a><br />"
+htmlMenu += "<a href='listTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
+htmlMenu += "<a href='listNotifications.py?systemKey=" + json_object['systemKey'] + "'>List Notifications</a><br />"
 htmlMenu += "</p>"
 # unescape them
 htmlMenu = html.unescape(htmlMenu)

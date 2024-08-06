@@ -4,6 +4,7 @@ import json
 import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
+import html
 import myVariables
 import os
 import urllib.parse
@@ -31,6 +32,7 @@ RecordTable.add_row([json_object['systemTitle'], json_object['systemKey'], json_
 # call to make this an HTML table and put into a new variable
 htmlCode = RecordTable.get_html_string(attributes={"class":"table"}, format=True)
 
+htmlCode = html.unescape(htmlCode)
 # print out the HTML fully page
 print(
 """\

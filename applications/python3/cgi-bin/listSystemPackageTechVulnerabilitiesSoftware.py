@@ -5,8 +5,18 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import html
+import os
+import urllib.parse
 
-url = myVariables.rootURL + "/api/external/systempackage/machina-biometric/techvulnerabilitydata/?categoryType=10&applicationKey=" + myVariables.applicationKey
+## get the query string. this gets passed to cgi scripts as the environment
+## variable QUERY_STRING
+query_string = os.environ['QUERY_STRING']
+
+## convert the query string to a dictionary
+arguments = urllib.parse.parse_qs(query_string)
+
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/techvulnerabilitydata/?categoryType=10&applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -22,6 +32,7 @@ for element in json_object:
 # call to make this an HTML table and put into a new variable
 htmlCode = softwareTable.get_html_string(attributes={"class":"table"}, format=True)
 
+htmlCode = html.unescape(htmlCode)
 # print out the HTML fully page
 print(
 """\

@@ -5,6 +5,7 @@ import requests
 from requests.structures import CaseInsensitiveDict
 from prettytable import PrettyTable
 import myVariables
+import html
 
 url = myVariables.rootURL + "/api/external/overlay/?applicationKey=" + myVariables.applicationKey
 
@@ -22,6 +23,7 @@ for element in json_object:  # iterate on each element of the list
 # call to make this an HTML table and put into a new variable
 htmlCode = overlayTable.get_html_string(attributes={"class":"table"}, format=True)
 
+htmlCode = html.unescape(htmlCode)
 # print out the HTML fully page
 print(
 """\
