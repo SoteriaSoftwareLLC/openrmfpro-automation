@@ -29,7 +29,7 @@ json_object = json.loads(resp.text)
 checklistsTable = PrettyTable(["Host Name", "Type", "Version", "Release", "Open", "Not Applicable", "Not A Finding", "Not Reviewed", "Cat1", "Cat2", "Cat3", "Updated"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    checklistsTable.add_row([element['hostName'], "<a href='getChecklistRecord.py?systemKey=" + element['systemKey'] + "&checklistid=" + element['internalIdString'] + "'>" + element['stigType'] + "</a>", element['stigVersion'], element['stigRelease'], element['totalOpen'], element['totalNotApplicable'], element['totalNotAFinding'], element['totalNotReviewed'], element['totalCat1'], element['totalCat2'], element['totalCat3'], element['updatedDateString']])
+    checklistsTable.add_row([element['hostName'], "<a href='getChecklistRecord.py?systemKey=" + element['systemKey'] + "&checklistid=" + element['artifactId'] + "'>" + element['stigType'] + "</a>", element['stigVersion'], element['stigRelease'], element['totalOpen'], element['totalNotApplicable'], element['totalNotAFinding'], element['totalNotReviewed'], element['totalCat1'], element['totalCat2'], element['totalCat3'], element['updatedDateString']])
 # call to make this an HTML table and put into a new variable
 htmlCode = checklistsTable.get_html_string(attributes={"class":"table"}, format=True)
 # make the URL strings an actual URL

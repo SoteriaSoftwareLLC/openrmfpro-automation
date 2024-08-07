@@ -26,10 +26,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # make into a PrettyTable
-milestoneTable = PrettyTable(["Title", "Key"])
+milestoneTable = PrettyTable(["Internal Id", "Title", "Description", "Location", "Start Date", "End Date", "Status"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    milestoneTable.add_row([element['systemTitle'], element['systemKey']])
+    milestoneTable.add_row([element['internalIdString'], element['eventTitle'], element['eventDescription'], element['eventLocation'], element['startDateOnly'], element['endDateOnly'], element['status']])
 # call to make this an HTML table and put into a new variable
 htmlCode = milestoneTable.get_html_string(attributes={"class":"table"}, format=True)
 

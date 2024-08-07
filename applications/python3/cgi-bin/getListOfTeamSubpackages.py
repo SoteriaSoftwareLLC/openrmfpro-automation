@@ -26,8 +26,8 @@ resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # print(json.dumps(json_object, indent=1))
 
-subpackagesTable = PrettyTable(["Title", "Key"])    
-subpackagesTable.add_row([json_object['systemTitle'], json_object['systemKey']])
+subpackagesTable = PrettyTable(["Title", "Team Key", "Description", "Checklists", "Devices"])    
+subpackagesTable.add_row([json_object['title'], json_object['teamKey'], json_object['description'], json_object['numberOfChecklists'], json_object['numberOfDevices']])
 # call to make this an HTML table and put into a new variable
 htmlCode = subpackagesTable.get_html_string(attributes={"class":"table"}, format=True)
 
