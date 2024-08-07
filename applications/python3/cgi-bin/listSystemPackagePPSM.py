@@ -25,10 +25,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # make into a PrettyTable
-ppsmTable = PrettyTable(["Host Name", "Low Port Number"])
+ppsmTable = PrettyTable(["Host Name", "Low Port Number", "High Port Number", "Protocol", "Service"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    ppsmTable.add_row([element['hostname'], element['lowPortNumber']])
+    ppsmTable.add_row([element['hostname'], element['lowPortNumber'], element['highPortNumber'], element['protocol'], element['svc_name']])
 # call to make this an HTML table and put into a new variable
 htmlCode = ppsmTable.get_html_string(attributes={"class":"table"}, format=True)
 

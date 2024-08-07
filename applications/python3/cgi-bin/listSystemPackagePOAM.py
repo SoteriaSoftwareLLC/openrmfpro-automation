@@ -25,10 +25,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # make into a PrettyTable
-poamTable = PrettyTable(["Poam Id", "Security Check", "Devices", "Raw Severity"])
+poamTable = PrettyTable(["Poam Id", "Control", "Security Check", "Devices", "Source", "Raw Severity", "Status"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    poamTable.add_row([element['poamItemId'], element['securityChecks'], element['devicesAffected'], element['rawSeverity']])
+    poamTable.add_row([element['poamItemId'], element['securityControlNumber'], element['securityChecks'], element['devicesAffected'], element['sourceIdControlVulnerability'], element['rawSeverity'], element['status']])
 # call to make this an HTML table and put into a new variable
 htmlCode = poamTable.get_html_string(attributes={"class":"table"}, format=True)
 
