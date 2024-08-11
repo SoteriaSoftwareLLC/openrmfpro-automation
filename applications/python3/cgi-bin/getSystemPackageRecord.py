@@ -45,7 +45,7 @@ htmlMenu += "<a href='listSystemPackageComplianceListing.py?systemKey=" + json_o
 htmlMenu += "<a href='listSystemPackageComplianceOverlays.py?systemKey=" + json_object['systemKey'] + "'>List Compliance Overlays</a><br />"
 htmlMenu += "<a href='listSystemPackageMilestoneEvents.py?systemKey=" + json_object['systemKey'] + "'>List Milestones</a><br />"
 htmlMenu += "<a href='listSystemPackageMitigationStatements.py?systemKey=" + json_object['systemKey'] + "'>List Mitigation Statements</a><br />"
-htmlMenu += "<a href='listTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
+htmlMenu += "<a href='getListOfTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
 htmlMenu += "<a href='listNotifications.py?systemKey=" + json_object['systemKey'] + "'>List Notifications</a><br />"
 htmlMenu += "</p>"
 # unescape them
