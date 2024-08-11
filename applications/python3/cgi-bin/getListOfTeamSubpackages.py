@@ -16,7 +16,7 @@ query_string = os.environ['QUERY_STRING']
 ## convert the query string to a dictionary
 arguments = urllib.parse.parse_qs(query_string)
 
-url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/teamsubpackages/?applicationKey=" + myVariables.applicationKey
+url = myVariables.rootURL + "/api/external/systempackage/" + str(arguments["systemKey"][0]) + "/teamsubpackage/?applicationKey=" + myVariables.applicationKey
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
@@ -24,10 +24,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
-# print(json.dumps(json_object, indent=1))
 
 subpackagesTable = PrettyTable(["Title", "Team Key", "Description", "Checklists", "Devices"])    
-subpackagesTable.add_row([json_object['title'], json_object['teamKey'], json_object['description'], json_object['numberOfChecklists'], json_object['numberOfDevices']])
+for element in json_object:  # iterate on each element of the list
+    subpackagesTable.add_row([element['fullTitle'], "<a href='getListOfTeamSubpackageItems.py?systemKey=" + element['parentSystemKey'] + "&teamKey=" + element['teamKey']+ "'>" + element['teamKey'] + "</a>", element['description'], element['numberOfChecklists'], element['numberOfDevices']])
 # call to make this an HTML table and put into a new variable
 htmlCode = subpackagesTable.get_html_string(attributes={"class":"table"}, format=True)
 
