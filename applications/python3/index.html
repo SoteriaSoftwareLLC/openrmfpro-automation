@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Soteria Software | OpenRMF Professional Python API Application</title>
+</head>
+
+<body>
+<h1>Python3 example application using simple cgi-bin</h1>
+To launch the application, from the ./applications/python/ folder run the below command. And access with a browser to http://localhost:8000/cgi-bin/listTemplates.py for example.
+
+<pre>python3 -m http.server --cgi</pre>
+
+This includes a myVariables.py file that has the 3 below variables in it for the root URL, application key, and bearer token generated. This is in place of ENVIRONMENT variables in a framework or however you wish to pass and use the information securely.
+
+<pre>
+rootURL = "http://openrmfpro.mycompany.com:8080"
+applicationKey = "myApplicationKey"
+bearerToken = "hvs.CAESIBP1QjNLqckAk1PlNyMqqJTlxxxxxxxxxxqTDV6Y05uOVhkTXREdlZlSHpjOUt0Q0U"
+</pre>
+<hr width="90%" />
+<h2>Start Here</h2>
+  <p><a href="/cgi-bin/listSystemPackages.py">List System Packages</a></p>
+  <p><a href="/cgi-bin/listTeamSubpackages.py">List Team Subpackages</a></p>
+  <p><a href="/cgi-bin/listTemplates.py">List Templates</a></p>
+</body>
+<hr width="90%" />
+Reference: <a href="https://github.com/SoteriaSoftwareLLC/openrmfpro-automation/tree/main/applications/python3" target="_blank">OpenRMF<sup>&reg;</sup> Professional Automation Repo</a>
+</html>
