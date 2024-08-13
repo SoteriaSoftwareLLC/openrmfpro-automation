@@ -11,7 +11,7 @@ url = myVariables.rootURL + "/api/external/templates/disa/?applicationKey=" + my
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer" + myVariables.bearerToken
+headers["Authorization"] = "Bearer " + myVariables.bearerToken
 
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)

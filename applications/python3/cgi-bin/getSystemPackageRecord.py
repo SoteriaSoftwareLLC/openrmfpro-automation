@@ -34,7 +34,8 @@ htmlCode = recordTable.get_html_string(attributes={"class":"table"}, format=True
 # make the URL strings an actual URL
 htmlCode = html.unescape(htmlCode)
 # make the links off the system package record here from the systemKey in the JSON object above
-htmlMenu = "<p><a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
+htmlMenu = "<p><a href='getSystemPackagePatchScore.py?systemKey=" + json_object['systemKey'] + "'>Patch Score Listing</a><br />"
+htmlMenu += "<a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
 htmlMenu += "<a href='listSystemPackageHardware.py?systemKey=" + json_object['systemKey'] + "'>List Hardware</a><br />"
 htmlMenu += "<a href='listSystemPackageSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Software</a><br />"
 htmlMenu += "<a href='listSystemPackagePPSM.py?systemKey=" + json_object['systemKey'] + "'>List Ports/Protocols/Services</a><br />"

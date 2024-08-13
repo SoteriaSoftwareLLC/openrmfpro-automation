@@ -30,7 +30,7 @@ json_object = json.loads(resp.text)
 systemPackageTable = PrettyTable(["Team Package", "Team Key", "Checklists", "Devices", "Last Updated"])
 # Just get the fields we want
 for element in json_object:  # iterate on each element of the list
-    systemPackageTable.add_row([element['title'], "<a href='getListOfTeamSubpackages.py?systemKey=" + element['systemKey'] + "'>" + element['teamKey'] + "</a>", element['numberOfChecklists'], element['numberOfDevices'], element['updatedDateString']])
+    systemPackageTable.add_row([element['title'], element['teamKey'], element['numberOfChecklists'], element['numberOfDevices'], element['updatedDateString']])
 # call to make this an HTML table and put into a new variable
 htmlCode = systemPackageTable.get_html_string(attributes={"class":"table"}, format=True)
 # make the URL strings an actual URL

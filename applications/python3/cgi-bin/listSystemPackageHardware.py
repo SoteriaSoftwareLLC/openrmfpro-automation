@@ -28,7 +28,7 @@ json_object = json.loads(resp.text)
 hardwareTable = PrettyTable(["HostName", "Operating System"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    hardwareTable.add_row([element['hostname'], "<a href='getSystemPackageHardwareRecord.py?systemKey=" + element['systemKey'] + "&hardwareid=" + element['internalIdString'] + "'>" + str(element['operatingSystem']) + "</a>"])
+    hardwareTable.add_row(["<a href='getSystemPackageHardwareRecord.py?systemKey=" + element['systemKey'] + "&hardwareid=" + element['internalIdString'] + "'>" + str(element['hostname']) + "</a>", str(element['operatingSystem'])])
 # call to make this an HTML table and put into a new variable
 htmlCode = hardwareTable.get_html_string(attributes={"class":"table"}, format=True)
 # make the URL strings an actual URL
