@@ -47,6 +47,7 @@ htmlMenu += "<a href='listSystemPackageMilestoneEvents.py?systemKey=" + json_obj
 htmlMenu += "<a href='listSystemPackageMitigationStatements.py?systemKey=" + json_object['systemKey'] + "'>List Mitigation Statements</a><br />"
 htmlMenu += "<a href='listTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
 htmlMenu += "<a href='listNotifications.py?systemKey=" + json_object['systemKey'] + "'>List Notifications</a><br />"
+htmlMenu += "<a href='listSystemPackagePatchVulnerabilities.py?systemKey=" + json_object['systemKey'] + "'>List Patch Vulnerabilities</a><br />"
 htmlMenu += "</p>"
 # unescape them
 htmlMenu = html.unescape(htmlMenu)
