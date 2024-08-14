@@ -34,7 +34,8 @@ htmlCode = recordTable.get_html_string(attributes={"class":"table"}, format=True
 # make the URL strings an actual URL
 htmlCode = html.unescape(htmlCode)
 # make the links off the system package record here from the systemKey in the JSON object above
-htmlMenu = "<p><a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
+htmlMenu = "<p><a href='getSystemPackagePatchScore.py?systemKey=" + json_object['systemKey'] + "'>Patch Score Listing</a><br />"
+htmlMenu += "<a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
 htmlMenu += "<a href='listSystemPackageHardware.py?systemKey=" + json_object['systemKey'] + "'>List Hardware</a><br />"
 htmlMenu += "<a href='listSystemPackageSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Software</a><br />"
 htmlMenu += "<a href='listSystemPackagePPSM.py?systemKey=" + json_object['systemKey'] + "'>List Ports/Protocols/Services</a><br />"
@@ -45,7 +46,7 @@ htmlMenu += "<a href='listSystemPackageComplianceListing.py?systemKey=" + json_o
 htmlMenu += "<a href='listSystemPackageComplianceOverlays.py?systemKey=" + json_object['systemKey'] + "'>List Compliance Overlays</a><br />"
 htmlMenu += "<a href='listSystemPackageMilestoneEvents.py?systemKey=" + json_object['systemKey'] + "'>List Milestones</a><br />"
 htmlMenu += "<a href='listSystemPackageMitigationStatements.py?systemKey=" + json_object['systemKey'] + "'>List Mitigation Statements</a><br />"
-htmlMenu += "<a href='listTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
+htmlMenu += "<a href='getListOfTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
 htmlMenu += "<a href='listNotifications.py?systemKey=" + json_object['systemKey'] + "'>List Notifications</a><br />"
 htmlMenu += "<a href='listSystemPackagePatchVulnerabilities.py?systemKey=" + json_object['systemKey'] + "'>List Patch Vulnerabilities</a><br />"
 htmlMenu += "</p>"
