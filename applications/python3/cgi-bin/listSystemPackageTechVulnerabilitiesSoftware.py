@@ -25,10 +25,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 
-softwareTable = PrettyTable(["Title", "Key", "Category Type", "Source", "Issue Type"])
+softwareTable = PrettyTable(["Source", "Category Type", "Project", "Status", "Severity", "Message"])
 # Just get the fields want
 for element in json_object: 
-    softwareTable.add_row([element['systemTitle'], element['systemKey'], element['categoryTypeString'], element['source'], element['issueType']])
+    softwareTable.add_row([element['source'], element['categoryTypeString'], element['project'], element['statusValue'], element['severityValue'], element['message']])
 # call to make this an HTML table and put into a new variable
 htmlCode = softwareTable.get_html_string(attributes={"class":"table"}, format=True)
 
