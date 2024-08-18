@@ -25,10 +25,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 # make into a PrettyTable
-deviceTable = PrettyTable(["Host Name", "Critical Open", "High Open", "Medium Open", "Low Open", "Info Open", "Version"])
+deviceTable = PrettyTable(["Host Name", "Critical Open", "High Open", "Medium Open", "Low Open", "Info Open"])
 # Just get the fields want
 for element in json_object:  # iterate on each element of the list
-    deviceTable.add_row([element['hostname'], element['totalCriticalOpen'],  element['totalHighOpen'],  element['totalMediumOpen'], element['totalLowOpen'], element['totalInfoOpen'], element['version']])
+    deviceTable.add_row([element['hostname'], element['totalCriticalOpen'],  element['totalHighOpen'],  element['totalMediumOpen'], element['totalLowOpen'], element['totalInfoOpen']])
 # call to make this an HTML table and put into a new variable
 htmlCode = deviceTable.get_html_string(attributes={"class":"table"}, format=True)
 

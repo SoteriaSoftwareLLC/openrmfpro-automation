@@ -25,10 +25,10 @@ headers["Authorization"] = "Bearer " + myVariables.bearerToken
 resp = requests.get(url, headers=headers)
 json_object = json.loads(resp.text)
 
-softwareTable = PrettyTable(["Host Name", "Software", "Version"])
+softwareTable = PrettyTable(["Host Name", "Software", "Version", "Type", "Install Date"])
 # Just get the fields want
 for element in json_object: 
-    softwareTable.add_row([element['hostname'], "<a href='getSystemPackageSoftwareRecord.py?systemKey=" + element['systemKey'] +  "&softwareid=" + element['internalIdString'] + "'>" + element['softwareName'] + "</a>", element['softwareVersion']])
+    softwareTable.add_row([element['hostname'], "<a href='getSystemPackageSoftwareRecord.py?systemKey=" + element['systemKey'] +  "&softwareid=" + element['internalIdString'] + "'>" + element['softwareName'] + "</a>", element['softwareVersion'], element['assetTypeString'], element['installedOn']])
 # call to make this an HTML table and put into a new variable
 htmlCode = softwareTable.get_html_string(attributes={"class":"table"}, format=True)
 # make the URL strings an actual URL
