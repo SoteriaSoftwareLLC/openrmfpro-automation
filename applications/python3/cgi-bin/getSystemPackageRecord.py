@@ -35,6 +35,7 @@ htmlCode = recordTable.get_html_string(attributes={"class":"table"}, format=True
 htmlCode = html.unescape(htmlCode)
 # make the links off the system package record here from the systemKey in the JSON object above
 htmlMenu = "<p><a href='getSystemPackagePatchScore.py?systemKey=" + json_object['systemKey'] + "'>Patch Score Listing</a><br />"
+htmlMenu += "<a href='getSystemPackageChecklistScore.py?systemKey=" + json_object['systemKey'] + "'>Checklist Score</a><br />"
 htmlMenu += "<a href='listSystemPackageChecklists.py?systemKey=" + json_object['systemKey'] + "'>List Checklists</a><br />"
 htmlMenu += "<a href='listSystemPackageHardware.py?systemKey=" + json_object['systemKey'] + "'>List Hardware</a><br />"
 htmlMenu += "<a href='listSystemPackageSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Software</a><br />"
@@ -48,6 +49,13 @@ htmlMenu += "<a href='listSystemPackageMilestoneEvents.py?systemKey=" + json_obj
 htmlMenu += "<a href='listSystemPackageMitigationStatements.py?systemKey=" + json_object['systemKey'] + "'>List Mitigation Statements</a><br />"
 htmlMenu += "<a href='getListOfTeamSubpackages.py?systemKey=" + json_object['systemKey'] + "'>List Team Subpackages</a><br />"
 htmlMenu += "<a href='listNotifications.py?systemKey=" + json_object['systemKey'] + "'>List Notifications</a><br />"
+htmlMenu += "<a href='listSystemPackagePatchVulnerabilities.py?systemKey=" + json_object['systemKey'] + "'>List Patch Vulnerabilities</a><br />"
+htmlMenu += "<a href='listSystemPackagePatchScoreForDeviceListing.py?systemKey=" + json_object['systemKey'] + "'>List Patch Score By Device Listing</a><br />"
+htmlMenu += "<a href='listSystemPackageTechVulnerabilitiesSoftware.py?systemKey=" + json_object['systemKey'] + "'>List Tech Vulnerabilities (Software)</a><br />"
+htmlMenu += "<a href='listSystemPackageTechVulnerabilitiesContainer.py?systemKey=" + json_object['systemKey'] + "'>List Tech Vulnerabilities (Container)</a><br />"
+htmlMenu += "<a href='listSystemPackageTechVulnerabilitiesLog.py?systemKey=" + json_object['systemKey'] + "'>List Tech Vulnerabilities (Log)</a><br />"
+htmlMenu += "<a href='listSystemPackageTechVulnerabilitiesOther.py?systemKey=" + json_object['systemKey'] + "'>List Tech Vulnerabilities (Other)</a><br />"
+htmlMenu += "<a href='listSystemPackageTechVulnerabilitiesTotalScore.py?systemKey=" + json_object['systemKey'] + "'>List Tech Vulnerabilities Total Score</a><br />"
 htmlMenu += "</p>"
 # unescape them
 htmlMenu = html.unescape(htmlMenu)
