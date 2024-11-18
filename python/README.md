@@ -30,6 +30,16 @@ This would load up workstations named SOTWKS2000001 to 00581 with 6 checklists p
 python3 windowsdesktopstackbulk.py http://192.168.13.100:8080/ company-desktop-infra myapiaccountname hvs.87587659786LKGJKHGLJKHJK "652fcdccde4e9aef5c32545b,652fcdeede4e9aef5c32545e,652fcdfdde4e9aef5c32545f,652fcdc1de4e9aef5c32545a,652fcdd7de4e9aef5c32545c,652fcde1de4e9aef5c32545d" SOTWKS200 1 581
 ```
 
+## MacOS Sonoma
+
+You may need to run this to setup requests and call the Python3 scripts correctly.
+
+```
+python3 -m venv path/to/venv
+source path/to/venv/bin/activate
+python3 -m pip install requests
+```
+
 ## Notes
 * for the Download XLSX scripts, there needs to be a ./download/ directory created where you run it. Or modify as appropriate.
 * we tried to put the applicable scripts into the appropriate folders for organization
