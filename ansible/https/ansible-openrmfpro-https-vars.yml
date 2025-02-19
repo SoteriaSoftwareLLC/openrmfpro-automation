@@ -1,0 +1,18 @@
+# ALL OF THESE ARE REQUIRED INCLUDING THE PEM FILE
+# what is your DNS entry or IP address to access
+# if using DNS, use all lowercase letters as Keycloak is case sensitive
+target_dns_ip_entry: openrmfpro.mycompany.com
+# variables for the HTTPS certificate setup playbook for OpenRMF Professional
+# exact path to the root OpenRMF Professional files
+target_openrmfpro_path: /apps/openrmfpro
+# source path for the files below
+source_cert_path: /home/openrmfproadmin/certificates
+# files we need to setup and move for HTTPS
+source_pem_file: dhparam.pem
+source_crt_combined_file: server.crt
+source_key_file: server.key
+# port to use of 8443 or 443, used in "when" clauses
+target_secure_port: 8443
+# the Keycloak admin account setup used for setting the valid redirect URI
+target_keycloak_admin: admin
+target_keycloak_admin_password: 1qaz2WSX3edc4RFV

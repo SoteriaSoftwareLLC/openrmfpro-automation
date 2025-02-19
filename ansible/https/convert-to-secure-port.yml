@@ -1,0 +1,247 @@
+# HTTPS certificate setup playbook for OpenRMF Professional
+---
+- name: OpenRMF Professional HTTPS Setup Configuration
+  hosts: localhost
+  connection: local
+  # uncomment if you want to use ansible facts in the file below or the ansible playbook YML
+  # gather_facts: yes
+  # use SUDO or not? 
+  become: no
+  tasks:
+  - include_vars: ansible-openrmfpro-https-vars.yml
+  # copy certificate files
+  - name: Copy DH Parameter pem file
+    copy:
+      src: "{{ source_cert_path }}/{{ source_pem_file }}"
+      dest: "{{ target_openrmfpro_path }}/ssl/certs/dhparam.pem"
+      owner: root
+      group: root
+      mode: "0755"
+    become: true
+  - name: Copy CRT bundle file for servercert_bundle with server certificate and all CA certificates combined
+    copy:
+      src: "{{ source_cert_path }}/{{ source_crt_combined_file }}"
+      dest: "{{ target_openrmfpro_path }}/ssl/certs/servercert_bundle.crt"
+      owner: root
+      group: root
+      mode: "0755"
+    become: true
+  - name: Copy key file
+    copy:
+      src: "{{ source_cert_path }}/{{ source_key_file }}"
+      dest: "{{ target_openrmfpro_path }}/ssl/private/server.key.unencrypted"
+      owner: root
+      group: root
+      mode: "0755"
+    become: true
+  # openrmfprobackend.yml changes
+  - name: openrmfprobackend.yml comment out port 8080 NGINX Metrics
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfprobackend.yml"
+      regexp: '- http://openrmfpro-web:8080/status'
+      replace: '# - http://openrmfpro-web:8080/status'
+  - name: openrmfprobackend.yml uncomment port 8443 NGINX Metrics
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfprobackend.yml"
+      regexp: '# - https://openrmfpro-web:8443/status'
+      replace: '- https://openrmfpro-web:8443/status'
+    when: '8443 == target_secure_port'
+  - name: openrmfprobackend.yml uncomment port 443 NGINX Metrics
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfprobackend.yml"
+      regexp: '# - https://openrmfpro-web:8443/status'
+      replace: '- https://openrmfpro-web/status'
+    when: '443 == target_secure_port'
+  - name: openrmfprobackend.yml uncomment Environment setting for NGINX Metrics
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfprobackend.yml"
+      regexp: '# environment:'
+      replace: 'environment:'
+  - name: openrmfprobackend.yml SSL_VERIFY change for NGINX Metrics
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfprobackend.yml"
+      regexp: '#   - SSL_VERIFY=false # do not verify on any SSL self signed cert for the web UI'
+      replace: '  - SSL_VERIFY=false # do not verify on any SSL self signed cert for the web UI'
+  # openrmfpro.yml changes
+  - name: openrmfpro.yml comment out port 8080 Web UI
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfpro.yml"
+      regexp: '- 8080:8080'
+      replace: '# - 8080:8080'
+  - name: openrmfpro.yml uncomment port 8443 Web UI
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfpro.yml"
+      regexp: '# - 8443:8443'
+      replace: '- 8443:8443'
+    when: '8443 == target_secure_port'
+  - name: openrmfpro.yml uncomment port 443 Web UI
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfpro.yml"
+      regexp: '# - 8443:8443'
+      replace: '- 443:443'
+    when: '443 == target_secure_port'
+  - name: openrmfpro.yml uncomment the SSL mounted directory
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfpro.yml"
+      regexp: '# - ./ssl/:/etc/ssl/:Z'
+      replace: '- ./ssl/:/etc/ssl/:Z'
+  - name: openrmfpro.yml make the web container privileged for 443
+    replace:
+      path: "{{ target_openrmfpro_path }}/openrmfpro.yml"
+      regexp: '    image: soteriasoft.jfrog.io/openrmfpro/openrmfpro-web:(.*)$'
+      replace: '    image: soteriasoft.jfrog.io/openrmfpro/openrmfpro-web:\1-privileged'
+    when: '443 == target_secure_port'
+  # nginx.conf changes
+  - name: nginx.conf comment out port 8080 listener
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: 'listen 8080;'
+      replace: '# listen 8080;'
+  - name: nginx.conf uncomment port 8443 listener
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# listen 8443'
+      replace: 'listen 8443'
+    when: '8443 == target_secure_port'
+  - name: nginx.conf uncomment port 8443 listener IPv6
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# listen \[::\]:8443'
+      replace: 'listen [::]:8443'
+    when: '8443 == target_secure_port'
+  - name: nginx.conf uncomment port 443 listener
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# listen 8443'
+      replace: 'listen 443'
+    when: '443 == target_secure_port'
+  - name: nginx.conf uncomment port 443 listener IPv6
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# listen \[::\]:8443'
+      replace: 'listen [::]:443'
+    when: '443 == target_secure_port'
+  - name: nginx.conf fix invalid http2 line
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: 'http2 ssl;'
+      replace: 'ssl;'
+  - name: nginx.conf uncomment http2
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# http2 on'
+      replace: 'http2 on'
+  - name: Check that http2 on is in the file
+    lineinfile:
+      state: absent
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: "^http2 on;"
+    check_mode: true
+    changed_when: false
+    register: checkhttp2
+  - name: add http2 on line
+    lineinfile:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      line: "        http2 on;"
+      insertbefore: '        # ssl_protocols TLSv1.2;'
+    when: checkhttp2.found == 0
+  - name: nginx.conf uncomment SSL protocols
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# ssl_protocols TLSv1.2;'
+      replace: 'ssl_protocols TLSv1.2;'
+  - name: nginx.conf uncomment SSL header information
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;'
+      replace: 'add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;'
+  - name: nginx.conf uncomment Server Name
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# server_name '
+      replace: 'server_name {{ target_dns_ip_entry }}; #'
+  - name: nginx.conf uncomment SSL server certificate bundle file
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# ssl_certificate /etc/ssl/certs/servercert_bundle.crt;'
+      replace: 'ssl_certificate /etc/ssl/certs/servercert_bundle.crt;'
+  - name: nginx.conf uncomment SSL server key
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# ssl_certificate_key /etc/ssl/private/server.key.unencrypted;'
+      replace: 'ssl_certificate_key /etc/ssl/private/server.key.unencrypted;'
+  - name: nginx.conf uncomment DHPARAM file
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      regexp: '# ssl_dhparam /etc/ssl/certs/dhparam.pem;'
+      replace: 'ssl_dhparam /etc/ssl/certs/dhparam.pem;'
+  - name: nginx.conf comment Keycloak port 8080 proxy redirect
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      before: 'host:8443;'
+      regexp: '  proxy_set_header Host              \$host:8080;'
+      replace: '  # proxy_set_header Host              $host:8080;'
+  - name: nginx.conf uncomment Keycloak port 8443 proxy redirect
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      after: 'host:8080;'
+      regexp: '# proxy_set_header   Host          \$host:8443;'
+      replace: 'proxy_set_header   Host            $host:8443;'
+    when: '8443 == target_secure_port'
+  - name: nginx.conf uncomment Keycloak port 443 proxy redirect
+    replace:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      after: 'host:8080;'
+      regexp: '# proxy_set_header   Host          \$host:8443;'
+      replace: 'proxy_set_header   Host            $host:443;'
+    when: '443 == target_secure_port'
+  - name: nginx.conf add non-root user variables for privileged NGINX
+    lineinfile:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      line: "    # Non-Root User\n    client_body_temp_path /tmp/client_temp;\n    proxy_temp_path       /tmp/proxy_temp_path;\n    fastcgi_temp_path     /tmp/fastcgi_temp;\n    uwsgi_temp_path       /tmp/uwsgi_temp;\n    scgi_temp_path        /tmp/scgi_temp;\n"
+      insertafter: "http {"
+    when: '443 == target_secure_port'
+  - name: Check that http2 on is in the file
+    lineinfile:
+      path: "{{ target_openrmfpro_path }}/nginx.conf"
+      line: "        http2 on;"
+      regexp: '^http2 on;'
+      insertafter: "listen [::]:"
+  # .env changes
+  - name: .env update JWTAUTHORITY for https
+    replace:
+      path: "{{ target_openrmfpro_path }}/.env"
+      regexp: 'JWTAUTHORITY=http:/'
+      replace: 'JWTAUTHORITY=https:/'
+  - name: .env update JWTAUTHORITY for port 8443
+    replace:
+      path: "{{ target_openrmfpro_path }}/.env"
+      regexp: ':8080/auth/'
+      replace: ':8443/auth/'
+    when: '8443 == target_secure_port'
+  - name: .env update JWTAUTHORITY for port 443
+    replace:
+      path: "{{ target_openrmfpro_path }}/.env"
+      regexp: ':8080/auth/'
+      replace: '/auth/'
+    when: '443 == target_secure_port'
+  # Keycloak Valid redirect URI changes
+  - name: Login to Keycloak
+    shell: docker exec openrmfpro-keycloak /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:8080/auth --realm master --user {{ target_keycloak_admin }} --password "{{ target_keycloak_admin_password}}"
+  - name: Request the Keycloak OpenRMF Client Id
+    shell: docker exec openrmfpro-keycloak /opt/keycloak/bin/kcadm.sh get clients -r openrmfpro --fields id --query clientId=openrmf
+    register: keycloak_client_id_output
+  - name: Parse the Keycloak OpenRMF Client Id
+    set_fact:
+      keycloak_client_openrmf_id: "{{ keycloak_client_id_output.stdout_lines[1].split().2|trim }}"
+  # - name: Prints two lines of messages, but only if there is an environment value set
+  #   debug:
+  #     msg:
+  #       - "Client Get Request Result: {{ keycloak_client_id_output }}"
+  #       - "Client Id for OpenRMF Professional: '{{ keycloak_client_openrmf_id }}'"
+  - name: Set Valid redirect URI for port 8443
+    shell: docker exec openrmfpro-keycloak /opt/keycloak/bin/kcadm.sh update clients/{{ keycloak_client_openrmf_id }} -r openrmfpro -s 'redirectUris=["https://{{ target_dns_ip_entry }}:8443/*"]'
+    when: '8443 == target_secure_port'
+  - name: Set Valid redirect URI for port 443
+    shell: docker exec openrmfpro-keycloak /opt/keycloak/bin/kcadm.sh update clients/{{ keycloak_client_openrmf_id }} -r openrmfpro -s 'redirectUris=["https://{{ target_dns_ip_entry }}/*"]'
+    when: '443 == target_secure_port'

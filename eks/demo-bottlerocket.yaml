@@ -4,7 +4,8 @@ kind: ClusterConfig
 
 metadata:
   name: openrmfpro-demo
-  region: us-east-2
+  region: us-east-1
+  version: '1.29'
 
 nodeGroups:
   - name: openrmfpro-demo-ng1-public
@@ -22,3 +23,9 @@ nodeGroups:
         fsx: true
         efs: true
         albIngress: true
+cloudWatch:
+    clusterLogging:
+        # enable specific types of cluster control plane logs
+        enableTypes: ["audit", "authenticator", "controllerManager"]
+        # all supported types: "api", "audit", "authenticator", "controllerManager", "scheduler"
+        # supported special values: "*" and "all"
