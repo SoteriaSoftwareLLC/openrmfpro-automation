@@ -1,2 +1,4 @@
-﻿Device,OperatingSystem,VirtualServer,Firmware,Manufacturer,ModelNumber,SerialNumber,AssetName,Purpose,Description
-WINSVR12MS003.SOTERIA,Microsoft Windows 2012 Server,X,3.23.32343,DELL,350PX,8756756475657,WINSVR12MS003,Windows Exchange Server,Our email Exchange Server
+﻿Device,OperatingSystem,VirtualServer,Firmware,Manufacturer,ModelNumber,SerialNumber,AssetName,Purpose,Description,Tags,IPAddress,MACAddress
+WINSVR12MS003.SOTERIA,Microsoft Windows 2012 Server,X,3.23.32343,DELL,350PX,8756756475657,WINSVR12MS003,Windows Exchange Server,Our email Exchange Server,windows team||server||email,10.10.25.17,00:0C:29:88:C9:7D
+WINSVR12MS001.SOTERIA,Microsoft Windows 2012 Server,X,3.23.32343,DELL,350PX,8756756475657,WINSVR12MS003,Windows Exchange Server,Our File Server,windows team||server,10.10.25.100||10.10.2.55,00:0C:33:88:C9:7D
+WINSVR12MS002.SOTERIA,Microsoft Windows 2012 Server,X,3.23.32343,DELL,350PX,8756756475657,WINSVR12MS003,Windows Exchange Server,Our File Server,windows team||server,10.10.25.129,00:0C:29:44:C9:7D
