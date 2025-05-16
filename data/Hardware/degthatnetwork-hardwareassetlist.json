@@ -9,10 +9,12 @@
         "serialNumber": "2342343-PV1",
         "assetName": "",
         "purpose": "",
-        "description": "", 
+        "description": "",
+        "ipAddress": "10.10.25.17",
+        "macAddress": "00:0C:29:88:C9:7D",
         "tags": [
-            "tag1",
-            "tag2"
+            "desktop",
+            "windows team"
         ]
     },{
         "device": "DEGTHAT3",
@@ -24,8 +26,13 @@
         "serialNumber": "2342343-PR2",
         "assetName": "",
         "purpose": "",
-        "description": "", 
-        "tags": []
+        "description": "",
+        "ipAddress": "10.10.25.100,10.10.2.55",
+        "macAddress": "00:0C:33:88:C9:7D",
+        "tags": [
+            "desktop",
+            "windows team"
+        ]
     },{
         "device": "DEGTHATWIN2K16SVR01",
         "operatingSystem": "Microsoft Windows 2016 Server",
@@ -36,7 +43,9 @@
         "serialNumber": "2342343-PV3",
         "assetName": "",
         "purpose": "Web Server",
-        "description": "This is the main IIS web server for application hosting internally.", 
+        "description": "This is the main IIS web server for application hosting internally.",
+        "ipAddress": "10.10.25.129",
+        "macAddress": "00:0C:29:44:C9:7D",
         "tags": []
     }
 ]
