@@ -6,7 +6,7 @@ import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2] + "/checklist/" + sys.argv[3] + "/?applicationKey=" + sys.argv[4]
+url = sys.argv[1] + "/api/external/systempackage/" + sys.argv[2] + "/checklist/" + sys.argv[3] + "/?format=ckl&applicationKey=" + sys.argv[4]
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "application/xml;charset=utf-8"
