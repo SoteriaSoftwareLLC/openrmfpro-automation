@@ -1,6 +1,7 @@
 # list all the checklists in a system package
 # API call from Developer's Guide: /api/external/systempackage/{systemKey}/checklists/?applicationKey={applicationKey}&page=1&limit=50&searchString=zzzzzzzzzzzzzzzz
-# ex: python3 listSystemPackageChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx 0 50
+# ex: python3 listSystemPackageChecklists.py http://192.168.13.111:8080 companyinfra openrmfprosvc hvs.xxxxxxxxxxxxxx 1 50
+# current page of the results starts with page 1
 
 import sys
 import json
