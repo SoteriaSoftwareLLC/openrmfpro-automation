@@ -1,0 +1,156 @@
+[
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Organizational Context",
+    "controlFamilySectionAcronym": "GV.OC",
+    "controlFamilySectionDescription": "The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood."
+    },
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Risk Management Strategy",
+    "controlFamilySectionAcronym": "GV.RM",
+    "controlFamilySectionDescription": "The organization's priorities, constraints, risk tolerance and appetite statements, and assumptions are established, communicated, and used to support operational risk decisions."
+    },
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Roles, Responsibilities, and Authorities",
+    "controlFamilySectionAcronym": "GV.RR",
+    "controlFamilySectionDescription": "Cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement are established and communicated."
+    },
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Policy",
+    "controlFamilySectionAcronym": "GV.PO",
+    "controlFamilySectionDescription": "Organizational cybersecurity policy is established, communicated, and enforced."
+    },
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Oversight",
+    "controlFamilySectionAcronym": "GV.OV",
+    "controlFamilySectionDescription": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy."
+    },
+    {
+    "controlFamily": "Govern",
+    "controlFamilyAcronym": "GV",
+    "controlFamilySection": "Cybersecurity Supply Chain Risk Management",
+    "controlFamilySectionAcronym": "GV.SC",
+    "controlFamilySectionDescription": "Cyber supply chain risk management processes are identified, established, managed, monitored, and improved by organizational stakeholders."
+    },
+    {
+    "controlFamily": "Identify",
+    "controlFamilyAcronym": "ID",
+    "controlFamilySection": "Asset Management",
+    "controlFamilySectionAcronym": "ID.AM",
+    "controlFamilySectionDescription": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy."
+    },
+    {
+    "controlFamily": "Identify",
+    "controlFamilyAcronym": "ID",
+    "controlFamilySection": "Risk Assessment",
+    "controlFamilySectionAcronym": "ID.RA",
+    "controlFamilySectionDescription": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization."
+    },
+    {
+    "controlFamily": "Identify",
+    "controlFamilyAcronym": "ID",
+    "controlFamilySection": "Improvement",
+    "controlFamilySectionAcronym": "ID.IM",
+    "controlFamilySectionDescription": "Improvements to organizational cybersecurity risk management processes, procedures and activities are identified across all CSF Functions."
+    },
+    {
+    "controlFamily": "Protect",
+    "controlFamilyAcronym": "PR",
+    "controlFamilySection": "Identity Management, Authentication, and Access Control",
+    "controlFamilySectionAcronym": "PR.AA",
+    "controlFamilySectionDescription": "Access to physical and logical assets is limited to authorized users, services, and hardware and  managed commensurate with the assessed risk of unauthorized access."
+    },
+    {
+    "controlFamily": "Protect",
+    "controlFamilyAcronym": "PR",
+    "controlFamilySection": "Awareness and Training",
+    "controlFamilySectionAcronym": "PR.AT",
+    "controlFamilySectionDescription": "The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks."
+    },
+    {
+    "controlFamily": "Protect",
+    "controlFamilyAcronym": "PR",
+    "controlFamilySection": "Data Security",
+    "controlFamilySectionAcronym": "PR.DS",
+    "controlFamilySectionDescription": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information."    
+    },
+    {
+    "controlFamily": "Protect",
+    "controlFamilyAcronym": "PR",
+    "controlFamilySection": "Platform Security",
+    "controlFamilySectionAcronym": "PR.PS",
+    "controlFamilySectionDescription": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability."
+    },
+    {
+    "controlFamily": "Protect",
+    "controlFamilyAcronym": "PR",
+    "controlFamilySection": "Technology Infrastructure Resilience",
+    "controlFamilySectionAcronym": "PR.IR",
+    "controlFamilySectionDescription": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience."
+    },
+    {
+    "controlFamily": "Detect",
+    "controlFamilyAcronym": "DE",
+    "controlFamilySection": "Continuous Monitoring",
+    "controlFamilySectionAcronym": "DE.CM",
+    "controlFamilySectionDescription": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events."
+    },
+    {
+    "controlFamily": "Detect",
+    "controlFamilyAcronym": "DE",
+    "controlFamilySection": "Adverse Event Analysis",
+    "controlFamilySectionAcronym": "DE.AE",
+    "controlFamilySectionDescription": "Anomalies, indicators of compromise, and other potentially adverse events are analyzed to characterize the events and detect cybersecurity incidents."
+    },
+    {
+    "controlFamily": "Respond",
+    "controlFamilyAcronym": "RS",
+    "controlFamilySection": "Incident Management",
+    "controlFamilySectionAcronym": "RS.MA",
+    "controlFamilySectionDescription": "Responses to detected cybersecurity incidents are managed."
+    },
+    {
+    "controlFamily": "Respond",
+    "controlFamilyAcronym": "RS",
+    "controlFamilySection": "Incident Analysis",
+    "controlFamilySectionAcronym": "RS.AN",
+    "controlFamilySectionDescription": "Investigations are conducted to ensure effective response and support forensics and recovery activities."
+    },
+    {
+    "controlFamily": "Respond",
+    "controlFamilyAcronym": "RS",
+    "controlFamilySection": "Incident Response Reporting and Communication",
+    "controlFamilySectionAcronym": "RS.CO",
+    "controlFamilySectionDescription": "Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies."
+    },
+    {
+    "controlFamily": "Respond",
+    "controlFamilyAcronym": "RS",
+    "controlFamilySection": "Incident Mitigation",
+    "controlFamilySectionAcronym": "RS.MI",
+    "controlFamilySectionDescription": "Activities are performed to prevent expansion of an event and mitigate its effects."
+    },
+    {
+    "controlFamily": "Recover",
+    "controlFamilyAcronym": "RC",
+    "controlFamilySection": "Incident Recovery Plan Execution",
+    "controlFamilySectionAcronym": "RC.RP",
+    "controlFamilySectionDescription": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents."
+    },
+    {
+    "controlFamily": "Recover",
+    "controlFamilyAcronym": "RC",
+    "controlFamilySection": "Incident Recovery Communication",
+    "controlFamilySectionAcronym": "RC.CO",
+    "controlFamilySectionDescription": "Restoration activities are coordinated with internal and external parties."
+    }
+]

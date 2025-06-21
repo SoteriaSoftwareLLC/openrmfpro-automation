@@ -1,0 +1,58 @@
+[
+    {
+    "frameworkTitle": "Risk Management Framework",
+    "frameworkAcronym": "RMF",
+    "frameworkVersion": "Revision 5",
+    "frameworkDescription": "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle. The risk-based approach to control selection and specification considers effectiveness, efficiency, and constraints due to applicable laws, directives, Executive Orders, policies, standards, or regulations. Managing organizational risk is paramount to effective information security and privacy programs; the RMF approach can be applied to new and legacy systems, any type of system or technology (e.g., IoT, control systems), and within any type of organization regardless of size or sector.",
+    "frameworkOriginator": "National Institude of Standards and Technology (NIST)",
+    "active": true
+    },
+    {
+    "frameworkTitle": "Risk Management Framework",
+    "frameworkAcronym": "RMF",
+    "frameworkVersion": "Revision 4",
+    "frameworkDescription": "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle. The risk-based approach to control selection and specification considers effectiveness, efficiency, and constraints due to applicable laws, directives, Executive Orders, policies, standards, or regulations. Managing organizational risk is paramount to effective information security and privacy programs; the RMF approach can be applied to new and legacy systems, any type of system or technology (e.g., IoT, control systems), and within any type of organization regardless of size or sector.",
+    "frameworkOriginator": "National Institude of Standards and Technology (NIST)",
+    "active": true
+    },
+    {
+    "frameworkTitle": "Federal Risk and Authorization Management Program",
+    "frameworkAcronym": "FedRAMP",
+    "frameworkVersion": "Revision 5",
+    "frameworkDescription": "The Federal Risk and Authorization Management Program (FedRAMP) is a government-wide initiative that provides a standardized, reusable approach to security assessment, authorization, and continuous monitoring for cloud service offerings. It aims to enable the federal government to accelerate the adoption of cloud computing by creating transparent standards and processes for security authorizations, and allowing agencies to leverage these authorizations on a government-wide scale.",
+    "frameworkOriginator": "Office of Management and Budget (OMB)",
+    "active": true
+    },
+    {
+    "frameworkTitle": "Federal Risk and Authorization Management Program",
+    "frameworkAcronym": "FedRAMP",
+    "frameworkVersion": "Revision 4",
+    "frameworkDescription": "The Federal Risk and Authorization Management Program (FedRAMP) is a government-wide initiative that provides a standardized, reusable approach to security assessment, authorization, and continuous monitoring for cloud service offerings. It aims to enable the federal government to accelerate the adoption of cloud computing by creating transparent standards and processes for security authorizations, and allowing agencies to leverage these authorizations on a government-wide scale.",
+    "frameworkOriginator": "Office of Management and Budget (OMB)",
+    "active": true
+    },
+    {
+    "frameworkTitle": "State Risk and Authorization Management Program",
+    "frameworkAcronym": "StateRAMP",
+    "frameworkVersion": "Revision 4",
+    "frameworkDescription": "StateRAMP, or the State Risk and Authorization Management Program, (also known as GovRAMP) is a cybersecurity framework for state and local governments, similar to FedRAMP for federal agencies. It provides a standardized way for these governments to assess and authorize the security of cloud service providers (CSPs) before they work with sensitive information. This helps ensure that CSPs meet specific security standards, improves security for government data, and streamlines the process of vendor approval.",
+    "frameworkOriginator": "StateRAMP non-profit organization",
+    "active": true
+    },
+    {
+    "frameworkTitle": "Cybersecurity Framework",
+    "frameworkAcronym": "CSF",
+    "frameworkVersion": "2.0",
+    "frameworkDescription": "Cybersecurity Framework is designed to help organizations better manage and reduce cybersecurity risks. It's a flexible, risk-based framework that can be customized to fit the specific needs of any organization, regardless of size, sector, or maturity level.",
+    "frameworkOriginator": "National Institude of Standards and Technology (NIST)",
+    "active": true
+    },
+    {
+    "frameworkTitle": "Cybersecurity Maturity Model Certification",
+    "frameworkAcronym": "CMMC",
+    "frameworkVersion": "2.0",
+    "frameworkDescription": "The Cybersecurity Maturity Model Certification program aims to protect sensitive government information, including Controlled Unclassified Information (CUI) and Federal Contract Information (FCI), within the Defense Industrial Base (DIB). CMMC 2.0 streamlines the original CMMC model, aligning it with widely accepted cybersecurity standards like NIST SP 800-171 and NIST SP 800-172.",
+    "frameworkOriginator": "U.S. Department of Defense (DoD)",
+    "active": true
+    }
+]
