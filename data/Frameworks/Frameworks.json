@@ -38,21 +38,5 @@
     "frameworkDescription": "StateRAMP, or the State Risk and Authorization Management Program, (also known as GovRAMP) is a cybersecurity framework for state and local governments, similar to FedRAMP for federal agencies. It provides a standardized way for these governments to assess and authorize the security of cloud service providers (CSPs) before they work with sensitive information. This helps ensure that CSPs meet specific security standards, improves security for government data, and streamlines the process of vendor approval.",
     "frameworkOriginator": "StateRAMP non-profit organization",
     "active": true
-    },
-    {
-    "frameworkTitle": "Cybersecurity Framework",
-    "frameworkAcronym": "CSF",
-    "frameworkVersion": "2.0",
-    "frameworkDescription": "Cybersecurity Framework is designed to help organizations better manage and reduce cybersecurity risks. It's a flexible, risk-based framework that can be customized to fit the specific needs of any organization, regardless of size, sector, or maturity level.",
-    "frameworkOriginator": "National Institude of Standards and Technology (NIST)",
-    "active": true
-    },
-    {
-    "frameworkTitle": "Cybersecurity Maturity Model Certification",
-    "frameworkAcronym": "CMMC",
-    "frameworkVersion": "2.0",
-    "frameworkDescription": "The Cybersecurity Maturity Model Certification program aims to protect sensitive government information, including Controlled Unclassified Information (CUI) and Federal Contract Information (FCI), within the Defense Industrial Base (DIB). CMMC 2.0 streamlines the original CMMC model, aligning it with widely accepted cybersecurity standards like NIST SP 800-171 and NIST SP 800-172.",
-    "frameworkOriginator": "U.S. Department of Defense (DoD)",
-    "active": true
     }
 ]

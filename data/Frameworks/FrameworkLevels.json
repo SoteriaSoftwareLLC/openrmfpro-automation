@@ -219,12 +219,5 @@
         "frameworkVersion": "Revision 4",
         "levelCategory": "Moderate",
         "active": true
-    },
-    {
-        "frameworkTitle": "Cybersecurity Maturity Model Certification",
-        "frameworkAcronym": "CMMC",
-        "frameworkVersion": "2.0",
-        "levelCategory": "Level 1",
-        "active": true
     }
 ]
