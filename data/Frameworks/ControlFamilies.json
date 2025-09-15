@@ -140,33 +140,51 @@
     "controlFamilyDescription": "Focus is on ensuring quality and integrity of personally identifiable information type of data."
     },
     {
-    "controlFamily": "Govern",
-    "controlFamilyAcronym": "GV",
-    "controlFamilyDescription": "The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood."
+        "controlFamily": "Govern",
+        "controlFamilyAcronym": "GV",
+        "controlFamilyDescription": "The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood.",
+        "cciTags": [
+            "CSF"
+        ]
     },
     {
-    "controlFamily": "Identify",
-    "controlFamilyAcronym": "ID",
-    "controlFamilyDescription": "The organization’s current cybersecurity risks are understood."
+        "controlFamily": "Identify",
+        "controlFamilyAcronym": "ID",
+        "controlFamilyDescription": "The organization’s current cybersecurity risks are understood.",
+        "cciTags": [
+            "CSF"
+        ]
     },
     {
-    "controlFamily": "Protect",
-    "controlFamilyAcronym": "PR",
-    "controlFamilyDescription": "Safeguards to manage the organization’s cybersecurity risk are used."
+        "controlFamily": "Protect",
+        "controlFamilyAcronym": "PR",
+        "controlFamilyDescription": "Safeguards to manage the organization’s cybersecurity risk are used.",
+        "cciTags": [
+            "CSF"
+        ]
     },
     {
-    "controlFamily": "Detect",
-    "controlFamilyAcronym": "DE",
-    "controlFamilyDescription": "Possible cybersecurity attacks and compromises are found and analyzed."
+        "controlFamily": "Detect",
+        "controlFamilyAcronym": "DE",
+        "controlFamilyDescription": "Possible cybersecurity attacks and compromises are found and analyzed.",
+        "cciTags": [
+            "CSF"
+        ]
     },
     {
-    "controlFamily": "Respond",
-    "controlFamilyAcronym": "RS",
-    "controlFamilyDescription": "Actions regarding a detected cybersecurity incident are taken."
+        "controlFamily": "Respond",
+        "controlFamilyAcronym": "RS",
+        "controlFamilyDescription": "Actions regarding a detected cybersecurity incident are taken.",
+        "cciTags": [
+            "CSF"
+        ]
     },
     {
-    "controlFamily": "Recover",
-    "controlFamilyAcronym": "RC",
-    "controlFamilyDescription": "Assets and operations affected by a cybersecurity incident are restored."
+        "controlFamily": "Recover",
+        "controlFamilyAcronym": "RC",
+        "controlFamilyDescription": "Assets and operations affected by a cybersecurity incident are restored.",
+        "cciTags": [
+            "CSF"
+        ]
     }
 ]

@@ -10,7 +10,8 @@
         "controlMinor": "1",
         "controlEnhancement": "1",
         "controlSupplementalText": "",
-        "relatedControls": []
+        "relatedControls": [],
+        "tags": []
     },
     {
         "controlFamilyAcronym": "AC",
@@ -23,7 +24,8 @@
         "controlMinor": "1",
         "controlEnhancement": "2",
         "controlSupplementalText": "",
-        "relatedControls": []
+        "relatedControls": [],
+        "tags": []
     },
     {
         "controlFamilyAcronym": "AC",
@@ -36,7 +38,8 @@
         "controlMinor": "1",
         "controlEnhancement": "20",
         "controlSupplementalText": "",
-        "relatedControls": []
+        "relatedControls": [],
+        "tags": []
     },
     {
         "controlFamilyAcronym": "AC",
@@ -49,6 +52,7 @@
         "controlMinor": "1",
         "controlEnhancement": "22",
         "controlSupplementalText": "",
-        "relatedControls": []
+        "relatedControls": [],
+        "tags": []
     }
 ]
