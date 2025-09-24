@@ -1,0 +1,190 @@
+[
+    {
+    "controlFamily": "Access Control",
+    "controlFamilyAcronym": "AC",
+    "controlFamilyDescription": "Focus is on who can access what assets and ensures proper account management, system privileges, and remote access logging."
+    },
+    {
+    "controlFamily": "Audit and Accountability",
+    "controlFamilyAcronym": "AU",
+    "controlFamilyDescription": "Focus is on establishing audit policies and procedures, keeping track of audit logs, generating reports, and safeguarding valuable audit information."
+    },
+    {
+    "controlFamily": "Awareness and Training",
+    "controlFamilyAcronym": "AT",
+    "controlFamilyDescription": "Focus is on security training and records to enhance awareness and equip your staff with the knowledge to stay vigilant against threats."
+    },
+    {
+    "controlFamily": "Configuration Management",
+    "controlFamilyAcronym": "CM",
+    "controlFamilyDescription": "Focus is on establishing policies for system configurations, maintaining inventories of information system components, and conducting security impact analysis to ensure a strong foundation for future builds or changes."
+    },
+    {
+    "controlFamily": "Contingency Planning",
+    "controlFamilyAcronym": "CP",
+    "controlFamilyDescription": "Focus is on creating contingency plans to tackle cybersecurity incidents effectively, including testing and training to backups and system recovery."
+    },
+    {
+    "controlFamily": "Identification and Authentication",
+    "controlFamilyAcronym": "IA",
+    "controlFamilyDescription": "Focus is on ensuring only authorized individuals gain access through identity verification and authentication processes for organizational and non-organizational users."
+    },
+    {
+    "controlFamily": "Incident Response",
+    "controlFamilyAcronym": "IR",
+    "controlFamilyDescription": "Focus is on establishing policies and procedures for incident response, including training, testing, monitoring, reporting, and a comprehensive response plan."
+    },
+    {
+    "controlFamily": "Maintenance",
+    "controlFamilyAcronym": "MA",
+    "controlFamilyDescription": "Focus is on outlining security requirements for maintaining organizational systems and the tools used to support them, ensuring their continued reliability and performance."
+    },
+    {
+    "controlFamily": "Media Protection",
+    "controlFamilyAcronym": "MP",
+    "controlFamilyDescription": "Focus is on safeguarding physical media, such as storage devices, with control enhancements for access, marking, storage, transport policies, sanitization, and defined organizational media use."
+    },
+    {
+    "controlFamily": "Personnel Security",
+    "controlFamilyAcronym": "PS",
+    "controlFamilyDescription": "Focus is on protecting them through NIST risk assessment, screening, termination procedures, access agreements, and more."
+    },
+    {
+    "controlFamily": "Physical and Environmental Protection",
+    "controlFamilyAcronym": "PE",
+    "controlFamilyDescription": "Focus is on access authorizations, emergency protocols, power management, fire protection, and more to ensure your systems remain secure in the physical world."
+    },
+    {
+    "controlFamily": "PII Processing and Transparency",
+    "controlFamilyAcronym": "PT",
+    "controlFamilyDescription": "Focus is on ensuring the proper handling of personally identifiable information (PII). This includes the collection, use, sharing, and retention of such information. Aims to improve transparency through clear privacy policies, user consent mechanisms, and providing user access to their PII."
+    },
+    {
+    "controlFamily": "Planning",
+    "controlFamilyAcronym": "PL",
+    "controlFamilyDescription": "Focus is on covering the purpose, scope, roles, responsibilities, management commitment, coordination, industry standards, and organizational compliance necessary for effective security planning."
+    },
+    {
+    "controlFamily": "Program Management",
+    "controlFamilyAcronym": "PM",
+    "controlFamilyDescription": "Focus is on establishing critical infrastructure plans, information security program plans, and risk management frameworks which aligns your enterprise architecture with your security objectives."
+    },
+    {
+    "controlFamily": "Risk Assessment",
+    "controlFamilyAcronym": "RA",
+    "controlFamilyDescription": "Focus is on assessing vulnerabilities and conducting regular scans to identify potential risks."
+    },
+    {
+    "controlFamily": "Security Assessment and Authorization",
+    "controlFamilyAcronym": "CA",
+    "controlFamilyDescription": "Focus is on security assessments, authorizations, and continuous monitoring and establishes plans for ongoing security standards improvements."
+    },
+    {
+    "controlFamily": "System and Communications Protection",
+    "controlFamilyAcronym": "SC",
+    "controlFamilyDescription": "Focus is on guarding your systems and communications against various threats through boundary protection, cryptographic measures, and denial-of-service protection to secure information at rest to ensure the safety of your digital interactions."
+    },
+    {
+    "controlFamily": "System and Information Integrity",
+    "controlFamilyAcronym": "SI",
+    "controlFamilyDescription": "Focus is on vulnerability remediation, monitoring, protection against malicious code, software and firmware integrity, and safeguards."
+    },
+    {
+    "controlFamily": "Supply Chain Risk Management",
+    "controlFamilyAcronym": "SR",
+    "controlFamilyDescription": "Focus is on identifying, assessing, and mitigating risks associated with the supply chain for information systems and components. This includes third-party risk management, ensuring secure procurement, and maintaining supplier oversight to protect computing system integrity and data confidentiality."
+    },
+    {
+    "controlFamily": "Data Collection",
+    "controlFamilyAcronym": "AP",
+    "controlFamilyDescription": "Focus is on legal authority that permits the collection, use, maintenance, and sharing of personally identifiable information (PII), either generally or in support of a specific program or information system need."
+    },
+    {
+    "controlFamily": "Identification",
+    "controlFamilyAcronym": "DI",
+    "controlFamilyDescription": "Focus is on identifying and documenting information systems and resources, as well as the individuals who access them."
+    },
+    {
+    "controlFamily": "Data Management",
+    "controlFamilyAcronym": "DM",
+    "controlFamilyDescription": "Focus is on verifying that an organization only collects and retains the minimum amount of personally identifiable information (PII) necessary to fulfill its legally authorized purpose."
+    },
+    {
+    "controlFamily": "Consent of Personally Identifiable Information",
+    "controlFamilyAcronym": "IP",
+    "controlFamilyDescription": "Focus is on ensuring consent, access, and complaint management of individuals with regard to their personally identifiable information (PII)."
+    },
+    {
+    "controlFamily": "Inventory of Personally Identifiable Information",
+    "controlFamilyAcronym": "SE",
+    "controlFamilyDescription": "Focus is on tracking the inventory of an individual's personally identifiable information (PII) as well a incident responses."
+    },
+    {
+    "controlFamily": "Privacy Notice",
+    "controlFamilyAcronym": "TR",
+    "controlFamilyDescription": "Focus is on notice of privacy and privacy records as well as how the privacy program is disseminated."
+    },
+    {
+    "controlFamily": "Use of Personally Identifiable Information",
+    "controlFamilyAcronym": "UL",
+    "controlFamilyDescription": "Focus is on the proper use of personally identifiable information (PII) internally and 3rd parties."
+    },
+    {
+    "controlFamily": "System and Services Acquisition",
+    "controlFamilyAcronym": "SA",
+    "controlFamilyDescription": "Focus is on security when acquiring new systems and services."
+    },
+    {
+    "controlFamily": "Data Quality and Integrity",
+    "controlFamilyAcronym": "DI",
+    "controlFamilyDescription": "Focus is on ensuring quality and integrity of personally identifiable information type of data."
+    },
+    {
+        "controlFamily": "Govern",
+        "controlFamilyAcronym": "GV",
+        "controlFamilyDescription": "The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood.",
+        "cciTags": [
+            "CSF"
+        ]
+    },
+    {
+        "controlFamily": "Identify",
+        "controlFamilyAcronym": "ID",
+        "controlFamilyDescription": "The organization’s current cybersecurity risks are understood.",
+        "cciTags": [
+            "CSF"
+        ]
+    },
+    {
+        "controlFamily": "Protect",
+        "controlFamilyAcronym": "PR",
+        "controlFamilyDescription": "Safeguards to manage the organization’s cybersecurity risk are used.",
+        "cciTags": [
+            "CSF"
+        ]
+    },
+    {
+        "controlFamily": "Detect",
+        "controlFamilyAcronym": "DE",
+        "controlFamilyDescription": "Possible cybersecurity attacks and compromises are found and analyzed.",
+        "cciTags": [
+            "CSF"
+        ]
+    },
+    {
+        "controlFamily": "Respond",
+        "controlFamilyAcronym": "RS",
+        "controlFamilyDescription": "Actions regarding a detected cybersecurity incident are taken.",
+        "cciTags": [
+            "CSF"
+        ]
+    },
+    {
+        "controlFamily": "Recover",
+        "controlFamilyAcronym": "RC",
+        "controlFamilyDescription": "Assets and operations affected by a cybersecurity incident are restored.",
+        "cciTags": [
+            "CSF"
+        ]
+    }
+]

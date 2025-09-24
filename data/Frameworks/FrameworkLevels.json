@@ -1,0 +1,223 @@
+[
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Confidentiality",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Confidentiality",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Confidentiality",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Integrity",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Integrity",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Integrity",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Availability",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Availability",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Availability",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Confidentiality",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Confidentiality",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Confidentiality",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Integrity",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Integrity",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Integrity",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Availability",
+        "levelValue": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Availability",
+        "levelValue": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Risk Management Framework",
+        "frameworkAcronym": "RMF",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Availability",
+        "levelValue": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 5",
+        "levelCategory": "LI-SaaS",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Moderate",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "High",
+        "active": true
+    },
+    {
+        "frameworkTitle": "Federal Risk and Authorization Management Program",
+        "frameworkAcronym": "FedRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "LI-SaaS",
+        "active": true
+    },
+    {
+        "frameworkTitle": "State Risk and Authorization Management Program",
+        "frameworkAcronym": "StateRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Low",
+        "active": true
+    },
+    {
+        "frameworkTitle": "State Risk and Authorization Management Program",
+        "frameworkAcronym": "StateRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Low+",
+        "active": true
+    },
+    {
+        "frameworkTitle": "State Risk and Authorization Management Program",
+        "frameworkAcronym": "StateRAMP",
+        "frameworkVersion": "Revision 4",
+        "levelCategory": "Moderate",
+        "active": true
+    }
+]

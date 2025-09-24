@@ -1,0 +1,58 @@
+[
+    {
+        "controlFamilyAcronym": "AC",
+        "controlFamilySectionAcronym": "",
+        "controlTitle": "Authorized Access Control",
+        "controlAcronym": "AC.L1",
+        "controlDescription": "Limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems).",
+        "controlDisplay": "AC.L1-3.1.1",
+        "controlMajor": "3",
+        "controlMinor": "1",
+        "controlEnhancement": "1",
+        "controlSupplementalText": "",
+        "relatedControls": [],
+        "tags": []
+    },
+    {
+        "controlFamilyAcronym": "AC",
+        "controlFamilySectionAcronym": "",
+        "controlTitle": "Transaction & Function Control",
+        "controlAcronym": "AC.L1",
+        "controlDescription": "Limit information system access to the types of transactions and functions that authorized users are permitted to execute.",
+        "controlDisplay": "AC.L1-3.1.2",
+        "controlMajor": "3",
+        "controlMinor": "1",
+        "controlEnhancement": "2",
+        "controlSupplementalText": "",
+        "relatedControls": [],
+        "tags": []
+    },
+    {
+        "controlFamilyAcronym": "AC",
+        "controlFamilySectionAcronym": "",
+        "controlTitle": "External Connections",
+        "controlAcronym": "AC.L1",
+        "controlDescription": "Verify and control/limit connections to and use of external information systems.",
+        "controlDisplay": "AC.L1-3.1.20",
+        "controlMajor": "3",
+        "controlMinor": "1",
+        "controlEnhancement": "20",
+        "controlSupplementalText": "",
+        "relatedControls": [],
+        "tags": []
+    },
+    {
+        "controlFamilyAcronym": "AC",
+        "controlFamilySectionAcronym": "",
+        "controlTitle": "Control Public Information",
+        "controlAcronym": "AC.L1",
+        "controlDescription": "Control information posted or processed on publicly accessible information systems.",
+        "controlDisplay": "AC.L1-3.1.22",
+        "controlMajor": "3",
+        "controlMinor": "1",
+        "controlEnhancement": "22",
+        "controlSupplementalText": "",
+        "relatedControls": [],
+        "tags": []
+    }
+]

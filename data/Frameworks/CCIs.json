@@ -1,0 +1,26 @@
+[
+    {
+        "cciId": "CCI-100020",
+        "cciContributor": "My Company",
+        "cciDefinition": "Official Definition",
+        "cciDescription": "Description for explanation",
+        "cciReferences": "NIST 800-53 revision 5 AU-10",
+        "cciType": [
+            "process"
+        ],
+        "cciPublishDate": "09/05/2025",
+        "cciTags": []
+    },
+    {
+        "cciId": "CCI-100021",
+        "cciContributor": "My Company",
+        "cciDefinition": "Official Definition",
+        "cciDescription": "Description for explanation",
+        "cciReferences": "NIST 800-53 revision 5 PM-16",
+        "cciType": [
+            "process"
+        ],
+        "cciPublishDate": "09/05/2025",
+        "cciTags": []
+    }
+]
