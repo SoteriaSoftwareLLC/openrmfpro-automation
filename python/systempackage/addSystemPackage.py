@@ -1,35 +1,62 @@
 # Add a brand new system package
 # make sure you have the SystemPackageAdministrator Role
 # API call from Developer's Guide: /api/external/systempackage/?applicationKey={applicationKey}
-# ex: python3 addSystemPackage.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxx 'Automated Infrastructure System Package' automatedinfra 'My automated system package for infrastructure done entirely via API calls' 20 20 20 10 'Infrastructure ATO' 'Dale Bingham' '855-RMF-0848' 'support@soteriasoft.com' 'AUTOINFRA'
-
-# For the packageType use the following:
-# 10 = RMF (default) – requires the CIA levels
-# 20 = FedRAMP – requires the FedRAMP Level
-
-# For RMF Confidentiality, Integrity, and Availability and FedRAMP level:
-# 10 = Low (default)
-# 20 = Moderate
-# 30 = High
-# For FedRAMP LI-SaaS use 40
+# ex: python3 addNewSystemPackageWithFramework.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxx MyTitle mykeywithlowercaseletters "My description" "My First and Last" 855-763-0848 info@soteriasoft.com true MYACRONYM 68bb00bb05c51ab74f106611c "68bb00b05c51ab74f1066129|68bb00b05c51ab74f106612c|68bb00b05c51ab74f1066131"
 
 import sys
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = sys.argv[1] + "/api/external/systempackage/?applicationKey=" + sys.argv[2]
+# The minimum expected arguments count is 20 (3 credentials + 17 data fields)
+MIN_ARGS = 13
 
-data = "title=" + sys.argv[4].replace(" ", "+") + "&systemKey=" + sys.argv[5] + "&description=" + sys.argv[6].replace(" ", "+") + "&confidentiality=" + sys.argv[7] + "&integrity=" + sys.argv[8] + "&availability=" + sys.argv[9] + "&packageType=" + sys.argv[10] + "&systemType=" + sys.argv[11].replace(" ", "+") + "&pocName=" + sys.argv[12].replace(" ", "+") + "&pocPhone=" + sys.argv[13].replace(" ", "+") + "&pocEmail=" + sys.argv[14] + "&addUserToSystemPackage=true&acronym=" + sys.argv[15].replace(" ", "+")
+if len(sys.argv) < MIN_ARGS:
+    print("Usage: python3 addNewSystemPackageWithFramework.py <URL> <applicationKey> <token> <title> <systemKey> <description> <pocName> <pocPhone> <pocEmail> <addUserToSystemPackage> <acronym> <frameworkId> <frameworkLevelList>")
+    sys.exit(1)
 
-# Assign the request headers for this particular API
-headers = CaseInsensitiveDict() # Does not change
-headers["Accept"] = "application/json"
-headers["Authorization"] = "Bearer " + sys.argv[3]
-headers["Content-Type"] = "application/x-www-form-urlencoded"
+base_url = sys.argv[1]
+app_key = sys.argv[2]
+token = sys.argv[3]
+title = sys.argv[4],
+system_key = sys.argv[5],
+description = sys.argv[6],
+poc_name = sys.argv[7],
+poc_phone = sys.argv[8],
+poc_email = sys.argv[9],
+add_user_to_system_package = sys.argv[10],
+acronym = sys.argv[11],
+framework_id = sys.argv[12],
+framework_level_list = sys.argv[13]
 
-# Make the API request
-resp = requests.post(url, headers=headers, data=data)
+data = {
+    "title": title,
+    "systemKey": system_key,
+    "description": description,
+    "pocName": poc_name,
+    "pocPhone": poc_phone,
+    "pocEmail": poc_email,
+    "addUserToSystemPackage": add_user_to_system_package,
+    "acronym": acronym,
+    "frameworkId": framework_id,
+    "frameworkLevelList": framework_level_list
+}
 
-# print to the screen the status code (i.e. 200, 400, 404, etc)
-print(resp.status_code)
-print(resp.text)
+endpoint = "/api/external/systempackage/"
+url = f"{base_url}{endpoint}?applicationKey={app_key}"
+
+headers = CaseInsensitiveDict()
+headers["Authorization"] = f"Bearer {token}"
+headers["Content-Type"] = "multipart/form-data"
+
+try:
+    resp = requests.post(url, headers=headers, data=data)
+    
+    print(f"HTTP Status Code: {resp.status_code}")
+    if resp.status_code == 200:
+        print("System Package created successfully.")
+    else:
+        print("Error creating System Package:")
+        print(resp.text)
+
+except requests.exceptions.RequestException as e:
+    print(f"An error occurred during the API call: {e}")

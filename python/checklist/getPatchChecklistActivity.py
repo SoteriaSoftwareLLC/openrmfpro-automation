@@ -1,0 +1,50 @@
+# get the patch & checklist activity
+# API call from Developer's Guide: /api/external/systempackage/{systemKey}/checklistpatchactivity/?applicationKey={applicationKey}
+# ex: python3 getPatchChecklistActivity.py http://192.168.13.111:8080 openrmfprosvc hvs.xxxxxxxxxxxxxx degthatnetwork
+
+import sys
+import json
+import requests
+from requests.structures import CaseInsensitiveDict
+
+if len(sys.argv) < 6:
+    print(
+        "Usage: python3 getPatchChecklistActivity.py <URL> <applicationKey> <token> <systemKey> <begin> <end>"
+    )
+    sys.exit(1)
+
+base_url = sys.argv[1]
+app_key = sys.argv[2]
+token = sys.argv[3]
+system_key = sys.argv[4]
+begin_date = sys.argv[5]
+end_date = sys.argv[6]
+
+endpoint = "/api/external/systempackage/{systemKey}/checklistpatchactivity/"
+url = f"{base_url}{endpoint.replace('{systemKey}', system_key)}"
+
+# Optional date range filtering, defaults to all time if omitted.
+params = {
+    "applicationKey": app_key,
+    "begin": begin_date,
+    "end": end_date
+}
+
+headers = CaseInsensitiveDict()
+headers["Accept"] = "application/json"
+headers["Authorization"] = f"Bearer {token}"
+
+try:
+    resp = requests.get(url, headers=headers, params=params)
+    
+    print(f"HTTP Status Code: {resp.status_code}")
+
+    if resp.status_code == 200:
+        json_object = resp.json()
+        print(json.dumps(json_object, indent=1))
+    else:
+        print("Error retrieving patch & checklist activity:")
+        print(resp.text)
+
+except requests.exceptions.RequestException as e:
+    print(f"An error occurred during the API call: {e}")
