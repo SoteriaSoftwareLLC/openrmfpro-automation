@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "OpenRMF Professional External API",
-    "description": "The External API for external scripts and integration with OpenRMF Professional v2.10 application.",
+    "description": "The External API for external scripts and integration with OpenRMF Professional application.",
     "contact": {
       "name": "Dale Bingham",
       "url": "https://www.soteriasoft.com",
@@ -11,627 +11,6 @@
     "version": "v2"
   },
   "paths": {
-    "/systempackage/{systemKey}/evidence/general": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "allowOverwrite": {
-                    "type": "boolean",
-                    "default": false
-                  }
-                }
-              },
-              "encoding": {
-                "allowOverwrite": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/evidence/compliance/{cciId}": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "cciId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": ""
-                  },
-                  "allowOverwrite": {
-                    "type": "boolean",
-                    "default": false
-                  }
-                }
-              },
-              "encoding": {
-                "title": {
-                  "style": "form"
-                },
-                "description": {
-                  "style": "form"
-                },
-                "allowOverwrite": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/evidence/poam/{poamItemId}": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "poamItemId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": ""
-                  },
-                  "allowOverwrite": {
-                    "type": "boolean",
-                    "default": false
-                  }
-                }
-              },
-              "encoding": {
-                "title": {
-                  "style": "form"
-                },
-                "description": {
-                  "style": "form"
-                },
-                "allowOverwrite": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/evidence/checklist/{artifactId}/vuln/{vulnId}": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "artifactId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "vulnId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": ""
-                  },
-                  "allowOverwrite": {
-                    "type": "boolean",
-                    "default": false
-                  }
-                }
-              },
-              "encoding": {
-                "title": {
-                  "style": "form"
-                },
-                "description": {
-                  "style": "form"
-                },
-                "allowOverwrite": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/evidence/{evidenceid}/download": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "evidenceid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/evidence/{evidenceid}": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "evidenceid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/checklisttypes": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/checklistdifference": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "checklistType": {
-                    "type": "string"
-                  },
-                  "devices": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "checklistType": {
-                  "style": "form"
-                },
-                "devices": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/checklistvulnerability": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "notafinding",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "open",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "notapplicable",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "notreviewed",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "category1",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "category2",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "category3",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": true
-            }
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 50
-            }
-          },
-          {
-            "name": "searchString",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/approvedpps": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/systempackage/{systemKey}/deviceprofile": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/testauthentication": {
       "post": {
         "tags": [
@@ -658,7 +37,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -687,7 +66,119 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/preferences": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "allowUncredentialedScans": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "allowUncredentialedScanVulns": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "allowUncredentialedScanSoftware": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "allowSeverityOverride": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "tspSingleChecklist": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "tspSingleDevice": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "ipMasking": {
+                    "type": "string",
+                    "default": "both"
+                  },
+                  "enablePoamTracking": {
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "classification": {
+                    "type": "string",
+                    "default": "none"
+                  },
+                  "classificationColor": {
+                    "type": "string",
+                    "default": "none"
+                  }
+                }
+              },
+              "encoding": {
+                "allowUncredentialedScans": {
+                  "style": "form"
+                },
+                "allowUncredentialedScanVulns": {
+                  "style": "form"
+                },
+                "allowUncredentialedScanSoftware": {
+                  "style": "form"
+                },
+                "allowSeverityOverride": {
+                  "style": "form"
+                },
+                "tspSingleChecklist": {
+                  "style": "form"
+                },
+                "tspSingleDevice": {
+                  "style": "form"
+                },
+                "ipMasking": {
+                  "style": "form"
+                },
+                "enablePoamTracking": {
+                  "style": "form"
+                },
+                "classification": {
+                  "style": "form"
+                },
+                "classificationColor": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -722,21 +213,6 @@
                     "type": "string",
                     "default": ""
                   },
-                  "confidentiality": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
-                  },
-                  "integrity": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
-                  },
-                  "availability": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
-                  },
                   "component": {
                     "type": "string",
                     "default": ""
@@ -768,29 +244,6 @@
                   "securityCosts": {
                     "type": "string",
                     "default": ""
-                  },
-                  "cnssi": {
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "pii": {
-                    "type": "boolean",
-                    "default": false
-                  },
-                  "packageType": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
-                  },
-                  "fedrampLevel": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
-                  },
-                  "staterampLevel": {
-                    "type": "integer",
-                    "format": "int32",
-                    "default": 10
                   },
                   "addUserToSystemPackage": {
                     "type": "boolean",
@@ -825,6 +278,14 @@
                   "authorizationExpiresDate": {
                     "type": "string",
                     "default": ""
+                  },
+                  "frameworkId": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "frameworkLevelList": {
+                    "type": "string",
+                    "default": ""
                   }
                 }
               },
@@ -836,15 +297,6 @@
                   "style": "form"
                 },
                 "description": {
-                  "style": "form"
-                },
-                "confidentiality": {
-                  "style": "form"
-                },
-                "integrity": {
-                  "style": "form"
-                },
-                "availability": {
                   "style": "form"
                 },
                 "component": {
@@ -871,21 +323,6 @@
                 "securityCosts": {
                   "style": "form"
                 },
-                "cnssi": {
-                  "style": "form"
-                },
-                "pii": {
-                  "style": "form"
-                },
-                "packageType": {
-                  "style": "form"
-                },
-                "fedrampLevel": {
-                  "style": "form"
-                },
-                "staterampLevel": {
-                  "style": "form"
-                },
                 "addUserToSystemPackage": {
                   "style": "form"
                 },
@@ -909,6 +346,12 @@
                 },
                 "authorizationExpiresDate": {
                   "style": "form"
+                },
+                "frameworkId": {
+                  "style": "form"
+                },
+                "frameworkLevelList": {
+                  "style": "form"
                 }
               }
             }
@@ -916,7 +359,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1140,7 +583,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -1167,7 +610,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1188,7 +631,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1243,7 +686,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1298,7 +741,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1327,7 +770,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1356,7 +799,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1385,7 +828,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1414,7 +857,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1451,7 +894,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1480,7 +923,67 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/notification": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "message": {
+                    "type": "string"
+                  },
+                  "notificationType": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "message": {
+                  "style": "form"
+                },
+                "notificationType": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -1509,7 +1012,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1546,7 +1049,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -1599,7 +1102,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1654,7 +1157,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1699,7 +1202,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1752,7 +1255,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1781,7 +1284,57 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/overlay": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/overlay": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -1810,7 +1363,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1871,7 +1424,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1900,7 +1453,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1953,7 +1506,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -1978,11 +1531,19 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "device",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2019,7 +1580,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2064,7 +1625,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2093,7 +1654,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2126,11 +1687,19 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "ckl"
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -2185,7 +1754,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2222,7 +1791,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2267,7 +1836,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2308,11 +1877,19 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "ckl"
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2357,7 +1934,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2456,7 +2033,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2604,7 +2181,94 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checkforupgrade": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "stigType",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "stigVersion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "stigRelease",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/upgradechecklist/{checklistId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "checklistId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -2641,7 +2305,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2666,11 +2330,19 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "ckl"
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2699,7 +2371,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2720,7 +2392,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2741,7 +2413,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2789,7 +2461,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2845,7 +2517,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2874,7 +2546,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2947,11 +2619,19 @@
               "type": "boolean",
               "default": false
             }
+          },
+          {
+            "name": "groupby",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -2987,7 +2667,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3020,11 +2700,19 @@
               "type": "string",
               "default": ""
             }
+          },
+          {
+            "name": "groupby",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -3051,7 +2739,252 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/software/{assetId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/softwareasset/{assetId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "deviceName": {
+                    "type": "string"
+                  },
+                  "softwareName": {
+                    "type": "string"
+                  },
+                  "softwareVersion": {
+                    "type": "string"
+                  },
+                  "assetType": {
+                    "type": "string"
+                  },
+                  "installedOn": {
+                    "type": "string"
+                  },
+                  "approvalReference": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "deviceName": {
+                  "style": "form"
+                },
+                "softwareName": {
+                  "style": "form"
+                },
+                "softwareVersion": {
+                  "style": "form"
+                },
+                "assetType": {
+                  "style": "form"
+                },
+                "installedOn": {
+                  "style": "form"
+                },
+                "approvalReference": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/softwareasset": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "deviceName": {
+                    "type": "string"
+                  },
+                  "softwareName": {
+                    "type": "string"
+                  },
+                  "softwareVersion": {
+                    "type": "string"
+                  },
+                  "assetType": {
+                    "type": "string"
+                  },
+                  "installedOn": {
+                    "type": "string"
+                  },
+                  "approvalReference": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "deviceName": {
+                  "style": "form"
+                },
+                "softwareName": {
+                  "style": "form"
+                },
+                "softwareVersion": {
+                  "style": "form"
+                },
+                "assetType": {
+                  "style": "form"
+                },
+                "installedOn": {
+                  "style": "form"
+                },
+                "approvalReference": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/softwareasset/{ppsId}": {
+      "delete": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "assetId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ppsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -3087,7 +3020,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -3114,12 +3047,47 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
     },
     "/systempackage/{systemKey}/hardware/{assetId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "External"
@@ -3171,7 +3139,267 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/hardwareasset/{assetId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "deviceName": {
+                    "type": "string"
+                  },
+                  "operatingSystem": {
+                    "type": "string"
+                  },
+                  "firmware": {
+                    "type": "string"
+                  },
+                  "manufacturer": {
+                    "type": "string"
+                  },
+                  "modelNumber": {
+                    "type": "string"
+                  },
+                  "assetName": {
+                    "type": "string"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "virtualServer": {
+                    "type": "boolean"
+                  },
+                  "serialNumber": {
+                    "type": "string"
+                  },
+                  "tagList": {
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "type": "string"
+                  },
+                  "ipAddresses": {
+                    "type": "string"
+                  },
+                  "macAddresses": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "deviceName": {
+                  "style": "form"
+                },
+                "operatingSystem": {
+                  "style": "form"
+                },
+                "firmware": {
+                  "style": "form"
+                },
+                "manufacturer": {
+                  "style": "form"
+                },
+                "modelNumber": {
+                  "style": "form"
+                },
+                "assetName": {
+                  "style": "form"
+                },
+                "purpose": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "virtualServer": {
+                  "style": "form"
+                },
+                "serialNumber": {
+                  "style": "form"
+                },
+                "tagList": {
+                  "style": "form"
+                },
+                "profileId": {
+                  "style": "form"
+                },
+                "ipAddresses": {
+                  "style": "form"
+                },
+                "macAddresses": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/hardwareasset": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "deviceName": {
+                    "type": "string"
+                  },
+                  "operatingSystem": {
+                    "type": "string"
+                  },
+                  "firmware": {
+                    "type": "string"
+                  },
+                  "manufacturer": {
+                    "type": "string"
+                  },
+                  "modelNumber": {
+                    "type": "string"
+                  },
+                  "assetName": {
+                    "type": "string"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "virtualServer": {
+                    "type": "boolean"
+                  },
+                  "serialNumber": {
+                    "type": "string"
+                  },
+                  "tagList": {
+                    "type": "string"
+                  },
+                  "profileId": {
+                    "type": "string"
+                  },
+                  "ipAddresses": {
+                    "type": "string"
+                  },
+                  "macAddresses": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "deviceName": {
+                  "style": "form"
+                },
+                "operatingSystem": {
+                  "style": "form"
+                },
+                "firmware": {
+                  "style": "form"
+                },
+                "manufacturer": {
+                  "style": "form"
+                },
+                "modelNumber": {
+                  "style": "form"
+                },
+                "assetName": {
+                  "style": "form"
+                },
+                "purpose": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "virtualServer": {
+                  "style": "form"
+                },
+                "serialNumber": {
+                  "style": "form"
+                },
+                "tagList": {
+                  "style": "form"
+                },
+                "profileId": {
+                  "style": "form"
+                },
+                "ipAddresses": {
+                  "style": "form"
+                },
+                "macAddresses": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -3204,11 +3432,19 @@
               "type": "string",
               "default": ""
             }
+          },
+          {
+            "name": "groupby",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -3235,7 +3471,870 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/ppsm/{ppsmId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ppsmId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "boundary1In": {
+                    "type": "boolean"
+                  },
+                  "boundary1Out": {
+                    "type": "boolean"
+                  },
+                  "boundary2In": {
+                    "type": "boolean"
+                  },
+                  "boundary2Out": {
+                    "type": "boolean"
+                  },
+                  "boundary3In": {
+                    "type": "boolean"
+                  },
+                  "boundary3Out": {
+                    "type": "boolean"
+                  },
+                  "boundary4In": {
+                    "type": "boolean"
+                  },
+                  "boundary4Out": {
+                    "type": "boolean"
+                  },
+                  "boundary5In": {
+                    "type": "boolean"
+                  },
+                  "boundary5Out": {
+                    "type": "boolean"
+                  },
+                  "boundary6In": {
+                    "type": "boolean"
+                  },
+                  "boundary6Out": {
+                    "type": "boolean"
+                  },
+                  "boundary7In": {
+                    "type": "boolean"
+                  },
+                  "boundary7Out": {
+                    "type": "boolean"
+                  },
+                  "boundary8In": {
+                    "type": "boolean"
+                  },
+                  "boundary8Out": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "boundary1In": {
+                  "style": "form"
+                },
+                "boundary1Out": {
+                  "style": "form"
+                },
+                "boundary2In": {
+                  "style": "form"
+                },
+                "boundary2Out": {
+                  "style": "form"
+                },
+                "boundary3In": {
+                  "style": "form"
+                },
+                "boundary3Out": {
+                  "style": "form"
+                },
+                "boundary4In": {
+                  "style": "form"
+                },
+                "boundary4Out": {
+                  "style": "form"
+                },
+                "boundary5In": {
+                  "style": "form"
+                },
+                "boundary5Out": {
+                  "style": "form"
+                },
+                "boundary6In": {
+                  "style": "form"
+                },
+                "boundary6Out": {
+                  "style": "form"
+                },
+                "boundary7In": {
+                  "style": "form"
+                },
+                "boundary7Out": {
+                  "style": "form"
+                },
+                "boundary8In": {
+                  "style": "form"
+                },
+                "boundary8Out": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/pps": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "lowPort": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "highPort": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "protocol": {
+                    "type": "string"
+                  },
+                  "serviceName": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "lowPort": {
+                  "style": "form"
+                },
+                "highPort": {
+                  "style": "form"
+                },
+                "protocol": {
+                  "style": "form"
+                },
+                "serviceName": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/pps/{ppsId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ppsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "lowPort": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "highPort": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "protocol": {
+                    "type": "string"
+                  },
+                  "serviceName": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "lowPort": {
+                  "style": "form"
+                },
+                "highPort": {
+                  "style": "form"
+                },
+                "protocol": {
+                  "style": "form"
+                },
+                "serviceName": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ppsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/poam/{poamId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "poamId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "poamId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "officeorg": {
+                    "type": "string"
+                  },
+                  "mitigations": {
+                    "type": "string"
+                  },
+                  "comments": {
+                    "type": "string"
+                  },
+                  "resources": {
+                    "type": "string"
+                  },
+                  "scheduledCompletionDate": {
+                    "type": "string"
+                  },
+                  "milestoneCompletionDates": {
+                    "type": "string"
+                  },
+                  "predisposingConditions": {
+                    "type": "string"
+                  },
+                  "severity": {
+                    "type": "string"
+                  },
+                  "relevanceOfThreat": {
+                    "type": "string"
+                  },
+                  "threatDescription": {
+                    "type": "string"
+                  },
+                  "likelihood": {
+                    "type": "string"
+                  },
+                  "impact": {
+                    "type": "string"
+                  },
+                  "impactDescription": {
+                    "type": "string"
+                  },
+                  "residualRiskLevel": {
+                    "type": "string"
+                  },
+                  "recommendations": {
+                    "type": "string"
+                  },
+                  "residualRiskLevelMitigations": {
+                    "type": "string"
+                  },
+                  "tagList": {
+                    "type": "string"
+                  },
+                  "riskaccepted": {
+                    "type": "boolean"
+                  },
+                  "securityCheck": {
+                    "type": "string"
+                  },
+                  "devices": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "string"
+                  },
+                  "rawSeverityValue": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "controlVulnerabilityDescription": {
+                    "type": "string"
+                  },
+                  "securityControlNumbers": {
+                    "type": "string"
+                  },
+                  "linkedId": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "milestoneEventId": {
+                    "type": "string"
+                  },
+                  "falsePositive": {
+                    "type": "boolean"
+                  },
+                  "misleadingInformation": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "officeorg": {
+                  "style": "form"
+                },
+                "mitigations": {
+                  "style": "form"
+                },
+                "comments": {
+                  "style": "form"
+                },
+                "resources": {
+                  "style": "form"
+                },
+                "scheduledCompletionDate": {
+                  "style": "form"
+                },
+                "milestoneCompletionDates": {
+                  "style": "form"
+                },
+                "predisposingConditions": {
+                  "style": "form"
+                },
+                "severity": {
+                  "style": "form"
+                },
+                "relevanceOfThreat": {
+                  "style": "form"
+                },
+                "threatDescription": {
+                  "style": "form"
+                },
+                "likelihood": {
+                  "style": "form"
+                },
+                "impact": {
+                  "style": "form"
+                },
+                "impactDescription": {
+                  "style": "form"
+                },
+                "residualRiskLevel": {
+                  "style": "form"
+                },
+                "recommendations": {
+                  "style": "form"
+                },
+                "residualRiskLevelMitigations": {
+                  "style": "form"
+                },
+                "tagList": {
+                  "style": "form"
+                },
+                "riskaccepted": {
+                  "style": "form"
+                },
+                "securityCheck": {
+                  "style": "form"
+                },
+                "devices": {
+                  "style": "form"
+                },
+                "source": {
+                  "style": "form"
+                },
+                "rawSeverityValue": {
+                  "style": "form"
+                },
+                "controlVulnerabilityDescription": {
+                  "style": "form"
+                },
+                "securityControlNumbers": {
+                  "style": "form"
+                },
+                "linkedId": {
+                  "style": "form"
+                },
+                "status": {
+                  "style": "form"
+                },
+                "milestoneEventId": {
+                  "style": "form"
+                },
+                "falsePositive": {
+                  "style": "form"
+                },
+                "misleadingInformation": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/poams": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "days",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "relevance",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "likelihood",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "impact",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "residualrisk",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "resultingrisk",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "severity",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "rawseverity",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "devicename",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "showManual",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "showChecklist",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "showPatch",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "showCompliance",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "showInherited",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "showTechVuln",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "milestoneEventId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "grouped",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "onlyMitigations",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "begin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "completedByDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "device",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "tags",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "needsUpdated",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "securityCheck",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "onlyFalsePositives",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "onlyMisleadingInformation",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -3281,7 +4380,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -3308,7 +4407,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3354,7 +4453,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3400,7 +4499,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3429,7 +4528,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3466,7 +4565,187 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/milestoneevent": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "startDateTime": {
+                    "type": "string"
+                  },
+                  "endDateTime": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string",
+                    "default": "Scheduled"
+                  },
+                  "statusDate": {
+                    "type": "string",
+                    "default": ""
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "startDateTime": {
+                  "style": "form"
+                },
+                "endDateTime": {
+                  "style": "form"
+                },
+                "location": {
+                  "style": "form"
+                },
+                "status": {
+                  "style": "form"
+                },
+                "statusDate": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/milestoneevent/{eventId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "eventId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "startDateTime": {
+                    "type": "string"
+                  },
+                  "endDateTime": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string",
+                    "default": "Scheduled"
+                  },
+                  "statusDate": {
+                    "type": "string",
+                    "default": ""
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "startDateTime": {
+                  "style": "form"
+                },
+                "endDateTime": {
+                  "style": "form"
+                },
+                "location": {
+                  "style": "form"
+                },
+                "status": {
+                  "style": "form"
+                },
+                "statusDate": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -3487,7 +4766,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3516,7 +4795,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3588,7 +4867,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3625,7 +4904,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3662,7 +4941,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3707,7 +4986,52 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/createnotification": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "bShowAll",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "notificationType",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -3825,7 +5149,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3854,7 +5178,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3907,7 +5231,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3936,7 +5260,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -3982,12 +5306,12 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
     },
-    "/systempackage/{systemKey}/techvulnerabilityscore/{categoryType}/source/{source}/project/{project}": {
+    "/systempackage/{systemKey}/techvulnerabilityscore/{categoryType}/sourceproject": {
       "get": {
         "tags": [
           "External"
@@ -4019,16 +5343,14 @@
           },
           {
             "name": "source",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string"
             }
           },
           {
             "name": "project",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string"
             }
@@ -4036,12 +5358,12 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
     },
-    "/systempackage/{systemKey}/techvulnerabilityscorehistory/{categoryType}/source/{source}/project/{project}": {
+    "/systempackage/{systemKey}/techvulnerabilityscorehistory/{categoryType}/sourceproject": {
       "get": {
         "tags": [
           "External"
@@ -4073,16 +5395,14 @@
           },
           {
             "name": "source",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string"
             }
           },
           {
             "name": "project",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string"
             }
@@ -4098,7 +5418,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4148,7 +5468,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4186,7 +5506,57 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/mitigation": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mitigation": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -4215,7 +5585,135 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/mitigationstatement": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "mitigationTitle": {
+                    "type": "string"
+                  },
+                  "mitigationCategory": {
+                    "type": "string"
+                  },
+                  "mitigationStatement": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "mitigationTitle": {
+                  "style": "form"
+                },
+                "mitigationCategory": {
+                  "style": "form"
+                },
+                "mitigationStatement": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/mitigationstatement/{statementId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "statementId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "mitigationTitle": {
+                    "type": "string"
+                  },
+                  "mitigationCategory": {
+                    "type": "string"
+                  },
+                  "mitigationStatement": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "mitigationTitle": {
+                  "style": "form"
+                },
+                "mitigationCategory": {
+                  "style": "form"
+                },
+                "mitigationStatement": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -4244,7 +5742,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4273,7 +5771,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4302,7 +5800,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -4329,7 +5827,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       },
@@ -4613,7 +6111,7 @@
         },
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4682,7 +6180,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4759,7 +6257,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
           }
         }
       }
@@ -4820,7 +6318,2039 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/general": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "allowOverwrite": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              },
+              "encoding": {
+                "allowOverwrite": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/compliance/{cciId}": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cciId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "allowOverwrite": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "allowOverwrite": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/poam/{poamItemId}": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "poamItemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "allowOverwrite": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "allowOverwrite": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/checklist/{artifactId}/vuln/{vulnId}": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "artifactId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "vulnId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "allowOverwrite": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              },
+              "encoding": {
+                "title": {
+                  "style": "form"
+                },
+                "description": {
+                  "style": "form"
+                },
+                "allowOverwrite": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/{evidenceid}/download": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "evidenceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/evidence/{evidenceid}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "evidenceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checklisttypes": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checklistdifference": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "checklistType": {
+                    "type": "string"
+                  },
+                  "devices": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "checklistType": {
+                  "style": "form"
+                },
+                "devices": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checklistvulnerability": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "notafinding",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "open",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notapplicable",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notreviewed",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category1",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category2",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category3",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "searchString",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checklistvulnoverride": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "notafinding",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "open",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notapplicable",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notreviewed",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category1",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category2",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category3",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "searchString",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/lockedvulnerabilities": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "notafinding",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "open",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notapplicable",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notreviewed",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category1",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category2",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category3",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "searchString",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/missingdata": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "notafinding",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "open",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notapplicable",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "notreviewed",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category1",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category2",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "category3",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          },
+          {
+            "name": "searchString",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/poamactivity": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "days",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "relevance",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "likelihood",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "impact",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "residualrisk",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "resultingrisk",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "severity",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/checklistpatchactivity": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "begin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/approvedpps": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/approvedpps": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/deviceprofile": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/deviceprofile": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/deviceprofile/{deviceProfileId}": {
+      "put": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "deviceProfileId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "deviceProfileId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/family/all": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/family/{familyId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "familyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/{frameworkId}/all": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "frameworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/frameworks": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/{frameworkId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "frameworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/{frameworkId}/levels": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "frameworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/{frameworkId}/controlccis": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "frameworkId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "levelcategory",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "levelvalue",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/rmfrev4": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/rmfrev5": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/rmf/confidentiality/{conLevel}/integrity/{intLevel}/availability/{availLevel}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "conLevel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "intLevel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "availLevel",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/fedramprev4": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/fedramprev5": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/fedramp/level/{level}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "level",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/stateramp": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/stateramp/level/{level}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "level",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/all": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/{control}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "control",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/ccis": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/cciforcontrol/{control}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "control",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rev5",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/cci/{cciId}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cciId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/levels": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/family": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/family/sections": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/controlccis": {
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/system/{systemKey}/ccis": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/system/{systemKey}": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
