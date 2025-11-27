@@ -14,7 +14,6 @@ if len(sys.argv) < 9:
     print("Usage: python3 generateFrameworkCrosswalk.py <url> <app_key> <token> <existing_framework_id> <new_framework_acronym> <new_framework_version> <new_framework_level> <new_framework_level_value> <input_filename.csv>")
     sys.exit(1)
 
-
 def read_csv_to_array(filename):
     data_array = []
     with open(filename, 'r', newline='') as csvfile:
