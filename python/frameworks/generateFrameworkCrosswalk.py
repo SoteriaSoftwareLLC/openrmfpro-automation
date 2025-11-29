@@ -1,5 +1,10 @@
 # Generate a CSV we can use to upload a list of controls for a framework level/category based on another one
 # API call from Developer's Guide: /api/external/controls/cciforcontrol/{frameworkId}/control/{controlDisplay/
+# the framework ID you pass in is from the existing framework you want to map from
+# you also pass in the new framework acronym, version, level category, and level value
+# along with a CSV file that has two columns: existing control display and new control display
+# The output is a CSV file named crosswalk-<new_framework_acronym>-<new_framework_version>.csv
+# that can be used to upload the crosswalk mapping via the API
 
 # ex: python3 generateFrameworkCrosswalk.py https://demo.openrmfpro.com openrmfprosvc hvs.xxxxxxxxxxxxxx 68cd32a0345e21f90a785792 CMMC "2.0" "Level 1" "" input-filename.csv
 
@@ -62,6 +67,6 @@ with open(csv_filename, 'w', newline='') as csvfile:
         for element in json_object:
             cciList += element['cciId'] + ", "
         # now write out the listing
-        writer.writerow([sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8], row[1], cciList[:-2]])
+        writer.writerow([sys.argv[5].strip(), sys.argv[6].strip(), sys.argv[7].strip(), sys.argv[8].strip(), row[1].strip(), cciList[:-2]])
 
 print(f"CSV file created: {csv_filename}")
