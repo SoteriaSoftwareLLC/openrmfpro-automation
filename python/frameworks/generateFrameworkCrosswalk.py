@@ -12,6 +12,7 @@ import sys
 import json
 import requests
 import csv
+import time
 from requests.structures import CaseInsensitiveDict
 
 # Check if we have enough arguments
@@ -68,5 +69,6 @@ with open(csv_filename, 'w', newline='') as csvfile:
             cciList += element['cciId'] + ", "
         # now write out the listing
         writer.writerow([sys.argv[5].strip(), sys.argv[6].strip(), sys.argv[7].strip(), sys.argv[8].strip(), row[1].strip(), cciList[:-2]])
+        time.sleep(1)  # Pauses execution for 1 second
 
 print(f"CSV file created: {csv_filename}")
