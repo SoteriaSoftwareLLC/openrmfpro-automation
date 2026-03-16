@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-03-16_111717,HostName:WKS1-SOTERIA,FileType:XCCDF Results,StreamName:Google_Chrome_Current_Windows-002.011,ErrorCount:0,WarnCount:0 -->
+
+<cdf:Benchmark style="SCAP_1.3" id="xccdf_mil.disa.stig_benchmark_Google_Chrome_Current_Windows" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd" resolved="1" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <cdf:status date="2025-05-15">accepted</cdf:status>
+      <cdf:title>Google Chrome Current Windows STIG SCAP Benchmark</cdf:title>
+      <cdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</cdf:description>
+      <cdf:notice id="terms-of-use"></cdf:notice>
+      <cdf:front-matter></cdf:front-matter>
+      <cdf:rear-matter></cdf:rear-matter>
+      <cdf:reference href="https://cyber.mil">
+            <dc:publisher>DISA</dc:publisher>
+            <dc:source>STIG.DOD.MIL</dc:source>
+      </cdf:reference>
+      <cdf:plain-text id="release-info">Benchmark Date: 02 Jul 2025</cdf:plain-text>
+      <cdf:plain-text id="generator">3.5</cdf:plain-text>
+      <cdf:plain-text id="conventionsVersion">1.10.0</cdf:plain-text>
+      <cdf:platform idref="cpe:/a:google:chrome"></cdf:platform>
+      <cdf:version>002.011</cdf:version>
+      <cdf:metadata>
+            <dc:creator>DISA</dc:creator>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:contributor>DISA</dc:contributor>
+            <dc:source>STIG.DOD.MIL</dc:source>
+      </cdf:metadata>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+            <cdf:title>I - Mission Critical Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+            <cdf:title>I - Mission Critical Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+            <cdf:title>I - Mission Critical Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+            <cdf:title>II - Mission Support Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+            <cdf:title>II - Mission Support Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+            <cdf:title>II - Mission Support Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+            <cdf:title>III - Administrative Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+            <cdf:title>III - Administrative Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+            <cdf:title>III - Administrative Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221561" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221570" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221574" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221575" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221576" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221579" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221586" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221587" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221588" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221590" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221591" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221594" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221595" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221597" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221598" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-221599" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226401" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226402" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226403" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-226404" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245538" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-245539" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+            <cdf:title>CAT I Only</cdf:title>
+            <cdf:description>This profile only includes rules that are Severity Category I.</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221577r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221566r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221567r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-245538r961470_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221559r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221571r987620_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221575r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221564r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221588r1106670_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-245539r960864_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221574r961863_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221576r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221570r960921_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221591r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221580r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221594r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221558r960804_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221590r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221595r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-226401r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221561r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221581r961128_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221572r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-226402r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-226403r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221563r1015468_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221586r960879_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-226404r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221578r960864_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221587r960879_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221579r961893_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221599r961167_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221573r987620_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221597r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221598r961083_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-221562r960879_rule" selected="false"></cdf:select>
+      </cdf:Profile>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221558">
+            <cdf:title>SRG-APP-000039</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221558r960804_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0001</cdf:version>
+                  <cdf:title>Firewall traversal from remote host must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Remote connections should never be allowed that bypass the firewall, as there is no way to verify if they can be trusted. Enables usage of STUN and relay servers when remote clients are trying to establish a connection to this machine. If this setting is enabled, then remote clients can discover and connect to this machine even if they are separated by a firewall. If this setting is disabled and outgoing UDP connections are filtered by the firewall, then this machine will only allow connections from client machines within the local network. If this policy is left not set the setting will be enabled.	&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57545</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44711</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001414</cdf:ident>
+                  <cdf:fixtext fixref="F-23262r769350_fix">Windows group policy:
+ 1. Open the group policy editor tool with gpedit.msc 
+ 2. Navigate to Policy Path: Computer Configuration\Administrative\Templates\Google\Google Chrome\Remote Access
+ Policy Name: Enable firewall traversal from remote access host
+ Policy State: Disabled
+ Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23262r769350_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240001"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221559">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221559r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0002</cdf:version>
+                  <cdf:title>Site tracking users location must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Website tracking is the practice of gathering information as to which websites were accesses by a browser. The common method of doing this is to have a website create a tracking cookie on the browser.   If the information of what sites are being accessed is made available to unauthorized persons, this violates confidentiality requirements, and over time poses a significant OPSEC issue. This policy setting allows you to set whether websites are allowed to track the user’s physical location. Tracking the user’s physical location can be allowed by default, denied by default or the user can be asked every time a website requests the physical location.	
+   1 = Allow sites to track the user’s physical location	
+   2 = Do not allow any site to track the user’s physical location	
+   3 = Ask whenever a site wants to track the user’s physical location&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57557</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44723</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-23263r478200_fix">Windows group policy:    
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\    
+   Policy Name: Default geolocation setting    
+   Policy State: Enabled    
+   Policy Value: Do not allow any site to track the users' physical location</cdf:fixtext>
+                  <cdf:fix id="F-23263r478200_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240002"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221561">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221561r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0004</cdf:version>
+                  <cdf:title>Sites ability to show pop-ups must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Chrome allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked. If you enable this policy setting, most unwanted pop-up windows are prevented from appearing. If you disable this policy setting, pop-up windows are not prevented from appearing. If you disable this policy setting, scripts can continue to create pop-up windows, and pop-ups that hide other windows. Recommend configuring this setting to ‘2’ to help prevent malicious websites from controlling the pop-up windows or fooling users into clicking on the wrong window.  If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.  If this policy is left not set, 'BlockPopups' will be used and the user will be able to change it.    
+   1 = Allow all sites to show pop-ups    
+   2 = Do not allow any site to show pop-ups&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57553</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44719</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23265r478203_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: Default popups setting
+    Policy State: Enabled
+    Policy Value: Do not allow any site to show popups</cdf:fixtext>
+                  <cdf:fix id="F-23265r478203_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240004"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221562">
+            <cdf:title>SRG-APP-000089</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221562r960879_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0005</cdf:version>
+                  <cdf:title>Extensions installation must be blocklisted by default.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Extensions are developed by third party sources and are designed to extend Google Chrome's functionality. An extension can be made by anyone, to do and access almost anything on a system; this means they pose a high risk to any system that would allow all extensions to be installed by default. Allows you to specify which extensions the users can NOT install. Extensions already installed will be removed if blocklisted. A blocklist value of '*' means all extensions are blocklisted unless they are explicitly listed in the allowlist. If this policy is left not set the user can install any extension in Google Chrome.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57561</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44727</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:fixtext fixref="F-23266r684814_fix">Windows group policy:
+ 1. Open the group policy editor tool with gpedit.msc 
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Extensions\
+ Policy Name: Configure extension installation blocklist
+ Policy State: Enabled
+ Policy Value: *</cdf:fixtext>
+                  <cdf:fix id="F-23266r684814_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240005"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221563">
+            <cdf:title>SRG-APP-000210</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221563r1015468_rule" severity="low" weight="10.0">
+                  <cdf:version>DTBC-0006</cdf:version>
+                  <cdf:title>Extensions that are approved for use must be allowlisted.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The allowlist should only contain organizationally approved extensions. This is to prevent a user from accidently allowlisitng a malicious extension. This policy allows you to specify which extensions are not subject to the blacklist. A blacklist value of ‘*’ means all extensions are blacklisted and users can only install extensions listed in the allowlist. By default, no extensions are allowlisted. If all extensions have been blacklisted by policy, then the allowlist policy can be used to allow specific extensions to be installed. Administrators should determine which extensions should be allowed to be installed by their users. If no extensions are allowlisted, then no extensions can be installed when combined with blacklisting all extensions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57563</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44729</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:fixtext fixref="F-23267r684817_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Extensions\
+Policy Name: Configure extension installation allowlist
+Policy State: Enabled
+Policy Value: oiigbmnaadbkfbmpbfijlflahbdbdgdf
+
+Note: oiigbmnaadbkfbmpbfijlflahbdbdgdfis the extension ID for scriptno (a commonly used Chrome extension), other extension IDs may vary.</cdf:fixtext>
+                  <cdf:fix id="F-23267r684817_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240006"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221564">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221564r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0007</cdf:version>
+                  <cdf:title>The default search providers name must be set.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Specifies the name of the default search provider that is to be used, if left empty or not set, the host name specified by the search URL will be used. This policy is only considered if the 'DefaultSearchProviderEnabled' policy is enabled. When doing internet searches it is important to use an encrypted connection via https.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57567</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44733</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23268r415820_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Default search provider\
+    Policy Name: Default search provider name
+    Policy State: Enabled
+    Policy Value: set to an organization approved encrypted search provider that corresponds to the encrypted search provider set in DTBC-0008(ex. Google Encrypted, Bing Encrypted)</cdf:fixtext>
+                  <cdf:fix id="F-23268r415820_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240007"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221566">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221566r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0009</cdf:version>
+                  <cdf:title>Default search provider must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Policy enables the use of a default search provider. If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL. You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider. If you disable this setting, no search is performed when the user enters non-URL text in the omnibox. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57571</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44737</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23270r415826_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Default search provider\
+    Policy Name: Enable the default search provider
+    Policy State: Enabled
+    Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23270r415826_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240009"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221567">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221567r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0011</cdf:version>
+                  <cdf:title>The Password Manager must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enables saving passwords and using saved passwords in Google Chrome. Malicious sites may take advantage of this feature by using hidden fields gain access to the stored information. If you enable this setting, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site. If you disable this setting, users are not able to save passwords or use already saved passwords. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it. ListPassword manager should not be used as it stores passwords locally.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57575</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44741</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23271r415829_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Password Manager\
+Policy Name: Enable Saving Passwords to the Password Manager
+Policy State: Disabled
+Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23271r415829_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240011"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221570">
+            <cdf:title>SRG-APP-000112</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221570r960921_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0017</cdf:version>
+                  <cdf:title>Background processing must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Determines whether a Google Chrome process is started on OS login that keeps running when the last browser window is closed, allowing background apps to remain active. The background process displays an icon in the system tray and can always be closed from there. If this policy is set to True, background mode is enabled and cannot be controlled by the user in the browser settings. If this policy is set to False, background mode is disabled and cannot be controlled by the user in the browser settings. If this policy is left unset, background mode is initially disabled and can be controlled by the user in the browser settings.' - Google Chrome Administrators Policy ListThis setting, if enabled, allows Google Chrome to run at all times. There is two reasons that this is not wanted. First, it can tie up system resources that might otherwise be needed. Second, it does not make it obvious to the user that it is running and poorly written extensions could cause instability on the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57587</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44753</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:fixtext fixref="F-23274r415838_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Continue running background apps when Google Chrome is closed
+    Policy State: Disabled
+    Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23274r415838_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240017"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221571">
+            <cdf:title>SRG-APP-000047</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221571r987620_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0020</cdf:version>
+                  <cdf:title>Google Data Synchronization must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disables data synchronization in Google Chrome using Google-hosted synchronization services and prevents users from changing this setting. If you enable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set the user will be able to enable Google Sync.  Google Sync is used to sync information between different user devices, this data is then stored on Google owned servers. The synced data may consist of information such as email, calendars, viewing history, etc. This feature must be disabled because the organization does not have control over the servers the data is stored on.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57593</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44759</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001374</cdf:ident>
+                  <cdf:fixtext fixref="F-23275r415841_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable synchronization of data with Google
+    Policy State: Enabled
+    Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23275r415841_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240020"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221572">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221572r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0021</cdf:version>
+                  <cdf:title>The URL protocol schema javascript must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Each access to a URL is handled by the browser according to the URL's "scheme". The "scheme" of a URL is the section before the ":". The term "protocol" is often mistakenly used for a "scheme". The difference is that the scheme is how the browser handles a URL and the protocol is how the browser communicates with a service.  If a scheme or its associated protocol used by a browser is insecure or obsolete, vulnerabilities can be exploited resulting in exposed data or unrestricted access to the browser's system.   The browser must be configured to disable the use of insecure and obsolete schemas (protocols).
+This policy disables the listed protocol schemes in Google Chrome, URLs using a scheme from this list will not load and cannot be navigated to. If this policy is left not set or the list is empty all schemes will be accessible in Google Chrome.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57595</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44761</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23276r754414_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc. 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Block access to a list of URLs.
+- Policy State: Enabled
+- Policy Value 1: javascript://*</cdf:fixtext>
+                  <cdf:fix id="F-23276r754414_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240021"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221573">
+            <cdf:title>SRG-APP-000047</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221573r987620_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0023</cdf:version>
+                  <cdf:title>Cloud print sharing must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Policy enables Google Chrome to act as a proxy between Google Cloud Print and legacy printers connected to the machine. If this setting is enabled or not configured, users can enable the cloud print proxy by authentication with their Google account. If this setting is disabled, users cannot enable the proxy, and the machine will not be allowed to share it’s printers with Google Cloud Print. If this policy is not set, this will be enabled but the user will be able to change it.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57599</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44765</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001374</cdf:ident>
+                  <cdf:fixtext fixref="F-23277r769352_fix">Windows group policy:
+ 1. Open the group policy editor tool with gpedit.msc 
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Printing
+ Policy Name: Enable Google Cloud Print proxy
+ Policy State: Disabled
+ Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23277r769352_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240023"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221574">
+            <cdf:title>SRG-APP-000516</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221574r961863_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0025</cdf:version>
+                  <cdf:title>Network prediction must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enables network prediction in Google Chrome and prevents users from changing this setting. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be disabled but the user will be able to change it.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57603</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44769</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000366</cdf:ident>
+                  <cdf:fixtext fixref="F-23278r415850_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Enable network prediction
+Policy State: Enabled
+Policy Value: Do not predict network actions on any network connection</cdf:fixtext>
+                  <cdf:fix id="F-23278r415850_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240025"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221575">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221575r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0026</cdf:version>
+                  <cdf:title>Metrics reporting to Google must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enables anonymous reporting of usage and crash-related data about Google Chrome to Google and prevents users from changing this setting. If you enable this setting, anonymous reporting of usage and crash-related data is sent to Google. A crash report could contain sensitive information from the computer's memory. If you disable this setting, anonymous reporting of usage and crash-related data is never sent to Google. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set the setting will be what the user chose upon installation / first run.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57605</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44771</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23279r415853_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable reporting of usage and crash-related data
+    Policy State: Disabled
+    Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23279r415853_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240026"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221576">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221576r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0027</cdf:version>
+                  <cdf:title>Search suggestions must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Search suggestion should be disabled as it could lead to searches being conducted that were never intended to be made. Enables search suggestions in Google Chrome's omnibox and prevents users from changing this setting. If you enable this setting, search suggestions are used. If you disable this setting, search suggestions are never used. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57607</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44773</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23280r415856_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable search suggestions
+    Policy State: Disabled
+    Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23280r415856_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240027"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221577">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221577r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0029</cdf:version>
+                  <cdf:title>Importing of saved passwords must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Importing of saved passwords should be disabled as it could lead to unencrypted account passwords stored on the system from another browser to be viewed. This policy forces the saved passwords to be imported from the previous default browser if enabled. If enabled, this policy also affects the import dialog. If disabled, the saved passwords are not imported. If it is not set, the user may be asked whether to import, or importing may happen automatically.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57609</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44775</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23281r415859_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+   Policy Name: Import saved passwords from default browser on first run
+   Policy State: Disabled
+   Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23281r415859_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240029"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221578">
+            <cdf:title>SRG-APP-000080</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221578r960864_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0030</cdf:version>
+                  <cdf:title>Incognito mode must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Incognito mode allows the user to browse the Internet without recording their browsing history/activity.  From a forensics perspective, this is unacceptable.  Best practice requires that browser history is retained.  The "IncognitoModeAvailability" setting controls whether the user may utilize Incognito mode in Google Chrome. If 'Enabled' is selected or the policy is left unset, pages may be opened in Incognito mode. If 'Disabled' is selected, pages may not be opened in Incognito mode. If 'Forced' is selected, pages may be opened ONLY in Incognito mode.   
+   0 = Incognito mode available.    
+   1 = Incognito mode disabled.    
+   2 = Incognito mode forced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57611</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44777</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:fixtext fixref="F-23282r415862_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Incognito mode availability
+    Policy State: Enabled
+    Policy Value: Incognito mode disabled</cdf:fixtext>
+                  <cdf:fix id="F-23282r415862_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240030"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221579">
+            <cdf:title>SRG-APP-000605</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221579r961893_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0037</cdf:version>
+                  <cdf:title>Online revocation checks must be performed.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;By setting this policy to true, the previous behavior is restored and online OCSP/CRL checks will be performed. If the policy is not set, or is set to false, then Chrome will not perform online revocation checks. Certificates are revoked when they have been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57623</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44789</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000185</cdf:ident>
+                  <cdf:fixtext fixref="F-23283r769354_fix">Windows group policy:
+ 1. Open the group policy editor tool with gpedit.msc 
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+ Policy Name: Enable online OCSP/CRL checks
+ Policy State: Enabled
+ Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23283r769354_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240037"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221580">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221580r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0038</cdf:version>
+                  <cdf:title>Safe Browsing must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Allows you to control whether Google Chrome's Safe Browsing feature is enabled and the mode it operates in.
+
+If this policy is set to 'NoProtection' (value 0), Safe Browsing is never active.
+
+If this policy is set to 'StandardProtection' (value 1, which is the default), Safe Browsing is always active in the standard mode.
+
+If this policy is set to 'EnhancedProtection' (value 2), Safe Browsing is always active in the enhanced mode, which provides better security, but requires sharing more browsing information with Google.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57625</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44791</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-23284r862942_fix">Windows group policy:
+ 1. Open the “group policy editor” tool with gpedit.msc
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Safe Browsing Settings
+ Policy Name: Safe Browsing Protection Level
+ Policy State: Enabled
+ Policy Value: "(1) Safe Browsing is active in the standard mode", or "(2) Safe Browsing is active in the enhanced mode. This mode provides better security, but requires sharing more browsing information with Google".</cdf:fixtext>
+                  <cdf:fix id="F-23284r862942_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240038"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221581">
+            <cdf:title>SRG-APP-000231</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221581r961128_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0039</cdf:version>
+                  <cdf:title>Browser history must be saved.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy disables saving browser history in Google Chrome and prevents users from changing this setting. If this setting is enabled, browsing history is not saved. If this setting is disabled or not set, browsing history is saved.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57627</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44793</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001199</cdf:ident>
+                  <cdf:fixtext fixref="F-23285r415871_fix">Windows group policy:
+   1. Open the group policy editor tool with gpedit.msc   
+   2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable saving browser history
+    Policy State: Disabled
+    Policy Value:  N/A</cdf:fixtext>
+                  <cdf:fix id="F-23285r415871_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240039"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221586">
+            <cdf:title>SRG-APP-000089</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221586r960879_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0052</cdf:version>
+                  <cdf:title>Deletion of browser history must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disabling this function will prevent users from deleting their browsing history, which could be used to identify malicious websites and files that could later be used for anti-virus and Intrusion Detection System (IDS) signatures. Furthermore, preventing users from deleting browsing history could be used to identify abusive web surfing on government systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-89845</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-75165</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:fixtext fixref="F-23290r415886_fix">Windows group policy:
+ 1. Open the group policy editor tool with gpedit.msc 
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+ Policy Name: Enable deleting browser and download history
+ Policy State: Disabled
+ Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23290r415886_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240052"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221587">
+            <cdf:title>SRG-APP-000089</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221587r960879_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0053</cdf:version>
+                  <cdf:title>Prompt for download location must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If the policy is enabled, the user will be asked where to save each file before downloading. If the policy is disabled, downloads will start immediately, and the user will not be asked where to save the file. If the policy is not configured, the user will be able to change this setting.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-94633</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-79929</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:fixtext fixref="F-23291r415889_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc
+2. Navigate to Policy Path:  Computer Configuration\Administrative Templates\Google\Google Chrome\
+ Policy Name: Ask where to save each file before downloading
+ Policy State:  Enabled
+ Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23291r415889_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:640053"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221588">
+            <cdf:title>SRG-APP-000089</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221588r1106670_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0055</cdf:version>
+                  <cdf:title>Download restrictions must be configured.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Setting the policy means users cannot bypass download security decisions. There are many types of download warnings within Chrome, which roughly break down into these categories:
+- Malicious, as flagged by the Safe Browsing server.
+- Uncommon or unwanted, as flagged by the Safe Browsing server.
+- A dangerous file type (e.g., all SWF downloads and many EXE downloads).
+
+Setting the policy blocks different subsets of these, depending on its value:
+
+0 = No special restrictions. Default.
+1 = Block malicious downloads and dangerous file types.
+2 = Block malicious downloads, uncommon or unwanted downloads, and dangerous file types.
+3 = Block all downloads.
+4 = Block malicious downloads. Recommended.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-94635</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-79931</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:fixtext fixref="F-23292r1106599_fix">If the system is on the SIPRNet, this requirement is Not Applicable.
+
+Windows group policy:
+1. Open the group policy editor tool with gpedit.msc.
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Allow download restrictions
+Policy State: 1, 2, or 4
+Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23292r1106599_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:610055"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221590">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221590r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0057</cdf:version>
+                  <cdf:title>Safe Browsing Extended Reporting must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enables Google Chrome's Safe Browsing Extended Reporting and prevents users from changing this setting. Extended Reporting sends some system information and page content to Google servers to help detect dangerous apps and sites.
+If the setting is set to "True", then reports will be created and sent whenever necessary (such as when a security interstitial is shown).
+If the setting is set to "False", reports will never be sent.
+If this policy is set to "True" or "False", the user will not be able to modify the setting.
+If this policy is left unset, the user will be able to change the setting and decide whether to send reports or not.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96299</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81585</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-23294r415898_fix">Windows group policy:
+1. Open the “group policy editor” tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Safe Browsing settings\
+Policy Name: Enable Safe Browsing Extended Reporting
+Policy State: Disabled
+Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23294r415898_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:660057"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221591">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221591r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0058</cdf:version>
+                  <cdf:title>WebUSB must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Allows you to set whether websites are allowed to get access to connected USB devices. Access can be completely blocked, or the user can be asked every time a website wants to get access to connected USB devices.
+If this policy is left not set, ”3” will be used, and the user will be able to change it.
+2 = Do not allow any site to request access to USB devices via the WebUSB API
+3 = Allow sites to ask the user to grant access to a connected USB device&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96301</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81587</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23295r415901_fix">Windows group policy:
+ 1. Open the “group policy editor” tool with gpedit.msc
+ 2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings
+ Policy Name: Control use of the WebUSB API
+ Policy State: Enabled
+ Policy Value: 2</cdf:fixtext>
+                  <cdf:fix id="F-23295r415901_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:670058"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221594">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221594r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0063</cdf:version>
+                  <cdf:title>Google Cast must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If this policy is set to ”True” or is not set, Google Cast will be enabled, and users will be able to launch it from the app menu, page context menus, media controls on Cast-enabled websites, and (if shown) the “Cast toolbar” icon.
+If this policy set to ”False”, Google Cast will be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96311</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81597</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23298r415910_fix">Windows group policy:
+1. Open the “group policy editor” tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Google Cast
+Policy Name: Enable Google Cast
+Policy State: Disabled
+Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23298r415910_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:520063"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221595">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221595r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0064</cdf:version>
+                  <cdf:title>Autoplay must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This allows a user to control if videos can play automatically with audio content (without user consent) in Google Chrome.
+
+If the policy is set to "True", Google Chrome is allowed to autoplay media. If the policy is set to "False", Google Chrome is not allowed to autoplay media. The "AutoplayAllowlist" policy can be used to override this for certain URL patterns. By default, Google Chrome is not allowed to autoplay media. The "AutoplayAllowlist" policy can be used to override this for certain URL patterns.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96295</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81581</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-23299r415913_fix">Windows group policy:
+1. Open the “group policy editor” tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Allow media autoplay
+Policy State: Disabled
+Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-23299r415913_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:660055"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221597">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221597r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0066</cdf:version>
+                  <cdf:title>Anonymized data collection must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enable URL-keyed anonymized data collection in Google Chrome and prevent users from changing this setting.
+URL-keyed anonymized data collection sends URLs of pages the user visits to Google to make searches and browsing better.
+If you enable this policy, URL-keyed anonymized data collection is always active.
+If you disable this policy, URL-keyed anonymized data collection is never active.
+If this policy is left not set, URL-keyed anonymized data collection will be enabled but the user will be able to change it.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-101303</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-91203</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-23301r415919_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Enable URL-keyed anonymized data collection
+Policy State: Disabled
+Policy Value: NA</cdf:fixtext>
+                  <cdf:fix id="F-23301r415919_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:690066"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221598">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221598r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0067</cdf:version>
+                  <cdf:title>Collection of WebRTC event logs must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If the policy is set to “true”, Google Chrome is allowed to collect WebRTC event logs from Google services (e.g., Google Meet), and upload those logs to Google.
+If the policy is set to “false”, or is unset, Google Chrome may not collect nor upload such logs.
+These logs contain diagnostic information helpful when debugging issues with audio or video calls in Chrome, such as the time and size of sent and received RTP packets, feedback about congestion on the network, and metadata about time and quality of audio and video frames. These logs do not contain audio or video contents from the call.
+This data collection by Chrome can only be triggered by Google's web services, such as Google Hangouts or Google Meet.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-101305</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-91205</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-23302r415922_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Allow collection of WebRTC event logs from Google services
+Policy State: Disabled
+Policy Value: NA</cdf:fixtext>
+                  <cdf:fix id="F-23302r415922_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:700067"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-221599">
+            <cdf:title>SRG-APP-000266</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-221599r961167_rule" severity="low" weight="10.0">
+                  <cdf:version>DTBC-0068</cdf:version>
+                  <cdf:title>Chrome development tools must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;While the risk associated with browser development tools is more related to the proper design of a web application, a risk vector remains within the browser. The developer tools allow end users and application developers to view and edit all types of web application related data via the browser. Page elements, source code, javascript, API calls, application data, etc. may all be viewed and potentially manipulated. Manipulation could be useful for troubleshooting legitimate issues, and this may be performed in a development environment. Manipulation could also be malicious and must be addressed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-106629</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-97525</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001312</cdf:ident>
+                  <cdf:fixtext fixref="F-23303r478215_fix">Windows group policy:
+1. Open the "group policy editor" tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome
+Policy Name: Control where Developer Tools can be used
+Policy State: Enabled
+Policy Value: Disallow usage of the Developer Tools</cdf:fixtext>
+                  <cdf:fix id="F-23303r478215_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:680062"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-226401">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-226401r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0069</cdf:version>
+                  <cdf:title>Guest Mode must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If this policy is set to true or not configured, Google Chrome will enable guest logins. Guest logins are Google Chrome profiles where all windows are in incognito mode.
+
+If this policy is set to false, Google Chrome will not allow guest profiles to be started.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111829</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102867</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-28097r478218_fix">Windows group policy:
+1. Open the "group policy editor" tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Enable guest mode in browser
+Policy State: Disabled</cdf:fixtext>
+                  <cdf:fix id="F-28097r478218_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240069"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-226402">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-226402r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0070</cdf:version>
+                  <cdf:title>AutoFill for credit cards must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enabling Google Chrome's AutoFill feature allows users to auto complete credit card information in web forms using previously stored information.
+If this setting is disabled, Autofill will never suggest or fill credit card information, nor will it save additional credit card information that the user might submit while browsing the web.
+
+If this setting is enabled or has no value, the user will be able to control Autofill for credit cards in the UI.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111831</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102869</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-28098r478221_fix">Windows group policy:
+1. Open the "group policy editor" tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Enable AutoFill for credit cards
+Policy State: Disabled</cdf:fixtext>
+                  <cdf:fix id="F-28098r478221_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240070"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-226403">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-226403r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0071</cdf:version>
+                  <cdf:title>AutoFill for addresses must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enabling Google Chrome's AutoFill feature allows users to auto complete address information in web forms using previously stored information.
+If this setting is disabled, Autofill will never suggest or fill address information, nor will it save additional address information that the user might submit while browsing the web.
+
+If this setting is enabled or has no value, the user will be able to control Autofill for addresses in the UI.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111833</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102871</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-28099r478224_fix">Windows group policy:
+1. Open the "group policy editor" tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Enable AutoFill for addresses
+Policy State: Disabled</cdf:fixtext>
+                  <cdf:fix id="F-28099r478224_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240071"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-226404">
+            <cdf:title>SRG-APP-000206</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-226404r961083_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0072</cdf:version>
+                  <cdf:title>Import AutoFill form data must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;This policy forces the autofill form data to be imported from the previous default browser if enabled. If enabled, this policy also affects the import dialog.
+If disabled, the autofill form data is not imported.
+
+If it is not set, the user may be asked whether to import, or importing may happen automatically.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111835</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102873</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:fixtext fixref="F-28100r478227_fix">Windows group policy:
+1. Open the "group policy editor" tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+Policy Name: Import autofill form data from default browser on first run
+Policy State: Disabled</cdf:fixtext>
+                  <cdf:fix id="F-28100r478227_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240072"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-245538">
+            <cdf:title>SRG-APP-000383</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-245538r961470_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0074</cdf:version>
+                  <cdf:title>Use of the QUIC protocol must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;QUIC is used by more than half of all connections from the Chrome web browser to Google's servers, and this activity is undesirable in the DoD.
+
+Setting the policy to Enabled or leaving it unset allows the use of QUIC protocol in Google Chrome.
+
+Setting the policy to Disabled disallows the use of QUIC protocol.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001762</cdf:ident>
+                  <cdf:fixtext fixref="F-48769r808523_fix">Windows group policy:
+1. Open the “group policy editor” tool with gpedit.msc.
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google Chrome.
+- Policy Name: Allow QUIC protocol
+- Policy State: Disabled
+- Policy Value: N/A</cdf:fixtext>
+                  <cdf:fix id="F-48769r808523_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:138"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-245539">
+            <cdf:title>SRG-APP-000080</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-245539r960864_rule" severity="medium" weight="10.0">
+                  <cdf:version>DTBC-0045</cdf:version>
+                  <cdf:title>Session only based cookies must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Cookies must only be allowed per session and only for approved URLs as permanently stored cookies can be used for malicious intent. 
+
+Approved URLs may be allowlisted via the CookiesAllowedForUrls policy setting, but is not a requirement.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>4081</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:fixtext fixref="F-23287r940012_fix">Windows group policy:
+1. Open the group policy editor tool with gpedit.msc 
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings.
+- Policy Name: Default cookies setting
+- Policy State: Enabled
+- Policy Value: Keep cookies for the duration of the session</cdf:fixtext>
+                  <cdf:fix id="F-23287r940012_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240045"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:TestResult end-time="2026-03-16T08:19:25" id="xccdf_mil.disa.stig_testresult_scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-xccdf.xml---xccdf_mil.disa.stig_profile_MAC-1_Classified-1" start-time="2026-03-16T08:19:24" test-system="cpe:/a:niwc:scc:5.14" version="002.011">
+            <cdf:benchmark href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-xccdf.xml" id="xccdf_mil.disa.stig_benchmark_Google_Chrome_Current_Windows"></cdf:benchmark>
+            <cdf:organization>NIWC Atlantic</cdf:organization>
+            <cdf:identity authenticated="true" privileged="true">WKS1-SOTERIA\Degthat</cdf:identity>
+            <cdf:profile idref="xccdf_mil.disa.stig_profile_MAC-1_Classified"></cdf:profile>
+            <cdf:target>WKS1-SOTERIA</cdf:target>
+            <cdf:target-address>192.168.40.91</cdf:target-address>
+            <cdf:target-facts>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:host_name" type="string">WKS1-SOTERIA</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:domain" type="string"></cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:fqdn" type="string">WKS1-SOTERIA.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_name" type="string">Microsoft Windows 11 Pro</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_version" type="string">25H2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor" type="string">12th Gen Intel(R) Core(TM) i7-12700</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_architecture" type="string">Intel64 Family 6 Model 151 Stepping 2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_mhz" type="string">2112</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:physical_memory" type="string">8192</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:manufacturer" type="string">VMware, Inc.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ein" type="string">VMware-56 4d 87 92 d8 27 18 a3-ea df de 8b f7 fe a6 6f</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:bios_version" type="string">VMW201.00V.24006586.B64.2406042154</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:model" type="string">VMware20,1</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:role" type="string">Workstation</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_service_pack" type="string"></cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:interface_name" type="string">[00000001] Intel(R) 82574L Gigabit Network Connection</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ipv4" type="string">192.168.40.91</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:mac" type="string">00:0C:29:03:21:20</cdf:fact>
+            </cdf:target-facts>
+            <cdf:target-id-ref href="" name="SCC_WKS1-SOTERIA" system="http://scap.nist.gov/schema/asset-identification/1.1"></cdf:target-id-ref>
+            <cdf:platform idref="cpe:/a:google:chrome"></cdf:platform>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221558r960804_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0001" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57545</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44711</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001414</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable firewall traversal)
+</cdf:message>
+                  <cdf:fix id="F-23262r769350_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240001"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221559r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0002" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57557</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44723</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable tracking user's location)
+</cdf:message>
+                  <cdf:fix id="F-23263r478200_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240002"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221561r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0004" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57553</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44719</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable pop-ups)
+</cdf:message>
+                  <cdf:fix id="F-23265r478203_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240004"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221562r960879_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0005" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57561</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44727</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Extensions installation are blocklisted by default)
+</cdf:message>
+                  <cdf:fix id="F-23266r684814_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240005"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221563r1015468_rule" role="full" severity="low" time="2026-03-16T08:19:24" version="DTBC-0006" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57563</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44729</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001170</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Extensions that are approved for use are allowlisted)
+</cdf:message>
+                  <cdf:fix id="F-23267r684817_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240006"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221564r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0007" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57567</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44733</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Set default search provider name)
+</cdf:message>
+                  <cdf:fix id="F-23268r415820_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240007"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221566r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0009" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57571</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44737</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Enable default search provider)
+</cdf:message>
+                  <cdf:fix id="F-23270r415826_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240009"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221567r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0011" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57575</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44741</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable Password Manager)
+</cdf:message>
+                  <cdf:fix id="F-23271r415829_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240011"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221570r960921_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0017" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57587</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44753</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001695</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable background processing)
+</cdf:message>
+                  <cdf:fix id="F-23274r415838_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240017"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221571r987620_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0020" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57593</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44759</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001374</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable Google data synchronization)
+</cdf:message>
+                  <cdf:fix id="F-23275r415841_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240020"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221572r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0021" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57595</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44761</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (The URL protocol schema javascript is disabled)
+</cdf:message>
+                  <cdf:fix id="F-23276r754414_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240021"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221573r987620_rule" role="full" severity="medium" time="2026-03-16T08:19:24" version="DTBC-0023" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57599</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44765</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001374</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable cloud print sharing)
+</cdf:message>
+                  <cdf:fix id="F-23277r769352_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240023"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221574r961863_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0025" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57603</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44769</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000366</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable network prediction)
+</cdf:message>
+                  <cdf:fix id="F-23278r415850_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240025"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221575r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0026" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57605</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44771</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable Google metrics reporting)
+</cdf:message>
+                  <cdf:fix id="F-23279r415853_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240026"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221576r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0027" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57607</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44773</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Enable search suggestion)
+</cdf:message>
+                  <cdf:fix id="F-23280r415856_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240027"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221577r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0029" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57609</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44775</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Password history=VAR)
+</cdf:message>
+                  <cdf:fix id="F-23281r415859_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240029"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221578r960864_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0030" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57611</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44777</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable incognito mode)
+</cdf:message>
+                  <cdf:fix id="F-23282r415862_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240030"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221579r961893_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0037" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57623</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44789</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000185</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Perform online revocation checks)
+</cdf:message>
+                  <cdf:fix id="F-23283r769354_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240037"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221580r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0038" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57625</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44791</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Safe Browsing is enabled)
+</cdf:message>
+                  <cdf:fix id="F-23284r862942_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240038"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221581r961128_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0039" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-57627</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-44793</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001199</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Save browser history)
+</cdf:message>
+                  <cdf:fix id="F-23285r415871_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240039"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221586r960879_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0052" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-89845</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-75165</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (One or more child tests must be true. (OR))
+Test            :   true (Check to make sure that google chrome is set to not allow deletion of browser and download history.)
+</cdf:message>
+                  <cdf:fix id="F-23290r415886_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240052"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221587r960879_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0053" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-94633</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-79929</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Prompt for download location)
+</cdf:message>
+                  <cdf:fix id="F-23291r415889_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:640053"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221588r1106670_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0055" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-94635</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-79931</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000169</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (HKLM\Software\Policies\Google\Chrome\DownloadRestrictions is set to 1, 2, 3, or 4)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\DownloadRestrictions'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-23292r1106599_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:610055"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221590r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0057" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96299</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81585</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Check SafeBrowsingExtendedReportingEnabled value.)
+</cdf:message>
+                  <cdf:fix id="F-23294r415898_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:660057"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221591r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0058" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96301</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81587</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (WebUSB must be disabled.)
+</cdf:message>
+                  <cdf:fix id="F-23295r415901_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:670058"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221594r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0063" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96311</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81597</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Google Cast must be disabled.)
+</cdf:message>
+                  <cdf:fix id="F-23298r415910_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:520063"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221595r960963_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0064" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-96295</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-81581</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Autoplay is disabled)
+</cdf:message>
+                  <cdf:fix id="F-23299r415913_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:660055"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221597r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0066" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-101303</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-91203</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable URL-keyed anonymized data collection)
+</cdf:message>
+                  <cdf:fix id="F-23301r415919_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:690066"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221598r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0067" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-101305</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-91205</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable WebRTC event log collection)
+</cdf:message>
+                  <cdf:fix id="F-23302r415922_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:700067"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-221599r961167_rule" role="full" severity="low" time="2026-03-16T08:19:25" version="DTBC-0068" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-106629</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-97525</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001312</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Chrome Developer Tools Availability must be disallowed.)
+</cdf:message>
+                  <cdf:fix id="F-23303r478215_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:680062"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-226401r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0069" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111829</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102867</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable Browser Guest Mode)
+</cdf:message>
+                  <cdf:fix id="F-28097r478218_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240069"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-226402r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0070" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111831</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102869</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable auto filling of credit card information)
+</cdf:message>
+                  <cdf:fix id="F-28098r478221_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240070"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-226403r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0071" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111833</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102871</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable AutoFill for addresses)
+</cdf:message>
+                  <cdf:fix id="F-28099r478224_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240071"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-226404r961083_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0072" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/legacy">SV-111835</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/legacy">V-102873</cdf:ident>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Disable Browser Guest Mode)
+</cdf:message>
+                  <cdf:fix id="F-28100r478227_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240072"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-245538r961470_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0074" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001762</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Use of the QUIC protocol is disabled)
+</cdf:message>
+                  <cdf:fix id="F-48769r808523_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:138"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-245539r960864_rule" role="full" severity="medium" time="2026-03-16T08:19:25" version="DTBC-0045" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Session only based cookies are enabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\DefaultCookiesSetting'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-23287r940012_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_Google_Chrome_V2R11_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.chrome:def:240045"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">94.44</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-original">94.44</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:default">94.4444444444444</cdf:score>
+            <cdf:score maximum="360" system="urn:xccdf:scoring:flat">340</cdf:score>
+            <cdf:score maximum="36" system="urn:xccdf:scoring:flat-unweighted">34</cdf:score>
+            <cdf:score maximum="1" system="urn:xccdf:scoring:absolute">0</cdf:score>
+      </cdf:TestResult>
+</cdf:Benchmark>
