@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-03-16_111717,HostName:WKS3-SOTERIA,FileType:XCCDF Results,StreamName:MOZ_Firefox_Windows-006.007,ErrorCount:0,WarnCount:0 -->
+
+<cdf:Benchmark resolved="1" id="xccdf_mil.disa.stig_benchmark_MOZ_Firefox_Windows" style="SCAP_1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <cdf:status date="2025-11-25">accepted</cdf:status>
+      <cdf:title>Mozilla Firefox for Windows STIG SCAP Benchmark</cdf:title>
+      <cdf:description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</cdf:description>
+      <cdf:notice id="terms-of-use"></cdf:notice>
+      <cdf:front-matter></cdf:front-matter>
+      <cdf:rear-matter></cdf:rear-matter>
+      <cdf:reference href="https://cyber.mil">
+            <dc:publisher>DISA</dc:publisher>
+            <dc:source>STIG.DOD.MIL</dc:source>
+      </cdf:reference>
+      <cdf:plain-text id="release-info">Benchmark Date: 05 Jan 2026</cdf:plain-text>
+      <cdf:plain-text id="generator">3.5.2</cdf:plain-text>
+      <cdf:plain-text id="conventionsVersion">1.10.0</cdf:plain-text>
+      <cdf:platform idref="cpe:/a:mozilla:firefox:::~~~windows~~"></cdf:platform>
+      <cdf:version>006.007</cdf:version>
+      <cdf:metadata>
+            <dc:creator>DISA</dc:creator>
+            <dc:publisher>DISA</dc:publisher>
+            <dc:contributor>DISA</dc:contributor>
+            <dc:source>STIG.DOD.MIL</dc:source>
+      </cdf:metadata>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Classified">
+            <cdf:title>I - Mission Critical Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Public">
+            <cdf:title>I - Mission Critical Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-1_Sensitive">
+            <cdf:title>I - Mission Critical Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Classified">
+            <cdf:title>II - Mission Support Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Public">
+            <cdf:title>II - Mission Support Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-2_Sensitive">
+            <cdf:title>II - Mission Support Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Classified">
+            <cdf:title>III - Administrative Classified</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Public">
+            <cdf:title>III - Administrative Public</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_MAC-3_Sensitive">
+            <cdf:title>III - Administrative Sensitive</cdf:title>
+            <cdf:description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251546" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251549" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251551" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251552" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251553" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251557" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251558" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251559" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251562" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251563" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251564" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251565" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251566" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251567" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251568" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251571" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251572" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251573" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251577" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251578" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251580" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-251581" selected="true"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_group_V-252881" selected="true"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_mil.disa.stig_profile_CAT_I_Only">
+            <cdf:title>CAT I Only</cdf:title>
+            <cdf:description>This profile only includes rules that are Severity Category I.</cdf:description>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251558r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251549r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251568r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251567r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251557r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251578r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251565r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251564r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251566r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251577r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251580r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251562r1156569_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-252881r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251551r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251571r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251573r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251563r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251552r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251553r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251559r961167_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251581r960963_rule" selected="false"></cdf:select>
+            <cdf:select idref="xccdf_mil.disa.stig_rule_SV-251572r960963_rule" selected="false"></cdf:select>
+      </cdf:Profile>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251546">
+            <cdf:title>SRG-APP-000560</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251546r961869_rule" severity="high" weight="10.0">
+                  <cdf:version>FFOX-00-000002</cdf:version>
+                  <cdf:title>Firefox must be configured to allow only TLS 1.2 or above.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Use of versions prior to TLS 1.2 are not permitted. SSL 2.0 and SSL 3.0 contain a number of security flaws. These versions must be disabled in compliance with the Network Infrastructure and Secure Remote Computing STIGs.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001453</cdf:ident>
+                  <cdf:fixtext fixref="F-54935r820744_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\
+Policy Name: Minimum SSL version enabled
+Policy State: Enabled
+Policy Value: TLS 1.2   (or TLS 1.3)
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;SSLVersionMin&lt;/key&gt;
+&lt;string&gt;tls1.2&lt;/string&gt;   (or &lt;string&gt;tls1.3&lt;/string&gt;)
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"SSLVersionMin": "tls1.2"   or ("SSLVersionMin": "tls1.3")</cdf:fixtext>
+                  <cdf:fix id="F-54935r820744_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:101"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251549">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251549r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000005</cdf:version>
+                  <cdf:title>Firefox must be configured to not automatically update installed add-ons and plugins.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Set this to false to disable checking for updated versions of the Extensions/Themes. Automatic updates from untrusted sites puts the enclave at risk of attack and may override security settings.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54938r807118_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Extensions
+Policy Name: Extension Update
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;ExtensionUpdate&lt;/key&gt;
+&lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"ExtensionUpdate": false</cdf:fixtext>
+                  <cdf:fix id="F-54938r807118_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:104"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251551">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251551r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000007</cdf:version>
+                  <cdf:title>Firefox must be configured to disable form fill assistance.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;To protect privacy and sensitive data, Firefox provides the ability to configure the program so that data entered into forms is not saved. This mitigates the risk of a website gleaning private information from prefilled information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54940r807124_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Disable Form History
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisableFormHistory&lt;/key&gt;
+&lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableFormHistory": true</cdf:fixtext>
+                  <cdf:fix id="F-54940r807124_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:106"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251552">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251552r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000008</cdf:version>
+                  <cdf:title>Firefox must be configured to not use a password store with or without a master password.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Firefox can be set to store passwords for sites visited by the user. These individual passwords are stored in a file and can be protected by a master password. Autofill of the password can then be enabled when the site is visited. This feature could also be used to autofill the certificate PIN, which could lead to compromise of DoD information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54941r822410_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: PasswordManager
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;PasswordManagerEnabled&lt;/key&gt;
+&lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"PasswordManagerEnabled": false</cdf:fixtext>
+                  <cdf:fix id="F-54941r822410_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:107"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251553">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251553r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000009</cdf:version>
+                  <cdf:title>Firefox must be configured to block pop-up windows.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Pop-up windows may be used to launch an attack within a new browser window with altered settings. This setting blocks pop-up windows created while the page is loading.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54942r862957_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Popups
+Policy Name: Block pop-ups from websites
+Policy State: Enabled
+
+Policy Name: Do not allow preferences to be changed
+Policy State: Enabled
+
+Optional:
+Policy Name: Allowed Sites
+Policy State: Enabled
+Click "Show..." and enter a list of websites to be allowlisted.
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;PopupBlocking&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Allow&lt;/key&gt;
+    &lt;array&gt;
+      &lt;string&gt;http://example.mil&lt;/string&gt;
+      &lt;string&gt;http://example.gov&lt;/string&gt;
+    &lt;/array&gt;
+    &lt;key&gt;Default&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;key&gt;Locked&lt;/key&gt;
+    &lt;true/&gt;
+  &lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"PopupBlocking": {
+      "Allow": ["http://example.mil/",
+                "http://example.gov/"],
+      "Default": true,
+      "Locked": true}</cdf:fixtext>
+                  <cdf:fix id="F-54942r862957_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:108"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251557">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251557r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000013</cdf:version>
+                  <cdf:title>Firefox must be configured to disable the installation of extensions.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;A browser extension is a program that has been installed into the browser to add functionality. Where a plug-in interacts only with a web page and usually a third-party external application (e.g., Flash, Adobe Reader), an extension interacts with the browser program itself. Extensions are not embedded in web pages and must be downloaded and installed in order to work. Extensions allow browsers to avoid restrictions that apply to web pages. 
+
+For example, an extension can be written to combine data from multiple domains and present it when a certain page is accessed, which can be considered cross-site scripting. If a browser is configured to allow unrestricted use of extensions, plug-ins can be loaded and installed from malicious sources and used on the browser.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54946r820751_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Addons
+Policy Name: Allow add-on installs from websites
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;InstallAddonsPermission&lt;/key&gt;
+&lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"InstallAddonsPermission": {
+      "Default": false
+}</cdf:fixtext>
+                  <cdf:fix id="F-54946r820751_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:112"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251558">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251558r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000014</cdf:version>
+                  <cdf:title>Background submission of information to Mozilla must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Firefox by default sends information about Firefox to Mozilla servers. There should be no background submission of technical and other information from DoD computers to Mozilla with portions posted publicly.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54947r807145_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Disable Telemetry
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisableTelemetry&lt;/key&gt;
+&lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableTelemetry": true</cdf:fixtext>
+                  <cdf:fix id="F-54947r807145_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:113"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251559">
+            <cdf:title>SRG-APP-000266</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251559r961167_rule" severity="low" weight="10.0">
+                  <cdf:version>FFOX-00-000015</cdf:version>
+                  <cdf:title>Firefox development tools must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Information needed by an attacker to begin looking for possible vulnerabilities in a web browser includes any information about the web browser and plug-ins or modules being used. When debugging or trace information is enabled in a production web browser, information about the web browser, such as web browser type, version, patches installed, plug-ins and modules installed, type of code being used by the hosted application, and any back ends being used for data storage may be displayed. Because this information may be placed in logs and general messages during normal operation of the web browser, an attacker does not have to cause an error condition to gain this information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001312</cdf:ident>
+                  <cdf:fixtext fixref="F-54948r807148_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Disable Developer Tools
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisableDeveloperTools&lt;/key&gt;
+&lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableDeveloperTools": true</cdf:fixtext>
+                  <cdf:fix id="F-54948r807148_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:114"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251562">
+            <cdf:title>SRG-APP-000326</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251562r1156569_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000018</cdf:version>
+                  <cdf:title>Firefox must prevent the user from quickly deleting data.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;There should not be an option for a user to "forget" work they have done. This is required to meet nonrepudiation controls.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:fixtext fixref="F-54951r1156568_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Mozilla &gt;&gt; Firefox.
+Policy Name: Disable Forget Button
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisableForgetButton&lt;/key&gt;
+&lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableForgetButton": true</cdf:fixtext>
+                  <cdf:fix id="F-54951r1156568_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:117"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251563">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251563r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000019</cdf:version>
+                  <cdf:title>Firefox private browsing must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Private browsing allows the user to browse the internet without recording their browsing history/activity. From a forensics perspective, this is unacceptable. Best practice requires that browser history is retained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54952r807160_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Disable Private Browsing
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisablePrivateBrowsing&lt;/key&gt;
+&lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisablePrivateBrowsing": true</cdf:fixtext>
+                  <cdf:fix id="F-54952r807160_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:118"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251564">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251564r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000020</cdf:version>
+                  <cdf:title>Firefox search suggestions must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Search suggestions must be disabled as this could lead to searches being conducted that were never intended to be made.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54953r807163_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Search
+Policy Name: Search Suggestions
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;SearchSuggestEnabled&lt;/key&gt;
+&lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"SearchSuggestEnabled": false</cdf:fixtext>
+                  <cdf:fix id="F-54953r807163_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:119"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251565">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251565r960963_rule" severity="low" weight="10.0">
+                  <cdf:version>FFOX-00-000021</cdf:version>
+                  <cdf:title>Firefox autoplay must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Autoplay allows the user to control whether videos can play automatically (without user consent) with audio content. The user must be able to select content that is run within the browser window.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54954r807166_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Permissions\Autoplay
+Policy Name: Default autoplay level
+Policy State: Enabled
+Policy Value: Block Audio and Video
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;Permissions&lt;/key&gt;
+&lt;dict&gt;
+  &lt;key&gt;Autoplay&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;string&gt;block-audio-video&lt;/string&gt;
+  &lt;/dict&gt;
+&lt;/dict&gt;
+ 
+Linux "policies.json" file:
+Add the following in the policies section:
+"Permissions": {
+  "Autoplay": {
+    "Default": "block-audio-video"
+  }
+}</cdf:fixtext>
+                  <cdf:fix id="F-54954r807166_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:120"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251566">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251566r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000022</cdf:version>
+                  <cdf:title>Firefox network prediction must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;If network prediction is enabled, requests to URLs are made without user consent. The browser should always make a direct DNS request without prefetching occurring.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54955r807169_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Network Prediction
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;NetworkPrediction&lt;/key&gt;
+&lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"NetworkPrediction": false</cdf:fixtext>
+                  <cdf:fix id="F-54955r807169_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:121"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251567">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251567r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000023</cdf:version>
+                  <cdf:title>Firefox fingerprinting protection must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Content Blocking/Tracking Protection feature stops Firefox from loading content from malicious sites. The content might be a script or an image, for example. If a site is on one of the tracker lists that Firefox is set to use, the fingerprinting script (or other tracking script/image) will not be loaded from that site.
+
+Fingerprinting scripts collect information about browser and device configuration, such as operating system, screen resolution, and other settings. By compiling these pieces of data, fingerprinters create a unique profile that can be used to track the user around the web.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54956r807172_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Tracking Protection
+Policy Name: Fingerprinting
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;EnableTrackingProtection&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Fingerprinting&lt;/key&gt;
+ &lt;true/&gt;
+  &lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"EnableTrackingProtection": {
+  "Fingerprinting": true
+}</cdf:fixtext>
+                  <cdf:fix id="F-54956r807172_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:122"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251568">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251568r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000024</cdf:version>
+                  <cdf:title>Firefox cryptomining protection must be enabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Content Blocking/Tracking Protection feature stops Firefox from loading content from malicious sites. The content might be a script or an image, for example. If a site is on one of the tracker lists that Firefox is set to use, the fingerprinting script (or other tracking script/image) will not be loaded from that site.
+
+Cryptomining scripts use a computer's central processing unit to invisibly mine cryptocurrency.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54957r807175_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Tracking Protection
+Policy Name: Cryptomining
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;EnableTrackingProtection&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Cryptomining&lt;/key&gt;
+ &lt;true/&gt;
+  &lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"EnableTrackingProtection": {
+  "Cryptomining": true
+}</cdf:fixtext>
+                  <cdf:fix id="F-54957r807175_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:123"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251571">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251571r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000027</cdf:version>
+                  <cdf:title>Firefox deprecated ciphers must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;A weak cipher is defined as an encryption/decryption algorithm that uses a key of insufficient length. Using an insufficient length for a key in an encryption/decryption algorithm opens up the possibility (or probability) that the encryption scheme could be broken.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54960r820761_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Disabled Ciphers
+Policy Name: TLS_RSA_WITH_3DES_EDE_CBC_SHA
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;DisabledCiphers&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;TLS_RSA_WITH_3DES_EDE_CBC_SHA&lt;/key&gt;
+    &lt;true/&gt;
+  &lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisabledCiphers": {
+  "TLS_RSA_WITH_3DES_EDE_CBC_SHA": true
+}</cdf:fixtext>
+                  <cdf:fix id="F-54960r820761_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:126"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251572">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251572r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000028</cdf:version>
+                  <cdf:title>Firefox must not recommend extensions as the user is using the browser.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The Recommended Extensions program recommends extensions to users as they surf the web.
+
+The user must not be encouraged to install extensions from the websites they visit. Allowed extensions are to be centrally managed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54961r807187_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\User Messaging
+Policy Name: Extension Recommendations
+Policy State: Disabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;UserMessaging&lt;/key&gt;
+&lt;dict&gt;
+  &lt;key&gt;ExtensionRecommendations&lt;/key&gt;
+  &lt;false/&gt;
+&lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"UserMessaging": {
+  "ExtensionRecommendations": false
+}</cdf:fixtext>
+                  <cdf:fix id="F-54961r807187_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:127"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251573">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251573r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000029</cdf:version>
+                  <cdf:title>The Firefox New Tab page must not show Top Sites, Sponsored Top Sites, Pocket Recommendations, Sponsored Pocket Stories, Searches, Highlights, or Snippets.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;The New Tab page by default shows a list of built-in top sites, as well as the top sites the user has visited.
+
+It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Applications are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). 
+
+Examples of non-essential capabilities include but are not limited to advertising software or browser plug-ins that are not related to requirements or provide a wide array of functionality not required for every mission but that cannot be disabled.
+
+The new tab page must not actively show user activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54962r822780_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox
+Policy Name: Customize Firefox Home
+Policy State: Enabled
+Policy Value: Uncheck "Search"
+Policy Value: Uncheck "Top Sites"
+Policy Value: Uncheck "Sponsored Top Sites"
+Policy Value: Uncheck "Recommended by Pocket"
+Policy Value: Uncheck "Sponsored Pocket Stories"
+Policy Value: Uncheck "Download History"
+Policy Value: Uncheck "Snippets"
+Policy Value: Check "Do not allow settings to be changed"
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;FirefoxHome&lt;/key&gt;
+&lt;dict&gt;
+&lt;key&gt;Search&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;TopSites&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;SponsoredTopSites&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;Pocket&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;SponsoredPocket&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;Highlights&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;Snippets&lt;/key&gt;
+  &lt;false/&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+  &lt;true/&gt;
+&lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"FirefoxHome": {
+  "Search": false,
+  "TopSites": false,
+  "SponsoredTopSites": false,
+  "Pocket": false,
+  "SponsoredPocket": false,
+  "Highlights": false,
+  "Snippets": false,
+  "locked": true
+}</cdf:fixtext>
+                  <cdf:fix id="F-54962r822780_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:128"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251577">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251577r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000033</cdf:version>
+                  <cdf:title>Firefox must be configured so that DNS over HTTPS is disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;DNS over HTTPS has generally not been adopted in the DoD. DNS is tightly controlled.
+
+It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Applications are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). 
+
+Examples of non-essential capabilities include, but are not limited to, advertising software or browser plug-ins not related to requirements or providing a wide array of functionality not required for every mission, but cannot be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54966r807202_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\DNS Over HTTPS
+Policy Name: Enabled
+Policy State: Disabled
+
+macOS "plist" file:
+&lt;key&gt;DNSOverHTTPS&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Enabled&lt;/key&gt;
+    &lt;false/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DNSOverHTTPS": {"Enabled": false}</cdf:fixtext>
+                  <cdf:fix id="F-54966r807202_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:132"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251578">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251578r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000034</cdf:version>
+                  <cdf:title>Firefox accounts must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disable Firefox Accounts integration (Sync). 
+
+It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Applications are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). 
+
+Examples of non-essential capabilities include but are not limited to advertising software or browser plug-ins that are not related to requirements or provide a wide array of functionality not required for every mission but that cannot be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54967r807205_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\
+Policy Name: Disable Firefox Accounts
+Policy State: Enabled
+
+macOS "plist" file:
+&lt;key&gt;DisableFirefoxAccounts&lt;/key&gt;
+  &lt;true/&gt; 
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableFirefoxAccounts": true</cdf:fixtext>
+                  <cdf:fix id="F-54967r807205_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:133"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251580">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251580r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000036</cdf:version>
+                  <cdf:title>Firefox feedback reporting must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Disable the menus for reporting sites (Submit Feedback, Report Deceptive Site). 
+
+It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Applications are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). 
+
+Examples of non-essential capabilities include but are not limited to advertising software or browser plug-ins that are not related to requirements or provide a wide array of functionality not required for every mission but that cannot be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54969r807211_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\
+Policy Name: Disable Feedback Commands
+Policy State: Enabled
+
+macOS "plist" file:
+&lt;key&gt;DisableFeedbackCommands&lt;/key&gt;
+  &lt;true/&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"DisableFeedbackCommands": true</cdf:fixtext>
+                  <cdf:fix id="F-54969r807211_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:135"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-251581">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-251581r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000037</cdf:version>
+                  <cdf:title>Firefox encrypted media extensions must be disabled.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;Enable or disable Encrypted Media Extensions and optionally lock it.
+
+If "Enabled" is set to "false", Firefox does not download encrypted media extensions (such as Widevine) unless the user consents to installing them.
+
+If "Locked" is set to "true" and "Enabled" is set to "false", Firefox will not download encrypted media extensions (such as Widevine) or ask the user to install them.
+
+It is detrimental for applications to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Applications are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). 
+
+Examples of non-essential capabilities include but are not limited to advertising software or browser plug-ins that are not related to requirements or provide a wide array of functionality not required for every mission but that cannot be disabled.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-54970r807214_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Encrypted Media Extensions
+Policy Name: Enable Encrypted Media Extensions
+Policy State: Disabled
+Policy Name: Lock Encrypted Media Extensions
+Policy State: Enabled
+
+macOS "plist" file:
+&lt;key&gt;EncryptedMediaExtensions&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Enabled&lt;/key&gt;
+    &lt;false/&gt;
+    &lt;key&gt;Locked&lt;/key&gt;
+    &lt;true/&gt; 
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"EncryptedMediaExtensions": {
+  "Enabled": false,
+  "Locked": true
+}</cdf:fixtext>
+                  <cdf:fix id="F-54970r807214_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:136"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:Group id="xccdf_mil.disa.stig_group_V-252881">
+            <cdf:title>SRG-APP-000141</cdf:title>
+            <cdf:description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</cdf:description>
+            <cdf:Rule id="xccdf_mil.disa.stig_rule_SV-252881r960963_rule" severity="medium" weight="10.0">
+                  <cdf:version>FFOX-00-000017</cdf:version>
+                  <cdf:title>Firefox must be configured to not delete data upon shutdown.</cdf:title>
+                  <cdf:description>&lt;VulnDiscussion&gt;For diagnostic purposes, data must remain behind when the browser is closed. This is required to meet non-repudiation controls.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</cdf:description>
+                  <cdf:reference>
+                        <dc:publisher>DISA</dc:publisher>
+                        <dc:identifier>5446</dc:identifier>
+                        <dc:type>DPMS Target</dc:type>
+                  </cdf:reference>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:fixtext fixref="F-56287r820756_fix">Windows group policy:
+1. Open the group policy editor tool with "gpedit.msc".
+2. Navigate to Policy Path: Computer Configuration\Administrative Templates\Mozilla\Firefox\Clear data when browser is closed
+Policy Name: Cache, Cookies, Download History, Form &amp; Search History, Browsing History, Active Logins, Site Preferences, Offline Website Data
+Policy State: Disabled
+Policy Name: Locked
+Policy State: Enabled
+
+macOS "plist" file:
+Add the following:
+&lt;key&gt;SanitizeOnShutdown&lt;/key&gt;
+&lt;dict&gt;
+  &lt;key&gt;Cache&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;Cookies&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;Downloads&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;FormData&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;History&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;Sessions&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;SiteSettings&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;OfflineApps&lt;/key&gt;
+  &lt;false/&gt;
+  &lt;key&gt;Locked&lt;/key&gt;
+  &lt;true/&gt;
+&lt;/dict&gt;
+
+Linux "policies.json" file:
+Add the following in the policies section:
+"SanitizeOnShutdown": {
+  "Cache": false,
+  "Cookies": false,
+  "Downloads": false,
+  "FormData": false,
+  "History": false,
+  "Sessions": false,
+  "SiteSettings": false,
+  "OfflineApps": false,
+  "Locked": true 
+}</cdf:fixtext>
+                  <cdf:fix id="F-56287r820756_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:116"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:TestResult end-time="2026-03-16T08:22:40" id="xccdf_mil.disa.stig_testresult_scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-xccdf.xml---xccdf_mil.disa.stig_profile_MAC-1_Classified-1" start-time="2026-03-16T08:22:40" test-system="cpe:/a:niwc:scc:5.14" version="006.007">
+            <cdf:benchmark href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-xccdf.xml" id="xccdf_mil.disa.stig_benchmark_MOZ_Firefox_Windows"></cdf:benchmark>
+            <cdf:organization>NIWC Atlantic</cdf:organization>
+            <cdf:identity authenticated="true" privileged="true">WKS3-SOTERIA\Degthat</cdf:identity>
+            <cdf:profile idref="xccdf_mil.disa.stig_profile_MAC-1_Classified"></cdf:profile>
+            <cdf:target>WKS3-SOTERIA</cdf:target>
+            <cdf:target-address>192.168.40.93</cdf:target-address>
+            <cdf:target-facts>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:host_name" type="string">WKS3-SOTERIA</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:domain" type="string"></cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:fqdn" type="string">WKS3-SOTERIA.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_name" type="string">Microsoft Windows 11 Pro</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_version" type="string">25H2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor" type="string">12th Gen Intel(R) Core(TM) i7-12700</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_architecture" type="string">Intel64 Family 6 Model 151 Stepping 2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_mhz" type="string">2112</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:physical_memory" type="string">4096</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:manufacturer" type="string">VMware, Inc.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ein" type="string">VMware-56 4d de cb 0a cd 36 5d-88 e9 4a a3 04 64 0c 74</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:bios_version" type="string">VMW201.00V.24006586.B64.2406042154</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:model" type="string">VMware20,1</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:role" type="string">Workstation</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_service_pack" type="string"></cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:interface_name" type="string">[00000001] Intel(R) 82574L Gigabit Network Connection</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ipv4" type="string">192.168.40.93</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:mac" type="string">00:0C:29:48:E1:6A</cdf:fact>
+            </cdf:target-facts>
+            <cdf:target-id-ref href="" name="SCC_WKS3-SOTERIA" system="http://scap.nist.gov/schema/asset-identification/1.1"></cdf:target-id-ref>
+            <cdf:platform idref="cpe:/a:mozilla:firefox:::~~~windows~~"></cdf:platform>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251546r961869_rule" role="full" severity="high" time="2026-03-16T08:22:40" version="FFOX-00-000002" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001453</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox is configured to allow only TLS 1.2 or above)
+</cdf:message>
+                  <cdf:fix id="F-54935r820744_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:101"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251549r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000005" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox is configured to not automatically update installed add-ons and plugins)
+</cdf:message>
+                  <cdf:fix id="F-54938r807118_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:104"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251551r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000007" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox is configured to disable form fill assistance)
+</cdf:message>
+                  <cdf:fix id="F-54940r807124_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:106"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251552r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000008" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox is configured to not use a password store with or without a master password)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\PasswordManagerEnabled'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54941r822410_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:107"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251553r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000009" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox is configured to block pop-up windows)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\PopupBlocking\Default'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Firefox pop-up preferences are locked)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\PopupBlocking\Locked'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54942r862957_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:108"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251557r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000013" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox is configured to disable the installation of extensions)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\InstallAddonsPermission\Default'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54946r820751_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:112"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251558r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000014" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Background submission of information to Mozilla is disabled)
+</cdf:message>
+                  <cdf:fix id="F-54947r807145_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:113"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251559r961167_rule" role="full" severity="low" time="2026-03-16T08:22:40" version="FFOX-00-000015" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-001312</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox development tools are disabled)
+</cdf:message>
+                  <cdf:fix id="F-54948r807148_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:114"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251562r1156569_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000018" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000166</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox prevents the user from quickly deleting data)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DisableForgetButton'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54951r1156568_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:117"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251563r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000019" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox private browsing is disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DisablePrivateBrowsing'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54952r807160_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:118"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251564r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000020" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox search suggestions is disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SearchSuggestEnabled'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54953r807163_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:119"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251565r960963_rule" role="full" severity="low" time="2026-03-16T08:22:40" version="FFOX-00-000021" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox autoplay is disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\Permissions\Autoplay\Default'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54954r807166_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:120"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251566r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000022" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox network prediction is disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\NetworkPrediction'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54955r807169_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:121"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251567r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000023" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox fingerprinting protection is enabled)
+</cdf:message>
+                  <cdf:fix id="F-54956r807172_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:122"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251568r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000024" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox Cryptomining protection is enabled)
+</cdf:message>
+                  <cdf:fix id="F-54957r807175_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:123"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251571r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000027" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox deprecated ciphers are disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DisabledCiphers\TLS_RSA_WITH_3DES_EDE_CBC_SHA'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54960r820761_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:126"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251572r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000028" weight="10.0">
+                  <cdf:result>pass</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Pass
+Criteria        : true (All child tests must be true. (AND))
+Test            :   true (Firefox does not recommend extensions as the user is using the browser)
+</cdf:message>
+                  <cdf:fix id="F-54961r807187_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:127"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251573r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000029" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (The Firefox New Tab page does not show Top Sites)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\TopSites'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Sponsored Top Sites)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\SponsoredTopSites'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Pocket Recommendations)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\Pocket'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Sponsored Pocket Stories)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\SponsoredPocket'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Highlights)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\Highlights'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Snippets)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\Snippets'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Customize Firefox Home settings are locked)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\Locked'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (The Firefox New Tab page does not show Search)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\FirefoxHome\Search'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54962r822780_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:128"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251577r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000033" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox is configured so that DNS over HTTPS is disabled)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DNSOverHTTPS\Enabled\value = '1' failed test of 'equals' compared to '0' 
+</cdf:message>
+                  <cdf:fix id="F-54966r807202_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:132"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251578r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000034" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox accounts are disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DisableFirefoxAccounts'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54967r807205_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:133"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251580r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000036" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox feedback reporting is disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\DisableFeedbackCommands'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54969r807211_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:135"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-251581r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000037" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox encrypted media extensions are disabled)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\EncryptedMediaExtensions\Enabled'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Firefox encrypted media extensions setting is locked)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\EncryptedMediaExtensions\Locked'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-54970r807214_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:136"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-252881r960963_rule" role="full" severity="medium" time="2026-03-16T08:22:40" version="FFOX-00-000017" weight="10.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:ident system="http://cyber.mil/cci">CCI-000381</cdf:ident>
+                  <cdf:message severity="info">Rule Result     : Fail
+Criteria        : false (All child tests must be true. (AND))
+Test            :   false (Firefox is configured to not delete Cache upon shutdown)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cache\value = '1' failed test of 'equals' compared to '0' 
+Test            :   false (Firefox is configured to not delete Cookies upon shutdown)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\Cookies'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Firefox is configured to not delete Download History upon shutdown)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\Downloads\value = '1' failed test of 'equals' compared to '0' 
+Test            :   false (Firefox is configured to not delete Form &amp; Search History upon shutdown)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\FormData\value = '1' failed test of 'equals' compared to '0' 
+Test            :   false (Firefox is configured to not delete Browsing History upon shutdown)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\History\value = '1' failed test of 'equals' compared to '0' 
+Test            :   false (Firefox is configured to not delete Active Logins upon shutdown)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\Sessions'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Firefox is configured to not delete Site Preferences upon shutdown)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\SiteSettings'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+Test            :   false (Firefox is configured to not delete Offline Website Data upon shutdown)
+Result Analysis :        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\OfflineApps\value = '1' failed test of 'equals' compared to '0' 
+Test            :   false (Firefox SanitizeOnShutdown settings are locked)
+Result Analysis :        Registry Name Not found: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown\Locked'.  Existence requirement is 'at_least_one_exists' and no items were collected, so result is false.
+</cdf:message>
+                  <cdf:fix id="F-56287r820756_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="#scap_mil.disa.stig_comp_U_MOZ_Firefox_Windows_V6R7_STIG_SCAP_1-3_Benchmark-oval.xml" name="oval:mil.disa.stig.firefox.windows:def:116"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">34.78</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-original">34.78</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:default">34.7826086956522</cdf:score>
+            <cdf:score maximum="230" system="urn:xccdf:scoring:flat">80</cdf:score>
+            <cdf:score maximum="23" system="urn:xccdf:scoring:flat-unweighted">8</cdf:score>
+            <cdf:score maximum="1" system="urn:xccdf:scoring:absolute">0</cdf:score>
+      </cdf:TestResult>
+</cdf:Benchmark>
