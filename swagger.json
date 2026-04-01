@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.4",
   "info": {
     "title": "OpenRMF Professional External API",
     "description": "The External API for external scripts and integration with OpenRMF Professional application.",
@@ -1246,6 +1246,51 @@
           },
           {
             "name": "end",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/systempackage/{systemKey}/compliance/{complianceId}/scoresummary": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "systemKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "complianceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "family",
             "in": "query",
             "schema": {
               "type": "string",
@@ -4991,51 +5036,6 @@
         }
       }
     },
-    "/createnotification": {
-      "get": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "bShowAll",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
-            "name": "systemKey",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          },
-          {
-            "name": "notificationType",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": ""
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/systempackage/{systemKey}/techvulnerabilitydata": {
       "get": {
         "tags": [
@@ -7607,6 +7607,27 @@
         }
       }
     },
+    "/controls/family/section/all": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/controls/{frameworkId}/all": {
       "get": {
         "tags": [
@@ -7715,6 +7736,27 @@
         }
       }
     },
+    "/controls/frameworks/levels": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/controls/framework/{frameworkId}/controlccis": {
       "get": {
         "tags": [
@@ -7757,6 +7799,67 @@
             "schema": {
               "type": "string",
               "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/framework/controlccis": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/controls/defaultcontrolccis": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -8105,7 +8208,7 @@
         }
       }
     },
-    "/controls/cciforcontrol/{control}": {
+    "/controls/cciforcontrol/{frameworkId}/control/{control}": {
       "get": {
         "tags": [
           "External"
@@ -8114,6 +8217,14 @@
           {
             "name": "applicationKey",
             "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "frameworkId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -8276,27 +8387,6 @@
         }
       }
     },
-    "/controls/framework/controlccis": {
-      "post": {
-        "tags": [
-          "External"
-        ],
-        "parameters": [
-          {
-            "name": "applicationKey",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/controls/system/{systemKey}/ccis": {
       "get": {
         "tags": [
@@ -8354,7 +8444,33 @@
           }
         }
       }
+    },
+    "/controls/assessmentprocedures": {
+      "get": {
+        "tags": [
+          "External"
+        ],
+        "parameters": [
+          {
+            "name": "applicationKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
-  "components": { }
+  "components": { },
+  "tags": [
+    {
+      "name": "External"
+    }
+  ]
 }
