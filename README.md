@@ -3,7 +3,9 @@ This repo contains OpenRMF<sup>&reg;</sup> Professional API automation scripts a
 
 > The data, example applications, python scripts, and more are free to use as-is. Soteria Software supports the OpenRMF Professional application itself. However, the data here and python examples show how to use that application. The scripts and data here are representative data. If you wish to use them, please do. You may need to update them, put error checking, data formatting, and more as additional steps if you use these in production. 
 
-This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
+This repo goes along with the <a href="https://www.soteriasoft.com/" target="_blank">OpenRMF<sup>&reg;</sup> Professional</a> application and the Developer's Guide from Soteria Software to automate ingest and download of data to/from OpenRMF<sup>&reg;</sup> Professional. Please contact <a href="https://www.soteriasoft.com/contact.html#contactform">Soteria Software</a> for more information.
+
+We also leverage these APIs for the <a href="https://github.com/SoteriaSoftwareLLC/cyrinae-portfolio-manager-scripts">CYRINAE python scripts</a> to do higher level features and calculations using your OpenRMF<sup>&reg;</sup> Professional data.
 
 ## How this Repo is Organized
 
