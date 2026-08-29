@@ -12,6 +12,7 @@
         "description": "",
         "ipAddress": "10.10.25.17",
         "macAddress": "00:0C:29:88:C9:7D",
+        "universalSIEMAssetid": "0f823a91-23bc-42e1-92a8-f5421c9a1012",
         "tags": [
             "desktop",
             "windows team"
@@ -29,6 +30,7 @@
         "description": "",
         "ipAddress": "10.10.25.100,10.10.2.55",
         "macAddress": "00:0C:33:88:C9:7D",
+        "universalSIEMAssetid": "0f823a91-23bc-42e1-92a8-f5421c9a1013",
         "tags": [
             "desktop",
             "windows team"
@@ -46,6 +48,7 @@
         "description": "This is the main IIS web server for application hosting internally.",
         "ipAddress": "10.10.25.129",
         "macAddress": "00:0C:29:44:C9:7D",
+        "universalSIEMAssetid": "0f823a91-23bc-42e1-92a8-f5421c9a1014",
         "tags": []
     }
 ]
