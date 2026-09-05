@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SessionID:2026-09-05_125637,HostName:WKS3-SOTERIA,FileType:XCCDF Results,StreamName:Windows_Updates-001.001,ErrorCount:0,WarnCount:0 -->
+
+<cdf:Benchmark resolved="1" style="SCAP_1.3" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://cpe.mitre.org/language/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-language_2.3.xsd" id="xccdf_navy.navwar.niwcatlantic.scc_benchmark_Windows_Updates" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <cdf:status date="2025-04-14">accepted</cdf:status>
+      <cdf:title>Windows Update Benchmark</cdf:title>
+      <cdf:description>This SCAP Benchmark is designed to query the Windows Update Agent (WUA) and determine if any updates are missing from the target system.  For questions/issues with the content please contact:  scc.fct@navy.mil</cdf:description>
+      <cdf:notice id="terms-of-use">Portions of this document were developed at Naval Information Warfare Center Atlantic by employees of the Federal Government in the course of their official duties. Pursuant to title 17 Section 105 of the United States Code this software is not subject to copyright protection and is in the public domain. The Government assumes no responsibility whatsoever for its use by other parties, and the software is provided "AS IS" without warranty or guarantee of any kind, express or implied, including, but not limited to, the warranties of merchantability and of fitness for a particular purpose. In no event shall the Government be liable for any claim, damages or other liability, whether in an action of contract, tort or other dealings in the software. The Government has no obligation hereunder to provide maintenance, support, updates, enhancements, or modifications. We would appreciate acknowledgement if the software is used. This software can be redistributed and/or modified freely provided that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified.</cdf:notice>
+      <cdf:front-matter></cdf:front-matter>
+      <cdf:reference href="https://www.niwcatlantic.navy.mil/scap/scap-content-repository/">
+            <dc:publisher>NIWC</dc:publisher>
+      </cdf:reference>
+      <cdf:plain-text id="release-info">Release: 1 Version: 1, Benchmark Date: 14 April 2025</cdf:plain-text>
+      <cdf:platform idref="cpe:/o:microsoft:windows"></cdf:platform>
+      <cdf:version>001.001</cdf:version>
+      <cdf:Profile id="xccdf_navy.navwar.niwcatlantic.scc_profile_MissingUpdates">
+            <cdf:title>Missing Updates</cdf:title>
+            <cdf:description>This profile contains a rule for checking for missing updates</cdf:description>
+            <cdf:select selected="true" idref="xccdf_navy.navwar.niwcatlantic.scc_rule_MissingWindowsUpdates"></cdf:select>
+      </cdf:Profile>
+      <cdf:Profile id="xccdf_navy.navwar.niwcatlantic.scc_profile_AllUpdates">
+            <cdf:title>All Updates</cdf:title>
+            <cdf:description>This profile contains a rule that reports on all updates, failing those that are missing</cdf:description>
+            <cdf:select selected="true" idref="xccdf_navy.navwar.niwcatlantic.scc_rule_AllWindowsUpdates"></cdf:select>
+      </cdf:Profile>
+      <cdf:Group id="xccdf_navy.navwar.niwcatlantic.scc_group_WindowsUpdates">
+            <cdf:title>Windows Updates</cdf:title>
+            <cdf:description></cdf:description>
+            <cdf:Rule weight="10.0" id="xccdf_navy.navwar.niwcatlantic.scc_rule_MissingWindowsUpdates" severity="high">
+                  <cdf:version>1.0</cdf:version>
+                  <cdf:title>Check system for missing Windows Updates</cdf:title>
+                  <cdf:description>The OVAL scanner deterines if Windows Update should be queried via the Internet, or WSUS, or via offline wsusscn2.cab file, refer to application documentation on how to configure which method to use.</cdf:description>
+                  <cdf:fixtext fixref="NIWC_Windows_Updates_fix">Update computer with the latest approved updates from Microsoft</cdf:fixtext>
+                  <cdf:fix id="NIWC_Windows_Updates_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="Windows_Updates_Benchmark-oval.xml" name="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+            <cdf:Rule id="xccdf_navy.navwar.niwcatlantic.scc_rule_AllWindowsUpdates" severity="high" weight="10.0" selected="false">
+                  <cdf:version>1.0</cdf:version>
+                  <cdf:title>Check system for all Windows Updates, reporting failures on any not installed</cdf:title>
+                  <cdf:description>The OVAL scanner deterines if Windows Update should be queried via the Internet, or WSUS, or via offline wsusscn2.cab file, refer to application documentation on how to configure which method to use.</cdf:description>
+                  <cdf:fixtext fixref="NIWC_Windows_Updates_fix">Update computer with the latest approved updates from Microsoft</cdf:fixtext>
+                  <cdf:fix id="NIWC_Windows_Updates_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref href="Windows_Updates_Benchmark-oval.xml" name="oval:navy.navwar.niwcatlantic.scc.windows.test:def:2"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:Rule>
+      </cdf:Group>
+      <cdf:TestResult id="xccdf_navy.navwar.niwcatlantic.scc_testresult_scap_navy.navwar.niwcatlantic.scc_comp_Windows_Updates_Benchmark-xccdf.xml---xccdf_navy.navwar.niwcatlantic.scc_profile_MissingUpdates-1" end-time="2026-09-05T10:20:49" start-time="2026-09-05T10:17:22" version="001.001" test-system="cpe:/a:niwc:scc:5.14.1">
+            <cdf:benchmark id="xccdf_navy.navwar.niwcatlantic.scc_benchmark_Windows_Updates" href="#scap_navy.navwar.niwcatlantic.scc_comp_Windows_Updates_Benchmark-xccdf.xml"></cdf:benchmark>
+            <cdf:organization>NIWC Atlantic</cdf:organization>
+            <cdf:identity privileged="true" authenticated="true">WKS3-SOTERIA\Degthat</cdf:identity>
+            <cdf:profile idref="xccdf_navy.navwar.niwcatlantic.scc_profile_MissingUpdates"></cdf:profile>
+            <cdf:target>WKS3-SOTERIA</cdf:target>
+            <cdf:target-address>192.168.40.93</cdf:target-address>
+            <cdf:target-facts>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:host_name" type="string">WKS3-SOTERIA</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:domain" type="string"></cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:fqdn">WKS3-SOTERIA.</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:os_name" type="string">Microsoft Windows 11 Pro</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_version">25H2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor" type="string">12th Gen Intel(R) Core(TM) i7-12700</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_architecture" type="string">Intel64 Family 6 Model 151 Stepping 2</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:processor_mhz" type="string">2112</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:physical_memory">4096</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:manufacturer" type="string">VMware, Inc.</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:ein">VMware-56 4d de cb 0a cd 36 5d-88 e9 4a a3 04 64 0c 74</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:bios_version" type="string">VMW201.00V.25275966.B64.2603102050</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:model">VMware20,1</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:role">Workstation</cdf:fact>
+                  <cdf:fact type="string" name="urn:scap:fact:asset:identifier:os_service_pack"></cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:interface_name" type="string">[00000001] Intel(R) 82574L Gigabit Network Connection</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:ipv4" type="string">192.168.40.93</cdf:fact>
+                  <cdf:fact name="urn:scap:fact:asset:identifier:mac" type="string">00:0C:29:48:E1:6A</cdf:fact>
+            </cdf:target-facts>
+            <cdf:target-id-ref href="" name="SCC_WKS3-SOTERIA" system="http://scap.nist.gov/schema/asset-identification/1.1"></cdf:target-id-ref>
+            <cdf:platform idref="cpe:/o:microsoft:windows"></cdf:platform>
+            <cdf:rule-result severity="high" time="2026-09-05T10:17:22" idref="xccdf_navy.navwar.niwcatlantic.scc_rule_MissingWindowsUpdates" weight="10.0" role="full" version="1.0">
+                  <cdf:result>fail</cdf:result>
+                  <cdf:message severity="info">Rule Result             : Fail
+Criteria                : false (All child tests must be true. (AND))
+Test                    :   false (Query Windows update to determine if any OS patches are missing)
+Result Analysis         :        2026-08 Security Update (KB5121003) (26200.9168) : is_installed = '0' failed test of 'equals' compared to '1' 
+
+---
+
+Test ID                 : oval:navy.navwar.niwcatlantic.scc.windows.test:tst:1 (wuaupdatesearcher_test)
+Result                  : false
+Test Title              : Query Windows update to determine if any OS patches are missing
+Check Existence         : Zero or more collected items may exist.
+Check                   : All collected items must match the given state(s).
+
+Object ID               : oval:navy.navwar.niwcatlantic.scc.windows.test:obj:1 (wuaupdatesearcher_object)
+Object Comment          : Retrieves a wuaupdatesearcher_object object with a search_criteria of 'IsInstalled=0'.
+Object Requirement      :  check =  'search_criteria' must be equal to '(IsInstalled=0 and IsHidden=0 and CategoryIDs contains '0FA1201D-4330-4FA8-8AE9-B877473B6441')'
+
+State ID                : oval:navy.navwar.niwcatlantic.scc.windows.test:ste:1 (wuaupdatesearcher_state)
+State Comment           : Verify that all updates are installed, and source has been updated in the past 31 days
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'is_installed' must be equal to '1'
+State Requirement       : check_existence = 'at_least_one_exists',  check = all 'days_since_source_modified' must be less than or equal to '31'
+
+Collected Item/State Result : false
+                        : search_criteria equals '(IsInstalled=0 and IsHidden=0 and CategoryIDs contains '0FA1201D-4330-4FA8-8AE9-B877473B6441')'
+                        : update_id equals '800d68a0-03d1-47a4-92f3-1feb02f141aa'
+                        : title equals '2026-08 Security Update (KB5121003) (26200.9168)'
+                        : support_url equals 'https://support.microsoft.com/help/5121003'
+                        : is_installed equals '0'
+                        : is_hidden equals '0'
+                        : msrc_severity equals ''
+                        : last_deployment_change_time equals '2026-08-11'
+                        : source equals 'Windows_Update'
+                        : source_path equals ''
+                        : days_since_source_modified equals '0'
+
+Result Analysis         : 2026-08 Security Update (KB5121003) (26200.9168) : is_installed = '0' failed test of 'equals' compared to '1' 
+</cdf:message>
+                  <cdf:fix id="NIWC_Windows_Updates_fix"></cdf:fix>
+                  <cdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <cdf:check-content-ref name="oval:navy.navwar.niwcatlantic.scc.windows.test:def:1" href="#scap_navy.navwar.niwcatlantic.scc_comp_Windows_Updates_Benchmark-oval.xml"></cdf:check-content-ref>
+                  </cdf:check>
+            </cdf:rule-result>
+            <cdf:rule-result version="1.0" weight="10.0" role="full" idref="xccdf_navy.navwar.niwcatlantic.scc_rule_AllWindowsUpdates" time="2026-09-05T10:20:49" severity="high">
+                  <cdf:result>notselected</cdf:result>
+                  <cdf:fix id="NIWC_Windows_Updates_fix"></cdf:fix>
+            </cdf:rule-result>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-adjusted">0</cdf:score>
+            <cdf:score maximum="100" system="urn:xccdf:scoring:spawar-original">0</cdf:score>
+            <cdf:score system="urn:xccdf:scoring:default" maximum="100">0</cdf:score>
+            <cdf:score system="urn:xccdf:scoring:flat" maximum="10">0</cdf:score>
+            <cdf:score system="urn:xccdf:scoring:flat-unweighted" maximum="1">0</cdf:score>
+            <cdf:score maximum="1" system="urn:xccdf:scoring:absolute">0</cdf:score>
+      </cdf:TestResult>
+</cdf:Benchmark>
