@@ -57,3 +57,8 @@ python/path/to/venv
 # Any Python Cache files
 __pycache__/
 *.py[cod]
+
+# MS Office Files
+~*.xlsx
+~*.docx
+~*.pptx
