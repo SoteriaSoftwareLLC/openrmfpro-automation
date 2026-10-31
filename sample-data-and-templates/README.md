@@ -15,3 +15,10 @@ This has all kinds of data for use in evaluating and testing OpenRMF Professiona
 * Lists for hardware, software, ports/protocols/services
 * Lists for mitigation statements
 * Lists for compliance statements
+
+## Fictitious ATO Dataset
+
+The [CYR scan dataset](./scap-scans/2026-09-CYR/README.md) provides matching
+September 2026 SCAP results and 2026 Nessus patch scans for 11 fictitious Windows
+hosts using CYR names and `10.10.20.x` addresses. It includes a host/IP mapping
+and import notes; the original scans are unchanged.
