@@ -1,0 +1,3146 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:fd046468-916c-4473-a7b4-da4d59d1f728",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-09-11T14:12:54Z",
+        "tools": [
+            {
+                "vendor": "RapidFort, Inc.",
+                "name": "RapidfortSbomGenerator",
+                "version": "1.0"
+            }
+        ],
+        "authors": [
+            {
+                "name": "RapidFort, Inc.",
+                "email": "info@rapidfort.com"
+            }
+        ],
+        "component": {
+            "type": "container",
+            "name": "soteriasoft.jfrog.io/openrmfpro/openrmfpro-msg",
+            "version": "2.14.06",
+            "bom-ref": "beacd232c76b4c9ab8545b339f95447c"
+        }
+    },
+    "components": [
+        {
+            "type": "operating-system",
+            "bom-ref": "d3f053f686f04b2aa6cbb701a5ab6ce1",
+            "name": "Alpine Linux",
+            "version": "3.24.1",
+            "properties": [
+                {
+                    "name": "rf:os_prettyname",
+                    "value": "Alpine Linux v3.24"
+                },
+                {
+                    "name": "rf:os_codename",
+                    "value": "v3.24"
+                },
+                {
+                    "name": "rf:os_shortname",
+                    "value": "alpine"
+                },
+                {
+                    "name": "rf:os_id",
+                    "value": "alpine"
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.7.2-r1?arch=x86_64&id=181cafb2088d4b7f",
+            "name": "alpine-baselayout",
+            "version": "3.7.2-r1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "alpine-baselayout"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.7.2-r1"
+                }
+            ],
+            "purl": "pkg:apk/alpine/alpine-baselayout@3.7.2-r1?arch=x86_64&id=181cafb2088d4b7f",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/alpine-baselayout-data@3.7.2-r1?arch=x86_64&id=5b735a12ca4d4f31",
+            "name": "alpine-baselayout-data",
+            "version": "3.7.2-r1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "alpine-baselayout"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.7.2-r1"
+                }
+            ],
+            "purl": "pkg:apk/alpine/alpine-baselayout-data@3.7.2-r1?arch=x86_64&id=5b735a12ca4d4f31",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&id=5abcf117aded4e6a",
+            "name": "alpine-keys",
+            "version": "2.6-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "alpine-keys"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "2.6-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&id=5abcf117aded4e6a",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/alpine-release@3.24.1-r0?arch=x86_64&id=66c4bc4a1bc24ee5",
+            "name": "alpine-release",
+            "version": "3.24.1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "alpine-base"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.24.1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/alpine-release@3.24.1-r0?arch=x86_64&id=66c4bc4a1bc24ee5",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/apk-tools@3.0.6-r0?arch=x86_64&id=2869c95b64cd4728",
+            "name": "apk-tools",
+            "version": "3.0.6-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "apk-tools"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.0.6-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/apk-tools@3.0.6-r0?arch=x86_64&id=2869c95b64cd4728",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d",
+            "name": "busybox",
+            "version": "1.37.0_p2-r12",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "busybox"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.37.0_p2-r12"
+                }
+            ],
+            "purl": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c",
+            "name": "busybox-binsh",
+            "version": "1.37.0_p2-r12",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "busybox"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.37.0_p2-r12"
+                }
+            ],
+            "purl": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/ca-certificates@20260611-r0?arch=x86_64&id=5ea4e83e7f264a65",
+            "name": "ca-certificates",
+            "version": "20260611-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "ca-certificates"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "20260611-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/ca-certificates@20260611-r0?arch=x86_64&id=5ea4e83e7f264a65",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "MPL-2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20260611-r0?arch=x86_64&id=2590a61ba7624429",
+            "name": "ca-certificates-bundle",
+            "version": "20260611-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "ca-certificates"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "20260611-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/ca-certificates-bundle@20260611-r0?arch=x86_64&id=2590a61ba7624429",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "MPL-2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/icu@78.1-r0?arch=x86_64&id=3ce2f5a8762b4c7c",
+            "name": "icu",
+            "version": "78.1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "icu"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "78.1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/icu@78.1-r0?arch=x86_64&id=3ce2f5a8762b4c7c",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "ICU"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/icu-data-en@78.1-r0?arch=x86_64&id=61880df092194d93",
+            "name": "icu-data-en",
+            "version": "78.1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "icu"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "78.1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/icu-data-en@78.1-r0?arch=x86_64&id=61880df092194d93",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "ICU"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/icu-libs@78.1-r0?arch=x86_64&id=f82163cb7882433f",
+            "name": "icu-libs",
+            "version": "78.1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "icu"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "78.1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/icu-libs@78.1-r0?arch=x86_64&id=f82163cb7882433f",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "ICU"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libapk@3.0.6-r0?arch=x86_64&id=31e43348266b4e6d",
+            "name": "libapk",
+            "version": "3.0.6-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "apk-tools"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.0.6-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libapk@3.0.6-r0?arch=x86_64&id=31e43348266b4e6d",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libcrypto3@3.5.7_p0-r0?arch=x86_64&id=68c1d64a0df74e6e",
+            "name": "libcrypto3",
+            "version": "3.5.7_p0-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssl"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.5.7_p0-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libcrypto3@3.5.7_p0-r0?arch=x86_64&id=68c1d64a0df74e6e",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libedit@20260508.3.1-r1?arch=x86_64&id=079728c4a7064cee",
+            "name": "libedit",
+            "version": "20260508.3.1-r1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "libedit"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "20260508.3.1-r1"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libedit@20260508.3.1-r1?arch=x86_64&id=079728c4a7064cee",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libgcc@15.2.0-r5?arch=x86_64&id=1203e6a9587e4292",
+            "name": "libgcc",
+            "version": "15.2.0-r5",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "gcc"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "15.2.0-r5"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libgcc@15.2.0-r5?arch=x86_64&id=1203e6a9587e4292",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-or-later"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "LGPL-2.1-or-later"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libintl@1.0-r0?arch=x86_64&id=aa325e0bb8364615",
+            "name": "libintl",
+            "version": "1.0-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "gettext"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.0-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libintl@1.0-r0?arch=x86_64&id=aa325e0bb8364615",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "LGPL-2.1-or-later"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libncursesw@6.6_p20260516-r0?arch=x86_64&id=6a744ca9cca14364",
+            "name": "libncursesw",
+            "version": "6.6_p20260516-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "ncurses"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "6.6_p20260516-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libncursesw@6.6_p20260516-r0?arch=x86_64&id=6a744ca9cca14364",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "X11"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libssl3@3.5.7_p0-r0?arch=x86_64&id=e842865d9c4a472f",
+            "name": "libssl3",
+            "version": "3.5.7_p0-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssl"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.5.7_p0-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libssl3@3.5.7_p0-r0?arch=x86_64&id=e842865d9c4a472f",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r5?arch=x86_64&id=95f2bbd362f841e5",
+            "name": "libstdc++",
+            "version": "15.2.0-r5",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "gcc"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "15.2.0-r5"
+                }
+            ],
+            "purl": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r5?arch=x86_64&id=95f2bbd362f841e5",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-or-later"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "LGPL-2.1-or-later"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&id=b481fd21f4c44725",
+            "name": "musl",
+            "version": "1.2.6-r2",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "musl"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.2.6-r2"
+                }
+            ],
+            "purl": "pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&id=b481fd21f4c44725",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&id=b0689c3727cc4747",
+            "name": "musl-utils",
+            "version": "1.2.6-r2",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "musl"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.2.6-r2"
+                }
+            ],
+            "purl": "pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&id=b0689c3727cc4747",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-2-Clause"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "GPL-2.0-or-later"
+                    }
+                },
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/ncurses-terminfo-base@6.6_p20260516-r0?arch=x86_64&id=f5cfea4573fa4181",
+            "name": "ncurses-terminfo-base",
+            "version": "6.6_p20260516-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "ncurses"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "6.6_p20260516-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/ncurses-terminfo-base@6.6_p20260516-r0?arch=x86_64&id=f5cfea4573fa4181",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "X11"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50",
+            "name": "openssh",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6",
+            "name": "openssh-client-common",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2",
+            "name": "openssh-client-default",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170",
+            "name": "openssh-keygen",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604",
+            "name": "openssh-server",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7",
+            "name": "openssh-server-common",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4",
+            "name": "openssh-sftp-server",
+            "version": "10.3_p1-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssh"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "10.3_p1-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "SSH-OpenSSH"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/openssl@3.5.7_p0-r0?arch=x86_64&id=3b1b4d2dd16f4e0a",
+            "name": "openssl",
+            "version": "3.5.7_p0-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "openssl"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "3.5.7_p0-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/openssl@3.5.7_p0-r0?arch=x86_64&id=3b1b4d2dd16f4e0a",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Apache-2.0"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/scanelf@1.3.9-r1?arch=x86_64&id=b77a40bcdc3e436f",
+            "name": "scanelf",
+            "version": "1.3.9-r1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "pax-utils"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.3.9-r1"
+                }
+            ],
+            "purl": "pkg:apk/alpine/scanelf@1.3.9-r1?arch=x86_64&id=b77a40bcdc3e436f",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae",
+            "name": "ssl_client",
+            "version": "1.37.0_p2-r12",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "busybox"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.37.0_p2-r12"
+                }
+            ],
+            "purl": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL-2.0-only"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&id=a71dc08879544145",
+            "name": "zlib",
+            "version": "1.3.2-r0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "apk"
+                },
+                {
+                    "name": "rf:source_name",
+                    "value": "zlib"
+                },
+                {
+                    "name": "rf:source_ver",
+                    "value": "1.3.2-r0"
+                }
+            ],
+            "purl": "pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&id=a71dc08879544145",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "Zlib"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/DnsClient@1.6.1?id=8e16338f40c6457c",
+            "name": "DnsClient",
+            "version": "1.6.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/DnsClient@1.6.1?id=8e16338f40c6457c",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Elastic.Clients.Elasticsearch@9.3.2?id=865ac8a2ce66474b",
+            "name": "Elastic.Clients.Elasticsearch",
+            "version": "9.3.2",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Elastic.Clients.Elasticsearch@9.3.2?id=865ac8a2ce66474b",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Elastic.Transport@0.15.1?id=ff0725608da0426e",
+            "name": "Elastic.Transport",
+            "version": "0.15.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Elastic.Transport@0.15.1?id=ff0725608da0426e",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.AspNet.WebApi.Client@6.0.0?id=aaf6b375b5954df5",
+            "name": "Microsoft.AspNet.WebApi.Client",
+            "version": "6.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.AspNet.WebApi.Client@6.0.0?id=aaf6b375b5954df5",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0?id=cabc5105e48c4991",
+            "name": "Microsoft.Extensions.Configuration.Abstractions",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0?id=cabc5105e48c4991",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection@10.0.0?id=3e99769dfcd3410c",
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@10.0.0?id=3e99769dfcd3410c",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@10.0.0?id=24ec59e31ccb4c8b",
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@10.0.0?id=24ec59e31ccb4c8b",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0?id=c81954dde5e645c1",
+            "name": "Microsoft.Extensions.Diagnostics.Abstractions",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0?id=c81954dde5e645c1",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0?id=d00a98b959cf450f",
+            "name": "Microsoft.Extensions.FileProviders.Abstractions",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0?id=d00a98b959cf450f",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0?id=23d50591f82a46fd",
+            "name": "Microsoft.Extensions.Hosting.Abstractions",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0?id=23d50591f82a46fd",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0?id=77ed235dfdba497d",
+            "name": "Microsoft.Extensions.Logging",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0?id=77ed235dfdba497d",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0?id=55f37f33c651451c",
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0?id=55f37f33c651451c",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Options@8.0.0?id=fd9e13244a87418c",
+            "name": "Microsoft.Extensions.Options",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Options@8.0.0?id=fd9e13244a87418c",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0?id=abd17507876148b9",
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "8.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0?id=abd17507876148b9",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/MongoDB.Bson@3.9.0?id=5aea30c35ed04e21",
+            "name": "MongoDB.Bson",
+            "version": "3.9.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/MongoDB.Bson@3.9.0?id=5aea30c35ed04e21",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/MongoDB.Driver@3.9.0?id=0efd14437fe9489f",
+            "name": "MongoDB.Driver",
+            "version": "3.9.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/MongoDB.Driver@3.9.0?id=0efd14437fe9489f",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Abstractions@2.7.1?id=1d28072fb2794d08",
+            "name": "NATS.Client.Abstractions",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Abstractions@2.7.1?id=1d28072fb2794d08",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Core@2.7.1?id=2f7a6946f96a46cd",
+            "name": "NATS.Client.Core",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Core@2.7.1?id=2f7a6946f96a46cd",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Hosting@2.7.1?id=82220aa515484ab6",
+            "name": "NATS.Client.Hosting",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Hosting@2.7.1?id=82220aa515484ab6",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.JetStream@2.7.1?id=7c3f5f49f4f34afb",
+            "name": "NATS.Client.JetStream",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.JetStream@2.7.1?id=7c3f5f49f4f34afb",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.KeyValueStore@2.7.1?id=b52acc459ad64946",
+            "name": "NATS.Client.KeyValueStore",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.KeyValueStore@2.7.1?id=b52acc459ad64946",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.ObjectStore@2.7.1?id=9af18d26c80e40d4",
+            "name": "NATS.Client.ObjectStore",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.ObjectStore@2.7.1?id=9af18d26c80e40d4",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Serializers.Json@2.7.1?id=35f8dc4e335849e8",
+            "name": "NATS.Client.Serializers.Json",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Serializers.Json@2.7.1?id=35f8dc4e335849e8",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Services@2.7.1?id=defe6a9921c24011",
+            "name": "NATS.Client.Services",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Services@2.7.1?id=defe6a9921c24011",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Client.Simplified@2.7.1?id=b14c71b3dfd24c77",
+            "name": "NATS.Client.Simplified",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Client.Simplified@2.7.1?id=b14c71b3dfd24c77",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NATS.Net@2.7.1?id=bd149277635d4c50",
+            "name": "NATS.Net",
+            "version": "2.7.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NATS.Net@2.7.1?id=bd149277635d4c50",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Newtonsoft.Json@13.0.4?id=04777ae8d83c44b9",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.4",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.4?id=04777ae8d83c44b9",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Newtonsoft.Json.Bson@1.0.2?id=15f299e1809748bb",
+            "name": "Newtonsoft.Json.Bson",
+            "version": "1.0.2",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Newtonsoft.Json.Bson@1.0.2?id=15f299e1809748bb",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NLog@6.1.3?id=9c5e9e2542aa4764",
+            "name": "NLog",
+            "version": "6.1.3",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NLog@6.1.3?id=9c5e9e2542aa4764",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NLog.Extensions.Logging@6.1.3?id=c458c83fe7bb41a5",
+            "name": "NLog.Extensions.Logging",
+            "version": "6.1.3",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NLog.Extensions.Logging@6.1.3?id=c458c83fe7bb41a5",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/NLog.Targets.Network@6.0.4?id=459e3b3d28194dab",
+            "name": "NLog.Targets.Network",
+            "version": "6.0.4",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/NLog.Targets.Network@6.0.4?id=459e3b3d28194dab",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/openrmfpro-msg@2.14.06?id=a53141a395764ab6",
+            "name": "openrmfpro-msg",
+            "version": "2.14.06",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/openrmfpro-msg@2.14.06?id=a53141a395764ab6",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/runtimepack.Microsoft.NETCore.App.Runtime.linux-musl-x64@8.0.29?id=168e60cae61a4886",
+            "name": "runtimepack.Microsoft.NETCore.App.Runtime.linux-musl-x64",
+            "version": "8.0.29",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/runtimepack.Microsoft.NETCore.App.Runtime.linux-musl-x64@8.0.29?id=168e60cae61a4886",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/SharpCompress@0.48.1?id=282e15db2a5440d1",
+            "name": "SharpCompress",
+            "version": "0.48.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/SharpCompress@0.48.1?id=282e15db2a5440d1",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/Snappier@1.3.1?id=6efdb1818fc0478c",
+            "name": "Snappier",
+            "version": "1.3.1",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/Snappier@1.3.1?id=6efdb1818fc0478c",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/System.Diagnostics.DiagnosticSource@10.0.0?id=0dda01e4fca14b1d",
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@10.0.0?id=0dda01e4fca14b1d",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/System.IO.Pipelines@10.0.0?id=fc0ca44494cb4a04",
+            "name": "System.IO.Pipelines",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/System.IO.Pipelines@10.0.0?id=fc0ca44494cb4a04",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/System.Text.Encodings.Web@10.0.0?id=be35ff5ba815407f",
+            "name": "System.Text.Encodings.Web",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/System.Text.Encodings.Web@10.0.0?id=be35ff5ba815407f",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/System.Text.Json@10.0.0?id=c81f7286e3dc4b2a",
+            "name": "System.Text.Json",
+            "version": "10.0.0",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/System.Text.Json@10.0.0?id=c81f7286e3dc4b2a",
+            "licenses": []
+        },
+        {
+            "type": "library",
+            "bom-ref": "pkg:nuget/ZstdSharp.Port@0.7.3?id=e29fe90041584f76",
+            "name": "ZstdSharp.Port",
+            "version": "0.7.3",
+            "properties": [
+                {
+                    "name": "rf:pkg_type",
+                    "value": "dotnet"
+                },
+                {
+                    "name": "rf:pkg_from",
+                    "value": "/app/openrmfpro-msg.deps.json"
+                }
+            ],
+            "purl": "pkg:nuget/ZstdSharp.Port@0.7.3?id=e29fe90041584f76",
+            "licenses": []
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "id": "CVE-2026-26157",
+            "description": "A flaw was found in BusyBox. Incomplete path sanitization in its archive extraction utilities allows an attacker to craft malicious archives that when extracted, and under specific conditions, may write to files outside the intended directory. This can lead to arbitrary file overwrite, potentially enabling code execution through the modification of sensitive system files.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.0,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cwes": [
+                73
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "rf:poc_source",
+                    "value": "https://www.exploit-db.com/exploits/52538"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-26158",
+            "description": "A flaw was found in BusyBox. This vulnerability allows an attacker to modify files outside of the intended extraction directory by crafting a malicious tar archive containing unvalidated hardlink or symlink entries. If the tar archive is extracted with elevated privileges, this flaw can lead to privilege escalation, enabling an attacker to gain unauthorized access to critical system files.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.0,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cwes": [
+                73
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-29004",
+            "description": "BusyBox before commit 42202bf contains a heap buffer overflow vulnerability in the DHCPv6 client (udhcpc6) DNS_SERVERS option handler in networking/udhcp/d6_dhcpc.c that allows network-adjacent attackers to trigger memory corruption by sending a crafted DHCPv6 response with a malformed D6_OPT_DNS_SERVERS option. Attackers can exploit incorrect heap buffer allocation calculations in the option_to_env() function to cause denial of service or achieve arbitrary code execution on embedded systems without heap hardening.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 8.1,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+                },
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.2,
+                    "method": "CVSSv4",
+                    "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+                }
+            ],
+            "cwes": [
+                131,
+                122
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2024-58251",
+            "description": "In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used by a victim.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 2.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+                }
+            ],
+            "cwes": [
+                150
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2025-46394",
+            "description": "In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 3.3,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                451
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2025-60876",
+            "description": "BusyBox wget thru 1.3.7 accepted raw CR (0x0D)/LF (0x0A) and other C0 control bytes in the HTTP request-target (path/query), allowing the request line to be split and attacker-controlled headers to be injected. To preserve the HTTP/1.1 request-line shape METHOD SP request-target SP HTTP/1.1, a raw space (0x20) in the request-target must also be rejected (clients should use %20).",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 6.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                284
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "rf:poc_source",
+                    "value": "https://gist.github.com/subyumatest/41554af6a72aedaacaec026adc311092"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-38752",
+            "description": "A stack overflow in the evaluate() function (editors/awk.c) of BusyBox commit 371fe9 allows attackers to cause a Denial of Service (DoS) via supplying a crafted AWK script.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 2.9,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+            ],
+            "cwes": [
+                674,
+                121
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-38753",
+            "description": "A use-after-free in the awk_sub() function (editors/awk.c) of Busybox v1.38.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted AWK script.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 4.9,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+                }
+            ],
+            "cwes": [
+                416
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-38754",
+            "description": "A heap overflow in the ifsbreakup() function (shell/ash.c) of Busybox v1.38.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 5.1,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L"
+                }
+            ],
+            "cwes": [
+                125,
+                122
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+                },
+                {
+                    "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+                },
+                {
+                    "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-14456",
+            "description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+            ],
+            "cwes": [
+                770
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/libcrypto3@3.5.7_p0-r0?arch=x86_64&id=68c1d64a0df74e6e"
+                },
+                {
+                    "ref": "pkg:apk/alpine/libssl3@3.5.7_p0-r0?arch=x86_64&id=e842865d9c4a472f"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssl@3.5.7_p0-r0?arch=x86_64&id=3b1b4d2dd16f4e0a"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-35385",
+            "description": "In OpenSSH before 10.3, a file downloaded by scp may be installed setuid or setgid, an outcome contrary to some users' expectations, if the download is performed as root with -O (legacy scp protocol) and without -p (preserve mode).",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 8.1,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cwes": [
+                281
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-35386",
+            "description": "In OpenSSH before 10.3, command execution can occur via shell metacharacters in a username within a command line. This requires a scenario where the username on the command line is untrusted, and also requires a non-default configurations of % in ssh_config.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 8.1,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cwes": [
+                696
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-35387",
+            "description": "OpenSSH before 10.3 can use unintended ECDSA algorithms. Listing of any ECDSA algorithm in PubkeyAcceptedAlgorithms or HostbasedAcceptedAlgorithms is misinterpreted to mean all ECDSA algorithms.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 6.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                670
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-35388",
+            "description": "OpenSSH before 10.3 omits connection multiplexing confirmation for proxy-mode multiplexing sessions.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 2.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                420
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-35414",
+            "description": "OpenSSH before 10.3 mishandles the authorized_keys principals option in uncommon scenarios involving a principals list in conjunction with a Certificate Authority that makes certain use of comma characters.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 8.1,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cwes": [
+                670
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-59995",
+            "description": "sftp in OpenSSH before 10.4 does not properly constrain the location of downloaded files when \"sftp server:/path .\" is used with an attacker-controlled server.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 5.4,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L"
+                }
+            ],
+            "cwes": [
+                23
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-59996",
+            "description": "scp in OpenSSH before 10.4 may place a file in the parent directory of an intended directory when the copy occurs between two remote destinations.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 5.4,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L"
+                }
+            ],
+            "cwes": [
+                23
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-59997",
+            "description": "internal-sftp in sshd in OpenSSH before 10.4 recognizes only the first 9 command-line arguments, which can be important if a later command-line argument would have helped to ensure the intended security properties of an SFTP connection.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 5.4,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                1284
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-59998",
+            "description": "sshd in OpenSSH before 10.4 has an undocumented security-relevant behavior: GSSAPIStrictAcceptorCheck has no value if the server is in Windows Active Directory.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 6.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                573
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-59999",
+            "description": "In sshd in OpenSSH before 10.4, DisableForwarding=yes was supposed to take precedence over PermitTunnel=yes, but did not.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+                }
+            ],
+            "cwes": [
+                348
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-60000",
+            "description": "sshd in OpenSSH before 10.4 allows remote attackers to cause a denial of service (resource consumption from excessive authentication attempts) because MaxAuthTries was mishandled for GSSAPIAuthentication.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 7.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+            ],
+            "cwes": [
+                770
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-60001",
+            "description": "sshd in OpenSSH before 10.4 does not always honor the minimum authentication delay.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 6.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+                }
+            ],
+            "cwes": [
+                770
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-60002",
+            "description": "ssh in OpenSSH before 10.4 can have a use-after-free when a server changes its host key during a key re-exchange. (This outcome occurs only on the client side.)",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 9.4,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+                }
+            ],
+            "cwes": [
+                416
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-73281",
+            "description": "In ssh-agent in OpenSSH before 10.5, some operations can occur remotely but were intended to occur only locally, including operations that add tokens or use keys. This is caused by misinteraction between agent locking and the session-bind@openssh.com extension.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 3.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                669
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-73282",
+            "description": "In ssh in OpenSSH before 10.5, a use-after-free for realloc data can occur if a certain pair of remote-forwarding operations are concurrent.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 4.8,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                416
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        },
+        {
+            "id": "CVE-2026-73283",
+            "description": "In sshd in OpenSSH before 10.5, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not.",
+            "ratings": [
+                {
+                    "source": {
+                        "name": "nvd"
+                    },
+                    "score": 2.5,
+                    "method": "CVSSv3",
+                    "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+                }
+            ],
+            "cwes": [
+                670
+            ],
+            "affects": [
+                {
+                    "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+                },
+                {
+                    "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "beacd232c76b4c9ab8545b339f95447c",
+            "dependsOn": [
+                "pkg:apk/alpine/alpine-baselayout@3.7.2-r1?arch=x86_64&id=181cafb2088d4b7f",
+                "pkg:apk/alpine/alpine-baselayout-data@3.7.2-r1?arch=x86_64&id=5b735a12ca4d4f31",
+                "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&id=5abcf117aded4e6a",
+                "pkg:apk/alpine/alpine-release@3.24.1-r0?arch=x86_64&id=66c4bc4a1bc24ee5",
+                "pkg:apk/alpine/apk-tools@3.0.6-r0?arch=x86_64&id=2869c95b64cd4728",
+                "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d",
+                "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c",
+                "pkg:apk/alpine/ca-certificates@20260611-r0?arch=x86_64&id=5ea4e83e7f264a65",
+                "pkg:apk/alpine/ca-certificates-bundle@20260611-r0?arch=x86_64&id=2590a61ba7624429",
+                "pkg:apk/alpine/icu@78.1-r0?arch=x86_64&id=3ce2f5a8762b4c7c",
+                "pkg:apk/alpine/icu-data-en@78.1-r0?arch=x86_64&id=61880df092194d93",
+                "pkg:apk/alpine/icu-libs@78.1-r0?arch=x86_64&id=f82163cb7882433f",
+                "pkg:apk/alpine/libapk@3.0.6-r0?arch=x86_64&id=31e43348266b4e6d",
+                "pkg:apk/alpine/libcrypto3@3.5.7_p0-r0?arch=x86_64&id=68c1d64a0df74e6e",
+                "pkg:apk/alpine/libedit@20260508.3.1-r1?arch=x86_64&id=079728c4a7064cee",
+                "pkg:apk/alpine/libgcc@15.2.0-r5?arch=x86_64&id=1203e6a9587e4292",
+                "pkg:apk/alpine/libintl@1.0-r0?arch=x86_64&id=aa325e0bb8364615",
+                "pkg:apk/alpine/libncursesw@6.6_p20260516-r0?arch=x86_64&id=6a744ca9cca14364",
+                "pkg:apk/alpine/libssl3@3.5.7_p0-r0?arch=x86_64&id=e842865d9c4a472f",
+                "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r5?arch=x86_64&id=95f2bbd362f841e5",
+                "pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&id=b481fd21f4c44725",
+                "pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&id=b0689c3727cc4747",
+                "pkg:apk/alpine/ncurses-terminfo-base@6.6_p20260516-r0?arch=x86_64&id=f5cfea4573fa4181",
+                "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50",
+                "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6",
+                "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2",
+                "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170",
+                "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604",
+                "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7",
+                "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4",
+                "pkg:apk/alpine/openssl@3.5.7_p0-r0?arch=x86_64&id=3b1b4d2dd16f4e0a",
+                "pkg:apk/alpine/scanelf@1.3.9-r1?arch=x86_64&id=b77a40bcdc3e436f",
+                "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae",
+                "pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&id=a71dc08879544145",
+                "pkg:nuget/DnsClient@1.6.1?id=8e16338f40c6457c",
+                "pkg:nuget/Elastic.Clients.Elasticsearch@9.3.2?id=865ac8a2ce66474b",
+                "pkg:nuget/Elastic.Transport@0.15.1?id=ff0725608da0426e",
+                "pkg:nuget/Microsoft.AspNet.WebApi.Client@6.0.0?id=aaf6b375b5954df5",
+                "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0?id=cabc5105e48c4991",
+                "pkg:nuget/Microsoft.Extensions.DependencyInjection@10.0.0?id=3e99769dfcd3410c",
+                "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@10.0.0?id=24ec59e31ccb4c8b",
+                "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0?id=c81954dde5e645c1",
+                "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0?id=d00a98b959cf450f",
+                "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0?id=23d50591f82a46fd",
+                "pkg:nuget/Microsoft.Extensions.Logging@8.0.0?id=77ed235dfdba497d",
+                "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0?id=55f37f33c651451c",
+                "pkg:nuget/Microsoft.Extensions.Options@8.0.0?id=fd9e13244a87418c",
+                "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0?id=abd17507876148b9",
+                "pkg:nuget/MongoDB.Bson@3.9.0?id=5aea30c35ed04e21",
+                "pkg:nuget/MongoDB.Driver@3.9.0?id=0efd14437fe9489f",
+                "pkg:nuget/NATS.Client.Abstractions@2.7.1?id=1d28072fb2794d08",
+                "pkg:nuget/NATS.Client.Core@2.7.1?id=2f7a6946f96a46cd",
+                "pkg:nuget/NATS.Client.Hosting@2.7.1?id=82220aa515484ab6",
+                "pkg:nuget/NATS.Client.JetStream@2.7.1?id=7c3f5f49f4f34afb",
+                "pkg:nuget/NATS.Client.KeyValueStore@2.7.1?id=b52acc459ad64946",
+                "pkg:nuget/NATS.Client.ObjectStore@2.7.1?id=9af18d26c80e40d4",
+                "pkg:nuget/NATS.Client.Serializers.Json@2.7.1?id=35f8dc4e335849e8",
+                "pkg:nuget/NATS.Client.Services@2.7.1?id=defe6a9921c24011",
+                "pkg:nuget/NATS.Client.Simplified@2.7.1?id=b14c71b3dfd24c77",
+                "pkg:nuget/NATS.Net@2.7.1?id=bd149277635d4c50",
+                "pkg:nuget/Newtonsoft.Json@13.0.4?id=04777ae8d83c44b9",
+                "pkg:nuget/Newtonsoft.Json.Bson@1.0.2?id=15f299e1809748bb",
+                "pkg:nuget/NLog@6.1.3?id=9c5e9e2542aa4764",
+                "pkg:nuget/NLog.Extensions.Logging@6.1.3?id=c458c83fe7bb41a5",
+                "pkg:nuget/NLog.Targets.Network@6.0.4?id=459e3b3d28194dab",
+                "pkg:nuget/openrmfpro-msg@2.14.06?id=a53141a395764ab6",
+                "pkg:nuget/runtimepack.Microsoft.NETCore.App.Runtime.linux-musl-x64@8.0.29?id=168e60cae61a4886",
+                "pkg:nuget/SharpCompress@0.48.1?id=282e15db2a5440d1",
+                "pkg:nuget/Snappier@1.3.1?id=6efdb1818fc0478c",
+                "pkg:nuget/System.Diagnostics.DiagnosticSource@10.0.0?id=0dda01e4fca14b1d",
+                "pkg:nuget/System.IO.Pipelines@10.0.0?id=fc0ca44494cb4a04",
+                "pkg:nuget/System.Text.Encodings.Web@10.0.0?id=be35ff5ba815407f",
+                "pkg:nuget/System.Text.Json@10.0.0?id=c81f7286e3dc4b2a",
+                "pkg:nuget/ZstdSharp.Port@0.7.3?id=e29fe90041584f76"
+            ]
+        },
+        {
+            "ref": "pkg:apk/alpine/alpine-baselayout@3.7.2-r1?arch=x86_64&id=181cafb2088d4b7f"
+        },
+        {
+            "ref": "pkg:apk/alpine/alpine-baselayout-data@3.7.2-r1?arch=x86_64&id=5b735a12ca4d4f31"
+        },
+        {
+            "ref": "pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&id=5abcf117aded4e6a"
+        },
+        {
+            "ref": "pkg:apk/alpine/alpine-release@3.24.1-r0?arch=x86_64&id=66c4bc4a1bc24ee5"
+        },
+        {
+            "ref": "pkg:apk/alpine/apk-tools@3.0.6-r0?arch=x86_64&id=2869c95b64cd4728"
+        },
+        {
+            "ref": "pkg:apk/alpine/busybox@1.37.0_p2-r12?arch=x86_64&id=c823063801db497d"
+        },
+        {
+            "ref": "pkg:apk/alpine/busybox-binsh@1.37.0_p2-r12?id=2175a1ecb098498c"
+        },
+        {
+            "ref": "pkg:apk/alpine/ca-certificates@20260611-r0?arch=x86_64&id=5ea4e83e7f264a65"
+        },
+        {
+            "ref": "pkg:apk/alpine/ca-certificates-bundle@20260611-r0?arch=x86_64&id=2590a61ba7624429"
+        },
+        {
+            "ref": "pkg:apk/alpine/icu@78.1-r0?arch=x86_64&id=3ce2f5a8762b4c7c"
+        },
+        {
+            "ref": "pkg:apk/alpine/icu-data-en@78.1-r0?arch=x86_64&id=61880df092194d93"
+        },
+        {
+            "ref": "pkg:apk/alpine/icu-libs@78.1-r0?arch=x86_64&id=f82163cb7882433f"
+        },
+        {
+            "ref": "pkg:apk/alpine/libapk@3.0.6-r0?arch=x86_64&id=31e43348266b4e6d"
+        },
+        {
+            "ref": "pkg:apk/alpine/libcrypto3@3.5.7_p0-r0?arch=x86_64&id=68c1d64a0df74e6e"
+        },
+        {
+            "ref": "pkg:apk/alpine/libedit@20260508.3.1-r1?arch=x86_64&id=079728c4a7064cee"
+        },
+        {
+            "ref": "pkg:apk/alpine/libgcc@15.2.0-r5?arch=x86_64&id=1203e6a9587e4292"
+        },
+        {
+            "ref": "pkg:apk/alpine/libintl@1.0-r0?arch=x86_64&id=aa325e0bb8364615"
+        },
+        {
+            "ref": "pkg:apk/alpine/libncursesw@6.6_p20260516-r0?arch=x86_64&id=6a744ca9cca14364"
+        },
+        {
+            "ref": "pkg:apk/alpine/libssl3@3.5.7_p0-r0?arch=x86_64&id=e842865d9c4a472f"
+        },
+        {
+            "ref": "pkg:apk/alpine/libstdc%2B%2B@15.2.0-r5?arch=x86_64&id=95f2bbd362f841e5"
+        },
+        {
+            "ref": "pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&id=b481fd21f4c44725"
+        },
+        {
+            "ref": "pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&id=b0689c3727cc4747"
+        },
+        {
+            "ref": "pkg:apk/alpine/ncurses-terminfo-base@6.6_p20260516-r0?arch=x86_64&id=f5cfea4573fa4181"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh@10.3_p1-r0?arch=x86_64&id=0005dbdc39d14c50"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-client-common@10.3_p1-r0?arch=x86_64&id=33d4ca813c2f44f6"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-client-default@10.3_p1-r0?arch=x86_64&id=ff97e47e506943c2"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-keygen@10.3_p1-r0?arch=x86_64&id=f853f3edac584170"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-server@10.3_p1-r0?arch=x86_64&id=b4b5fced52c14604"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-server-common@10.3_p1-r0?arch=x86_64&id=312e20d9e46048a7"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssh-sftp-server@10.3_p1-r0?arch=x86_64&id=f5e86bc31fa243f4"
+        },
+        {
+            "ref": "pkg:apk/alpine/openssl@3.5.7_p0-r0?arch=x86_64&id=3b1b4d2dd16f4e0a"
+        },
+        {
+            "ref": "pkg:apk/alpine/scanelf@1.3.9-r1?arch=x86_64&id=b77a40bcdc3e436f"
+        },
+        {
+            "ref": "pkg:apk/alpine/ssl_client@1.37.0_p2-r12?arch=x86_64&id=c682b84147ae4fae"
+        },
+        {
+            "ref": "pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&id=a71dc08879544145"
+        },
+        {
+            "ref": "pkg:nuget/DnsClient@1.6.1?id=8e16338f40c6457c"
+        },
+        {
+            "ref": "pkg:nuget/Elastic.Clients.Elasticsearch@9.3.2?id=865ac8a2ce66474b"
+        },
+        {
+            "ref": "pkg:nuget/Elastic.Transport@0.15.1?id=ff0725608da0426e"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.AspNet.WebApi.Client@6.0.0?id=aaf6b375b5954df5"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0?id=cabc5105e48c4991"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection@10.0.0?id=3e99769dfcd3410c"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@10.0.0?id=24ec59e31ccb4c8b"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0?id=c81954dde5e645c1"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0?id=d00a98b959cf450f"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0?id=23d50591f82a46fd"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0?id=77ed235dfdba497d"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0?id=55f37f33c651451c"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Options@8.0.0?id=fd9e13244a87418c"
+        },
+        {
+            "ref": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0?id=abd17507876148b9"
+        },
+        {
+            "ref": "pkg:nuget/MongoDB.Bson@3.9.0?id=5aea30c35ed04e21"
+        },
+        {
+            "ref": "pkg:nuget/MongoDB.Driver@3.9.0?id=0efd14437fe9489f"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Abstractions@2.7.1?id=1d28072fb2794d08"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Core@2.7.1?id=2f7a6946f96a46cd"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Hosting@2.7.1?id=82220aa515484ab6"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.JetStream@2.7.1?id=7c3f5f49f4f34afb"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.KeyValueStore@2.7.1?id=b52acc459ad64946"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.ObjectStore@2.7.1?id=9af18d26c80e40d4"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Serializers.Json@2.7.1?id=35f8dc4e335849e8"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Services@2.7.1?id=defe6a9921c24011"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Client.Simplified@2.7.1?id=b14c71b3dfd24c77"
+        },
+        {
+            "ref": "pkg:nuget/NATS.Net@2.7.1?id=bd149277635d4c50"
+        },
+        {
+            "ref": "pkg:nuget/Newtonsoft.Json@13.0.4?id=04777ae8d83c44b9"
+        },
+        {
+            "ref": "pkg:nuget/Newtonsoft.Json.Bson@1.0.2?id=15f299e1809748bb"
+        },
+        {
+            "ref": "pkg:nuget/NLog@6.1.3?id=9c5e9e2542aa4764"
+        },
+        {
+            "ref": "pkg:nuget/NLog.Extensions.Logging@6.1.3?id=c458c83fe7bb41a5"
+        },
+        {
+            "ref": "pkg:nuget/NLog.Targets.Network@6.0.4?id=459e3b3d28194dab"
+        },
+        {
+            "ref": "pkg:nuget/openrmfpro-msg@2.14.06?id=a53141a395764ab6"
+        },
+        {
+            "ref": "pkg:nuget/runtimepack.Microsoft.NETCore.App.Runtime.linux-musl-x64@8.0.29?id=168e60cae61a4886"
+        },
+        {
+            "ref": "pkg:nuget/SharpCompress@0.48.1?id=282e15db2a5440d1"
+        },
+        {
+            "ref": "pkg:nuget/Snappier@1.3.1?id=6efdb1818fc0478c"
+        },
+        {
+            "ref": "pkg:nuget/System.Diagnostics.DiagnosticSource@10.0.0?id=0dda01e4fca14b1d"
+        },
+        {
+            "ref": "pkg:nuget/System.IO.Pipelines@10.0.0?id=fc0ca44494cb4a04"
+        },
+        {
+            "ref": "pkg:nuget/System.Text.Encodings.Web@10.0.0?id=be35ff5ba815407f"
+        },
+        {
+            "ref": "pkg:nuget/System.Text.Json@10.0.0?id=c81f7286e3dc4b2a"
+        },
+        {
+            "ref": "pkg:nuget/ZstdSharp.Port@0.7.3?id=e29fe90041584f76"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+[
+    {
+      "controlDisplay": "AC-2",
+      "controlDescription": "Inactive system accounts must be automatically disabled within 30 days for High-Confidentiality/High-Integrity systems (standard NIST default is 90 days).",
+      "controlSupplementalText": "Account management procedures for NSS must account for personnel security clearances and formal access authorizations (e.g., need-to-know determinations). System accounts associated with personnel whose clearance or access authorization has been revoked must be terminated immediately (within 24 hours)."
+    },
+    {
+      "controlDisplay": "AC-3",
+      "controlDescription": "Access control mechanisms must enforce explicit security attributes, including security classification markings, handling caveats, and compartment designations.",
+      "controlSupplementalText": "For NSS processing classified national security information (CNSI), logical access enforcement must prevent lower-cleared or non-compartmented users from viewing, querying, or executing data tagged with higher security attributes or specific dissemination controls (e.g., NOFORN, PROPIN)."
+    },
+    {
+      "controlDisplay": "AC-6",
+      "controlDescription": "Non-privileged users must be strictly prohibited from executing system utilities or administrative applications that bypass auditing or access controls.",
+      "controlSupplementalText": "In NSS environments, dual-authorization (two-person control) must be implemented for critical administrative functions, such as modifying system security configurations, changing cryptographic keys, or wiping audit logs."
+    },
+    {
+      "controlDisplay": "AC-17",
+      "controlDescription": "Remote access to NSS from non-NSS perimeters is prohibited unless protected by NSA-approved Cryptographic High Assurance (Type 1) mechanisms or an Authorizing Official (AO)-approved enclave perimeter.",
+      "controlSupplementalText": "Unencrypted remote access, dial-up access, or split-tunneling on remote devices connected to NSS is explicitly forbidden. Wireless remote access must comply with specific CNSS wireless instructions (CNSSI 7003 / CNSSAM TEMPEST)."
+    },
+    {
+      "controlDisplay": "AU-2",
+      "controlDescription": "Audit logging capabilities cannot be disabled or altered by privileged system accounts without triggering an immediate high-priority security alert.",
+      "controlSupplementalText": "CNSSI 1253 establishes mandatory non-tailorable audit logging requirements for NSS. Auditable events must include all privilege escalations, cross-domain file transfers, cryptographic operations, failed logon attempts, and modifications to access control lists."
+    },
+    {
+      "controlDisplay": "AU-6",
+      "controlDescription": "Audit records must be reviewed at least weekly using automated log analysis and correlation tools.",
+      "controlSupplementalText": "Automated analysis must look for cross-boundary leakages, unauthorized access attempts to classified repositories, and insider threat anomalies. Real-time alerts must be routed directly to the Information System Security Manager (ISSM) or Security Operations Center (SOC)."
+    },
+    {
+      "controlDisplay": "AU-11",
+      "controlDescription": "Audit logs must be retained online for a minimum of 90 days and archived offline for a minimum of 5 years (or per agency-specific national security record schedules).",
+      "controlSupplementalText": "Archived logs must be cryptographically protected against tampering or unauthorized deletion to preserve evidentiary chain-of-custody for national security investigations."
+    },
+    {
+      "controlDisplay": "IA-2",
+      "controlDescription": "Hardware-based multi-factor authentication (MFA) utilizing National Security System-approved PKI certificates or DoD Common Access Cards (CAC) / Personal Identity Verification (PIV) tokens is mandatory for all access.",
+      "controlSupplementalText": "Passwords alone are not authorized for primary authentication on NSS. Remote and local administrative logins require hardware-based cryptographic credentials."
+    },
+    {
+      "controlDisplay": "IA-5",
+      "controlDescription": "Passwords used as secondary authenticators or for local recovery accounts must be a minimum of 15 characters for general users and 20 characters for privileged accounts.",
+      "controlSupplementalText": "Authenticators must be changed every 60 days and cannot reuse the previous 24 passwords. System authenticators must be stored using approved cryptographic hashes (e.g., FIPS-validated / NSA-approved hashing algorithms)."
+    },
+    {
+      "controlDisplay": "MP-2",
+      "controlDescription": "Removable media (e.g., flash drives, external hard drives, optical discs) must be physically marked with the highest classification level and caveats of the information stored or processed on the system.",
+      "controlSupplementalText": "Unapproved commercial USB flash drives are strictly prohibited on NSS. Hardware perimeters must physically or logically disable unauthorized USB mass storage devices."
+    },
+    {
+      "controlDisplay": "MP-6",
+      "controlDescription": "Media sanitization and destruction must strictly comply with NSA/CSS Policy Manual 9-12 or NSA-approved sanitization evaluators (EPLs).",
+      "controlSupplementalText": "Standard software overwrites or commercial formatting are insufficient for classified National Security Systems media. Physical destruction (incineration, shredding to NSA particle size, or degaussing via an NSA-approved degausser) is required and must be witnessed by two cleared individuals."
+    },
+    {
+      "controlDisplay": "PE-3",
+      "controlDescription": "Systems processing classified NSS data must reside within accredited physical perimeters, such as Sensitive Compartmented Information Facilities (SCIFs) or designated secure rooms complying with CNSS specifications.",
+      "controlSupplementalText": "Physical security perimeters must incorporate Intrusion Detection Systems (IDS), acoustic protection, physical access logs, and TEMPEST emission security measures (CNSSAM TEMPEST/1-13) to prevent emanations tapping."
+    },
+    {
+      "controlDisplay": "SC-7",
+      "controlDescription": "Interconnections between NSS and non-NSS (or between different security classification levels) must be managed through an AO-approved Guard or Cross Domain Solution (CDS).",
+      "controlSupplementalText": "Direct, unmonitored routing between networks of different classification levels or security domains is prohibited. Cross Domain Solutions must be tested and certified in accordance with NSA/CDMO guidelines."
+    },
+    {
+      "controlDisplay": "SC-8",
+      "controlDescription": "Cryptographic mechanisms protecting classified national security data in transit or at rest must utilize NSA-approved Type 1 Cryptography or Commercial Solutions for Classified (CSfC) architectures.",
+      "controlSupplementalText": "Standard commercial FIPS 140-2/140-3 validation alone is insufficient for protecting classified national security data across unapproved perimeters. Data in transit across unclassified networks must be encapsulated in NSA-certified Type 1 encryptors (e.g., HAIPE)."
+    },
+    {
+      "controlDisplay": "SC-28",
+      "controlDescription": "Cryptographic mechanisms protecting classified national security data in transit or at rest must utilize NSA-approved Type 1 Cryptography or Commercial Solutions for Classified (CSfC) architectures.",
+      "controlSupplementalText": "Standard commercial FIPS 140-2/140-3 validation alone is insufficient for protecting classified national security data across unapproved perimeters. Data in transit across unclassified networks must be encapsulated in NSA-certified Type 1 encryptors (e.g., HAIPE)."
+    },
+    {
+      "controlDisplay": "SI-4",
+      "controlDescription": "Intrusion detection and prevention systems (IDS/IPS) must be deployed at all internal and external perimeters, specifically configured to monitor for indicators of insider threat and nation-state threat activity.",
+      "controlSupplementalText": "Continuous monitoring tools must feed security event data into centralized defense-wide or agency-wide SOC architectures (e.g., US-CERT / DoD Cyber Command reporting mechanisms)."
+    }
+  ]

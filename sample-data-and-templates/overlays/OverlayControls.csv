@@ -1,0 +1,3 @@
+﻿ControlNumber,ControlDescription,ControlSupplementalText
+AC-17,Remote access to a system processing classified information from an off-site or unclassified location is strictly prohibited.,"Unencrypted remote access, commercial VPNs, and split-tunneling are forbidden."
+AU-2,Audit record generation capabilities cannot be bypassed or turned off by privileged system administrators without triggering an immediate high-priority security alert.,"Auditable events must capture all classification level changes, cross-boundary file transfers, print jobs containing classified markings, failed login attempts, privilege escalations, and media writing operations."
